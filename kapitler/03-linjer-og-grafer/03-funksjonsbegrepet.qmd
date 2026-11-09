@@ -2,20 +2,115 @@
 title: "Funksjonsbegrepet"
 tema: funksjoner
 undertema: funksjonsbegrepet
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/03-03-funksjonsbegrepet) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+En funksjon er en regel som gir **nøyaktig én** utverdi for hver innverdi. Posisjonen til en bil er en funksjon av tiden: For hvert tidspunkt er bilen på ett bestemt sted. Funksjoner er språket vi bruker for å beskrive hvordan én størrelse avhenger av en annen.
+
+## Definisjon og skrivemåte
+
+::: {.callout-note title="Definisjon: Funksjon"}
+En funksjon $f$ tilordner hvert tall $x$ i definisjonsmengden $D_f$ nøyaktig ett tall $f(x)$.
 :::
 
-## Dette kommer på siden
+Vi skriver for eksempel $f(x) = x^2 - 3x$. Da er $f(2) = 4 - 6 = -2$: Vi setter inn $2$ overalt der det står $x$. Grafen til $f$ er alle punktene $(x, f(x))$.
 
-- Hva en funksjon er
-- Definisjonsmengde og verdimengde
-- Funksjoner i fysikk
-- Eksempler og oppgaver med løsning
+::: {.kort}
+- **Definisjonsmengde $D_f$** Alle $x$-verdiene funksjonen er definert for. $f(x) = \frac{1}{x}$ har $D_f = \mathbb{R}\setminus\{0\}$, og $g(x) = \sqrt x$ har $D_g = [0, \rightarrow\rangle$.
+- **Verdimengde $V_f$** Alle verdiene funksjonen kan få. $f(x) = x^2$ har $V_f = [0, \rightarrow\rangle$.
+- **Nullpunkt** En $x$-verdi der $f(x) = 0$. Der skjærer grafen $x$-aksen.
+:::
+
+Noen ganger begrenser vi definisjonsmengden fordi det gir mening i en praktisk situasjon. En stein som faller i $2.0\ \mathrm{s}$, har en posisjon $s(t)$ bare for $t \in [0, 2.0]$.
+
+## Hvordan kjenne igjen en funksjon
+
+En graf er en funksjon hvis hver loddrett linje skjærer grafen **høyst én gang**. En sirkel er ikke grafen til en funksjon, fordi en loddrett linje gjennom sirkelen treffer den to ganger.
+
+::: {.eksempel}
+**Eksempel: Verdier og definisjonsmengde.** La $f(x) = \dfrac{x + 1}{x - 2}$. a) Finn $f(0)$ og $f(5)$. b) Finn definisjonsmengden. c) Finn nullpunktet.
+
+::: {.losning}
+a) $f(0) = \frac{1}{-2} = \underline{\underline{-\frac12}}$ og $f(5) = \frac{6}{3} = \underline{\underline{2}}$.
+
+b) Nevneren kan ikke være null, så $x \ne 2$: $\underline{\underline{D_f = \mathbb{R}\setminus\{2\}}}$.
+
+c) En brøk er null når telleren er null: $x + 1 = 0$, så nullpunktet er $\underline{\underline{x = -1}}$.
+:::
+:::
+
+## Funksjoner i fysikk
+
+I fysikk bruker vi gjerne andre bokstaver: posisjonen $s(t)$, farten $v(t)$ og temperaturen $T(t)$ er funksjoner av tiden $t$. Tegner vi grafen, kan vi lese av mye: Hvor bratt den er, forteller hvor fort størrelsen endrer seg.
+
+::: {.callout-tip title="I fysikken"}
+Se [funksjoner og plotting på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/02-matematikk/02-funksjoner-og-plotting.html) for hvordan vi tegner og leser fysiske sammenhenger.
+:::
+
+## Prøv selv
+
+En funksjon i matematikk passer fint som en funksjon i Python.
+
+```{.python .kjor}
+def f(x):
+    return (x + 1) / (x - 2)
+
+print(f(0), f(5))
+for x in [1.9, 1.99, 2.01, 2.1]:
+    print(x, f(x))      # hva skjer nær x = 2?
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Regn ut funksjonsverdier"}
+La $f(x) = 2x^2 - x + 3$. Finn a) $f(0)$ b) $f(-2)$ c) $f(a + 1)$
+
+::: {.losning}
+a) $\underline{\underline{3}}$
+
+b) $2\cdot 4 + 2 + 3 = \underline{\underline{13}}$
+
+c) $2(a + 1)^2 - (a + 1) + 3 = 2a^2 + 4a + 2 - a - 1 + 3 = \underline{\underline{2a^2 + 3a + 4}}$
+:::
+:::
+
+::: {.oppgave tittel="Definisjonsmengde"}
+Finn definisjonsmengden: a) $f(x) = \dfrac{3}{x + 4}$ b) $g(x) = \sqrt{x - 1}$ c) $h(x) = \dfrac{1}{\sqrt{5 - x}}$
+
+::: {.losning}
+a) $\underline{\underline{\mathbb{R}\setminus\{-4\}}}$
+
+b) $x - 1 \ge 0$: $\underline{\underline{[1, \rightarrow\rangle}}$
+
+c) $5 - x > 0$ (strengt, fordi roten står i nevneren): $\underline{\underline{\langle\leftarrow, 5\rangle}}$
+:::
+:::
+
+::: {.oppgave tittel="Er det en funksjon?" niva="Middels"}
+Er sammenhengene funksjoner av $x$? a) $y = x^3$ b) $x^2 + y^2 = 1$ c) $y^2 = x$
+
+::: {.losning}
+a) **Ja.** Hver $x$ gir én $y$.
+
+b) **Nei.** For $x = 0$ er både $y = 1$ og $y = -1$ med. Det er en sirkel.
+
+c) **Nei.** For $x = 4$ er både $y = 2$ og $y = -2$ med. (Men $y = \sqrt x$ alene er en funksjon.)
+:::
+:::
+
+::: {.oppgave tittel="Ballkast" niva="Middels"}
+Høyden til en ball er $h(t) = 1.5 + 12t - 4.9t^2$ (meter, sekunder). a) Hva er $h(0)$, og hva betyr det? b) Regn ut $h(1)$ og $h(2)$. c) Hvilken definisjonsmengde gir mening?
+
+::: {.losning}
+a) $h(0) = 1.5\ \mathrm{m}$: ballen kastes fra $1.5\ \mathrm{m}$ over bakken.
+
+b) $h(1) = 1.5 + 12 - 4.9 = \underline{\underline{8.6\ \mathrm{m}}}$ og $h(2) = 1.5 + 24 - 19.6 = \underline{\underline{5.9\ \mathrm{m}}}$.
+
+c) Fra kastet ($t = 0$) til ballen treffer bakken ($h = 0$). Grafisk finner vi $h = 0$ ved $t \approx 2.57\ \mathrm{s}$, så $D_h = [0, 2.57]$.
+:::
+:::
+
+::::

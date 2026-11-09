@@ -1,0 +1,20 @@
+\begin{tikzpicture}[scale=0.75]
+% a > 0
+\draw[akse] (-0.5,0)--(4.8,0) node[right]{$x$};
+\draw[akse] (0,-1.6)--(0,4.2) node[above]{$y$};
+\draw[very thick,bla,domain=0.1:3.9,samples=60] plot (\x,{(\x-2)^2-1});
+\draw[dashed,black!50] (2,-1.5)--(2,3.8);
+\fill (2,-1) circle (2.2pt) node[below right]{bunnpunkt};
+\fill (1,0) circle (2pt); \fill (3,0) circle (2pt);
+\node at (2.2,4.4) {$a > 0$};
+% a < 0
+\begin{scope}[xshift=7cm]
+\draw[akse] (-0.5,0)--(4.8,0) node[right]{$x$};
+\draw[akse] (0,-1.6)--(0,4.2) node[above]{$y$};
+\draw[very thick,rod,domain=0.1:3.9,samples=60] plot (\x,{-(\x-2)^2+3});
+\draw[dashed,black!50] (2,-1.5)--(2,3.8);
+\fill (2,3) circle (2.2pt) node[above right]{toppunkt};
+\node at (2.2,4.4) {$a < 0$};
+\node[black!60,font=\footnotesize] at (2,-2) {symmetrilinje $x = -\frac{b}{2a}$};
+\end{scope}
+\end{tikzpicture}

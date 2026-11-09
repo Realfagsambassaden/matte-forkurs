@@ -2,20 +2,117 @@
 title: "Graftegning og grafisk løsning"
 tema: funksjoner
 undertema: grafisk-losning
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/03-02-graftegning-og-grafisk-losning) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Mange likninger er vanskelige eller umulige å løse med algebra, for eksempel $2^x = x + 3$. Men vi kan alltid tegne grafene og se hvor de skjærer hverandre. Grafisk løsning gir oversikt, og den er en god kontroll på algebraiske svar.
+
+## Å tegne grafer digitalt
+
+En graf er mange punkter $(x, y)$ som tegnes og bindes sammen. Med Python lager vi en tabell med mange $x$-verdier og regner ut $y$ for alle samtidig:
+
+```{.python .kjor}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-3, 3, 200)      # 200 x-verdier fra -3 til 3
+y = x**2 - 2
+
+plt.plot(x, y)
+plt.axhline(0, color="gray"); plt.axvline(0, color="gray")
+plt.xlabel("x"); plt.ylabel("y"); plt.grid(True); plt.show()
+```
+
+GeoGebra og grafiske kalkulatorer gjør det samme. Velg et vindu (verdier for $x$ og $y$) som viser det interessante: nullpunkter, skjæringspunkter og topp- og bunnpunkter.
+
+## Grafisk løsning av likninger
+
+For å løse $f(x) = g(x)$ grafisk tegner vi begge sidene som hver sin graf. Løsningene er $x$-koordinatene til **skjæringspunktene**.
+
+::: {.steg}
+1. Tegn $y = f(x)$ (venstre side) og $y = g(x)$ (høyre side) i samme koordinatsystem.
+2. Finn skjæringspunktene.
+3. Les av $x$-koordinatene. Det er løsningene.
 :::
 
-## Dette kommer på siden
+Vil du løse $f(x) = 0$, er løsningene **nullpunktene**, der grafen skjærer $x$-aksen.
 
-- Å tegne grafer digitalt (Python)
-- Skjæringspunkter
-- Grafisk løsning av likninger og ulikheter
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: Likning som ikke kan løses algebraisk.** Løs $2^x = x + 3$ grafisk.
+
+::: {.losning}
+Tegn $y = 2^x$ og $y = x + 3$. Grafene skjærer hverandre i to punkter. Avlest (og kontrollert i Python under):
+$$
+\underline{\underline{x \approx -2.86 \quad\text{og}\quad x \approx 2.44}}
+$$
+Kontroll: $2^{2.44} \approx 5.43$ og $2.44 + 3 = 5.44$. Det stemmer godt.
+:::
+:::
+
+## Grafisk løsning av ulikheter
+
+Ulikheten $f(x) > g(x)$ er oppfylt der grafen til $f$ ligger **over** grafen til $g$. Les av hvilke $x$-verdier det gjelder for, med skjæringspunktene som grenser. I eksemplet over er $2^x > x + 3$ for $x < -2.86$ og for $x > 2.44$.
+
+## Prøv selv
+
+Programmet tegner begge grafene og finner skjæringspunktene numerisk med `fsolve`. Prøv andre likninger.
+
+```{.python .kjor}
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import fsolve
+
+f = lambda x: 2.0**x
+g = lambda x: x + 3
+
+x = np.linspace(-4, 4, 300)
+plt.plot(x, f(x), label="2^x"); plt.plot(x, g(x), label="x + 3")
+for start in (-3.0, 3.0):
+    r = fsolve(lambda t: f(t) - g(t), start)[0]
+    print(f"x = {r:.3f}")
+    plt.plot(r, g(r), "o")
+plt.legend(); plt.grid(True); plt.ylim(-2, 10); plt.show()
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Nullpunkter"}
+Tegn grafen til $f(x) = x^2 - 4x + 1$ for $x \in [-1, 5]$, og finn nullpunktene grafisk med to desimaler.
+
+::: {.losning}
+Grafen skjærer $x$-aksen i $\underline{\underline{x \approx 0.27}}$ og $\underline{\underline{x \approx 3.73}}$. (Eksakt er det $2 \pm \sqrt3$, som vi lærer å finne med abc-formelen.)
+:::
+:::
+
+::: {.oppgave tittel="Skjæringspunkt"}
+Løs likningen $x^2 = 2x + 3$ grafisk, og kontroller svarene ved å sette inn.
+
+::: {.losning}
+Grafene $y = x^2$ og $y = 2x + 3$ skjærer hverandre i $(-1, 1)$ og $(3, 9)$. Løsningene er $\underline{\underline{x = -1}}$ og $\underline{\underline{x = 3}}$.
+
+Kontroll: $(-1)^2 = 1 = 2\cdot(-1) + 3$ og $3^2 = 9 = 2\cdot 3 + 3$.
+:::
+:::
+
+::: {.oppgave tittel="Ulikhet grafisk" niva="Middels"}
+Bruk grafene fra forrige oppgave og løs ulikheten $x^2 < 2x + 3$.
+
+::: {.losning}
+Parabelen ligger under linja mellom skjæringspunktene: $\underline{\underline{-1 < x < 3}}$.
+:::
+:::
+
+::: {.oppgave tittel="Avkjøling" niva="Utfordrende"}
+Temperaturen i en kopp te er $T(t) = 20 + 70\cdot 0.95^t$ (i $^\circ\mathrm{C}$, med $t$ i minutter). Når er teen avkjølt til $50\ ^\circ\mathrm{C}$? Løs grafisk eller med `fsolve`.
+
+::: {.losning}
+Vi løser $20 + 70\cdot 0.95^t = 50$. Grafen til $T$ krysser den vannrette linja $y = 50$ ved $\underline{\underline{t \approx 16.5\ \mathrm{min}}}$.
+
+Kontroll: $0.95^{16.5} \approx 0.429$, og $20 + 70\cdot 0.429 = 50.0$. (Med logaritmer får vi eksakt $t = \frac{\ln(3/7)}{\ln 0.95} = 16.52$.)
+:::
+:::
+
+::::
