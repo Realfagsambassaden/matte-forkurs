@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=0.9]
+\foreach \i in {0,...,7} {
+  \pgfmathsetmacro{\x}{1+0.5*\i}
+  \pgfmathsetmacro{\h}{0.12*(\x+0.25)*(\x+0.25)+0.6}
+  \draw[bla,fill=bla!15] (\x,0) rectangle ({\x+0.5},\h);
+}
+\draw[akse] (-0.3,0)--(5.8,0) node[right]{$x$};
+\draw[akse] (0,-0.3)--(0,3.6) node[above]{$y$};
+\draw[very thick,rod,domain=0.3:5.4,samples=80] plot (\x,{0.12*\x*\x+0.6}) node[right]{$f$};
+\draw (1,0.1)--(1,-0.1) node[below]{$a$};
+\draw (5,0.1)--(5,-0.1) node[below]{$b$};
+\draw[|-|,thick] (3,-0.6)--(3.5,-0.6); \node[below] at (3.25,-0.65) {$\Delta x$};
+\end{tikzpicture}

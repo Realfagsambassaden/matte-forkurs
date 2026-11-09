@@ -2,20 +2,103 @@
 title: "Ubestemt integral"
 tema: integrasjon
 undertema: ubestemt-integral
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/16-01-ubestemt-integral) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Når vi deriverer, går vi fra posisjon til fart. Men hva om vi kjenner farten og vil finne posisjonen? Da må vi gå baklengs: finne en funksjon som har den deriverte vi kjenner. Det kalles å **integrere**.
+
+## Antiderivert
+
+::: {.graa}
+$F$ er en **antiderivert** til $f$ hvis $F'(x) = f(x)$. Alle antideriverte til $f$ skrives som det **ubestemte integralet**
+$$
+\int f(x)\,\mathrm{d}x = F(x) + C
+$$
+der $C$ er en vilkårlig konstant.
 :::
 
-## Dette kommer på siden
+Konstanten er med fordi den deriverte av en konstant er null: $x^2$, $x^2 + 5$ og $x^2 - 3$ har alle den deriverte $2x$.
 
-- Antiderivert og integrasjonskonstant
-- Integralet av 1/x
-- Integrasjon av eksponentialfunksjoner
-- Eksempler og oppgaver med løsning
+## Regler
+
+Hver regel er en derivasjonsregel lest baklengs:
+
+::: {.graa}
+$$
+\begin{aligned}
+\int x^r\,\mathrm{d}x &= \frac{x^{r+1}}{r + 1} + C, \quad r \ne -1 &
+\int \frac1x\,\mathrm{d}x &= \ln|x| + C \\
+\int \mathrm{e}^{x}\,\mathrm{d}x &= \mathrm{e}^{x} + C &
+\int \mathrm{e}^{kx}\,\mathrm{d}x &= \frac1k\mathrm{e}^{kx} + C \\
+\int \sin x\,\mathrm{d}x &= -\cos x + C &
+\int \cos x\,\mathrm{d}x &= \sin x + C
+\end{aligned}
+$$
+Konstanter kan settes utenfor, og et integral av en sum er summen av integralene.
+:::
+
+::: {.eksempel}
+**Eksempel: Polynom.** Finn $\displaystyle\int (6x^2 - 4x + 3)\,\mathrm{d}x$.
+
+::: {.losning}
+$6\cdot\frac{x^3}{3} - 4\cdot\frac{x^2}{2} + 3x + C = \underline{\underline{2x^3 - 2x^2 + 3x + C}}$
+
+Sjekk: Deriver svaret, og du skal få integranden tilbake.
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Røtter og brøker.** Finn $\displaystyle\int\left(\sqrt{x} + \frac{2}{x}\right)\mathrm{d}x$.
+
+::: {.losning}
+$\sqrt{x} = x^{1/2}$ gir $\frac{x^{3/2}}{3/2} = \frac23x^{3/2}$.
+$$
+\int\left(\sqrt{x} + \frac{2}{x}\right)\mathrm{d}x = \underline{\underline{\frac23x\sqrt{x} + 2\ln|x| + C}}
+$$
+:::
+:::
+
+## Startbetingelse
+
+Kjenner vi én verdi av $F$, kan vi bestemme $C$.
+
+::: {.eksempel}
+**Eksempel: Fra fart til posisjon.** En bil har farten $v(t) = 2t + 3$ (m/s), og posisjonen er $s(0) = 10\ \mathrm{m}$. Finn $s(t)$.
+
+::: {.losning}
+$s(t) = \int (2t + 3)\,\mathrm{d}t = t^2 + 3t + C$. $s(0) = C = 10$, så $\underline{\underline{s(t) = t^2 + 3t + 10}}$.
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Integrer"}
+a) $\int 5\,\mathrm{d}x$ b) $\int x^4\,\mathrm{d}x$ c) $\int (3x^2 + 2x)\,\mathrm{d}x$
+
+::: {.losning}
+a) $\underline{\underline{5x + C}}$ b) $\underline{\underline{\frac{x^5}{5} + C}}$ c) $\underline{\underline{x^3 + x^2 + C}}$
+:::
+:::
+
+::: {.oppgave tittel="Eksponential og trigonometri"}
+a) $\int 4\mathrm{e}^{2x}\,\mathrm{d}x$ b) $\int (\cos x - \sin x)\,\mathrm{d}x$ c) $\int \frac{1}{x^2}\,\mathrm{d}x$
+
+::: {.losning}
+a) $\underline{\underline{2\mathrm{e}^{2x} + C}}$ b) $\underline{\underline{\sin x + \cos x + C}}$ c) $\int x^{-2}\,\mathrm{d}x = \underline{\underline{-\frac1x + C}}$
+:::
+:::
+
+::: {.oppgave tittel="Fritt fall" niva="Middels"}
+En stein slippes fra ro, og akselerasjonen er $a = -\mathrm{g}$. Finn $v(t)$ og $s(t)$ når $v(0) = 0$ og $s(0) = h$.
+
+::: {.losning}
+$v = \int -\mathrm{g}\,\mathrm{d}t = -\mathrm{g}t + C_1$, og $v(0) = 0$ gir $\underline{\underline{v = -\mathrm{g}t}}$.
+
+$s = \int -\mathrm{g}t\,\mathrm{d}t = -\frac12\mathrm{g}t^2 + C_2$, og $s(0) = h$ gir $\underline{\underline{s = h - \frac12\mathrm{g}t^2}}$.
+:::
+:::
+
+::::
