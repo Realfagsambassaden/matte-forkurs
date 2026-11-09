@@ -2,20 +2,153 @@
 title: "Andregradslikninger og abc-formelen"
 tema: algebra-og-likninger
 undertema: andregradslikninger
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/04-04-andregradslikninger) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+En andregradslikning har formen $ax^2 + bx + c = 0$. Den dukker opp når vi spør når en ball treffer bakken, hvor to grafer skjærer hverandre, eller hvilke mål et rektangel med gitt areal har. Her lærer vi å løse alle andregradslikninger, med eller uten faktorisering.
+
+## Uten konstantledd eller uten førstegradsledd
+
+To spesialtilfeller løses raskest uten formel:
+
+::: {.kort}
+- **Uten konstantledd** $ax^2 + bx = 0$. Sett $x$ utenfor: $x(ax + b) = 0$. Et produkt er null når én av faktorene er null, så $x = 0$ eller $x = -\frac ba$.
+- **Uten førstegradsledd** $ax^2 + c = 0$. Løs for $x^2$ og ta roten: $x^2 = -\frac ca$, så $x = \pm\sqrt{-\frac ca}$ (hvis tallet under roten er positivt).
 :::
 
-## Dette kommer på siden
+::: {.callout-warning title="Ikke del på x"}
+I $x^2 = 3x$ er det fristende å dele på $x$ og få $x = 3$. Da mister du løsningen $x = 0$. Skriv heller $x^2 - 3x = 0$, altså $x(x - 3) = 0$, som gir begge løsningene.
+:::
 
-- Andregradslikninger uten konstantledd eller førstegradsledd
-- abc-formelen
-- Diskriminanten: to, én eller ingen løsninger
-- Eksempler og oppgaver med løsning
+## Med faktorisering
+
+Kan venstre side faktoriseres, bruker vi at et produkt er null når en faktor er null:
+$$
+x^2 - 5x + 6 = 0 \quad\Longrightarrow\quad (x - 2)(x - 3) = 0 \quad\Longrightarrow\quad x = 2 \ \text{eller}\ x = 3
+$$
+
+## abc-formelen
+
+For den generelle likningen $ax^2 + bx + c = 0$ gir **abc-formelen** alle løsningene:
+
+::: {.graa}
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+:::
+
+Formelen kommer fra å fullføre kvadratet. Tallet under roten kalles **diskriminanten**, $D = b^2 - 4ac$, og den forteller hvor mange løsninger det er:
+
+::: {.kort}
+- **$D > 0$** To løsninger. Parabelen skjærer $x$-aksen to ganger.
+- **$D = 0$** Én løsning. Parabelen berører $x$-aksen i toppunktet eller bunnpunktet.
+- **$D < 0$** Ingen reelle løsninger. Parabelen skjærer ikke $x$-aksen.
+:::
+
+::: {.eksempel}
+**Eksempel: abc-formelen.** Løs $2x^2 - 3x - 4 = 0$.
+
+::: {.losning}
+$a = 2$, $b = -3$, $c = -4$. Diskriminanten: $D = 9 - 4\cdot 2\cdot(-4) = 9 + 32 = 41 > 0$, så to løsninger:
+$$
+x = \frac{3 \pm \sqrt{41}}{4} \quad\Longrightarrow\quad \underline{\underline{x \approx 2.35 \quad\text{eller}\quad x \approx -0.85}}
+$$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Ballen treffer bakken.** En ball kastes opp fra $2.0\ \mathrm{m}$ høyde med farten $8.0\ \mathrm{m/s}$. Høyden er $y = 2.0 + 8.0t - 4.9t^2$. Når treffer ballen bakken?
+
+::: {.losning}
+Vi løser $-4.9t^2 + 8.0t + 2.0 = 0$:
+$$
+t = \frac{-8.0 \pm\sqrt{64 + 4\cdot 4.9\cdot 2.0}}{2\cdot(-4.9)} = \frac{-8.0 \pm \sqrt{103.2}}{-9.8} = \frac{-8.0 \pm 10.16}{-9.8}
+$$
+Det gir $t = -0.22\ \mathrm{s}$ og $t = 1.85\ \mathrm{s}$. Negativ tid gir ikke mening her, så ballen treffer bakken etter $\underline{\underline{1.9\ \mathrm{s}}}$ (to gjeldende siffer).
+:::
+:::
+
+::: {.callout-tip title="I fysikken"}
+Bevegelseslikningen $s = v_0 t + \frac12 at^2$ er en andregradslikning i $t$. Se [bevegelseslikningene](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/04-bevegelseslikningene-for-konstant-akselerasjon.html) og [skrått kast](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/06-bevegelse-i-to-dimensjoner.html) på fysikkhjelp.no.
+:::
+
+## Prøv selv
+
+```{.python .kjor}
+import numpy as np
+
+def abc(a, b, c):
+    D = b**2 - 4*a*c
+    if D < 0:
+        return []
+    return sorted({(-b - np.sqrt(D)) / (2*a), (-b + np.sqrt(D)) / (2*a)})
+
+print(abc(2, -3, -4))
+print(abc(-4.9, 8.0, 2.0))
+print(abc(1, 2, 5))       # ingen løsninger
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Uten formel"}
+Løs: a) $x^2 - 7x = 0$ b) $3x^2 - 48 = 0$ c) $x^2 + 4 = 0$
+
+::: {.losning}
+a) $x(x - 7) = 0$: $\underline{\underline{x = 0 \text{ eller } x = 7}}$
+
+b) $x^2 = 16$: $\underline{\underline{x = \pm 4}}$
+
+c) $x^2 = -4$ har $\underline{\underline{\text{ingen reelle løsninger}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Faktoriser og løs"}
+Løs: a) $x^2 + 2x - 8 = 0$ b) $x^2 - 6x + 9 = 0$
+
+::: {.losning}
+a) $(x + 4)(x - 2) = 0$: $\underline{\underline{x = -4 \text{ eller } x = 2}}$
+
+b) $(x - 3)^2 = 0$: $\underline{\underline{x = 3}}$ (én løsning, $D = 0$)
+:::
+:::
+
+::: {.oppgave tittel="abc-formelen"}
+Løs med abc-formelen: a) $x^2 + x - 1 = 0$ b) $3x^2 - 5x + 1 = 0$
+
+::: {.losning}
+a) $x = \frac{-1 \pm\sqrt{5}}{2}$: $\underline{\underline{x \approx 0.618 \text{ eller } x \approx -1.618}}$
+
+b) $x = \frac{5 \pm \sqrt{13}}{6}$: $\underline{\underline{x \approx 1.43 \text{ eller } x \approx 0.23}}$
+:::
+:::
+
+::: {.oppgave tittel="Antall løsninger" niva="Middels"}
+For hvilke verdier av $k$ har $x^2 + kx + 9 = 0$ nøyaktig én løsning?
+
+::: {.losning}
+Én løsning når $D = k^2 - 36 = 0$, altså $\underline{\underline{k = 6 \text{ eller } k = -6}}$.
+:::
+:::
+
+::: {.oppgave tittel="Rektangel" niva="Middels"}
+Et rektangel er $3\ \mathrm{cm}$ lengre enn det er bredt, og arealet er $40\ \mathrm{cm^2}$. Finn sidene.
+
+::: {.losning}
+$x(x + 3) = 40$ gir $x^2 + 3x - 40 = 0$, altså $(x + 8)(x - 5) = 0$. Siden må være positiv, så bredden er $\underline{\underline{5\ \mathrm{cm}}}$ og lengden $\underline{\underline{8\ \mathrm{cm}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Bremsing" niva="Utfordrende"}
+En bil kjører med farten $20\ \mathrm{m/s}$ og bremser med akselerasjonen $-4.0\ \mathrm{m/s^2}$. Strekningen er $s = 20t - 2.0t^2$. Hvor lang tid bruker bilen på de første $32\ \mathrm{m}$? Hvorfor gir likningen to svar?
+
+::: {.losning}
+$20t - 2.0t^2 = 32$ gir $2.0t^2 - 20t + 32 = 0$, altså $t^2 - 10t + 16 = 0$ og $(t - 2)(t - 8) = 0$.
+
+Svaret er $\underline{\underline{t = 2.0\ \mathrm{s}}}$. Bilen står stille ved $t = 5.0\ \mathrm{s}$ (når $v = 20 - 4.0t = 0$), etter $50\ \mathrm{m}$. Løsningen $t = 8.0\ \mathrm{s}$ hører til en tenkt fortsettelse der bilen rygger tilbake, og den gjelder ikke her.
+:::
+:::
+
+::::
