@@ -2,20 +2,126 @@
 title: "Tall på standardform"
 tema: tall-og-regneregler
 undertema: standardform
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/01-06-tall-pa-standardform) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Avstanden til sola er $150\,000\,000\,000$ meter, og et hydrogenatom er $0.000\,000\,000\,1$ meter bredt. Tall med så mange nuller er vanskelige å lese og lette å skrive feil. På **standardform** skriver vi dem i stedet som $1.5\cdot 10^{11}\ \mathrm{m}$ og $1\cdot 10^{-10}\ \mathrm{m}$.
+
+## Definisjon
+
+::: {.callout-note title="Definisjon: Standardform"}
+Et tall er skrevet på standardform når det står som
+$$
+a\cdot 10^n, \qquad 1 \le |a| < 10, \quad n \text{ helt tall.}
+$$
 :::
 
-## Dette kommer på siden
+Eksponenten $n$ forteller hvor mange plasser kommaet er flyttet: positiv $n$ for store tall, negativ $n$ for små.
 
-- Store og små tall
-- Regning på standardform
-- Standardform på kalkulator og i Python
-- Eksempler og oppgaver med løsning
+::: {.kort}
+- **Stort tall** $45\,000 = 4.5\cdot 10^4$. Kommaet flyttes 4 plasser mot venstre.
+- **Lite tall** $0.0032 = 3.2\cdot 10^{-3}$. Kommaet flyttes 3 plasser mot høyre.
+- **Gjeldende siffer** $a$ viser hvor nøyaktig tallet er: $4.50\cdot 10^4$ har tre gjeldende siffer, $4.5\cdot 10^4$ har to.
+:::
+
+## Regning på standardform
+
+Ved multiplikasjon og divisjon regner vi med tallene og tierpotensene hver for seg, og bruker potensreglene:
+$$
+(a\cdot 10^m)(b\cdot 10^n) = (a b)\cdot 10^{m + n} \qquad \frac{a\cdot 10^m}{b\cdot 10^n} = \frac{a}{b}\cdot 10^{m - n}
+$$
+Til slutt justerer vi slik at tallet foran står mellom 1 og 10.
+
+::: {.eksempel}
+**Eksempel: Lyset fra sola.** Lyset går med farten $3.00\cdot 10^8\ \mathrm{m/s}$, og avstanden til sola er $1.50\cdot 10^{11}\ \mathrm{m}$. Hvor lang tid bruker lyset?
+
+::: {.losning}
+$$
+t = \frac{s}{v} = \frac{1.50\cdot 10^{11}\ \mathrm{m}}{3.00\cdot 10^{8}\ \mathrm{m/s}} = 0.500\cdot 10^{3}\ \mathrm{s} = \underline{\underline{5.00\cdot 10^{2}\ \mathrm{s}}}
+$$
+Det er litt over 8 minutter. Legg merke til justeringen: $0.500\cdot 10^3 = 5.00\cdot 10^2$.
+:::
+:::
+
+Ved addisjon og subtraksjon må tierpotensene være like før vi legger sammen:
+$$
+3.2\cdot 10^5 + 4.0\cdot 10^4 = 3.2\cdot 10^5 + 0.40\cdot 10^5 = 3.6\cdot 10^5
+$$
+
+::: {.callout-tip title="På kalkulator og i Python"}
+Kalkulatorer og Python skriver $6.02\cdot 10^{23}$ som `6.02E23` eller `6.02e23`. Skriv aldri `6.02*10^23` i Python: der betyr `^` noe helt annet. Bruk `6.02e23`.
+:::
+
+::: {.callout-tip title="I fysikken"}
+Fysikken bruker standardform hele tiden, ofte sammen med prefikser som kilo ($10^3$), mega ($10^6$), milli ($10^{-3}$) og mikro ($10^{-6}$). Se [tall på standardform på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/01-hva-er-fysikk/06-tall-pa-standardform.html).
+:::
+
+## Prøv selv
+
+```{.python .kjor}
+s = 1.50e11        # m
+v = 3.00e8         # m/s
+t = s / v
+print(t)                     # 500.0
+print(f"{t:.2e}")            # 5.00e+02, standardform med tre gjeldende siffer
+print(f"{6.02e23 * 2:.3e}")
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Skriv på standardform"}
+Skriv på standardform: a) $73\,000$ b) $0.000\,58$ c) $602\,000\,000$ d) $0.07$
+
+::: {.losning}
+a) $\underline{\underline{7.3\cdot 10^4}}$ b) $\underline{\underline{5.8\cdot 10^{-4}}}$ c) $\underline{\underline{6.02\cdot 10^{8}}}$ d) $\underline{\underline{7\cdot 10^{-2}}}$
+:::
+:::
+
+::: {.oppgave tittel="Skriv som vanlig tall"}
+Skriv som vanlige tall: a) $2.4\cdot 10^3$ b) $9.1\cdot 10^{-5}$ c) $1.0\cdot 10^0$
+
+::: {.losning}
+a) $\underline{\underline{2400}}$ b) $\underline{\underline{0.000\,091}}$ c) $\underline{\underline{1.0}}$
+:::
+:::
+
+::: {.oppgave tittel="Gange og dele"}
+Regn ut og svar på standardform: a) $(4.0\cdot 10^{3})\cdot(3.0\cdot 10^{-5})$ b) $\dfrac{8.4\cdot 10^{6}}{2.1\cdot 10^{-2}}$ c) $(5.0\cdot 10^{4})^2$
+
+::: {.losning}
+a) $12\cdot 10^{-2} = \underline{\underline{1.2\cdot 10^{-1}}}$
+
+b) $4.0\cdot 10^{6 - (-2)} = \underline{\underline{4.0\cdot 10^{8}}}$
+
+c) $25\cdot 10^{8} = \underline{\underline{2.5\cdot 10^{9}}}$
+:::
+:::
+
+::: {.oppgave tittel="Vannmolekyler" niva="Middels"}
+Ett vannmolekyl har massen $2.99\cdot 10^{-26}\ \mathrm{kg}$. Hvor mange molekyler er det i $1.00\ \mathrm{kg}$ vann? Gjør først et overslag.
+
+::: {.losning}
+Overslag: $\dfrac{1}{3\cdot 10^{-26}} \approx 0.3\cdot 10^{26} = 3\cdot 10^{25}$.
+
+Nøyaktig:
+$$
+N = \frac{1.00\ \mathrm{kg}}{2.99\cdot 10^{-26}\ \mathrm{kg}} = 0.334\cdot 10^{26} = \underline{\underline{3.34\cdot 10^{25}}}
+$$
+:::
+:::
+
+::: {.oppgave tittel="Pluss på standardform" niva="Utfordrende"}
+Regn ut uten kalkulator og svar på standardform: $\dfrac{6.0\cdot 10^{-3} + 4.0\cdot 10^{-4}}{8.0\cdot 10^{2}}$
+
+::: {.losning}
+Telleren med lik tierpotens: $6.0\cdot 10^{-3} + 0.40\cdot 10^{-3} = 6.4\cdot 10^{-3}$. Så:
+$$
+\frac{6.4\cdot 10^{-3}}{8.0\cdot 10^{2}} = 0.80\cdot 10^{-5} = \underline{\underline{8.0\cdot 10^{-6}}}
+$$
+:::
+:::
+
+::::

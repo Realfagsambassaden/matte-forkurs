@@ -2,20 +2,134 @@
 title: "Brøkregning"
 tema: tall-og-regneregler
 undertema: brokregning
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/01-02-brokregning) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Brøker dukker opp overalt: i formler, i sannsynlighet, i forholdstall og når vi løser likninger. Kalkulatoren kan regne med desimaltall, men i algebra med bokstaver må vi kunne brøkreglene selv. Her går vi gjennom dem med tall, så de sitter når bokstavene kommer.
+
+## Teller, nevner og forkorting
+
+I brøken $\frac{a}{b}$ er $a$ **telleren** og $b$ **nevneren**. Nevneren kan aldri være null.
+
+Vi kan **utvide** en brøk ved å gange teller og nevner med samme tall, og **forkorte** ved å dele teller og nevner på samme tall. Verdien endres ikke:
+$$
+\frac{3}{4} = \frac{3\cdot 5}{4\cdot 5} = \frac{15}{20} \qquad\qquad \frac{18}{24} = \frac{18 : 6}{24 : 6} = \frac{3}{4}
+$$
+En brøk er **fullstendig forkortet** når teller og nevner ikke har noen felles faktor. Det er lurt å faktorisere: $\frac{18}{24} = \frac{2\cdot 3\cdot 3}{2\cdot 2\cdot 2\cdot 3} = \frac34$.
+
+## De fire regneartene
+
+::: {.kort}
+- **Addisjon og subtraksjon** Skriv brøkene med samme nevner (fellesnevner), og legg sammen tellerne: $\frac{a}{n} + \frac{b}{n} = \frac{a + b}{n}$.
+- **Multiplikasjon** Teller ganger teller og nevner ganger nevner: $\frac{a}{b}\cdot\frac{c}{d} = \frac{ac}{bd}$.
+- **Divisjon** Gang med den omvendte brøken: $\frac{a}{b} : \frac{c}{d} = \frac{a}{b}\cdot\frac{d}{c}$.
+- **Hele tall** Et helt tall er en brøk med nevner 1: $3 = \frac31$.
 :::
 
-## Dette kommer på siden
+Den **minste fellesnevneren** finner du ved å faktorisere nevnerne og ta med hver faktor så mange ganger som den forekommer i en av nevnerne.
 
-- Forkorte og utvide
-- Addisjon og subtraksjon med fellesnevner
-- Multiplikasjon og divisjon av brøker
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: Fellesnevner.** Regn ut $\dfrac{5}{6} - \dfrac{3}{8} + \dfrac{1}{4}$.
+
+::: {.losning}
+Nevnerne er $6 = 2\cdot 3$, $8 = 2\cdot 2\cdot 2$ og $4 = 2\cdot 2$. Fellesnevneren må ha tre totall og ett tretall: $2\cdot 2\cdot 2\cdot 3 = 24$.
+$$
+\frac{5\cdot 4}{24} - \frac{3\cdot 3}{24} + \frac{1\cdot 6}{24} = \frac{20 - 9 + 6}{24} = \underline{\underline{\frac{17}{24}}}
+$$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Brudden brøk.** Regn ut $\dfrac{\frac23 + \frac12}{\frac{5}{6}}$.
+
+::: {.losning}
+Telleren: $\frac23 + \frac12 = \frac46 + \frac36 = \frac76$. Så deler vi på $\frac56$ ved å gange med den omvendte:
+$$
+\frac76 : \frac56 = \frac76\cdot\frac65 = \frac{7\cdot 6}{6\cdot 5} = \underline{\underline{\frac75}}
+$$
+Seksene forkortes bort før vi ganger ut.
+:::
+:::
+
+::: {.callout-warning title="Vanlige feil"}
+- $\frac{a}{b} + \frac{c}{d}$ er **ikke** $\frac{a + c}{b + d}$. Prøv med $\frac12 + \frac12$: riktig svar er $1$, men den gale regelen gir $\frac24$.
+- Du kan bare forkorte **faktorer**, ikke ledd: $\frac{2 + 6}{2} = 4$, men å «stryke totallene» gir feil svar $6$.
+:::
+
+## Prøv selv
+
+Python har modulen `fractions`, som regner eksakt med brøker. Endre brøkene og trykk **Kjør**.
+
+```{.python .kjor}
+from fractions import Fraction as F
+
+print(F(5, 6) - F(3, 8) + F(1, 4))     # 17/24
+print((F(2, 3) + F(1, 2)) / F(5, 6))   # 7/5
+print(F(18, 24))                       # forkortes automatisk: 3/4
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Forkort"}
+Forkort brøkene så mye som mulig: a) $\frac{24}{36}$ b) $\frac{45}{75}$ c) $\frac{84}{126}$
+
+::: {.losning}
+a) $\frac{24}{36} = \frac{2\cdot 12}{3\cdot 12} = \underline{\underline{\frac23}}$
+
+b) $\frac{45}{75} = \frac{3\cdot 15}{5\cdot 15} = \underline{\underline{\frac35}}$
+
+c) $\frac{84}{126} = \frac{2\cdot 42}{3\cdot 42} = \underline{\underline{\frac23}}$
+:::
+:::
+
+::: {.oppgave tittel="Pluss og minus"}
+Regn ut: a) $\frac25 + \frac{3}{10}$ b) $\frac34 - \frac16$ c) $2 - \frac{5}{8}$
+
+::: {.losning}
+a) $\frac{4}{10} + \frac{3}{10} = \underline{\underline{\frac{7}{10}}}$
+
+b) Fellesnevner 12: $\frac{9}{12} - \frac{2}{12} = \underline{\underline{\frac{7}{12}}}$
+
+c) $\frac{16}{8} - \frac58 = \underline{\underline{\frac{11}{8}}}$
+:::
+:::
+
+::: {.oppgave tittel="Gange og dele"}
+Regn ut og forkort: a) $\frac{4}{9}\cdot\frac{3}{8}$ b) $\frac{5}{6} : \frac{10}{9}$ c) $6\cdot\frac{5}{4}$
+
+::: {.losning}
+a) $\frac{4\cdot 3}{9\cdot 8} = \frac{12}{72} = \underline{\underline{\frac16}}$
+
+b) $\frac56\cdot\frac{9}{10} = \frac{45}{60} = \underline{\underline{\frac34}}$
+
+c) $\frac{6\cdot 5}{4} = \frac{30}{4} = \underline{\underline{\frac{15}{2}}}$
+:::
+:::
+
+::: {.oppgave tittel="Motstander i parallell" niva="Middels"}
+I fysikken er den samlede motstanden $R$ for to motstander i parallell gitt ved $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$. Finn $R$ når $R_1 = 6\ \Omega$ og $R_2 = 12\ \Omega$. Regn med brøker.
+
+::: {.losning}
+$$
+\frac1R = \frac16 + \frac{1}{12} = \frac{2}{12} + \frac{1}{12} = \frac{3}{12} = \frac14
+$$
+Når $\frac1R = \frac14$, er $R = \underline{\underline{4\ \Omega}}$. Den samlede motstanden er mindre enn hver av motstandene, slik den skal være i parallell.
+:::
+:::
+
+::: {.oppgave tittel="Brudden brøk" niva="Utfordrende"}
+Regn ut og forkort: $\dfrac{1 - \frac{1}{3}}{1 + \frac{1}{3}} + \dfrac{\frac34}{\frac{3}{2}}$
+
+::: {.losning}
+Første brøk: $\dfrac{\frac23}{\frac43} = \frac23\cdot\frac34 = \frac{6}{12} = \frac12$.
+
+Andre brøk: $\frac34\cdot\frac23 = \frac{6}{12} = \frac12$.
+
+Summen er $\frac12 + \frac12 = \underline{\underline{1}}$.
+:::
+:::
+
+::::

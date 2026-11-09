@@ -2,20 +2,146 @@
 title: "Røtter og brøkeksponenter"
 tema: tall-og-regneregler
 undertema: rotter
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/01-07-rotter-og-brokeksponenter) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Å ta roten er det motsatte av å opphøye i en potens. Kvadratroten av $25$ er $5$, fordi $5^2 = 25$. Røtter trenger vi når vi løser likninger som $x^2 = 7$, regner ut lengden av en vektor, eller finner farten fra $v^2 = 2as$. Her ser vi også at en rot kan skrives som en potens med brøk i eksponenten.
+
+## Kvadratrot og n-te rot
+
+::: {.callout-note title="Definisjon: Kvadratrot"}
+For $a \ge 0$ er $\sqrt{a}$ det tallet som er større enn eller lik null, og som opphøyd i andre gir $a$:
+$$
+\sqrt{a} \ge 0 \quad\text{og}\quad \left(\sqrt{a}\right)^2 = a.
+$$
 :::
 
-## Dette kommer på siden
+Likningen $x^2 = 25$ har to løsninger, $x = 5$ og $x = -5$, men $\sqrt{25}$ betyr bare den positive: $\sqrt{25} = 5$.
 
-- Kvadratrøtter og n-te røtter
-- Regneregler for røtter
-- Potenser med brøk som eksponent
-- Eksempler og oppgaver med løsning
+Tilsvarende er den **n-te roten** $\sqrt[n]{a}$ det tallet som opphøyd i $n$ gir $a$. For eksempel er $\sqrt[3]{8} = 2$ fordi $2^3 = 8$, og $\sqrt[3]{-27} = -3$. Kubikkroten (tredjeroten) av et negativt tall finnes, men kvadratroten gjør ikke det blant de reelle tallene.
+
+## Regneregler for røtter
+
+::: {.graa}
+$$
+\sqrt{a\cdot b} = \sqrt a\cdot\sqrt b \qquad\qquad \sqrt{\frac{a}{b}} = \frac{\sqrt a}{\sqrt b} \qquad (a, b \ge 0,\ b \ne 0)
+$$
+:::
+
+Den første regelen brukes til å **forenkle** røtter ved å finne en kvadratfaktor:
+$$
+\sqrt{72} = \sqrt{36\cdot 2} = 6\sqrt2
+$$
+
+::: {.callout-warning title="Ikke for summer"}
+$\sqrt{a + b}$ er **ikke** $\sqrt a + \sqrt b$. Prøv med $\sqrt{9 + 16} = \sqrt{25} = 5$, mens $\sqrt9 + \sqrt{16} = 3 + 4 = 7$.
+:::
+
+## Brøk som eksponent
+
+Hvordan skal vi tolke $a^{1/2}$? Potensreglene sier at $\left(a^{1/2}\right)^2 = a^{\frac12\cdot 2} = a^1 = a$. Da må $a^{1/2}$ være kvadratroten av $a$. På samme måte:
+
+::: {.graa}
+$$
+a^{\frac{1}{n}} = \sqrt[n]{a} \qquad\qquad a^{\frac{m}{n}} = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}
+$$
+:::
+
+Nå gjelder alle potensreglene også for røtter, og det gjør regningen mye enklere.
+
+::: {.eksempel}
+**Eksempel: Røtter som potenser.** Regn ut a) $27^{2/3}$ og b) skriv $\dfrac{\sqrt{x}\cdot\sqrt[3]{x}}{x}$ som én potens av $x$.
+
+::: {.losning}
+a) Ta tredjeroten først, så kvadrer: $27^{2/3} = \left(\sqrt[3]{27}\right)^2 = 3^2 = \underline{\underline{9}}$.
+
+b) Skriv røttene som potenser og legg sammen eksponentene:
+$$
+\frac{x^{1/2}\cdot x^{1/3}}{x^1} = x^{\frac12 + \frac13 - 1} = x^{\frac{3 + 2 - 6}{6}} = \underline{\underline{x^{-1/6}}}
+$$
+:::
+:::
+
+## Rasjonale nevnere
+
+Det er vanlig å unngå røtter i nevneren. Vi utvider brøken med roten:
+$$
+\frac{6}{\sqrt3} = \frac{6\sqrt3}{\sqrt3\cdot\sqrt3} = \frac{6\sqrt3}{3} = 2\sqrt3
+$$
+
+::: {.callout-tip title="I fysikken"}
+Røtter dukker opp når vi løser for fart: Fra $v^2 = v_0^2 + 2as$ får vi $v = \sqrt{v_0^2 + 2as}$, og svingetiden for en pendel er $T = 2\pi\sqrt{L/\mathrm{g}}$. Se [fjær og pendel på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/07-svingninger/02-fjaer-og-pendel.html).
+:::
+
+## Prøv selv
+
+```{.python .kjor}
+import numpy as np
+print(np.sqrt(72), 6*np.sqrt(2))   # like
+print(27**(2/3))                   # 9 (nesten nøyaktig)
+print(np.cbrt(-27))                # -3
+
+from sympy import sqrt, Rational
+print(sqrt(72), Rational(27)**Rational(2, 3))   # eksakt: 6*sqrt(2) og 9
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Regn ut"}
+Regn ut uten kalkulator: a) $\sqrt{81}$ b) $\sqrt[3]{125}$ c) $16^{1/4}$ d) $8^{-2/3}$
+
+::: {.losning}
+a) $\underline{\underline{9}}$ b) $\underline{\underline{5}}$ c) $\sqrt[4]{16} = \underline{\underline{2}}$ d) $\dfrac{1}{8^{2/3}} = \dfrac{1}{(\sqrt[3]8)^2} = \underline{\underline{\dfrac14}}$
+:::
+:::
+
+::: {.oppgave tittel="Forenkle røtter"}
+Forenkle: a) $\sqrt{50}$ b) $\sqrt{12} + \sqrt{27}$ c) $\sqrt{2}\cdot\sqrt{18}$
+
+::: {.losning}
+a) $\sqrt{25\cdot 2} = \underline{\underline{5\sqrt2}}$
+
+b) $2\sqrt3 + 3\sqrt3 = \underline{\underline{5\sqrt3}}$
+
+c) $\sqrt{36} = \underline{\underline{6}}$
+:::
+:::
+
+::: {.oppgave tittel="Skriv som potens"}
+Skriv som én potens av $a$: a) $\sqrt{a^3}$ b) $\dfrac{1}{\sqrt[4]{a}}$ c) $a\sqrt a$
+
+::: {.losning}
+a) $\underline{\underline{a^{3/2}}}$ b) $\underline{\underline{a^{-1/4}}}$ c) $a^{1 + 1/2} = \underline{\underline{a^{3/2}}}$
+:::
+:::
+
+::: {.oppgave tittel="Rasjonal nevner" niva="Middels"}
+Skriv uten rot i nevneren: a) $\dfrac{10}{\sqrt5}$ b) $\dfrac{1}{\sqrt2 + 1}$ (hint: utvid med $\sqrt2 - 1$)
+
+::: {.losning}
+a) $\dfrac{10\sqrt5}{5} = \underline{\underline{2\sqrt5}}$
+
+b) Konjugatsetningen gir $(\sqrt2 + 1)(\sqrt2 - 1) = 2 - 1 = 1$:
+$$
+\frac{\sqrt2 - 1}{(\sqrt2 + 1)(\sqrt2 - 1)} = \frac{\sqrt2 - 1}{1} = \underline{\underline{\sqrt2 - 1}}
+$$
+:::
+:::
+
+::: {.oppgave tittel="Fart fra fallhøyde" niva="Utfordrende"}
+En stein slippes fra høyden $h$ og får farten $v = \sqrt{2\mathrm{g}h}$ når den treffer bakken. a) Hvor mange ganger større blir farten hvis høyden blir fire ganger så stor? b) Skriv $v$ som en potens av $h$, og regn ut $v$ for $h = 20.0\ \mathrm{m}$ med $\mathrm{g} = 9.81\ \mathrm{m/s^2}$.
+
+::: {.losning}
+a) $\sqrt{2\mathrm{g}\cdot 4h} = \sqrt4\cdot\sqrt{2\mathrm{g}h} = 2v$. Farten blir $\underline{\underline{2 \text{ ganger}}}$ så stor.
+
+b) $v = (2\mathrm{g})^{1/2}\,h^{1/2}$. Med tall:
+$$
+v = \sqrt{2\cdot 9.81\ \mathrm{m/s^2}\cdot 20.0\ \mathrm{m}} = \sqrt{392.4\ \mathrm{m^2/s^2}} = \underline{\underline{19.8\ \mathrm{m/s}}}
+$$
+:::
+:::
+
+::::

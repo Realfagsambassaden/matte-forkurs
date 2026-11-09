@@ -2,20 +2,133 @@
 title: "Potenser og potensregler"
 tema: tall-og-regneregler
 undertema: potenser
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/01-05-potenser) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+En potens er en kort måte å skrive gjentatt multiplikasjon: $2^5 = 2\cdot2\cdot2\cdot2\cdot2 = 32$. Potenser dukker opp i arealer ($r^2$), volumer ($r^3$), standardform ($10^{-9}$), vekst og kraftlover. Potensreglene gjør at vi kan regne med dem uten å skrive ut alle faktorene.
+
+## Grunntall og eksponent
+
+I potensen $a^n$ er $a$ **grunntallet** og $n$ **eksponenten**. Eksponenten forteller hvor mange ganger grunntallet ganges med seg selv:
+$$
+a^n = \underbrace{a\cdot a\cdot\ldots\cdot a}_{n \text{ faktorer}}
+$$
+
+## Potensreglene
+
+Alle reglene følger av definisjonen. Tell faktorene, så ser du hvorfor de gjelder.
+
+::: {.graa}
+| Regel | Eksempel |
+|:---|:---|
+| $a^m\cdot a^n = a^{m + n}$ | $2^3\cdot 2^4 = 2^7$ |
+| $\dfrac{a^m}{a^n} = a^{m - n}$ | $\dfrac{5^6}{5^2} = 5^4$ |
+| $(a^m)^n = a^{m\cdot n}$ | $(3^2)^4 = 3^8$ |
+| $(ab)^n = a^n b^n$ | $(2x)^3 = 8x^3$ |
+| $\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}$ | $\left(\dfrac{x}{3}\right)^2 = \dfrac{x^2}{9}$ |
 :::
 
-## Dette kommer på siden
+## Null og negative eksponenter
 
-- Hva en potens er
-- Potensreglene
-- Null og negative eksponenter
-- Eksempler og oppgaver med løsning
+Hva betyr $a^0$ og $a^{-2}$? Vi velger betydningen slik at regelen for divisjon fortsatt gjelder:
+
+::: {.kort}
+- **Eksponent null** $\dfrac{a^3}{a^3} = 1$, men regelen gir $a^{3 - 3} = a^0$. Derfor er $a^0 = 1$ (for $a \neq 0$).
+- **Negativ eksponent** $\dfrac{a^2}{a^5} = \dfrac{1}{a^3}$, men regelen gir $a^{2 - 5} = a^{-3}$. Derfor er $a^{-n} = \dfrac{1}{a^n}$.
+:::
+
+En negativ eksponent betyr altså «én delt på». Den gjør ikke tallet negativt: $2^{-3} = \frac18 = 0.125$.
+
+::: {.eksempel}
+**Eksempel: Bruk reglene.** Skriv så enkelt som mulig: $\dfrac{(2a^3)^2\cdot a^{-4}}{4a}$.
+
+::: {.losning}
+Først potensen av et produkt: $(2a^3)^2 = 2^2 a^{3\cdot 2} = 4a^6$. Så samler vi $a$-ene:
+$$
+\frac{4a^6\cdot a^{-4}}{4a} = \frac{4a^{2}}{4a} = a^{2 - 1} = \underline{\underline{a}}
+$$
+:::
+:::
+
+::: {.callout-warning title="Vanlige feil"}
+- $(a + b)^2$ er **ikke** $a^2 + b^2$. Reglene over gjelder for produkter, ikke summer. Prøv med $a = b = 1$: $(1 + 1)^2 = 4$, men $1^2 + 1^2 = 2$.
+- $2\cdot 3^2 = 2\cdot 9 = 18$, ikke $6^2 = 36$. Potensen gjelder bare tallet rett foran.
+:::
+
+::: {.callout-tip title="I fysikken"}
+Enheter følger de samme reglene: $\mathrm{m/s^2} = \mathrm{m\cdot s^{-2}}$, og $\mathrm{N} = \mathrm{kg\cdot m\cdot s^{-2}}$. Se [å regne med enheter på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/01-hva-er-fysikk/04-a-regne-med-enheter.html).
+:::
+
+## Prøv selv
+
+```{.python .kjor}
+print(2**3 * 2**4, 2**7)        # like
+print(2**-3)                    # 0.125
+print(5**0)                     # 1
+
+from sympy import symbols, simplify
+a = symbols("a", positive=True)
+print(simplify((2*a**3)**2 * a**-4 / (4*a)))   # a
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Regn ut"}
+Regn ut uten kalkulator: a) $3^4$ b) $(-2)^5$ c) $10^{-3}$ d) $\left(\frac{2}{3}\right)^{-2}$
+
+::: {.losning}
+a) $\underline{\underline{81}}$
+
+b) $\underline{\underline{-32}}$ (oddetall minustegn gir minus)
+
+c) $\dfrac{1}{1000} = \underline{\underline{0.001}}$
+
+d) $\left(\frac32\right)^2 = \underline{\underline{\frac94}}$
+:::
+:::
+
+::: {.oppgave tittel="Potensreglene"}
+Skriv som én potens: a) $x^5\cdot x^3$ b) $\dfrac{y^7}{y^{10}}$ c) $(a^{-2})^3$ d) $\dfrac{b^4\cdot b^{-1}}{b^2}$
+
+::: {.losning}
+a) $\underline{\underline{x^8}}$ b) $\underline{\underline{y^{-3}}} = \dfrac{1}{y^3}$ c) $\underline{\underline{a^{-6}}}$ d) $b^{4 - 1 - 2} = \underline{\underline{b}}$
+:::
+:::
+
+::: {.oppgave tittel="Forenkle"}
+Forenkle: a) $(3x^2y)^3$ b) $\dfrac{12a^5b^2}{4a^2b^5}$
+
+::: {.losning}
+a) $3^3(x^2)^3y^3 = \underline{\underline{27x^6y^3}}$
+
+b) $3a^{3}b^{-3} = \underline{\underline{\dfrac{3a^3}{b^3}}}$
+:::
+:::
+
+::: {.oppgave tittel="Dobbel radius" niva="Middels"}
+Volumet av en kule er $V = \frac43\pi r^3$. Hvor mange ganger større blir volumet når radien dobles? Bruk potensreglene.
+
+::: {.losning}
+Med radius $2r$:
+$$
+V_2 = \frac43\pi(2r)^3 = \frac43\pi\cdot 2^3 r^3 = 8\cdot\frac43\pi r^3 = 8V
+$$
+Volumet blir $\underline{\underline{8 \text{ ganger}}}$ så stort.
+:::
+:::
+
+::: {.oppgave tittel="Negative eksponenter" niva="Utfordrende"}
+Forenkle og skriv uten negative eksponenter: $\dfrac{(2x^{-1}y^2)^{-2}}{x^3 y^{-4}}$
+
+::: {.losning}
+Telleren: $(2x^{-1}y^2)^{-2} = 2^{-2}x^{2}y^{-4} = \frac14 x^2 y^{-4}$. Delt på $x^3y^{-4}$:
+$$
+\frac14 x^{2 - 3}y^{-4 - (-4)} = \frac14 x^{-1} y^{0} = \underline{\underline{\frac{1}{4x}}}
+$$
+:::
+:::
+
+::::

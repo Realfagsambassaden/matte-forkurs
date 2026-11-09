@@ -2,18 +2,93 @@
 title: "Blandede oppgaver: tall og variabler"
 tema: tall-og-regneregler
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/01-08-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander alt fra tallregning til røtter, slik det blir på en prøve. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Regnerekkefølge med brøker"}
+Regn ut uten kalkulator: $\dfrac{2}{3} + \dfrac{1}{3}\cdot\left(\dfrac{3}{2}\right)^2$
+
+::: {.losning}
+Potensen først: $\left(\frac32\right)^2 = \frac94$. Så multiplikasjonen: $\frac13\cdot\frac94 = \frac{9}{12} = \frac34$. Til slutt:
+$$
+\frac23 + \frac34 = \frac{8}{12} + \frac{9}{12} = \underline{\underline{\frac{17}{12}}}
+$$
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Parenteser og potenser"}
+Forenkle $(x + 2)^2 - x(x + 4)$.
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$(x + 2)^2 = (x + 2)(x + 2) = x^2 + 4x + 4$. Så:
+$$
+x^2 + 4x + 4 - x^2 - 4x = \underline{\underline{4}}
+$$
+Uttrykket er lik $4$ uansett hva $x$ er.
+:::
+:::
+
+::: {.oppgave tittel="Potenser av ti"}
+Regn ut og svar på standardform: $\dfrac{(3.0\cdot 10^{4})^2\cdot 2.0\cdot 10^{-3}}{6.0\cdot 10^{2}}$
+
+::: {.losning}
+Telleren: $9.0\cdot 10^{8}\cdot 2.0\cdot 10^{-3} = 18\cdot 10^{5}$. Delt på $6.0\cdot 10^2$:
+$$
+3.0\cdot 10^{3} = \underline{\underline{3.0\cdot 10^{3}}}
+$$
+:::
+:::
+
+::: {.oppgave tittel="Brøk med bokstaver" niva="Middels"}
+Skriv som én brøk og forkort: $\dfrac{a}{b} - \dfrac{b}{a}$, og regn deretter ut verdien for $a = 3$ og $b = 2$ på to måter.
+
+::: {.losning}
+Fellesnevner $ab$:
+$$
+\frac{a^2}{ab} - \frac{b^2}{ab} = \underline{\underline{\frac{a^2 - b^2}{ab}}}
+$$
+Med $a = 3$, $b = 2$: $\frac{9 - 4}{6} = \frac56$. Direkte: $\frac32 - \frac23 = \frac{9}{6} - \frac46 = \frac56$. Samme svar.
+:::
+:::
+
+::: {.oppgave tittel="Røtter og potenser" niva="Middels"}
+Skriv som én potens av 2: $\dfrac{\sqrt{8}\cdot 4^{3}}{2^{-1}}$
+
+::: {.losning}
+$\sqrt8 = (2^3)^{1/2} = 2^{3/2}$ og $4^3 = (2^2)^3 = 2^6$:
+$$
+\frac{2^{3/2}\cdot 2^6}{2^{-1}} = 2^{\frac32 + 6 + 1} = \underline{\underline{2^{17/2}}}
+$$
+:::
+:::
+
+::: {.oppgave tittel="Avstand til Månen" niva="Middels"}
+En laserpuls sendes til Månen og reflekteres tilbake. Det tar $2.56\ \mathrm{s}$ fram og tilbake. Lysfarten er $3.00\cdot 10^8\ \mathrm{m/s}$. Hvor langt er det til Månen? Svar på standardform.
+
+::: {.losning}
+Pulsen går strekningen to ganger, så tiden én vei er $1.28\ \mathrm{s}$:
+$$
+s = vt = 3.00\cdot 10^8\ \mathrm{m/s}\cdot 1.28\ \mathrm{s} = \underline{\underline{3.84\cdot 10^8\ \mathrm{m}}}
+$$
+:::
+:::
+
+::: {.oppgave tittel="Alt på en gang" niva="Utfordrende"}
+Forenkle så mye som mulig, og skriv uten negative eksponenter og uten rot i nevneren:
+$$
+\frac{\sqrt{12x^3}}{(3x)^{-1}\cdot\sqrt{3x}}, \qquad x > 0
+$$
+
+::: {.losning}
+$\sqrt{12x^3} = \sqrt{4x^2\cdot 3x} = 2x\sqrt{3x}$. Delt på $\sqrt{3x}$ blir det $2x$. Å dele på $(3x)^{-1}$ er det samme som å gange med $3x$:
+$$
+2x\cdot 3x = \underline{\underline{6x^2}}
+$$
+:::
+:::
+
+::::
