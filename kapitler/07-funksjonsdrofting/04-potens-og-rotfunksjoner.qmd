@@ -2,19 +2,70 @@
 title: "Potensfunksjoner og rotfunksjoner"
 tema: funksjoner
 undertema: potens-og-rotfunksjoner
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/07-04-potens-og-rotfunksjoner) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+En **potensfunksjon** har formen $f(x) = a\cdot x^b$, der eksponenten $b$ kan være et hvilket som helst tall. Mange sammenhenger i naturen er slike: Arealet av en sirkel er $\pi r^2$, gravitasjonskraften avtar som $\frac{1}{r^2}$, og svingetiden for en pendel vokser som $\sqrt L$.
+
+## Formen på grafen
+
+::: {.kort}
+- **$b > 1$** Grafen vokser raskere og raskere ($x^2$, $x^3$). Krummer oppover for $x > 0$.
+- **$0 < b < 1$** Grafen vokser, men saktere og saktere ($\sqrt x = x^{1/2}$). Krummer nedover.
+- **$b < 0$** Grafen avtar mot null ($\frac1x = x^{-1}$, $\frac{1}{x^2}$), med asymptoter langs aksene.
 :::
 
-## Dette kommer på siden
+For $x > 0$ går alle grafene $y = x^b$ gjennom punktet $(1, 1)$.
 
-- Potensfunksjoner
-- Rotfunksjoner og derivasjon av dem
-- Eksempler og oppgaver med løsning
+## Rotfunksjoner
+
+$f(x) = \sqrt x = x^{1/2}$ er bare definert for $x \ge 0$. Potensregelen for derivasjon gjelder:
+$$
+\left(\sqrt x\right)' = \left(x^{1/2}\right)' = \frac12 x^{-1/2} = \frac{1}{2\sqrt x}
+$$
+Den deriverte blir veldig stor nær $x = 0$: Grafen starter loddrett.
+
+::: {.eksempel}
+**Eksempel: Drøft en rotfunksjon.** Drøft $f(x) = x - 2\sqrt x$ for $x \ge 0$.
+
+::: {.losning}
+$f'(x) = 1 - \frac{1}{\sqrt x}$. $f'(x) = 0$ gir $\sqrt x = 1$, altså $x = 1$. For $0 < x < 1$ er $\frac{1}{\sqrt x} > 1$, så $f' < 0$. For $x > 1$ er $f' > 0$.
+
+$f$ avtar på $[0, 1]$ og vokser for $x > 1$. Bunnpunkt $\underline{\underline{(1, -1)}}$. Nullpunkter: $x = 2\sqrt x$ gir $x = 0$ og $x = 4$.
+:::
+:::
+
+::: {.callout-tip title="Proporsjonalitet i fysikken"}
+Skriver vi $y \propto x^b$, betyr det at $y$ er proporsjonal med $x^b$. Dobles $x$, blir $y$ ganget med $2^b$. For en pendel er $T \propto \sqrt L$, så fire ganger så lang pendel gir dobbelt så lang svingetid. Se [fjær og pendel på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/07-svingninger/02-fjaer-og-pendel.html).
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Deriver"}
+a) $f(x) = 4x^{3/2}$ b) $g(x) = \dfrac{6}{\sqrt x}$ c) $h(x) = 2\sqrt[3]{x}$
+
+::: {.losning}
+a) $\underline{\underline{6x^{1/2} = 6\sqrt x}}$ b) $6x^{-1/2}$ gir $\underline{\underline{-3x^{-3/2}}}$ c) $2x^{1/3}$ gir $\underline{\underline{\frac23 x^{-2/3}}}$
+:::
+:::
+
+::: {.oppgave tittel="Gravitasjon" niva="Middels"}
+Gravitasjonskraften på en satellitt er $F = \dfrac{k}{r^2}$. Hvor mye mindre blir kraften når avstanden til jordsenteret tredobles?
+
+::: {.losning}
+$F(3r) = \frac{k}{9r^2} = \frac19 F(r)$. Kraften blir $\underline{\underline{9 \text{ ganger mindre}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Drøfting" niva="Utfordrende"}
+Finn bunnpunktet til $f(x) = x + \dfrac{4}{x}$ for $x > 0$.
+
+::: {.losning}
+$f'(x) = 1 - \frac{4}{x^2} = 0$ gir $x = 2$. $f'' = \frac{8}{x^3} > 0$, så det er et bunnpunkt: $\underline{\underline{(2, 4)}}$.
+:::
+:::
+
+::::
