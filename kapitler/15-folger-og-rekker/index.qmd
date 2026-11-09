@@ -1,0 +1,21 @@
+---
+title: "Følger og rekker"
+toc: false
+---
+
+::: {.intro}
+
+En følge er en liste med tall som følger et mønster, og en rekke er summen av dem. Her lærer vi aritmetiske og geometriske følger og rekker, og ser at noen uendelige rekker har en endelig sum.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva er forskjellen på en følge og en rekke?
+
+2.  Hvordan finner vi summen av en aritmetisk eller geometrisk rekke?
+
+3.  Når har en uendelig rekke en sum?
+
+:::

@@ -1,0 +1,20 @@
+---
+title: "Sinusfunksjonen"
+tema: trigonometri
+undertema: trigonometriske-funksjoner
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/11-01-sinusfunksjonen) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Grafen til sin x
+- Amplitude, periode og likevektslinje
+- Eksempler og oppgaver med løsning

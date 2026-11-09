@@ -1,0 +1,21 @@
+---
+title: "Intervaller og mengder"
+tema: algebra-og-likninger
+undertema: intervall-og-mengder
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/02-05-intervaller-og-mengder) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Tallinja og intervaller
+- Mengder, union og snitt
+- Å skrive løsningsmengder
+- Eksempler og oppgaver med løsning

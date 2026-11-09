@@ -1,0 +1,21 @@
+---
+title: "Logaritmer og eksponentialfunksjoner"
+toc: false
+---
+
+::: {.intro}
+
+Eksponentiell vekst og nedbrytning finnes overalt: renter, bakterier, radioaktivitet og avkjøling. Logaritmen er verktøyet som løser slike likninger.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva er en logaritme?
+
+2.  Hvordan løser vi eksponentiallikninger?
+
+3.  Hva er spesielt med tallet e?
+
+:::

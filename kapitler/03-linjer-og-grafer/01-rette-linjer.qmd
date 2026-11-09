@@ -1,0 +1,21 @@
+---
+title: "Rette linjer"
+tema: funksjoner
+undertema: rette-linjer
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/03-01-rette-linjer) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Stigningstall og konstantledd
+- Likningen for linja gjennom to punkter
+- Ettpunktsformelen
+- Eksempler og oppgaver med løsning

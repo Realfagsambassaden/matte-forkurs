@@ -1,0 +1,20 @@
+---
+title: "Vektorregning i Python"
+tema: vektorer
+undertema: vektorer-i-planet
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/12-03-vektorregning-i-python) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Vektorer med numpy
+- Lengde, sum og plott
+- Eksempler og oppgaver med løsning

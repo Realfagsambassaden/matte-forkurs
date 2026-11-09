@@ -1,0 +1,21 @@
+---
+title: "Integrasjonsmetoder"
+toc: false
+---
+
+::: {.intro}
+
+Ikke alle integraler kan løses rett fram. Her lærer vi variabelskifte, delvis integrasjon og delbrøkoppspalting, regner ut volum, og bruker numeriske metoder når ingen formel finnes.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Når bruker vi variabelskifte og når delvis integrasjon?
+
+2.  Hvordan regner vi ut volumet av et omdreiningslegeme?
+
+3.  Hvordan regner vi ut et integral numerisk?
+
+:::

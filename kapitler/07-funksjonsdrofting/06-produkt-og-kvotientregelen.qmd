@@ -1,0 +1,20 @@
+---
+title: "Produkt- og kvotientregelen"
+tema: derivasjon
+undertema: produkt-og-kvotient
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/07-06-produkt-og-kvotientregelen) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Derivasjon av et produkt
+- Derivasjon av en kvotient
+- Eksempler og oppgaver med løsning

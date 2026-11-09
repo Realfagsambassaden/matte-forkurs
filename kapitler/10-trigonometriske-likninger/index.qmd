@@ -1,0 +1,21 @@
+---
+title: "Trigonometriske likninger"
+toc: false
+---
+
+::: {.intro}
+
+Når vinkler kan være større enn 90°, trenger vi enhetssirkelen. Her lærer vi radianer, løser likninger med sinus, cosinus og tangens, og bruker de trigonometriske formlene.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva er en radian?
+
+2.  Hvordan definerer enhetssirkelen sinus og cosinus for alle vinkler?
+
+3.  Hvorfor har trigonometriske likninger uendelig mange løsninger?
+
+:::

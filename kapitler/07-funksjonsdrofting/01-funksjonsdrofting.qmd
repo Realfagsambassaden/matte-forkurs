@@ -1,0 +1,21 @@
+---
+title: "Funksjonsdrøfting"
+tema: anvendelser-derivasjon
+undertema: drofting
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/07-01-funksjonsdrofting) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Fortegnslinje for den deriverte
+- Topp- og bunnpunkter
+- Monotoniegenskaper
+- Eksempler og oppgaver med løsning

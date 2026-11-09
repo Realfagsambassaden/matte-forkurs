@@ -1,0 +1,21 @@
+---
+title: "To lineære likninger med to ukjente"
+tema: algebra-og-likninger
+undertema: likningssett
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/02-02-to-likninger-med-to-ukjente) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Innsettingsmetoden
+- Addisjonsmetoden
+- Grafisk tolkning
+- Eksempler og oppgaver med løsning

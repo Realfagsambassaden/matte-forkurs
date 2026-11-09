@@ -1,0 +1,21 @@
+---
+title: "Nullpunktsfaktorisering og andregradsulikheter"
+tema: algebra-og-likninger
+undertema: ulikheter
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/04-06-andregradsulikheter) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Nullpunktsfaktorisering
+- Fortegnslinjer
+- Andregradsulikheter
+- Eksempler og oppgaver med løsning

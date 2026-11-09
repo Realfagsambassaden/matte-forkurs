@@ -1,0 +1,21 @@
+---
+title: "Grenseverdier og derivasjon"
+toc: false
+---
+
+::: {.intro}
+
+Derivasjon er matematikken for endring: hvor fort noe vokser, hvor bratt en graf er, hvor fort en bil kjører akkurat nå. Vi starter med grenseverdier og asymptoter, og bygger opp den deriverte steg for steg.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva er en grenseverdi?
+
+2.  Hva betyr det at en funksjon er kontinuerlig?
+
+3.  Hva er den deriverte, og hva har den med fart å gjøre?
+
+:::

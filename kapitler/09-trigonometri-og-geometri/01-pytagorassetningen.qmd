@@ -1,0 +1,20 @@
+---
+title: "Pytagorassetningen"
+tema: geometri
+undertema: pytagoras
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/09-01-pytagorassetningen) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Setningen og beviset
+- Avstand mellom to punkter
+- Eksempler og oppgaver med løsning

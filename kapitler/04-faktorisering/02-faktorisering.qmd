@@ -1,0 +1,21 @@
+---
+title: "Faktorisering"
+tema: algebra-og-likninger
+undertema: faktorisering
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/04-02-faktorisering) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Felles faktor
+- Heltallsmetoden
+- Faktorisering med kvadratsetningene
+- Eksempler og oppgaver med løsning

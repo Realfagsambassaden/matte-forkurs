@@ -1,0 +1,21 @@
+---
+title: "Skalarproduktet"
+tema: vektorer
+undertema: skalarprodukt
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/13-01-skalarproduktet) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Definisjonen
+- Koordinatformelen
+- Ortogonale vektorer og regneregler
+- Eksempler og oppgaver med løsning

@@ -1,0 +1,21 @@
+---
+title: "Formler"
+tema: algebra-og-likninger
+undertema: formler
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/02-03-formler) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Å bruke en formel
+- Å snu en formel
+- Formler i Python
+- Eksempler og oppgaver med løsning

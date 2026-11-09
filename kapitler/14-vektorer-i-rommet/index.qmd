@@ -1,0 +1,21 @@
+---
+title: "Vektorer i rommet"
+toc: false
+---
+
+::: {.intro}
+
+Den virkelige verden har tre dimensjoner. Her utvider vi vektorregningen til rommet, lærer vektorproduktet og beskriver linjer og plan.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hvordan regner vi med vektorer i tre dimensjoner?
+
+2.  Hva er vektorproduktet?
+
+3.  Hvordan finner vi likningen for et plan?
+
+:::

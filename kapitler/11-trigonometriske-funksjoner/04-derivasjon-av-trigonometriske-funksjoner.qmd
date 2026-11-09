@@ -1,0 +1,20 @@
+---
+title: "Derivasjon og drøfting av trigonometriske funksjoner"
+tema: derivasjon
+undertema: eksponential-og-trig
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/11-04-derivasjon-av-trigonometriske-funksjoner) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Den deriverte av sin x og cos x
+- Drøfting
+- Eksempler og oppgaver med løsning

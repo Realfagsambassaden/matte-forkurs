@@ -1,0 +1,21 @@
+---
+title: "Likninger og ulikheter"
+toc: false
+---
+
+::: {.intro}
+
+En likning er et spørsmål: hvilken verdi gjør dette sant? Her løser vi likninger og likningssett, snur formler, og lærer å løse ulikheter og skrive svarene som intervaller.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hvordan løser vi en likning steg for steg?
+
+2.  Hvordan snur vi en formel?
+
+3.  Hva er forskjellen på å løse en likning og en ulikhet?
+
+:::

@@ -1,0 +1,19 @@
+---
+title: "Blandede oppgaver: trigonometri og geometri"
+tema: trigonometri
+undertema: oppgaver
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/09-06-oppgaver) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Oppgaver som blander temaene i kapitlet
+- Eksempler og oppgaver med løsning

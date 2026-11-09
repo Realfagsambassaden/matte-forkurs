@@ -1,0 +1,19 @@
+---
+title: "Integrasjon av trigonometriske funksjoner"
+tema: integrasjonsteknikker
+undertema: variabelskifte
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/17-06-integrasjon-av-trigonometriske-funksjoner) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Integraler med sin og cos
+- Eksempler og oppgaver med løsning

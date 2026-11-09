@@ -1,0 +1,21 @@
+---
+title: "Graftegning og grafisk løsning"
+tema: funksjoner
+undertema: grafisk-losning
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/03-02-graftegning-og-grafisk-losning) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Å tegne grafer digitalt (Python)
+- Skjæringspunkter
+- Grafisk løsning av likninger og ulikheter
+- Eksempler og oppgaver med løsning

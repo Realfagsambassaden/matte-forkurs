@@ -1,0 +1,20 @@
+---
+title: "Tangenter og normaler"
+tema: derivasjon
+undertema: tangenter
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/06-05-tangenter-og-normaler) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Likningen for tangenten
+- Normalen står vinkelrett på tangenten
+- Eksempler og oppgaver med løsning

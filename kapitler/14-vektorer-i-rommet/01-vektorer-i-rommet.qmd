@@ -1,0 +1,20 @@
+---
+title: "Vektorer i rommet"
+tema: vektorer
+undertema: vektorer-i-rommet
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/14-01-vektorer-i-rommet) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Punktkoordinater og vektorkoordinater
+- Regning med vektorkoordinater
+- Eksempler og oppgaver med løsning

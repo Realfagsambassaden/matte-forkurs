@@ -1,0 +1,20 @@
+---
+title: "Den naturlige logaritmen"
+tema: eksponential-og-logaritme
+undertema: ln-og-e
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/08-03-den-naturlige-logaritmen) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Tallet e
+- ln x og likninger med e
+- Eksempler og oppgaver med løsning

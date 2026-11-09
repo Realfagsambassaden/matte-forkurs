@@ -1,0 +1,20 @@
+---
+title: "Irrasjonale likninger"
+tema: algebra-og-likninger
+undertema: likninger
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/05-06-irrasjonale-likninger) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Kvadrere begge sider
+- Falske løsninger: sett alltid prøve
+- Eksempler og oppgaver med løsning

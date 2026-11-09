@@ -1,0 +1,21 @@
+---
+title: "Andregradslikninger og abc-formelen"
+tema: algebra-og-likninger
+undertema: andregradslikninger
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/04-04-andregradslikninger) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Andregradslikninger uten konstantledd eller førstegradsledd
+- abc-formelen
+- Diskriminanten: to, én eller ingen løsninger
+- Eksempler og oppgaver med løsning

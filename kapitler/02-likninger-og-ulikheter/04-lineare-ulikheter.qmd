@@ -1,0 +1,21 @@
+---
+title: "Lineære ulikheter"
+tema: algebra-og-likninger
+undertema: ulikheter
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/02-04-lineare-ulikheter) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Ulikhetstegnene
+- Når ulikhetstegnet snur
+- Fortegnslinje
+- Eksempler og oppgaver med løsning

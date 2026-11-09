@@ -1,0 +1,21 @@
+---
+title: "Derivasjon og drøfting av eksponentialfunksjoner"
+tema: eksponential-og-logaritme
+undertema: drofting
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/08-05-eksponentialfunksjoner) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Den deriverte av e^x og a^x
+- Drøfting av eksponentialfunksjoner
+- Eksponentiell vekst og nedbrytning
+- Eksempler og oppgaver med løsning

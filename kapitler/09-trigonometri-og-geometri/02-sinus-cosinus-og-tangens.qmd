@@ -1,0 +1,21 @@
+---
+title: "Sinus, cosinus og tangens"
+tema: trigonometri
+undertema: rettvinklet
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/09-02-sinus-cosinus-og-tangens) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Definisjonene i en rettvinklet trekant
+- Å finne sider
+- Å finne vinkler
+- Eksempler og oppgaver med løsning

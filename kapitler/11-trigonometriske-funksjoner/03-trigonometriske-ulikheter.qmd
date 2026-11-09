@@ -1,0 +1,19 @@
+---
+title: "Trigonometriske ulikheter"
+tema: trigonometri
+undertema: trigonometriske-likninger
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/11-03-trigonometriske-ulikheter) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Ulikheter med enhetssirkelen og grafen
+- Eksempler og oppgaver med løsning

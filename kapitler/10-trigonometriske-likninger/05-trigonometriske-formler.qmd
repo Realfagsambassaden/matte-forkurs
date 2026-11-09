@@ -1,0 +1,21 @@
+---
+title: "Trigonometriske formler"
+tema: trigonometri
+undertema: trigonometriske-formler
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/10-05-trigonometriske-formler) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Enhetsformelen
+- Sum- og differanseformler
+- Formler for dobbel vinkel
+- Eksempler og oppgaver med løsning

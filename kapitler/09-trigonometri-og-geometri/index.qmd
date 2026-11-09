@@ -1,0 +1,21 @@
+---
+title: "Trigonometri og geometri"
+toc: false
+---
+
+::: {.intro}
+
+Trigonometri betyr «trekantmåling». Med sinus, cosinus og tangens kan vi regne ut sider og vinkler i trekanter, og det trenger vi hele tiden i fysikken når vi dekomponerer krefter og fart.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva sier Pytagorassetningen?
+
+2.  Hva er sinus, cosinus og tangens?
+
+3.  Hvordan regner vi i trekanter som ikke er rettvinklede?
+
+:::
