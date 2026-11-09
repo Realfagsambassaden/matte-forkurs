@@ -2,19 +2,79 @@
 title: "Irrasjonale likninger"
 tema: algebra-og-likninger
 undertema: likninger
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/05-06-irrasjonale-likninger) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+En **irrasjonal likning** har den ukjente under et rottegn, som $\sqrt{x + 6} = x$. Vi blir kvitt roten ved å kvadrere begge sider. Men kvadrering kan lage **falske løsninger**, så her er prøven ikke valgfri.
+
+## Kvadrer og sett prøve
+
+::: {.steg}
+1. Få roten alene på én side.
+2. Kvadrer begge sider.
+3. Løs likningen som kommer ut.
+4. **Sett prøve** i den opprinnelige likningen, og forkast falske løsninger.
 :::
 
-## Dette kommer på siden
+::: {.eksempel}
+**Eksempel: Falsk løsning.** Løs $\sqrt{x + 6} = x$.
 
-- Kvadrere begge sider
-- Falske løsninger: sett alltid prøve
-- Eksempler og oppgaver med løsning
+::: {.losning}
+Kvadrer: $x + 6 = x^2$, så $x^2 - x - 6 = 0$ og $(x - 3)(x + 2) = 0$. Mulige løsninger: $x = 3$ og $x = -2$.
+
+Prøve: $x = 3$ gir $\sqrt9 = 3$. Det stemmer. $x = -2$ gir $\sqrt4 = 2$, men høyre side er $-2$. Den stemmer ikke.
+
+Svaret er $\underline{\underline{x = 3}}$.
+:::
+:::
+
+::: {.callout-note title="Hvorfor oppstår falske løsninger?"}
+$a = b$ gir $a^2 = b^2$, men $a^2 = b^2$ gir bare $a = \pm b$. Når vi kvadrerer, løser vi derfor også likningen $\sqrt{x + 6} = -x$. Den har løsningen $x = -2$, og den sniker seg inn.
+:::
+
+::: {.eksempel}
+**Eksempel: Få roten alene først.** Løs $\sqrt{2x - 1} + 2 = x$.
+
+::: {.losning}
+Roten alene: $\sqrt{2x - 1} = x - 2$. Kvadrer: $2x - 1 = x^2 - 4x + 4$, så $x^2 - 6x + 5 = 0$ og $(x - 1)(x - 5) = 0$.
+
+Prøve: $x = 1$ gir $\sqrt1 + 2 = 3 \ne 1$. Falsk. $x = 5$ gir $\sqrt9 + 2 = 5$. Riktig.
+
+Svaret er $\underline{\underline{x = 5}}$.
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Løs likningene"}
+a) $\sqrt{x + 3} = 4$ b) $\sqrt{3x + 4} = x$
+
+::: {.losning}
+a) $x + 3 = 16$, så $x = 13$. Prøve: $\sqrt{16} = 4$. $\underline{\underline{x = 13}}$
+
+b) $3x + 4 = x^2$ gir $(x - 4)(x + 1) = 0$. Prøve: $x = 4$ gir $\sqrt{16} = 4$ (riktig), $x = -1$ gir $\sqrt1 = 1 \ne -1$ (falsk). $\underline{\underline{x = 4}}$
+:::
+:::
+
+::: {.oppgave tittel="Pendellengde" niva="Middels"}
+En pendel har svingetiden $T = 2\pi\sqrt{\dfrac{L}{9.81}}$ (sekunder, meter). Hvor lang er pendelen når $T = 1.50\ \mathrm{s}$?
+
+::: {.losning}
+$\sqrt{\frac{L}{9.81}} = \frac{1.50}{2\pi} = 0.2387$. Kvadrer: $\frac{L}{9.81} = 0.05699$, så $\underline{\underline{L = 0.559\ \mathrm{m}}}$.
+:::
+:::
+
+::: {.oppgave tittel="To røtter" niva="Utfordrende"}
+Løs $\sqrt{x + 5} - \sqrt{x} = 1$.
+
+::: {.losning}
+$\sqrt{x + 5} = 1 + \sqrt x$. Kvadrer: $x + 5 = 1 + 2\sqrt x + x$, så $2\sqrt x = 4$ og $\sqrt x = 2$, altså $x = 4$.
+
+Prøve: $\sqrt9 - \sqrt4 = 3 - 2 = 1$. $\underline{\underline{x = 4}}$
+:::
+:::
+
+::::

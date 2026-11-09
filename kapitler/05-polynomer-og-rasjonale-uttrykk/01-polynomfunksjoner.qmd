@@ -2,19 +2,97 @@
 title: "Polynomfunksjoner"
 tema: funksjoner
 undertema: potens-og-rotfunksjoner
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/05-01-polynomfunksjoner) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Lineære funksjoner og andregradsfunksjoner er de enkleste eksemplene på **polynomfunksjoner**. Generelt er et polynom en sum av ledd der $x$ står i hele, ikke-negative potenser. Polynomer er lette å regne med, og de brukes til å tilnærme nesten alle andre funksjoner.
+
+## Grad og koeffisienter
+
+::: {.graa}
+$$
+P(x) = a_n x^n + a_{n-1}x^{n-1} + \dots + a_1 x + a_0, \qquad a_n \neq 0
+$$
 :::
 
-## Dette kommer på siden
+::: {.kort}
+- **Grad** Den høyeste potensen $n$. $P(x) = 2x^3 - x + 5$ har grad 3.
+- **Koeffisienter** Tallene $a_n, \dots, a_0$ foran potensene. $a_0$ er konstantleddet, der grafen skjærer $y$-aksen.
+- **Nullpunkter** Et polynom av grad $n$ har høyst $n$ nullpunkter.
+- **Topp- og bunnpunkter** Et polynom av grad $n$ har høyst $n - 1$ topp- og bunnpunkter til sammen.
+:::
 
-- Grad og koeffisienter
-- Grafer til polynomfunksjoner
-- Eksempler og oppgaver med løsning
+## Hvordan grafen ser ut
+
+![](../../bilder/figurer/polynomgrafer.svg){.tikz-fig style="width:560px" fig-alt="Tre grafer: et førstegradspolynom (rett linje), et andregradspolynom (parabel) og et tredjegradspolynom med ett toppunkt og ett bunnpunkt og tre nullpunkter."}
+
+For store verdier av $|x|$ er det leddet med høyest grad som bestemmer. Derfor går et tredjegradspolynom med $a_3 > 0$ mot $-\infty$ til venstre og mot $+\infty$ til høyre, mens et fjerdegradspolynom med $a_4 > 0$ går mot $+\infty$ på begge sider.
+
+::: {.eksempel}
+**Eksempel: Et tredjegradspolynom.** La $P(x) = x^3 - 4x$. Finn nullpunktene og beskriv grafen.
+
+::: {.losning}
+Faktoriser: $P(x) = x(x^2 - 4) = x(x + 2)(x - 2)$. Nullpunktene er $\underline{\underline{x = -2,\ x = 0 \text{ og } x = 2}}$.
+
+Graden er 3 og $a_3 = 1 > 0$, så grafen kommer nedenfra til venstre og går oppover til høyre. Mellom $-2$ og $0$ er $P$ positiv (prøv $x = -1$: $P = 3$), og mellom $0$ og $2$ er den negativ. Grafen har altså et toppunkt mellom $-2$ og $0$ og et bunnpunkt mellom $0$ og $2$.
+:::
+:::
+
+## Prøv selv
+
+```{.python .kjor}
+import numpy as np
+import matplotlib.pyplot as plt
+
+koeff = [1, 0, -4, 0]          # x^3 + 0x^2 - 4x + 0
+print("Nullpunkter:", np.roots(koeff))
+
+x = np.linspace(-3, 3, 300)
+plt.plot(x, np.polyval(koeff, x))
+plt.axhline(0, color="gray"); plt.grid(True); plt.show()
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Grad"}
+Hva er graden, og hvor skjærer grafen $y$-aksen? a) $P(x) = 3x^4 - x + 2$ b) $Q(x) = (x - 1)(x + 2)(x - 3)$ c) $R(x) = 7$
+
+::: {.losning}
+a) Grad 4, skjærer i $(0, 2)$. b) Grad 3, $Q(0) = (-1)(2)(-3) = 6$, skjærer i $(0, 6)$. c) Grad 0, skjærer i $(0, 7)$.
+:::
+:::
+
+::: {.oppgave tittel="Nullpunkter"}
+Finn nullpunktene: a) $x^3 - 9x$ b) $x^4 - 5x^2 + 4$ (hint: sett $u = x^2$)
+
+::: {.losning}
+a) $x(x - 3)(x + 3)$: $\underline{\underline{x = 0, \pm 3}}$
+
+b) $u^2 - 5u + 4 = (u - 1)(u - 4) = 0$, så $x^2 = 1$ eller $x^2 = 4$: $\underline{\underline{x = \pm 1, \pm 2}}$
+:::
+:::
+
+::: {.oppgave tittel="Lag et polynom" niva="Middels"}
+Finn et tredjegradspolynom med nullpunktene $-1$, $2$ og $4$, som skjærer $y$-aksen i $(0, 16)$.
+
+::: {.losning}
+$P(x) = a(x + 1)(x - 2)(x - 4)$. $P(0) = a\cdot 1\cdot(-2)(-4) = 8a = 16$, så $a = 2$: $\underline{\underline{P(x) = 2(x + 1)(x - 2)(x - 4)}}$.
+:::
+:::
+
+::: {.oppgave tittel="Eske" niva="Utfordrende"}
+Fra en plate på $20\ \mathrm{cm}\times 20\ \mathrm{cm}$ klippes et kvadrat med side $x$ bort i hvert hjørne, og kantene brettes opp til en eske. a) Vis at volumet er $V(x) = x(20 - 2x)^2$. b) Hvilken definisjonsmengde gir mening? c) Finn grafisk hvilken $x$ som gir størst volum.
+
+::: {.losning}
+a) Bunnen blir $(20 - 2x)$ cm på hver side og høyden $x$ cm, så $V = x(20 - 2x)^2$.
+
+b) $0 < x < 10$.
+
+c) Grafen har toppunkt ved $\underline{\underline{x \approx 3.33\ \mathrm{cm}}}$, med $V \approx 593\ \mathrm{cm^3}$. (Med derivasjon finner vi eksakt $x = \frac{10}{3}$.)
+:::
+:::
+
+::::

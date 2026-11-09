@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.62]
+\foreach \s/\t/\f/\c in {0/Grad 1/{0.8*\x+0.5}/bla, 6.5/Grad 2/{0.5*\x*\x-1.5}/rod, 13/Grad 3/{0.25*\x*\x*\x-1.2*\x}/gronn} {
+\begin{scope}[xshift=\s cm]
+\draw[akse] (-2.8,0)--(2.8,0) node[right]{$x$};
+\draw[akse] (0,-2.6)--(0,2.8);
+\draw[very thick,\c,domain=-2.6:2.6,samples=80] plot (\x,\f);
+\node at (0,3.3) {\t};
+\end{scope}}
+\end{tikzpicture}
