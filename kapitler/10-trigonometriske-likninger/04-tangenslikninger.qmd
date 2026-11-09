@@ -2,19 +2,85 @@
 title: "Tangenslikninger og andregradslikninger i sinus og cosinus"
 tema: trigonometri
 undertema: trigonometriske-likninger
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/10-04-tangenslikninger) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Tangens gjentar seg allerede etter en halv runde, så tangenslikninger er litt enklere enn sinus- og cosinuslikninger. Her ser vi også på likninger der $\sin x$ eller $\cos x$ står i andre potens. De løser vi som vanlige andregradslikninger.
+
+## tan x = a
+
+$\tan x$ har perioden $\pi$: $\tan(x + \pi) = \tan x$. Derfor:
+
+::: {.graa}
+$$
+\tan x = a \quad\Longleftrightarrow\quad x = \tan^{-1} a + k\cdot\pi
+$$
+Løsningen finnes for alle $a$.
 :::
 
-## Dette kommer på siden
+::: {.eksempel}
+**Eksempel: Tangens.** Løs $\sin x = \sqrt3\cos x$ for $x \in [0, 2\pi\rangle$.
 
-- Tangenslikninger
-- Andregradslikninger med sin x og cos x
-- Eksempler og oppgaver med løsning
+::: {.losning}
+Del på $\cos x$ (den kan ikke være null her, for da ville også $\sin x = 0$): $\tan x = \sqrt3$. Så $x = \frac{\pi}{3} + k\pi$:
+$$
+\underline{\underline{x = \frac{\pi}{3} \quad\text{eller}\quad x = \frac{4\pi}{3}}}
+$$
+:::
+:::
+
+## Andregradslikninger i sin x eller cos x
+
+Sett $u = \sin x$ (eller $\cos x$), løs andregradslikningen i $u$, og løs så grunnlikningene. Husk at $u$ må ligge mellom $-1$ og $1$.
+
+::: {.eksempel}
+**Eksempel: Andregrad.** Løs $2\sin^2 x - \sin x - 1 = 0$ for $x \in [0, 2\pi\rangle$.
+
+::: {.losning}
+Med $u = \sin x$: $2u^2 - u - 1 = 0$ gir $u = 1$ eller $u = -\frac12$.
+
+$\sin x = 1$ gir $x = \frac{\pi}{2}$. $\sin x = -\frac12$ gir $x = \frac{7\pi}{6}$ og $x = \frac{11\pi}{6}$.
+$$
+\underline{\underline{x = \frac{\pi}{2},\ \frac{7\pi}{6},\ \frac{11\pi}{6}}}
+$$
+:::
+:::
+
+::: {.callout-tip title="Bytt med enhetsformelen"}
+Står både $\sin^2 x$ og $\cos x$ i likningen, bytt $\sin^2 x = 1 - \cos^2 x$, så får du en andregradslikning i $\cos x$ alene.
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Tangens"}
+Løs for $x \in [0, 2\pi\rangle$: a) $\tan x = 1$ b) $\tan x = -2$
+
+::: {.losning}
+a) $\underline{\underline{\frac{\pi}{4}, \frac{5\pi}{4}}}$
+
+b) $\tan^{-1}(-2) = -1.107$. I intervallet: $\underline{\underline{x = 2.034 \text{ og } x = 5.176}}$.
+:::
+:::
+
+::: {.oppgave tittel="Faktoriser" niva="Middels"}
+Løs $\sin x\cos x = \sin x$ for $x \in [0, 2\pi\rangle$.
+
+::: {.losning}
+$\sin x(\cos x - 1) = 0$. $\sin x = 0$ gir $x = 0, \pi$. $\cos x = 1$ gir $x = 0$. Løsningene: $\underline{\underline{x = 0 \text{ og } x = \pi}}$. (Ikke del på $\sin x$, da mister du løsninger.)
+:::
+:::
+
+::: {.oppgave tittel="Med enhetsformelen" niva="Utfordrende"}
+Løs $2\sin^2 x + 3\cos x = 3$ for $x \in [0, 2\pi\rangle$.
+
+::: {.losning}
+$2(1 - \cos^2 x) + 3\cos x - 3 = 0$ gir $2\cos^2 x - 3\cos x + 1 = 0$, altså $\cos x = 1$ eller $\cos x = \frac12$.
+
+$\underline{\underline{x = 0,\ \frac{\pi}{3},\ \frac{5\pi}{3}}}$
+:::
+:::
+
+::::

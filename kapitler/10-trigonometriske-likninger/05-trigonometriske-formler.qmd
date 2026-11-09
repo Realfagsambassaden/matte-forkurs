@@ -2,20 +2,91 @@
 title: "Trigonometriske formler"
 tema: trigonometri
 undertema: trigonometriske-formler
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/10-05-trigonometriske-formler) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Det finnes mange sammenhenger mellom de trigonometriske funksjonene. Du trenger ikke kunne alle utenat, men de viktigste gjør regning med vinkler mye enklere, både i likninger, i derivasjon og i fysikk med bølger og svingninger.
+
+## De viktigste formlene
+
+::: {.graa}
+**Enhetsformelen**
+$$
+\sin^2 v + \cos^2 v = 1
+$$
+
+**Sum og differanse**
+$$
+\begin{aligned}
+\sin(u \pm v) &= \sin u\cos v \pm \cos u\sin v \\
+\cos(u \pm v) &= \cos u\cos v \mp \sin u\sin v
+\end{aligned}
+$$
+
+**Dobbel vinkel**
+$$
+\sin 2v = 2\sin v\cos v \qquad \cos 2v = \cos^2 v - \sin^2 v = 1 - 2\sin^2 v = 2\cos^2 v - 1
+$$
 :::
 
-## Dette kommer på siden
+Formlene for dobbel vinkel følger av sumformlene med $u = v$.
 
-- Enhetsformelen
-- Sum- og differanseformler
-- Formler for dobbel vinkel
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: Eksakt verdi.** Finn eksakt $\cos 75^\circ$.
+
+::: {.losning}
+$75^\circ = 45^\circ + 30^\circ$:
+$$
+\cos 75^\circ = \cos 45^\circ\cos 30^\circ - \sin 45^\circ\sin 30^\circ = \frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2} - \frac{\sqrt2}{2}\cdot\frac12 = \underline{\underline{\frac{\sqrt6 - \sqrt2}{4}}}
+$$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Likning med dobbel vinkel.** Løs $\sin 2x = \cos x$ for $x \in [0, 2\pi\rangle$.
+
+::: {.losning}
+$2\sin x\cos x - \cos x = 0$, altså $\cos x(2\sin x - 1) = 0$.
+
+$\cos x = 0$ gir $x = \frac{\pi}{2}, \frac{3\pi}{2}$. $\sin x = \frac12$ gir $x = \frac{\pi}{6}, \frac{5\pi}{6}$.
+
+$\underline{\underline{x = \frac{\pi}{6},\ \frac{\pi}{2},\ \frac{5\pi}{6},\ \frac{3\pi}{2}}}$
+:::
+:::
+
+::: {.callout-tip title="I fysikken"}
+Rekkevidden til et skrått kast fra bakken er $R = \dfrac{v_0^2\sin 2\alpha}{\mathrm{g}}$, der formelen for dobbel vinkel er brukt. Den er størst når $\sin 2\alpha = 1$, altså $\alpha = 45^\circ$. Se [skrått kast på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/06-bevegelse-i-to-dimensjoner.html).
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Eksakte verdier"}
+Finn eksakt: a) $\sin 15^\circ$ b) $\cos 105^\circ$
+
+::: {.losning}
+a) $\sin(45^\circ - 30^\circ) = \frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2} - \frac{\sqrt2}{2}\cdot\frac12 = \underline{\underline{\frac{\sqrt6 - \sqrt2}{4}}}$
+
+b) $\cos(60^\circ + 45^\circ) = \frac12\cdot\frac{\sqrt2}{2} - \frac{\sqrt3}{2}\cdot\frac{\sqrt2}{2} = \underline{\underline{\frac{\sqrt2 - \sqrt6}{4}}}$
+:::
+:::
+
+::: {.oppgave tittel="Dobbel vinkel" niva="Middels"}
+$\sin v = \frac35$ og $v$ er spiss. Finn $\sin 2v$ og $\cos 2v$.
+
+::: {.losning}
+$\cos v = \frac45$. $\sin 2v = 2\cdot\frac35\cdot\frac45 = \underline{\underline{\frac{24}{25}}}$ og $\cos 2v = \frac{16}{25} - \frac{9}{25} = \underline{\underline{\frac{7}{25}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Vis at" niva="Utfordrende"}
+Vis at $\sin^2 v = \frac12(1 - \cos 2v)$.
+
+::: {.losning}
+Fra $\cos 2v = 1 - 2\sin^2 v$ får vi $2\sin^2 v = 1 - \cos 2v$, altså $\sin^2 v = \frac12(1 - \cos 2v)$. Denne formelen brukes når vi skal integrere $\sin^2 x$.
+:::
+:::
+
+::::

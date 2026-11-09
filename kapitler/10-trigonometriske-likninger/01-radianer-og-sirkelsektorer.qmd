@@ -2,19 +2,89 @@
 title: "Radianer og sirkelsektorer"
 tema: trigonometri
 undertema: radianer-og-enhetssirkelen
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/10-01-radianer-og-sirkelsektorer) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+At en hel runde er $360^\circ$, er et gammelt valg uten noen dypere grunn. I matematikk og fysikk måler vi vinkler heller i **radianer**: hvor lang buen er, målt i radier. Da blir formlene for buelengde, vinkelfart og derivasjon av sinus mye enklere.
+
+## Hva en radian er
+
+::: {.callout-note title="Definisjon: Radian"}
+En vinkel $v$ i radianer er buelengden $b$ delt på radien $r$:
+$$
+v = \frac{b}{r}
+$$
 :::
 
-## Dette kommer på siden
+Én radian er vinkelen der buen er like lang som radien, omtrent $57.3^\circ$. En hel runde har buelengden $2\pi r$, så den er $2\pi$ radianer:
 
-- Radianer
-- Buelengde og areal av sirkelsektor
-- Eksempler og oppgaver med løsning
+::: {.graa}
+$$
+360^\circ = 2\pi \qquad 180^\circ = \pi \qquad 90^\circ = \frac{\pi}{2} \qquad 1^\circ = \frac{\pi}{180}
+$$
+:::
+
+Radianer har ingen enhet (meter delt på meter), men vi skriver noen ganger «rad» for å være tydelige.
+
+::: {.eksempel}
+**Eksempel: Gjør om.** Gjør om $135^\circ$ til radianer og $\frac{5\pi}{6}$ til grader.
+
+::: {.losning}
+$135^\circ = 135\cdot\frac{\pi}{180} = \underline{\underline{\frac{3\pi}{4}}}$ og $\frac{5\pi}{6} = \frac{5\cdot 180^\circ}{6} = \underline{\underline{150^\circ}}$.
+:::
+:::
+
+## Sirkelsektorer
+
+Med vinkelen $v$ i radianer blir formlene for en **sirkelsektor** (et «kakestykke») svært enkle:
+
+::: {.graa}
+$$
+\text{buelengde } b = rv \qquad\qquad \text{areal } A = \tfrac12 r^2 v
+$$
+:::
+
+Arealet følger av at sektoren er andelen $\frac{v}{2\pi}$ av hele sirkelen: $\frac{v}{2\pi}\cdot\pi r^2 = \frac12 r^2 v$.
+
+::: {.eksempel}
+**Eksempel: Pizzastykke.** En pizza har radius $16\ \mathrm{cm}$ og deles i 8 like stykker. Finn buelengden og arealet av ett stykke.
+
+::: {.losning}
+$v = \frac{2\pi}{8} = \frac{\pi}{4}$. Buelengde: $b = 16\cdot\frac{\pi}{4} = \underline{\underline{12.6\ \mathrm{cm}}}$. Areal: $A = \frac12\cdot 16^2\cdot\frac{\pi}{4} = \underline{\underline{101\ \mathrm{cm^2}}}$.
+:::
+:::
+
+::: {.callout-tip title="I fysikken"}
+Ved sirkelbevegelse er farten $v = \omega r$, der vinkelfarten $\omega$ måles i radianer per sekund. Se [sirkelbevegelse på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/05-sirkelbevegelse.html).
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Gjør om"}
+Gjør om til radianer: a) $60^\circ$ b) $270^\circ$. Gjør om til grader: c) $\frac{\pi}{12}$ d) $2.0$
+
+::: {.losning}
+a) $\underline{\underline{\frac{\pi}{3}}}$ b) $\underline{\underline{\frac{3\pi}{2}}}$ c) $\underline{\underline{15^\circ}}$ d) $\frac{2.0\cdot 180^\circ}{\pi} = \underline{\underline{115^\circ}}$
+:::
+:::
+
+::: {.oppgave tittel="Buelengde"}
+Et pendellodd svinger ut $0.20$ rad på hver side, og snora er $1.2\ \mathrm{m}$. Hvor lang er buen loddet går fra ytterpunkt til ytterpunkt?
+
+::: {.losning}
+$b = 1.2\cdot 0.40 = \underline{\underline{0.48\ \mathrm{m}}}$
+:::
+:::
+
+::: {.oppgave tittel="Vindmølle" niva="Middels"}
+En vindmølle har vinger på $40\ \mathrm{m}$ og roterer 15 ganger i minuttet. Finn vinkelfarten i rad/s og farten til vingespissen.
+
+::: {.losning}
+$\omega = \frac{15\cdot 2\pi}{60\ \mathrm{s}} = \underline{\underline{1.57\ \mathrm{rad/s}}}$ og $v = \omega r = \underline{\underline{63\ \mathrm{m/s}}}$.
+:::
+:::
+
+::::

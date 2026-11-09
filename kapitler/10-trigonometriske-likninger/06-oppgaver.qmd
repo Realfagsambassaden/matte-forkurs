@@ -2,18 +2,43 @@
 title: "Blandede oppgaver: trigonometriske likninger"
 tema: trigonometri
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/10-06-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander radianer, enhetssirkelen og trigonometriske likninger. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Radianer"}
+Et hjul med radius $0.35\ \mathrm{m}$ ruller $10\ \mathrm{m}$. Hvor mange radianer har det rotert, og hvor mange omdreininger er det?
+
+::: {.losning}
+$v = \frac{10}{0.35} = \underline{\underline{28.6\ \mathrm{rad}}}$, som er $\frac{28.6}{2\pi} = \underline{\underline{4.5 \text{ omdreininger}}}$.
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Likning"}
+Løs $2\cos x + 1 = 0$ for $x \in [0, 2\pi\rangle$.
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$\cos x = -\frac12$: $\underline{\underline{x = \frac{2\pi}{3} \text{ og } \frac{4\pi}{3}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Andregrad" niva="Middels"}
+Løs $\cos^2 x - \cos x = 0$ for $x \in [0, 2\pi\rangle$.
+
+::: {.losning}
+$\cos x(\cos x - 1) = 0$. $\cos x = 0$ gir $\frac{\pi}{2}, \frac{3\pi}{2}$, og $\cos x = 1$ gir $0$. $\underline{\underline{x = 0,\ \frac{\pi}{2},\ \frac{3\pi}{2}}}$
+:::
+:::
+
+::: {.oppgave tittel="Tidevann" niva="Utfordrende"}
+Vannstanden i en havn er $h(t) = 2.0 + 1.5\cos\left(\frac{2\pi}{12.4}t\right)$ meter, der $t$ er timer etter høyvann. En båt trenger minst $2.5\ \mathrm{m}$ vann. Hvor lenge etter høyvann kan den gå inn?
+
+::: {.losning}
+$1.5\cos\left(\frac{2\pi t}{12.4}\right) = 0.5$ gir $\cos\left(\frac{2\pi t}{12.4}\right) = \frac13$, altså $\frac{2\pi t}{12.4} = 1.231$ og $t = \underline{\underline{2.4 \text{ timer}}}$.
+:::
+:::
+
+::::
