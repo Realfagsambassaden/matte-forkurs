@@ -2,20 +2,112 @@
 title: "Sinussetningen og cosinussetningen"
 tema: trigonometri
 undertema: trekantsetninger
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/09-04-sinus-og-cosinussetningen) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Sinus, cosinus og tangens som forhold mellom sider gjelder bare i rettvinklede trekanter. For alle andre trekanter har vi to setninger som lar oss finne ukjente sider og vinkler: sinussetningen og cosinussetningen.
+
+## Sinussetningen
+
+::: {.graa}
+$$
+\frac{\sin A}{a} = \frac{\sin B}{b} = \frac{\sin C}{c}
+$$
 :::
 
-## Dette kommer på siden
+Den følger av arealsetningen: $\frac12 bc\sin A = \frac12 ac\sin B$ gir $\frac{\sin A}{a} = \frac{\sin B}{b}$.
 
-- Sinussetningen
-- Cosinussetningen
-- Hvilken setning skal jeg bruke?
-- Eksempler og oppgaver med løsning
+**Brukes når** vi kjenner en side og vinkelen overfor, pluss én side eller vinkel til.
+
+::: {.callout-warning title="To mulige trekanter"}
+Bruker du sinussetningen til å finne en **vinkel**, kan det være to løsninger: $v$ og $180^\circ - v$ har samme sinus. Sjekk om begge gir en trekant der vinkelsummen er under $180^\circ$.
+:::
+
+## Cosinussetningen
+
+::: {.graa}
+$$
+a^2 = b^2 + c^2 - 2bc\cos A
+$$
+:::
+
+Er $A = 90^\circ$, er $\cos A = 0$, og setningen blir Pytagoras. Cosinussetningen er altså Pytagoras med et korreksjonsledd.
+
+**Brukes når** vi kjenner to sider og vinkelen mellom dem (finn den tredje siden), eller alle tre sidene (finn en vinkel).
+
+::: {.eksempel}
+**Eksempel: Cosinussetningen.** To båter går fra samme havn. Den ene er $8.0\ \mathrm{km}$ unna, den andre $12\ \mathrm{km}$, og vinkelen mellom retningene er $50^\circ$. Hvor langt er det mellom båtene?
+
+::: {.losning}
+$$
+d^2 = 8.0^2 + 12^2 - 2\cdot 8.0\cdot 12\cos 50^\circ = 64 + 144 - 123.4 = 84.6
+$$
+$d = \underline{\underline{9.2\ \mathrm{km}}}$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Sinussetningen.** I trekant $ABC$ er $A = 40^\circ$, $B = 75^\circ$ og $a = 6.0$. Finn $b$.
+
+::: {.losning}
+$$
+b = \frac{a\sin B}{\sin A} = \frac{6.0\cdot\sin 75^\circ}{\sin 40^\circ} = \underline{\underline{9.0}}
+$$
+:::
+:::
+
+## Hvilken setning?
+
+::: {.kort}
+- **To sider og vinkelen mellom** Cosinussetningen for den tredje siden.
+- **Tre sider** Cosinussetningen for en vinkel.
+- **En side og to vinkler** Sinussetningen (finn den tredje vinkelen med vinkelsummen $180^\circ$).
+- **To sider og en vinkel som ikke er mellom dem** Sinussetningen, og pass på to løsninger.
+:::
+
+::: {.callout-tip title="I fysikken"}
+Summen av to krefter som ikke står vinkelrett på hverandre, finner vi med cosinussetningen, eller ved å dekomponere. Se [operasjoner med vektorer på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/02-matematikk/05-operasjoner-med-vektorer.html).
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Cosinussetningen"}
+Finn $c$ når $a = 5.0$, $b = 7.0$ og $C = 60^\circ$.
+
+::: {.losning}
+$c^2 = 25 + 49 - 70\cdot 0.5 = 39$, så $\underline{\underline{c = 6.2}}$.
+:::
+:::
+
+::: {.oppgave tittel="Vinkel fra tre sider" niva="Middels"}
+En trekant har sidene $4$, $5$ og $7$. Finn den største vinkelen.
+
+::: {.losning}
+Den største vinkelen ligger overfor den lengste siden: $\cos C = \frac{16 + 25 - 49}{2\cdot 4\cdot 5} = -0.2$, så $\underline{\underline{C = 101.5^\circ}}$.
+:::
+:::
+
+::: {.oppgave tittel="To løsninger" niva="Utfordrende"}
+I trekant $ABC$ er $a = 6.0$, $b = 8.0$ og $A = 35^\circ$. Finn de mulige verdiene for $B$.
+
+::: {.losning}
+$\sin B = \frac{8.0\sin 35^\circ}{6.0} = 0.765$. $B = 49.9^\circ$ eller $B = 130.1^\circ$. Begge gir vinkelsum under $180^\circ$ ($35 + 130.1 = 165.1$), så $\underline{\underline{B = 49.9^\circ \text{ eller } 130.1^\circ}}$.
+:::
+:::
+
+::: {.oppgave tittel="Krefter" niva="Utfordrende"}
+To krefter på $30\ \mathrm{N}$ og $40\ \mathrm{N}$ virker på samme punkt, med $60^\circ$ mellom retningene. Hvor stor er summen?
+
+::: {.losning}
+Kreftene legges etter hverandre, og vinkelen i trekanten blir $180^\circ - 60^\circ = 120^\circ$:
+$$
+F^2 = 30^2 + 40^2 - 2\cdot 30\cdot 40\cos 120^\circ = 900 + 1600 + 1200 = 3700
+$$
+$F = \underline{\underline{61\ \mathrm{N}}}$
+:::
+:::
+
+::::
