@@ -2,19 +2,90 @@
 title: "Derivasjon og drøfting av trigonometriske funksjoner"
 tema: derivasjon
 undertema: eksponential-og-trig
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/11-04-derivasjon-av-trigonometriske-funksjoner) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Stigningstallet til sinusgrafen er størst der grafen krysser likevektslinja, og null i toppene og bunnene. Tegner vi stigningstallet som funksjon av $x$, får vi akkurat cosinusgrafen. Det er en av de vakreste sammenhengene i matematikken, og den forklarer hvorfor svingninger oppfører seg som de gjør.
+
+## De deriverte
+
+::: {.graa}
+$$
+(\sin x)' = \cos x \qquad (\cos x)' = -\sin x \qquad (\tan x)' = \frac{1}{\cos^2 x} = 1 + \tan^2 x
+$$
 :::
 
-## Dette kommer på siden
+Disse gjelder bare når $x$ er i **radianer**. Det er hovedgrunnen til at vi bruker radianer.
 
-- Den deriverte av sin x og cos x
-- Drøfting
-- Eksempler og oppgaver med løsning
+Med kjerneregelen: $\big(\sin(kx)\big)' = k\cos(kx)$ og $\big(\cos(kx)\big)' = -k\sin(kx)$.
+
+::: {.eksempel}
+**Eksempel: Derivasjon.** Deriver a) $f(x) = 3\sin(2x)$ b) $g(x) = x\cos x$ c) $h(x) = \sin^2 x$
+
+::: {.losning}
+a) $f'(x) = 3\cdot 2\cos(2x) = \underline{\underline{6\cos(2x)}}$
+
+b) Produktregelen: $g'(x) = \underline{\underline{\cos x - x\sin x}}$
+
+c) Kjerneregelen: $h'(x) = 2\sin x\cos x = \underline{\underline{\sin 2x}}$
+:::
+:::
+
+## Svingninger og fart
+
+Er posisjonen $x(t) = A\cos(\omega t)$, er farten og akselerasjonen
+$$
+v(t) = -A\omega\sin(\omega t) \qquad a(t) = -A\omega^2\cos(\omega t) = -\omega^2 x(t)
+$$
+Akselerasjonen er alltid motsatt rettet av utslaget og proporsjonal med det. Det er kjennetegnet på en **harmonisk svingning**. Den største farten er $A\omega$.
+
+::: {.callout-tip title="I fysikken"}
+For et lodd i en fjær gir Newtons 2. lov $ma = -kx$, så $a = -\frac km x$. Sammenlign med $a = -\omega^2 x$: Da er $\omega = \sqrt{k/m}$, og perioden $T = 2\pi\sqrt{m/k}$. Se [fjær og pendel på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/07-svingninger/02-fjaer-og-pendel.html).
+:::
+
+## Drøfting
+
+::: {.eksempel}
+**Eksempel: Drøft.** Finn topp- og bunnpunktene til $f(x) = x + 2\cos x$ for $x \in [0, 2\pi]$.
+
+::: {.losning}
+$f'(x) = 1 - 2\sin x = 0$ gir $\sin x = \frac12$, altså $x = \frac{\pi}{6}$ og $x = \frac{5\pi}{6}$.
+
+$f'$ er positiv for $x < \frac{\pi}{6}$, negativ mellom, og positiv etter $\frac{5\pi}{6}$.
+
+Toppunkt $\left(\frac{\pi}{6}, \frac{\pi}{6} + \sqrt3\right) \approx \underline{\underline{(0.52,\ 2.26)}}$, bunnpunkt $\left(\frac{5\pi}{6}, \frac{5\pi}{6} - \sqrt3\right) \approx \underline{\underline{(2.62,\ 0.89)}}$.
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Deriver"}
+a) $5\cos(3x)$ b) $\sin x\cos x$ c) $\tan(2x)$ d) $\mathrm{e}^x\sin x$
+
+::: {.losning}
+a) $\underline{\underline{-15\sin(3x)}}$ b) $\cos^2 x - \sin^2 x = \underline{\underline{\cos 2x}}$ c) $\underline{\underline{\frac{2}{\cos^2(2x)}}}$ d) $\underline{\underline{\mathrm{e}^x(\sin x + \cos x)}}$
+:::
+:::
+
+::: {.oppgave tittel="Største fart" niva="Middels"}
+Et lodd har posisjonen $x(t) = 0.050\cos(8.0t)$ (meter, sekunder). Finn den største farten og den største akselerasjonen.
+
+::: {.losning}
+$v_{\max} = A\omega = 0.050\cdot 8.0 = \underline{\underline{0.40\ \mathrm{m/s}}}$, $a_{\max} = A\omega^2 = \underline{\underline{3.2\ \mathrm{m/s^2}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Drøfting" niva="Utfordrende"}
+Finn topp- og bunnpunktene til $f(x) = \sin x + \cos x$ for $x \in [0, 2\pi]$.
+
+::: {.losning}
+$f'(x) = \cos x - \sin x = 0$ gir $\tan x = 1$: $x = \frac{\pi}{4}$ og $\frac{5\pi}{4}$.
+
+Toppunkt $\left(\frac{\pi}{4}, \sqrt2\right)$, bunnpunkt $\left(\frac{5\pi}{4}, -\sqrt2\right)$. (Faktisk er $\sin x + \cos x = \sqrt2\sin\left(x + \frac{\pi}{4}\right)$.)
+:::
+:::
+
+::::
