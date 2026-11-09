@@ -2,18 +2,35 @@
 title: "Blandede oppgaver: vektorer"
 tema: vektorer
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/12-05-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander koordinater, lengder, sum og dekomponering. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Midtpunkt"}
+Finn midtpunktet $M$ på linjestykket fra $A = (2, -1)$ til $B = (8, 5)$ ved hjelp av vektorer.
+
+::: {.losning}
+$\overrightarrow{AM} = \frac12\overrightarrow{AB} = \frac12[6, 6] = [3, 3]$, så $M = \underline{\underline{(5, 2)}}$.
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Flyet og vinden" niva="Middels"}
+Et fly har farten $\vec v = [250, 0]$ km/h i forhold til lufta. Vinden blåser med $[0, -60]$ km/h. Finn farten i forhold til bakken og vinkelen flyet driver av kurs.
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$[250, -60]$ km/h, størrelse $\sqrt{250^2 + 60^2} = \underline{\underline{257\ \mathrm{km/h}}}$, vinkel $\tan^{-1}\frac{60}{250} = \underline{\underline{13.5^\circ}}$.
+:::
+:::
+
+::: {.oppgave tittel="Lampe i to snorer" niva="Utfordrende"}
+En lampe med tyngde $G = 40\ \mathrm{N}$ henger i to snorer som begge danner $30^\circ$ med vannrett. Finn snorkraften $S$ i hver snor.
+
+::: {.losning}
+Symmetri: de vannrette komponentene opphever hverandre. De loddrette: $2S\sin 30^\circ = G$, så $S = \frac{40}{2\cdot 0.5} = \underline{\underline{40\ \mathrm{N}}}$. Hver snor bærer like mye som hele lampen veier, fordi snorene er så slake.
+:::
+:::
+
+::::
