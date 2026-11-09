@@ -2,19 +2,71 @@
 title: "Faktorisering av polynomer"
 tema: algebra-og-likninger
 undertema: polynomer
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/05-03-faktorisering-av-polynomer) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+For andregradspolynomer har vi abc-formelen. For tredjegradspolynomer finnes det også en formel, men den er så lang at ingen bruker den. I stedet gjetter vi ett nullpunkt, deler det bort med polynomdivisjon og står igjen med et andregradspolynom.
+
+## Fremgangsmåten
+
+::: {.steg}
+1. Sett eventuell felles faktor utenfor.
+2. Finn ett nullpunkt $a$ ved å prøve tall. Har polynomet heltallskoeffisienter og $a_n = 1$, er heltallige nullpunkter faktorer i konstantleddet.
+3. Del polynomet på $(x - a)$.
+4. Faktoriser kvotienten (abc-formelen eller heltallsmetoden).
 :::
 
-## Dette kommer på siden
+::: {.eksempel}
+**Eksempel: Faktoriser et tredjegradspolynom.** Faktoriser $P(x) = x^3 + 2x^2 - 5x - 6$.
 
-- Finne et nullpunkt
-- Dividere og faktorisere videre
-- Eksempler og oppgaver med løsning
+::: {.losning}
+Konstantleddet er $-6$, så vi prøver $\pm 1, \pm 2, \pm 3, \pm 6$:
+$$
+P(1) = 1 + 2 - 5 - 6 = -8 \qquad P(-1) = -1 + 2 + 5 - 6 = 0
+$$
+$x = -1$ er et nullpunkt, så $x + 1$ er en faktor. Polynomdivisjon gir $P(x) : (x + 1) = x^2 + x - 6 = (x + 3)(x - 2)$.
+$$
+P(x) = \underline{\underline{(x + 1)(x + 3)(x - 2)}}
+$$
+:::
+:::
+
+::: {.callout-tip title="Hvorfor faktorer i konstantleddet?"}
+Er $P(x) = (x - a)(x - b)(x - c)$, er konstantleddet $-abc$. Hele tall $a$, $b$ og $c$ må derfor gå opp i konstantleddet. Prøv de små tallene først.
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Faktoriser"}
+Faktoriser: a) $x^3 - 7x + 6$ b) $x^3 - 2x^2 - x + 2$
+
+::: {.losning}
+a) $P(1) = 0$. $P : (x - 1) = x^2 + x - 6 = (x + 3)(x - 2)$: $\underline{\underline{(x - 1)(x - 2)(x + 3)}}$
+
+b) Gruppering: $x^2(x - 2) - (x - 2) = (x - 2)(x^2 - 1)$: $\underline{\underline{(x - 2)(x - 1)(x + 1)}}$
+:::
+:::
+
+::: {.oppgave tittel="Med felles faktor" niva="Middels"}
+Faktoriser $2x^4 - 2x^3 - 12x^2$.
+
+::: {.losning}
+$2x^2(x^2 - x - 6) = \underline{\underline{2x^2(x - 3)(x + 2)}}$
+:::
+:::
+
+::: {.oppgave tittel="Ett heltallig nullpunkt" niva="Utfordrende"}
+Faktoriser $P(x) = x^3 - 3x^2 - 2x + 6$ så langt det går.
+
+::: {.losning}
+$P(3) = 27 - 27 - 6 + 6 = 0$. Divisjonen gir $P : (x - 3) = x^2 - 2$. Nullpunktene til $x^2 - 2$ er $\pm\sqrt2$:
+$$
+P(x) = \underline{\underline{(x - 3)\left(x - \sqrt2\right)\left(x + \sqrt2\right)}}
+$$
+:::
+:::
+
+::::

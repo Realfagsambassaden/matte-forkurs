@@ -2,18 +2,51 @@
 title: "Blandede oppgaver: polynomer"
 tema: algebra-og-likninger
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/05-07-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander polynomdivisjon, faktorisering og rasjonale og irrasjonale likninger. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Polynomdivisjon"}
+Regn ut $(x^3 - 8) : (x - 2)$.
+
+::: {.losning}
+$(x^3 + 0x^2 + 0x - 8) : (x - 2) = \underline{\underline{x^2 + 2x + 4}}$, rest 0.
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Faktoriser og løs"}
+Løs $x^3 - 6x^2 + 11x - 6 = 0$.
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$P(1) = 0$. Divisjonen gir $x^2 - 5x + 6 = (x - 2)(x - 3)$. Løsningene er $\underline{\underline{x = 1, 2, 3}}$.
+:::
+:::
+
+::: {.oppgave tittel="Rasjonal likning" niva="Middels"}
+Løs $\dfrac{x}{x + 1} + \dfrac{2}{x - 1} = 1$.
+
+::: {.losning}
+Forbudt $\pm 1$. Gang med $(x + 1)(x - 1)$: $x(x - 1) + 2(x + 1) = x^2 - 1$, så $x^2 + x + 2 = x^2 - 1$ og $x = -3$. $\underline{\underline{x = -3}}$
+:::
+:::
+
+::: {.oppgave tittel="Rasjonal ulikhet" niva="Middels"}
+Løs $\dfrac{x^2 - 4}{x} \ge 0$.
+
+::: {.losning}
+$\frac{(x + 2)(x - 2)}{x} \ge 0$. Nullpunkter $-2$, $0$ (forbudt) og $2$. Langt til høyre positivt, og fortegnet skifter ved hvert: $\underline{\underline{-2 \le x < 0 \text{ eller } x \ge 2}}$.
+:::
+:::
+
+::: {.oppgave tittel="Irrasjonal likning" niva="Utfordrende"}
+Løs $x - \sqrt{x} - 6 = 0$. (Hint: sett $u = \sqrt x$.)
+
+::: {.losning}
+$u^2 - u - 6 = 0$ gir $(u - 3)(u + 2) = 0$. $u = \sqrt x \ge 0$, så bare $u = 3$, og $\underline{\underline{x = 9}}$. Prøve: $9 - 3 - 6 = 0$.
+:::
+:::
+
+::::

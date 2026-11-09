@@ -2,19 +2,82 @@
 title: "Likninger og ulikheter av tredje grad"
 tema: algebra-og-likninger
 undertema: polynomer
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/05-04-likninger-og-ulikheter-av-tredje-grad) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Når vi kan faktorisere polynomer av tredje grad, kan vi også løse likninger og ulikheter av tredje grad. Metoden er den samme som for andregrad: Flytt alt over på én side, faktoriser, og bruk at et produkt er null når en faktor er null, eller tegn fortegnslinje.
+
+## Likninger
+
+::: {.eksempel}
+**Eksempel: Tredjegradslikning.** Løs $x^3 + 2x^2 = 5x + 6$.
+
+::: {.losning}
+Flytt over: $x^3 + 2x^2 - 5x - 6 = 0$. Fra forrige side er dette $(x + 1)(x + 3)(x - 2) = 0$, så
+$$
+\underline{\underline{x = -3, \quad x = -1, \quad x = 2}}
+$$
+:::
 :::
 
-## Dette kommer på siden
+## Ulikheter med fortegnslinje
 
-- Tredjegradslikninger
-- Fortegnslinje for et polynom
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: Tredjegradsulikhet.** Løs $x^3 - 4x > 0$.
+
+::: {.losning}
+Faktoriser: $x(x + 2)(x - 2) > 0$. Fortegnslinjer:
+
+```{=html}
+<div class="graa" style="font-family: monospace; padding: .6rem 1rem; white-space: pre;">x:            −2        0        2
+x + 2:   − − − 0 + + + + + + + + + + + +
+x:       − − − − − − − 0 + + + + + + + +
+x − 2:   − − − − − − − − − − − − 0 + + +
+produkt: − − − 0 + + + 0 − − − − 0 + + +</div>
+```
+
+Produktet er positivt for $\underline{\underline{-2 < x < 0 \text{ eller } x > 2}}$.
+:::
+:::
+
+::: {.callout-tip title="Fortegnet skifter i hvert nullpunkt"}
+Har alle faktorene grad 1 og ingen gjentar seg, skifter fortegnet i hvert nullpunkt. Da holder det å finne fortegnet langt til høyre (samme som $a_n$) og bytte fortegn for hvert nullpunkt mot venstre. Står en faktor i andre potens, som $(x - 1)^2$, skifter fortegnet **ikke** der.
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Løs likningene"}
+a) $x^3 - 9x = 0$ b) $x^3 - 7x + 6 = 0$
+
+::: {.losning}
+a) $x(x - 3)(x + 3) = 0$: $\underline{\underline{x = 0, \pm 3}}$
+
+b) $(x - 1)(x - 2)(x + 3) = 0$: $\underline{\underline{x = -3, 1, 2}}$
+:::
+:::
+
+::: {.oppgave tittel="Ulikhet" niva="Middels"}
+Løs $(x - 1)(x + 2)(x - 4) \le 0$.
+
+::: {.losning}
+Nullpunkter $-2$, $1$ og $4$. Langt til høyre er produktet positivt. Fortegnet skifter i hvert nullpunkt: $+$ for $x > 4$, $-$ mellom 1 og 4, $+$ mellom $-2$ og 1, $-$ for $x < -2$.
+
+$\underline{\underline{x \le -2 \text{ eller } 1 \le x \le 4}}$
+:::
+:::
+
+::: {.oppgave tittel="Dobbelt nullpunkt" niva="Utfordrende"}
+Løs $x^3 - 3x^2 + 4 > 0$. (Faktoriseringen er $(x - 2)^2(x + 1)$.)
+
+::: {.losning}
+$(x - 2)^2 \ge 0$ alltid, og er null bare for $x = 2$. Produktet er derfor positivt når $x + 1 > 0$ og $x \ne 2$:
+$$
+\underline{\underline{x > -1, \ x \ne 2}}
+$$
+:::
+:::
+
+::::
