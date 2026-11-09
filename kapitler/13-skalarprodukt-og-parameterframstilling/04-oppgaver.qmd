@@ -2,18 +2,35 @@
 title: "Blandede oppgaver: skalarprodukt"
 tema: vektorer
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/13-04-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander skalarprodukt, vinkler og parameterframstillinger. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Vinkel i trekant"}
+Finn vinkelen $A$ i trekanten med $A = (1, 1)$, $B = (5, 2)$ og $C = (2, 5)$.
+
+::: {.losning}
+$\overrightarrow{AB} = [4, 1]$, $\overrightarrow{AC} = [1, 4]$. $\cos A = \frac{8}{17}$, så $\underline{\underline{A = 61.9^\circ}}$.
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Projeksjon" niva="Middels"}
+Hvor lang er projeksjonen av $\vec u = [5, 2]$ ned på retningen til $\vec v = [3, 4]$?
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$\frac{\vec u\cdot\vec v}{|\vec v|} = \frac{15 + 8}{5} = \underline{\underline{4.6}}$
+:::
+:::
+
+::: {.oppgave tittel="Møtes de?" niva="Utfordrende"}
+To roboter starter samtidig: A i $(0, 0)$ med fart $[2, 1]$ m/s, B i $(10, -5)$ med fart $[-1, 2]$ m/s. Krysser banene hverandre? Kolliderer robotene?
+
+::: {.losning}
+Bruk ulike tider: A er i $(2t, t)$ og B i $(10 - s, -5 + 2s)$. Like koordinater: $2t = 10 - s$ og $t = -5 + 2s$. Fra den første er $s = 10 - 2t$. Inn i den andre: $t = -5 + 20 - 4t$, så $t = 3$ og $s = 4$. Banene krysser i $(6, 3)$, men A er der ved $t = 3$ og B ved $t = 4$. **Banene krysser, men robotene kolliderer ikke.**
+:::
+:::
+
+::::

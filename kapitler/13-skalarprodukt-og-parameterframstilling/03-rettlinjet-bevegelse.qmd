@@ -2,18 +2,61 @@
 title: "Rettlinjet bevegelse"
 tema: vektorer
 undertema: parameterframstilling
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/13-03-rettlinjet-bevegelse) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Når parameteren er tiden, beskriver en parameterframstilling en bevegelse. Posisjonen blir en vektorfunksjon $\vec r(t)$, og ved å derivere hver koordinat får vi farten og akselerasjonen som vektorer.
+
+## Posisjon, fart og akselerasjon som vektorer
+
+::: {.graa}
+$$
+\vec r(t) = [x(t), y(t)] \qquad \vec v(t) = \vec r\,'(t) = [x'(t), y'(t)] \qquad \vec a(t) = \vec v\,'(t)
+$$
+Farten (banefarten) er lengden $|\vec v(t)|$.
 :::
 
-## Dette kommer på siden
+Ved **rettlinjet bevegelse med konstant fart** er $\vec r(t) = \vec r_0 + \vec v\,t$. Det er nøyaktig en parameterframstilling for en linje, der retningsvektoren er farten.
 
-- Posisjon, fart og akselerasjon som vektorer
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: To skip.** Skip A er i $(0, 0)$ og går med farten $[12, 5]$ km/h. Skip B er i $(30, 0)$ og går med $[0, 10]$ km/h. Hvor er de etter $t$ timer, og hvor nær hverandre kommer de?
+
+::: {.losning}
+$\vec r_A = [12t, 5t]$ og $\vec r_B = [30, 10t]$. Avstanden i andre:
+$$
+d^2 = (30 - 12t)^2 + (10t - 5t)^2 = 900 - 720t + 144t^2 + 25t^2 = 169t^2 - 720t + 900
+$$
+Minst der den deriverte er null: $338t - 720 = 0$, $t = 2.13\ \mathrm{h}$. Da er $d^2 = 900 - \frac{720^2}{4\cdot 169} = 133$, og $d = \underline{\underline{11.5\ \mathrm{km}}}$ etter $\underline{\underline{2.1 \text{ timer}}}$.
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Skrått kast.** Et kast har $\vec r(t) = [8.0t,\ 6.0t - 4.9t^2]$ (meter, sekunder). Finn farten og akselerasjonen.
+
+::: {.losning}
+$\vec v(t) = [8.0,\ 6.0 - 9.8t]$ og $\vec a = [0, -9.8]\ \mathrm{m/s^2}$: tyngdeakselerasjonen, rett ned. Den vannrette farten er konstant. Banefarten ved $t = 0$ er $|[8.0, 6.0]| = 10\ \mathrm{m/s}$.
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Fart"}
+En partikkel har $\vec r(t) = [t^2, 3t]$. Finn $\vec v(t)$ og farten ved $t = 2$.
+
+::: {.losning}
+$\vec v = [2t, 3]$, $\vec v(2) = [4, 3]$, fart $\underline{\underline{5}}$.
+:::
+:::
+
+::: {.oppgave tittel="Toppunkt i kastet" niva="Middels"}
+Med $\vec r(t) = [8.0t,\ 6.0t - 4.9t^2]$: Når er ballen høyest, og hvor er den da?
+
+::: {.losning}
+$v_y = 6.0 - 9.8t = 0$ gir $t = 0.61\ \mathrm{s}$. Posisjon $[4.9,\ 1.8]$ m.
+:::
+:::
+
+::::
