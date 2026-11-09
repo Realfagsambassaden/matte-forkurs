@@ -2,20 +2,138 @@
 title: "To lineære likninger med to ukjente"
 tema: algebra-og-likninger
 undertema: likningssett
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/02-02-to-likninger-med-to-ukjente) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Mange problemer har to ukjente, og da trenger vi to likninger. Sammen kalles de et **likningssett**. En løsning er et tallpar $(x, y)$ som passer i begge likningene samtidig. Vi lærer to metoder og ser hva løsningen betyr grafisk.
+
+## Innsettingsmetoden
+
+::: {.steg}
+1. Løs den ene likningen med hensyn på én av de ukjente, for eksempel $y$.
+2. Sett uttrykket inn i den andre likningen. Da har den bare én ukjent.
+3. Løs den, og sett svaret tilbake for å finne den andre ukjente.
 :::
 
-## Dette kommer på siden
+::: {.eksempel}
+**Eksempel: Innsetting.** Løs likningssettet
+$$
+\begin{aligned} 2x + y &= 7 \\ 3x - 2y &= 0 \end{aligned}
+$$
 
-- Innsettingsmetoden
-- Addisjonsmetoden
-- Grafisk tolkning
-- Eksempler og oppgaver med løsning
+::: {.losning}
+Fra den første likningen: $y = 7 - 2x$. Sett inn i den andre:
+$$
+3x - 2(7 - 2x) = 0 \quad\Longrightarrow\quad 3x - 14 + 4x = 0 \quad\Longrightarrow\quad 7x = 14 \quad\Longrightarrow\quad x = 2
+$$
+Da er $y = 7 - 2\cdot 2 = 3$. Løsningen er $\underline{\underline{x = 2,\ y = 3}}$.
+
+Prøve i den andre likningen: $3\cdot 2 - 2\cdot 3 = 0$. Det stemmer.
+:::
+:::
+
+## Addisjonsmetoden
+
+Ganger vi likningene med passende tall, kan vi legge dem sammen slik at én av de ukjente forsvinner.
+
+::: {.eksempel}
+**Eksempel: Addisjon.** Løs likningssettet
+$$
+\begin{aligned} 3x + 4y &= 10 \\ 5x - 2y &= 8 \end{aligned}
+$$
+
+::: {.losning}
+Gang den andre likningen med 2, så $y$-leddene får motsatt fortegn: $10x - 4y = 16$. Legg sammen med den første:
+$$
+3x + 10x + 4y - 4y = 10 + 16 \quad\Longrightarrow\quad 13x = 26 \quad\Longrightarrow\quad x = 2
+$$
+Sett inn i den første: $6 + 4y = 10$, så $y = 1$. Løsningen er $\underline{\underline{x = 2,\ y = 1}}$.
+:::
+:::
+
+## Grafisk tolkning
+
+Hver lineære likning med to ukjente er en rett linje i et koordinatsystem. Løsningen av likningssettet er **skjæringspunktet** mellom linjene. Det gir tre muligheter:
+
+::: {.kort}
+- **Linjene skjærer hverandre** Nøyaktig én løsning.
+- **Linjene er parallelle** De skjærer aldri hverandre. Ingen løsning.
+- **Linjene ligger oppå hverandre** Uendelig mange løsninger.
+:::
+
+## Prøv selv
+
+Programmet løser likningssettet og tegner de to linjene. Endre tallene og se hvordan skjæringspunktet flytter seg.
+
+```{.python .kjor}
+import numpy as np
+import matplotlib.pyplot as plt
+
+# a1*x + b1*y = c1  og  a2*x + b2*y = c2
+a1, b1, c1 = 3, 4, 10
+a2, b2, c2 = 5, -2, 8
+
+x, y = np.linalg.solve([[a1, b1], [a2, b2]], [c1, c2])
+print(f"x = {x:.3g}, y = {y:.3g}")
+
+xs = np.linspace(-2, 6, 100)
+plt.plot(xs, (c1 - a1*xs)/b1, label="likning 1")
+plt.plot(xs, (c2 - a2*xs)/b2, label="likning 2")
+plt.plot(x, y, "o")
+plt.legend(); plt.grid(True); plt.show()
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Innsetting"}
+Løs likningssettet: $y = 2x - 1$ og $3x + y = 14$.
+
+::: {.losning}
+Sett inn: $3x + 2x - 1 = 14$, så $5x = 15$ og $x = 3$. Da er $y = 5$. Løsningen er $\underline{\underline{x = 3,\ y = 5}}$.
+:::
+:::
+
+::: {.oppgave tittel="Addisjon"}
+Løs likningssettet: $2x + 3y = 12$ og $2x - y = 4$.
+
+::: {.losning}
+Trekk den andre fra den første: $4y = 8$, så $y = 2$. Da er $2x - 2 = 4$, så $x = 3$. Løsningen er $\underline{\underline{x = 3,\ y = 2}}$.
+:::
+:::
+
+::: {.oppgave tittel="Hvor mange løsninger?"}
+Hvor mange løsninger har likningssettene? a) $x + 2y = 4$ og $2x + 4y = 8$ b) $x + 2y = 4$ og $2x + 4y = 5$
+
+::: {.losning}
+a) Den andre likningen er den første ganget med 2. Linjene ligger oppå hverandre: **uendelig mange løsninger**.
+
+b) Ganger vi den første med 2, får vi $2x + 4y = 8$, men den andre sier $2x + 4y = 5$. Det kan ikke begge være sant: linjene er parallelle, og det er **ingen løsning**.
+:::
+:::
+
+::: {.oppgave tittel="Billetter" niva="Middels"}
+En klasse kjøper 30 billetter til en konsert, noen til voksenpris $250$ kr og resten til studentpris $150$ kr. Til sammen betaler de $5100$ kr. Hvor mange billetter av hver sort kjøpte de?
+
+::: {.losning}
+La $v$ være voksenbilletter og $s$ studentbilletter: $v + s = 30$ og $250v + 150s = 5100$. Sett $s = 30 - v$ inn i den andre:
+$$
+250v + 4500 - 150v = 5100 \quad\Longrightarrow\quad 100v = 600 \quad\Longrightarrow\quad v = 6
+$$
+De kjøpte $\underline{\underline{6 \text{ voksenbilletter og } 24 \text{ studentbilletter}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Møtes de?" niva="Utfordrende"}
+En syklist starter i punkt A med farten $5.0\ \mathrm{m/s}$. Samtidig starter en løper 600 m lenger fram, i samme retning, med farten $3.0\ \mathrm{m/s}$. Posisjonene målt fra A er $x = 5.0t$ og $x = 600 + 3.0t$ (meter, sekunder). Når og hvor tar syklisten igjen løperen?
+
+::: {.losning}
+Like posisjoner: $5.0t = 600 + 3.0t$, så $2.0t = 600$ og $t = 300\ \mathrm{s}$. Posisjonen er $x = 5.0\cdot 300 = 1500\ \mathrm{m}$.
+
+Syklisten tar igjen løperen etter $\underline{\underline{300\ \mathrm{s} = 5.0\ \mathrm{min}}}$, $\underline{\underline{1.5\ \mathrm{km}}}$ fra A. Grafisk er dette skjæringspunktet mellom to rette linjer i et posisjon–tid-diagram.
+:::
+:::
+
+::::

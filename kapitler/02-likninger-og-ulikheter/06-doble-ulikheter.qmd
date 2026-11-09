@@ -2,19 +2,98 @@
 title: "Doble ulikheter"
 tema: algebra-og-likninger
 undertema: ulikheter
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/02-06-doble-ulikheter) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Noen ganger skal et uttrykk ligge mellom to grenser, for eksempel $-1 < 2x + 3 \le 9$. Det er to ulikheter på en gang, og løsningen er et intervall med to endepunkter.
+
+## Tre deler samtidig
+
+En dobbel ulikhet $a < u < b$ betyr at både $a < u$ og $u < b$. Vi kan løse den i én omgang ved å gjøre det samme med **alle tre delene**:
+
+::: {.eksempel}
+**Eksempel: Dobbel ulikhet.** Løs $-1 < 2x + 3 \le 9$.
+
+::: {.losning}
+Trekk fra 3 i alle tre delene, og del på 2:
+$$
+-4 < 2x \le 6 \quad\Longrightarrow\quad -2 < x \le 3
+$$
+Løsningen er $\underline{\underline{x \in \langle -2, 3]}}$.
+:::
 :::
 
-## Dette kommer på siden
+Deler vi på et negativt tall, snur **begge** tegnene. Da er det lurt å skrive ulikheten i riktig rekkefølge etterpå, med det minste tallet til venstre.
 
-- To ulikheter samtidig
-- Løsning som intervall
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: Negativ koeffisient.** Løs $1 \le 5 - 2x < 9$.
+
+::: {.losning}
+Trekk fra 5: $-4 \le -2x < 4$. Del på $-2$, begge tegnene snur:
+$$
+2 \ge x > -2
+$$
+Skrevet i vanlig rekkefølge: $-2 < x \le 2$, altså $\underline{\underline{x \in \langle -2, 2]}}$.
+:::
+:::
+
+## Når x står i flere deler
+
+Står $x$ i både den midterste og en av de ytre delene, må vi dele opp i to vanlige ulikheter, løse hver for seg og ta **snittet** av løsningene.
+
+::: {.eksempel}
+**Eksempel: Del opp.** Løs $x - 1 < 2x + 1 < x + 5$.
+
+::: {.losning}
+Første del: $x - 1 < 2x + 1$ gir $-2 < x$. Andre del: $2x + 1 < x + 5$ gir $x < 4$. Begge må gjelde:
+$$
+\underline{\underline{x \in \langle -2, 4\rangle}}
+$$
+:::
+:::
+
+::: {.callout-tip title="I fysikken"}
+Måleusikkerhet skrives ofte som en dobbel ulikhet: «lengden er $2.50 \pm 0.02\ \mathrm{m}$» betyr $2.48\ \mathrm{m} \le L \le 2.52\ \mathrm{m}$. Se [måleusikkerhet på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/01-hva-er-fysikk/08-maleusikkerhet.html).
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Løs de doble ulikhetene"}
+a) $3 \le x + 5 < 8$ b) $-6 < 3x \le 12$ c) $0 < 2x - 4 < 10$
+
+::: {.losning}
+a) $\underline{\underline{-2 \le x < 3}}$ b) $\underline{\underline{-2 < x \le 4}}$ c) $4 < 2x < 14$, så $\underline{\underline{2 < x < 7}}$
+:::
+:::
+
+::: {.oppgave tittel="Tegnet snur"}
+Løs $-3 \le 1 - 4x \le 9$.
+
+::: {.losning}
+Trekk fra 1: $-4 \le -4x \le 8$. Del på $-4$, tegnene snur: $1 \ge x \ge -2$, altså $\underline{\underline{x \in [-2, 1]}}$.
+:::
+:::
+
+::: {.oppgave tittel="Temperaturintervall" niva="Middels"}
+En maskin tåler temperaturer fra $-20\ ^\circ\mathrm{C}$ til $60\ ^\circ\mathrm{C}$. Bruk $F = \frac95 C + 32$ og finn intervallet i grader fahrenheit.
+
+::: {.losning}
+$-20 \le C \le 60$. Gang med $\frac95$: $-36 \le \frac95 C \le 108$. Legg til 32:
+$$
+\underline{\underline{-4\ ^\circ\mathrm{F} \le F \le 140\ ^\circ\mathrm{F}}}
+$$
+:::
+:::
+
+::: {.oppgave tittel="To ulikheter" niva="Utfordrende"}
+Løs $2x - 3 \le x + 1 < 3x + 5$.
+
+::: {.losning}
+Første del: $2x - 3 \le x + 1$ gir $x \le 4$. Andre del: $x + 1 < 3x + 5$ gir $-4 < 2x$, altså $x > -2$. Snittet er $\underline{\underline{x \in \langle -2, 4]}}$.
+:::
+:::
+
+::::
