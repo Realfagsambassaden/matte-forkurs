@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=1.1]
+\fill[gronn!25,domain=0:2,samples=60] plot (\x,{2*\x}) -- plot[domain=2:0] (\x,{\x*\x});
+\draw[akse] (-0.3,0)--(2.7,0) node[right]{$x$};
+\draw[akse] (0,-0.3)--(0,4.7) node[above]{$y$};
+\draw[very thick,bla,domain=-0.1:2.3] plot (\x,{2*\x}); \node[bla,left] at (1.1,2.5) {$y = 2x$};
+\draw[very thick,rod,domain=-0.3:2.15,samples=60] plot (\x,{\x*\x}) node[right]{$y = x^2$};
+\fill (2,4) circle (2pt); \fill (0,0) circle (2pt);
+\draw (2,0.1)--(2,-0.1) node[below]{$2$};
+\end{tikzpicture}

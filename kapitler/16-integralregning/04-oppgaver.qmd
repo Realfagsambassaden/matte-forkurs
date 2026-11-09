@@ -2,18 +2,43 @@
 title: "Blandede oppgaver: integralregning"
 tema: integrasjon
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/16-04-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander ubestemte og bestemte integraler og areal. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Finn funksjonen"}
+$f'(x) = 3x^2 - 2$ og $f(1) = 4$. Finn $f(x)$.
+
+::: {.losning}
+$f(x) = x^3 - 2x + C$, og $f(1) = -1 + C = 4$ gir $\underline{\underline{f(x) = x^3 - 2x + 5}}$.
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Gjennomsnitt" niva="Middels"}
+Gjennomsnittsverdien av $f$ på $[a, b]$ er $\frac{1}{b - a}\int_a^b f(x)\,\mathrm{d}x$. Finn gjennomsnittet av $f(x) = x^2$ på $[0, 3]$.
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$\frac13\left[\frac{x^3}{3}\right]_0^3 = \frac13\cdot 9 = \underline{\underline{3}}$
+:::
+:::
+
+::: {.oppgave tittel="Vanntank" niva="Middels"}
+Vann renner inn i en tank med $r(t) = 20 - 2t$ liter per minutt, for $0 \le t \le 10$. Hvor mye vann har rent inn?
+
+::: {.losning}
+$\int_0^{10}(20 - 2t)\,\mathrm{d}t = \Big[20t - t^2\Big]_0^{10} = \underline{\underline{100\ \mathrm{L}}}$
+:::
+:::
+
+::: {.oppgave tittel="Finn grensen" niva="Utfordrende"}
+For hvilken $b > 0$ er $\int_0^b \mathrm{e}^{x}\,\mathrm{d}x = 10$?
+
+::: {.losning}
+$\mathrm{e}^b - 1 = 10$ gir $b = \ln 11 = \underline{\underline{2.40}}$.
+:::
+:::
+
+::::
