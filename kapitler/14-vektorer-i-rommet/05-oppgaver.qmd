@@ -2,18 +2,35 @@
 title: "Blandede oppgaver: vektorer i rommet"
 tema: vektorer
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/14-05-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander lengder, vinkler, kryssprodukt og plan i rommet. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Vinkel"}
+Finn vinkelen mellom $[1, 0, 1]$ og $[0, 1, 1]$.
+
+::: {.losning}
+$\cos v = \frac{1}{\sqrt2\sqrt2} = \frac12$, så $\underline{\underline{v = 60^\circ}}$.
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Volum av pyramide" niva="Middels"}
+Finn volumet av pyramiden med hjørnene $O = (0, 0, 0)$, $A = (2, 0, 0)$, $B = (0, 3, 0)$ og $C = (1, 1, 4)$.
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$\overrightarrow{OA}\times\overrightarrow{OB} = [0, 0, 6]$, prikket med $\overrightarrow{OC}$: $24$. Volumet er $\frac16\cdot 24 = \underline{\underline{4}}$.
+:::
+:::
+
+::: {.oppgave tittel="Normal fra to vektorer" niva="Utfordrende"}
+Finn en vektor med lengde 1 som står vinkelrett på både $[1, 1, 0]$ og $[0, 1, 1]$.
+
+::: {.losning}
+$[1, 1, 0]\times[0, 1, 1] = [1, -1, 1]$, lengde $\sqrt3$. En enhetsvektor er $\underline{\underline{\frac{1}{\sqrt3}[1, -1, 1]}}$ (eller den motsatte).
+:::
+:::
+
+::::

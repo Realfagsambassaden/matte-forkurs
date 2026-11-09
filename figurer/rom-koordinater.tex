@@ -1,0 +1,10 @@
+\begin{tikzpicture}[x={(-0.6cm,-0.45cm)},y={(1cm,0cm)},z={(0cm,1cm)},scale=1.1]
+\draw[akse] (0,0,0)--(3.6,0,0) node[below left]{$x$};
+\draw[akse] (0,0,0)--(0,4.2,0) node[right]{$y$};
+\draw[akse] (0,0,0)--(0,0,3.2) node[above]{$z$};
+\coordinate (P) at (2,3,2);
+\draw[dashed,black!50] (2,0,0)--(2,3,0)--(0,3,0);
+\draw[dashed,black!50] (2,3,0)--(P);
+\draw[vek,bla] (0,0,0)--(P);
+\fill (P) circle (2pt) node[above right]{$P = (2, 3, 2)$};
+\end{tikzpicture}
