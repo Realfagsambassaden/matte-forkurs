@@ -2,19 +2,99 @@
 title: "Forkorting av rasjonale uttrykk"
 tema: algebra-og-likninger
 undertema: rasjonale-uttrykk
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/04-03-rasjonale-uttrykk) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Vi kan bare forkorte **faktorer**, aldri ledd. Uttrykket $\dfrac{x^2 - 4}{x - 2}$ ser ut som det ikke kan forkortes, men faktoriserer vi telleren, dukker det opp en felles faktor: $\dfrac{(x + 2)(x - 2)}{x - 2} = x + 2$. Nå som vi kan faktorisere, kan vi forkorte mye mer.
+
+## Faktoriser først, forkort så
+
+::: {.steg}
+1. Faktoriser teller og nevner fullstendig.
+2. Skriv opp hvilke $x$-verdier som gjør nevneren null (de er forbudt).
+3. Stryk felles faktorer i teller og nevner.
 :::
 
-## Dette kommer på siden
+::: {.eksempel}
+**Eksempel: Forkort.** Forkort $\dfrac{x^2 + x - 6}{x^2 - 9}$.
 
-- Faktoriser først
-- Forkorting og fellesnevner
-- Eksempler og oppgaver med løsning
+::: {.losning}
+Faktoriser: $x^2 + x - 6 = (x + 3)(x - 2)$ og $x^2 - 9 = (x + 3)(x - 3)$.
+$$
+\frac{(x + 3)(x - 2)}{(x + 3)(x - 3)} = \underline{\underline{\frac{x - 2}{x - 3}}}, \quad x \ne 3,\ x \ne -3
+$$
+Selv om faktoren $x + 3$ forsvant, er uttrykket fortsatt ikke definert for $x = -3$.
+:::
+:::
+
+::: {.callout-tip title="Fortegnsbytte"}
+$2 - x = -(x - 2)$. Det hjelper ofte når faktorene nesten er like:
+$$
+\frac{2 - x}{x^2 - 4} = \frac{-(x - 2)}{(x + 2)(x - 2)} = -\frac{1}{x + 2}
+$$
+:::
+
+## Fellesnevner med faktorisering
+
+Fellesnevneren blir minst når vi faktoriserer nevnerne først og bare tar med hver faktor én gang.
+
+::: {.eksempel}
+**Eksempel: Fellesnevner.** Skriv som én brøk: $\dfrac{3}{x - 1} - \dfrac{6}{x^2 - 1}$.
+
+::: {.losning}
+$x^2 - 1 = (x + 1)(x - 1)$, så fellesnevneren er $(x + 1)(x - 1)$:
+$$
+\frac{3(x + 1) - 6}{(x + 1)(x - 1)} = \frac{3x - 3}{(x + 1)(x - 1)} = \frac{3(x - 1)}{(x + 1)(x - 1)} = \underline{\underline{\frac{3}{x + 1}}}, \quad x \ne \pm 1
+$$
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Forkort"}
+Forkort: a) $\dfrac{x^2 - 16}{x + 4}$ b) $\dfrac{x^2 + 5x + 6}{x + 2}$ c) $\dfrac{3x - 6}{x^2 - 4x + 4}$
+
+::: {.losning}
+a) $\underline{\underline{x - 4}}$, $x \ne -4$
+
+b) $\frac{(x + 2)(x + 3)}{x + 2} = \underline{\underline{x + 3}}$, $x \ne -2$
+
+c) $\frac{3(x - 2)}{(x - 2)^2} = \underline{\underline{\frac{3}{x - 2}}}$, $x \ne 2$
+:::
+:::
+
+::: {.oppgave tittel="Fortegnsbytte" niva="Middels"}
+Forkort $\dfrac{x^2 - 5x}{25 - x^2}$.
+
+::: {.losning}
+$$
+\frac{x(x - 5)}{(5 - x)(5 + x)} = \frac{x(x - 5)}{-(x - 5)(x + 5)} = \underline{\underline{-\frac{x}{x + 5}}}, \quad x \ne \pm 5
+$$
+:::
+:::
+
+::: {.oppgave tittel="Fellesnevner" niva="Middels"}
+Skriv som én brøk og forenkle: $\dfrac{x}{x - 2} - \dfrac{8}{x^2 - 4}$
+
+::: {.losning}
+Fellesnevner $(x + 2)(x - 2)$:
+$$
+\frac{x(x + 2) - 8}{(x + 2)(x - 2)} = \frac{x^2 + 2x - 8}{(x + 2)(x - 2)} = \frac{(x + 4)(x - 2)}{(x + 2)(x - 2)} = \underline{\underline{\frac{x + 4}{x + 2}}}, \quad x \ne \pm 2
+$$
+:::
+:::
+
+::: {.oppgave tittel="Gange og dele" niva="Utfordrende"}
+Forenkle $\dfrac{x^2 - 1}{x^2 + 2x}\cdot\dfrac{x + 2}{x - 1}$.
+
+::: {.losning}
+$$
+\frac{(x + 1)(x - 1)}{x(x + 2)}\cdot\frac{x + 2}{x - 1} = \underline{\underline{\frac{x + 1}{x}}}, \quad x \ne 0,\ x \ne -2,\ x \ne 1
+$$
+:::
+:::
+
+::::

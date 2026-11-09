@@ -2,18 +2,63 @@
 title: "Blandede oppgaver: faktorisering"
 tema: algebra-og-likninger
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/04-07-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander kvadratsetninger, faktorisering, andregradslikninger og -ulikheter. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Faktoriser"}
+Faktoriser fullstendig: a) $4x^2 - 25$ b) $x^3 - 6x^2 + 9x$ c) $2x^2 + 2x - 24$
+
+::: {.losning}
+a) $\underline{\underline{(2x + 5)(2x - 5)}}$ b) $x(x^2 - 6x + 9) = \underline{\underline{x(x - 3)^2}}$ c) $2(x^2 + x - 12) = \underline{\underline{2(x + 4)(x - 3)}}$
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Andregradslikninger"}
+Løs: a) $x^2 = 5x$ b) $2x^2 + 3x - 2 = 0$ c) $x^2 + 6x + 10 = 0$
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+a) $x(x - 5) = 0$: $\underline{\underline{x = 0 \text{ eller } x = 5}}$
+
+b) $x = \frac{-3 \pm 5}{4}$: $\underline{\underline{x = \frac12 \text{ eller } x = -2}}$
+
+c) $D = 36 - 40 < 0$: $\underline{\underline{\text{ingen løsning}}}$
+:::
+:::
+
+::: {.oppgave tittel="Forkort" niva="Middels"}
+Forkort $\dfrac{2x^2 - 8}{x^2 + 4x + 4}$.
+
+::: {.losning}
+$$
+\frac{2(x + 2)(x - 2)}{(x + 2)^2} = \underline{\underline{\frac{2(x - 2)}{x + 2}}}, \quad x \ne -2
+$$
+:::
+:::
+
+::: {.oppgave tittel="Ulikhet" niva="Middels"}
+Løs ulikheten $x^2 \ge 3x + 10$.
+
+::: {.losning}
+$x^2 - 3x - 10 \ge 0$, altså $(x - 5)(x + 2) \ge 0$. Parabelen smiler: $\underline{\underline{x \le -2 \text{ eller } x \ge 5}}$.
+:::
+:::
+
+::: {.oppgave tittel="Steinen i brønnen" niva="Utfordrende"}
+En stein slippes ned i en brønn. Etter $t$ sekunder har den falt $4.9t^2$ meter. Lyden av plasket går opp med $340\ \mathrm{m/s}$. Du hører plasket $2.50\ \mathrm{s}$ etter at du slapp steinen. Hvor dyp er brønnen?
+
+::: {.losning}
+La $t$ være falltiden. Dybden er $h = 4.9t^2$, og lyden bruker $\frac{h}{340}$. Til sammen:
+$$
+t + \frac{4.9t^2}{340} = 2.50 \quad\Longrightarrow\quad 0.01441t^2 + t - 2.50 = 0
+$$
+abc-formelen gir den positive løsningen $t = 2.42\ \mathrm{s}$. Med den uavrundede verdien $t = 2.416\ \mathrm{s}$ blir dybden $h = 4.9\cdot 2.416^2 = \underline{\underline{28.6\ \mathrm{m}}}$.
+
+Uten å ta hensyn til lyden ville vi fått $4.9\cdot 2.50^2 = 30.6\ \mathrm{m}$.
+:::
+:::
+
+::::

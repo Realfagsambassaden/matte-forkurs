@@ -2,20 +2,112 @@
 title: "Faktorisering"
 tema: algebra-og-likninger
 undertema: faktorisering
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/04-02-faktorisering) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Å **faktorisere** er å skrive et uttrykk som et produkt av faktorer, for eksempel $x^2 - 5x + 6 = (x - 2)(x - 3)$. Det er det motsatte av å gange ut parenteser. Faktorisering gjør det mulig å forkorte brøker, løse likninger og finne fortegnet til et uttrykk.
+
+## Tre metoder, i denne rekkefølgen
+
+::: {.steg}
+1. **Felles faktor.** Har alle leddene en felles faktor, sett den utenfor: $3x^2 - 12x = 3x(x - 4)$.
+2. **Kvadratsetningene.** Er uttrykket et fullstendig kvadrat eller en differanse av kvadrater: $x^2 - 9 = (x + 3)(x - 3)$.
+3. **Heltallsmetoden.** For $x^2 + bx + c$: finn to tall med sum $b$ og produkt $c$.
 :::
 
-## Dette kommer på siden
+Gjør alltid steg 1 først. Det gjør resten enklere.
 
-- Felles faktor
-- Heltallsmetoden
-- Faktorisering med kvadratsetningene
-- Eksempler og oppgaver med løsning
+## Heltallsmetoden
+
+Ganger vi ut $(x + p)(x + q)$, får vi $x^2 + (p + q)x + pq$. For å faktorisere $x^2 + bx + c$ leter vi derfor etter to tall $p$ og $q$ der
+
+::: {.graa}
+$$
+p + q = b \qquad\text{og}\qquad p\cdot q = c
+$$
+:::
+
+Da er $x^2 + bx + c = (x + p)(x + q)$.
+
+::: {.eksempel}
+**Eksempel: Heltallsmetoden.** Faktoriser a) $x^2 + 7x + 12$ og b) $x^2 - 2x - 15$.
+
+::: {.losning}
+a) To tall med produkt $12$ og sum $7$: $3$ og $4$. Så $x^2 + 7x + 12 = \underline{\underline{(x + 3)(x + 4)}}$.
+
+b) Produkt $-15$ og sum $-2$. Produktet er negativt, så tallene har ulikt fortegn: $3$ og $-5$. Så $x^2 - 2x - 15 = \underline{\underline{(x + 3)(x - 5)}}$.
+
+Kontroll av b): $(x + 3)(x - 5) = x^2 - 5x + 3x - 15 = x^2 - 2x - 15$.
+:::
+:::
+
+::: {.callout-tip title="Tips for å finne tallene"}
+List opp faktorparene til $c$. Er $c$ positiv, har tallene samme fortegn som $b$. Er $c$ negativ, har de ulikt fortegn, og det største (i tallverdi) har samme fortegn som $b$.
+:::
+
+## Kombiner metodene
+
+::: {.eksempel}
+**Eksempel: Faktoriser fullstendig.** Faktoriser $2x^3 - 8x^2 - 10x$.
+
+::: {.losning}
+Felles faktor først: $2x(x^2 - 4x - 5)$. Heltallsmetoden på parentesen: produkt $-5$ og sum $-4$ gir $1$ og $-5$.
+$$
+2x^3 - 8x^2 - 10x = \underline{\underline{2x(x + 1)(x - 5)}}
+$$
+:::
+:::
+
+Ikke alle uttrykk kan faktoriseres med hele tall. $x^2 + x - 1$ har ingen to hele tall med sum $1$ og produkt $-1$. Da bruker vi abc-formelen og nullpunktsfaktorisering, som kommer senere i kapitlet.
+
+## Prøv selv
+
+```{.python .kjor}
+from sympy import symbols, factor
+x = symbols("x")
+for uttrykk in [x**2 + 7*x + 12, x**2 - 2*x - 15, 2*x**3 - 8*x**2 - 10*x, x**2 + x - 1]:
+    print(uttrykk, "=", factor(uttrykk))
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Felles faktor"}
+Faktoriser: a) $5x^2 + 10x$ b) $6a^2b - 9ab^2$ c) $x^3 - x^2$
+
+::: {.losning}
+a) $\underline{\underline{5x(x + 2)}}$ b) $\underline{\underline{3ab(2a - 3b)}}$ c) $\underline{\underline{x^2(x - 1)}}$
+:::
+:::
+
+::: {.oppgave tittel="Heltallsmetoden"}
+Faktoriser: a) $x^2 + 5x + 6$ b) $x^2 - 7x + 10$ c) $x^2 + 3x - 10$ d) $x^2 - x - 20$
+
+::: {.losning}
+a) $\underline{\underline{(x + 2)(x + 3)}}$ b) $\underline{\underline{(x - 2)(x - 5)}}$ c) $\underline{\underline{(x - 2)(x + 5)}}$ d) $\underline{\underline{(x + 4)(x - 5)}}$
+:::
+:::
+
+::: {.oppgave tittel="Fullstendig faktorisering" niva="Middels"}
+Faktoriser fullstendig: a) $3x^2 - 27$ b) $x^3 + 2x^2 - 8x$ c) $2x^2 - 12x + 18$
+
+::: {.losning}
+a) $3(x^2 - 9) = \underline{\underline{3(x + 3)(x - 3)}}$
+
+b) $x(x^2 + 2x - 8) = \underline{\underline{x(x + 4)(x - 2)}}$
+
+c) $2(x^2 - 6x + 9) = \underline{\underline{2(x - 3)^2}}$
+:::
+:::
+
+::: {.oppgave tittel="Kan det faktoriseres?" niva="Utfordrende"}
+For hvilke hele tall $b$ kan $x^2 + bx + 6$ faktoriseres med heltallsmetoden?
+
+::: {.losning}
+Faktorparene til $6$ er $(1, 6)$, $(2, 3)$, $(-1, -6)$ og $(-2, -3)$. Summene gir $\underline{\underline{b \in \{7, 5, -7, -5\}}}$.
+:::
+:::
+
+::::
