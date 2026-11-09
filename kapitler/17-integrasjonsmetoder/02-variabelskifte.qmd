@@ -2,19 +2,84 @@
 title: "Variabelskifte"
 tema: integrasjonsteknikker
 undertema: variabelskifte
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/17-02-variabelskifte) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Kjerneregelen sier at $\big(F(u(x))\big)' = F'(u)\cdot u'(x)$. Leser vi den baklengs, får vi **variabelskifte** (substitusjon): Ser du en funksjon *og* den deriverte av kjernen i integranden, kan du bytte ut kjernen med en ny variabel $u$.
+
+## Metoden
+
+::: {.steg}
+1. Velg kjernen $u = u(x)$, ofte det som står inni en parentes, rot eller eksponent.
+2. Deriver: $\frac{\mathrm{d}u}{\mathrm{d}x} = u'(x)$, altså $\mathrm{d}x = \frac{\mathrm{d}u}{u'(x)}$.
+3. Sett inn. Alle $x$ skal forsvinne. Gjør de ikke det, prøv en annen $u$.
+4. Integrer i $u$, og sett tilbake $u = u(x)$.
 :::
 
-## Dette kommer på siden
+::: {.eksempel}
+**Eksempel: Parentes.** Finn $\displaystyle\int 2x(x^2 + 1)^3\,\mathrm{d}x$.
 
-- Substitusjon
-- Grenser ved variabelskifte
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$u = x^2 + 1$, $\mathrm{d}u = 2x\,\mathrm{d}x$:
+$$
+\int u^3\,\mathrm{d}u = \frac{u^4}{4} + C = \underline{\underline{\frac{(x^2 + 1)^4}{4} + C}}
+$$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Eksponent.** Finn $\displaystyle\int x\,\mathrm{e}^{x^2}\,\mathrm{d}x$.
+
+::: {.losning}
+$u = x^2$, $\mathrm{d}u = 2x\,\mathrm{d}x$, så $x\,\mathrm{d}x = \frac12\mathrm{d}u$:
+$$
+\frac12\int \mathrm{e}^{u}\,\mathrm{d}u = \underline{\underline{\frac12\mathrm{e}^{x^2} + C}}
+$$
+:::
+:::
+
+## Bestemte integraler
+
+Bytt grensene samtidig, så slipper du å sette tilbake.
+
+::: {.eksempel}
+**Eksempel: Nye grenser.** Regn ut $\displaystyle\int_0^1 x\sqrt{1 + x^2}\,\mathrm{d}x$.
+
+::: {.losning}
+$u = 1 + x^2$, $x\,\mathrm{d}x = \frac12\mathrm{d}u$. Grenser: $x = 0 \Rightarrow u = 1$ og $x = 1 \Rightarrow u = 2$.
+$$
+\frac12\int_1^2 \sqrt{u}\,\mathrm{d}u = \frac12\left[\frac23u^{3/2}\right]_1^2 = \frac{2\sqrt2 - 1}{3} = \underline{\underline{0.609}}
+$$
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Integrer"}
+a) $\int 3(3x + 2)^5\,\mathrm{d}x$ b) $\int \frac{2x}{x^2 + 4}\,\mathrm{d}x$
+
+::: {.losning}
+a) $u = 3x + 2$: $\underline{\underline{\frac{(3x + 2)^6}{6} + C}}$ b) $u = x^2 + 4$: $\underline{\underline{\ln(x^2 + 4) + C}}$
+:::
+:::
+
+::: {.oppgave tittel="Logaritme" niva="Middels"}
+Finn $\int \frac{\ln x}{x}\,\mathrm{d}x$.
+
+::: {.losning}
+$u = \ln x$, $\mathrm{d}u = \frac1x\mathrm{d}x$: $\int u\,\mathrm{d}u = \underline{\underline{\frac12(\ln x)^2 + C}}$
+:::
+:::
+
+::: {.oppgave tittel="Bestemt" niva="Utfordrende"}
+Regn ut $\int_0^2 \frac{x}{(x^2 + 1)^2}\,\mathrm{d}x$.
+
+::: {.losning}
+$u = x^2 + 1$, grenser 1 og 5: $\frac12\int_1^5 u^{-2}\,\mathrm{d}u = \frac12\left[-\frac1u\right]_1^5 = \frac12\left(1 - \frac15\right) = \underline{\underline{\frac25}}$
+:::
+:::
+
+::::
