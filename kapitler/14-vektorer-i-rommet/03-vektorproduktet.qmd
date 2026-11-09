@@ -2,19 +2,94 @@
 title: "Vektorproduktet"
 tema: vektorer
 undertema: vektorprodukt
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/14-03-vektorproduktet) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Skalarproduktet av to vektorer er et tall. **Vektorproduktet** (kryssproduktet) $\vec u\times\vec v$ er en ny vektor som står vinkelrett på begge. Det finnes bare i tre dimensjoner, og det er verktøyet for kraftmoment, dreieimpuls og magnetiske krefter.
+
+## Definisjon
+
+::: {.callout-note title="Definisjon: Vektorprodukt"}
+$\vec u\times\vec v$ er vektoren som
+
+- står vinkelrett på både $\vec u$ og $\vec v$,
+- har lengden $|\vec u|\,|\vec v|\sin v$, der $v$ er vinkelen mellom dem,
+- peker i retningen gitt av høyrehåndsregelen: fingrene fra $\vec u$ mot $\vec v$, tommelen langs $\vec u\times\vec v$.
 :::
 
-## Dette kommer på siden
+Lengden er arealet av parallellogrammet som $\vec u$ og $\vec v$ utspenner.
 
-- Definisjon og høyrehåndsregelen
-- Areal og volum med vektorprodukt
-- Eksempler og oppgaver med løsning
+## Koordinatformelen
+
+::: {.graa}
+$$
+[x_1, y_1, z_1]\times[x_2, y_2, z_2] = [\,y_1z_2 - z_1y_2,\ \ z_1x_2 - x_1z_2,\ \ x_1y_2 - y_1x_2\,]
+$$
+:::
+
+Huskeregel: For $x$-komponenten «dekker» du $x$-ene og tar $y_1z_2 - z_1y_2$. De andre følger syklisk ($x \to y \to z \to x$).
+
+::: {.kort}
+- **Rekkefølgen teller** $\vec v\times\vec u = -\vec u\times\vec v$.
+- **Parallelle vektorer** gir nullvektoren, fordi $\sin 0^\circ = 0$.
+- **Enhetsvektorene** $\hat{\mathbf{x}}\times\hat{\mathbf{y}} = \hat{\mathbf{z}}$, $\hat{\mathbf{y}}\times\hat{\mathbf{z}} = \hat{\mathbf{x}}$, $\hat{\mathbf{z}}\times\hat{\mathbf{x}} = \hat{\mathbf{y}}$.
+:::
+
+::: {.eksempel}
+**Eksempel: Kryssprodukt og areal.** Finn $\vec u\times\vec v$ for $\vec u = [1, 2, 0]$ og $\vec v = [3, 1, 2]$, og arealet av trekanten de utspenner.
+
+::: {.losning}
+$$
+\vec u\times\vec v = [2\cdot 2 - 0\cdot 1,\ 0\cdot 3 - 1\cdot 2,\ 1\cdot 1 - 2\cdot 3] = \underline{\underline{[4, -2, -5]}}
+$$
+Kontroll: $[4, -2, -5]\cdot[1, 2, 0] = 0$ og $[4, -2, -5]\cdot[3, 1, 2] = 12 - 2 - 10 = 0$.
+
+Trekanten er halve parallellogrammet: $T = \frac12\sqrt{16 + 4 + 25} = \frac12\sqrt{45} = \underline{\underline{3.35}}$.
+:::
+:::
+
+## Volum
+
+Volumet av parallellepipedet (et skjevt prisme) utspent av $\vec u$, $\vec v$ og $\vec w$ er $|(\vec u\times\vec v)\cdot\vec w|$. En pyramide med samme grunnflate og høyde har $\frac16$ av dette volumet.
+
+::: {.callout-tip title="I fysikken"}
+Kraftmomentet er $\vec\tau = \vec r\times\vec F$, der $\vec r$ går fra aksen til angrepspunktet. Se [kraftmoment på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/06-statikk/02-kraftmoment.html).
+:::
+
+```{.python .kjor}
+import numpy as np
+u, v = np.array([1, 2, 0]), np.array([3, 1, 2])
+w = np.cross(u, v)
+print(w, w @ u, w @ v, 0.5*np.linalg.norm(w))
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Regn ut"}
+Finn $[2, 0, 1]\times[1, 3, -1]$.
+
+::: {.losning}
+$[0\cdot(-1) - 1\cdot 3,\ 1\cdot 1 - 2\cdot(-1),\ 2\cdot 3 - 0\cdot 1] = \underline{\underline{[-3, 3, 6]}}$
+:::
+:::
+
+::: {.oppgave tittel="Areal av trekant" niva="Middels"}
+Finn arealet av trekanten med hjørnene $A = (1, 0, 0)$, $B = (0, 2, 0)$ og $C = (0, 0, 3)$.
+
+::: {.losning}
+$\overrightarrow{AB} = [-1, 2, 0]$, $\overrightarrow{AC} = [-1, 0, 3]$. Kryssprodukt: $[6, 3, 2]$, lengde $7$. Areal $\underline{\underline{3.5}}$.
+:::
+:::
+
+::: {.oppgave tittel="Kraftmoment" niva="Utfordrende"}
+En kraft $\vec F = [0, 0, -50]$ N virker i punktet $\vec r = [0.30, 0.40, 0]$ m fra en akse gjennom origo. Finn kraftmomentet $\vec\tau = \vec r\times\vec F$ og størrelsen.
+
+::: {.losning}
+$\vec\tau = [0.40\cdot(-50) - 0,\ 0 - 0.30\cdot(-50),\ 0] = \underline{\underline{[-20, 15, 0]\ \mathrm{N\,m}}}$, størrelse $\underline{\underline{25\ \mathrm{N\,m}}}$.
+:::
+:::
+
+::::

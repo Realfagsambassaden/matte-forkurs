@@ -2,18 +2,62 @@
 title: "Skalarproduktet i rommet"
 tema: vektorer
 undertema: vektorer-i-rommet
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/14-02-skalarproduktet-i-rommet) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Skalarproduktet virker på samme måte i rommet som i planet. Definisjonen med cosinus er den samme, og koordinatformelen får ett ledd til. Det gir oss vinkler og rette vinkler i tre dimensjoner.
+
+::: {.graa}
+$$
+\vec u\cdot\vec v = |\vec u|\,|\vec v|\cos v = x_1x_2 + y_1y_2 + z_1z_2
+$$
 :::
 
-## Dette kommer på siden
+To vektorer står vinkelrett når skalarproduktet er null, akkurat som i planet.
 
-- Vinkler og lengder i rommet
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: Vinkel i rommet.** Finn vinkelen mellom $\vec u = [1, 2, 2]$ og $\vec v = [2, -1, 2]$.
+
+::: {.losning}
+$\vec u\cdot\vec v = 2 - 2 + 4 = 4$, $|\vec u| = 3$ og $|\vec v| = 3$. $\cos v = \frac49$, så $\underline{\underline{v = 63.6^\circ}}$.
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Romdiagonal.** Hvilken vinkel danner romdiagonalen i en kube med en av kantene?
+
+::: {.losning}
+Med kant 1: diagonalen er $[1, 1, 1]$ og kanten $[1, 0, 0]$. $\cos v = \frac{1}{\sqrt3\cdot 1}$, så $\underline{\underline{v = 54.7^\circ}}$.
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Vinkelrett?"}
+Står $[3, -1, 2]$ og $[1, 5, 1]$ vinkelrett på hverandre?
+
+::: {.losning}
+$3 - 5 + 2 = 0$: **ja**.
+:::
+:::
+
+::: {.oppgave tittel="Finn konstanten" niva="Middels"}
+Bestem $t$ slik at $[t, 2, -1]$ står vinkelrett på $[4, t, 6]$.
+
+::: {.losning}
+$4t + 2t - 6 = 0$, så $\underline{\underline{t = 1}}$.
+:::
+:::
+
+::: {.oppgave tittel="Arbeid i rommet" niva="Middels"}
+En kraft $\vec F = [10, -4, 20]$ N flytter en gjenstand $\vec s = [3, 2, 1]$ m. Finn arbeidet.
+
+::: {.losning}
+$W = 30 - 8 + 20 = \underline{\underline{42\ \mathrm{J}}}$
+:::
+:::
+
+::::

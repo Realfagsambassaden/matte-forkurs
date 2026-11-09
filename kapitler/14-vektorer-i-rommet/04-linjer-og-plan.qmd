@@ -2,20 +2,88 @@
 title: "Linjer og plan i rommet"
 tema: vektorer
 undertema: linjer-og-plan
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/14-04-linjer-og-plan) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+I rommet kan en linje ikke beskrives med én likning $y = ax + b$. Vi bruker parameterframstilling, som i planet. Et **plan** derimot har en enkel likning, og den bygger på en vektor som står vinkelrett på planet: **normalvektoren**.
+
+## Linjer i rommet
+
+Linja gjennom $P_0 = (x_0, y_0, z_0)$ med retningsvektor $[a, b, c]$:
+
+::: {.graa}
+$$
+x = x_0 + at, \qquad y = y_0 + bt, \qquad z = z_0 + ct
+$$
 :::
 
-## Dette kommer på siden
+## Likningen for et plan
 
-- Likningen for et plan
-- Rette linjer i rommet
-- Parameterframstilling for et plan
-- Eksempler og oppgaver med løsning
+Planet gjennom $P_0$ med normalvektor $\vec n = [a, b, c]$ består av alle punkter $P$ der $\overrightarrow{P_0P}$ står vinkelrett på $\vec n$, altså $\vec n\cdot\overrightarrow{P_0P} = 0$:
+
+::: {.graa}
+$$
+a(x - x_0) + b(y - y_0) + c(z - z_0) = 0
+$$
+:::
+
+Ganger vi ut, får vi formen $ax + by + cz + d = 0$. Tallene foran $x$, $y$ og $z$ er normalvektoren.
+
+::: {.eksempel}
+**Eksempel: Plan gjennom tre punkter.** Finn likningen for planet gjennom $A = (1, 0, 0)$, $B = (0, 2, 0)$ og $C = (0, 0, 3)$.
+
+::: {.losning}
+To vektorer i planet: $\overrightarrow{AB} = [-1, 2, 0]$ og $\overrightarrow{AC} = [-1, 0, 3]$. Normalvektoren er kryssproduktet: $\vec n = [6, 3, 2]$.
+
+Gjennom $A$: $6(x - 1) + 3y + 2z = 0$, altså $\underline{\underline{6x + 3y + 2z = 6}}$.
+
+Kontroll: $B$ gir $6$, og $C$ gir $6$. Det stemmer.
+:::
+:::
+
+## Linje og plan
+
+Der en linje treffer et plan, setter vi parameterframstillingen inn i planlikningen og løser for $t$.
+
+::: {.eksempel}
+**Eksempel: Skjæringspunkt.** Hvor treffer linja $x = 1 + t$, $y = 2t$, $z = 3 - t$ planet $6x + 3y + 2z = 6$?
+
+::: {.losning}
+$6(1 + t) + 6t + 2(3 - t) = 6$ gir $12 + 10t = 6$, så $t = -0.6$. Punktet er $\underline{\underline{(0.4,\ -1.2,\ 3.6)}}$.
+:::
+:::
+
+## Parameterframstilling for et plan
+
+Et plan kan også skrives med to parametre: $\vec r = \overrightarrow{OP_0} + s\vec u + t\vec v$, der $\vec u$ og $\vec v$ er to ikke-parallelle vektorer i planet.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Planlikning"}
+Finn likningen for planet gjennom $(2, -1, 3)$ med normalvektor $[1, 4, -2]$.
+
+::: {.losning}
+$(x - 2) + 4(y + 1) - 2(z - 3) = 0$, altså $\underline{\underline{x + 4y - 2z + 8 = 0}}$.
+:::
+:::
+
+::: {.oppgave tittel="Ligger punktet i planet?"}
+Ligger $(1, 1, 1)$ i planet $2x - y + 3z = 4$?
+
+::: {.losning}
+$2 - 1 + 3 = 4$: **ja**.
+:::
+:::
+
+::: {.oppgave tittel="Avstand fra punkt til plan" niva="Utfordrende"}
+Avstanden fra punktet $(x_1, y_1, z_1)$ til planet $ax + by + cz + d = 0$ er $\dfrac{|ax_1 + by_1 + cz_1 + d|}{\sqrt{a^2 + b^2 + c^2}}$. Finn avstanden fra origo til planet $6x + 3y + 2z = 6$.
+
+::: {.losning}
+$\frac{|0 - 6|}{\sqrt{36 + 9 + 4}} = \underline{\underline{\frac67 \approx 0.86}}$
+:::
+:::
+
+::::
