@@ -1,0 +1,21 @@
+---
+title: "Faktorisering og andregradslikninger"
+toc: false
+---
+
+::: {.intro}
+
+Å faktorisere er å skrive et uttrykk som et produkt. Det gjør det lettere å forkorte brøker, løse likninger og finne fortegnet til et uttrykk. Her lærer vi kvadratsetningene, abc-formelen og andregradsulikheter.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva sier kvadratsetningene?
+
+2.  Hvordan løser vi en andregradslikning?
+
+3.  Hvordan bruker vi faktorisering til å løse ulikheter?
+
+:::

@@ -1,0 +1,21 @@
+---
+title: "Funksjonsdrøfting"
+toc: false
+---
+
+::: {.intro}
+
+Med den deriverte kan vi finne topp- og bunnpunkter, vendepunkter og hvor en funksjon vokser. Det bruker vi til å drøfte funksjoner og løse optimeringsproblemer. Vi lærer også flere derivasjonsregler.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hvordan finner vi topp- og bunnpunkter?
+
+2.  Hva forteller den andrederiverte?
+
+3.  Hvordan deriverer vi produkter, brøker og sammensatte funksjoner?
+
+:::

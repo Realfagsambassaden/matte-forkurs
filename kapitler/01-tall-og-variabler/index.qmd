@@ -1,0 +1,21 @@
+---
+title: "Tall og variabler"
+toc: false
+---
+
+::: {.intro}
+
+All matematikk bygger på at vi kan regne trygt med tall og bokstaver. Her repeterer vi regnerekkefølge, brøker, parenteser, potenser og røtter, og vi lærer å skrive svært store og svært små tall på standardform.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hvilken rekkefølge regner vi i?
+
+2.  Hvordan regner vi med brøker og bokstaver?
+
+3.  Hvilke regler gjelder for potenser og røtter?
+
+:::

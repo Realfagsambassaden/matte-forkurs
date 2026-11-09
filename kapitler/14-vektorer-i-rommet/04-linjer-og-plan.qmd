@@ -1,0 +1,21 @@
+---
+title: "Linjer og plan i rommet"
+tema: vektorer
+undertema: linjer-og-plan
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/14-04-linjer-og-plan) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Likningen for et plan
+- Rette linjer i rommet
+- Parameterframstilling for et plan
+- Eksempler og oppgaver med løsning

@@ -1,0 +1,20 @@
+---
+title: "Asymptoter"
+tema: grenseverdier
+undertema: asymptoter
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/06-03-asymptoter) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Vertikale asymptoter
+- Horisontale og skrå asymptoter
+- Eksempler og oppgaver med løsning

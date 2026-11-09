@@ -1,0 +1,21 @@
+---
+title: "Tall og tallregning"
+tema: tall-og-regneregler
+undertema: tallregning
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/01-01-tall-og-tallregning) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Tallmengdene (naturlige tall, hele tall, rasjonale og reelle tall)
+- Regnerekkefølge og fortegnsregler
+- Overslag
+- Eksempler og oppgaver med løsning

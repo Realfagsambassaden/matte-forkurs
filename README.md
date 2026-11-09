@@ -1,15 +1,9 @@
-# Mal for nytt fag – Realfagsambassaden
+# Forkurs i matematikk – matematikkhjelp.no
 
-Dette er utgangspunktet for nytt stoff på fysikkhjelp.no, matematikkhjelp.no, kjemihjelp.no eller biologihjelp.no.
+Lærestoffet i faget **Forkurs i matematikk** på [matematikkhjelp.no/matte-forkurs/](https://matematikkhjelp.no/matte-forkurs/). Matematikk fra grunnen av for deg som skal begynne på ingeniør- eller realfag, med eksempler, oppgaver med løsning og kobling til fysikken på [fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/).
 
-**Slik starter du et nytt fag:**
+- `kapitler/` – én mappe per kapittel, én `.qmd`-fil per side. Hver side har `tema:` og `undertema:` øverst (temakartet er `matematikkhjelp/tema.yml` i [Plattform](https://github.com/Realfagsambassaden/Plattform)).
+- `figurer/` – TikZ-figurer. `python3 figurer/lag.py` lager `bilder/figurer/*.svg`.
+- Sider med `plassholder: true` er ikke skrevet ennå.
 
-1. Klikk den grønne knappen **Use this template → Create a new repository** øverst på denne siden.
-   Velg eier **Realfagsambassaden** og gi repoet et navn som `fysikk-mekanikk` eller `matte-kalkulus1`.
-2. Fyll ut `fag.yml` (navn, nettsted, kortnavn, status).
-3. Skriv sidene i `kapitler/`, og merk hver side med hvilket **tema** og **undertema** den hører til (`tema:` og `undertema:` øverst i fila). Se `kapitler/01-forste-kapittel/01-eksempelside.qmd` for alt du kan bruke.
-4. Be plattformansvarlig legge faget inn i `fag.yml` i plattform-repoet (én linje), og sett `status: arbeid` eller `klar` når du vil at det skal vises.
-
-Hver gang du lagrer (commit + push) på `main`, oppdateres nettsiden av seg selv etter noen minutter.
-
-Les **[BIDRA.md](BIDRA.md)** for en fullstendig guide.
+Les [AGENTS.md](AGENTS.md) og [BIDRA.md](BIDRA.md) før du bidrar. Alt på `main` publiseres automatisk.

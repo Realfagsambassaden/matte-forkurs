@@ -1,0 +1,21 @@
+---
+title: "Tall på standardform"
+tema: tall-og-regneregler
+undertema: standardform
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/01-06-tall-pa-standardform) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Store og små tall
+- Regning på standardform
+- Standardform på kalkulator og i Python
+- Eksempler og oppgaver med løsning

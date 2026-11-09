@@ -1,8 +1,12 @@
-# Om faget. Dette er det eneste du MÅ fylle ut før faget dukker opp på nettsiden.
-nettsted: fysikkhjelp          # fysikkhjelp | matematikkhjelp | kjemihjelp | biologihjelp
-tittel: "Navn på faget"        # f.eks. "Mekanikk" eller "Kalkulus 1"
-kortnavn: navn-pa-faget        # brukes i nettadressen: fysikkhjelp.no/navn-pa-faget/
-beskrivelse: "Én setning om hva faget handler om og hvem det er for."
-ansvarlig: "Ditt navn"
-status: skjult                 # skjult (vises ikke) | arbeid (vises med «under arbeid») | klar
-bilde: bilder/forside.webp     # valgfritt: en tegning som vises på fagkortet
+# Om faget.
+nettsted: matematikkhjelp
+tittel: "Forkurs i matematikk"
+kortnavn: matte-forkurs        # brukes i nettadressen: matematikkhjelp.no/matte-forkurs/
+beskrivelse: "Matematikk fra grunnen av for deg som skal begynne på ingeniør- eller realfag: tall og algebra, funksjoner, derivasjon, trigonometri, vektorer, følger og integrasjon. Med eksempler, oppgaver med hint og kobling til fysikken."
+ansvarlig: "Realfagsambassaden"
+status: arbeid                 # skjult (vises ikke) | arbeid (vises med «under arbeid») | klar
+
+# PDF-kompendium (lages automatisk sammen med nettsidene)
+pdf:
+  undertittel: "Forkurs i matematikk"
+  linje: "Forkursnivå · matematikkhjelp.no"

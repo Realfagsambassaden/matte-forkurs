@@ -1,0 +1,21 @@
+---
+title: "Likninger"
+tema: algebra-og-likninger
+undertema: likninger
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/02-01-likninger) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Å gjøre det samme på begge sider
+- Likninger med brøker
+- Sette prøve på svaret
+- Eksempler og oppgaver med løsning

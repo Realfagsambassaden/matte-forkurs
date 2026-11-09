@@ -1,0 +1,21 @@
+---
+title: "Potenser og potensregler"
+tema: tall-og-regneregler
+undertema: potenser
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/01-05-potenser) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Hva en potens er
+- Potensreglene
+- Null og negative eksponenter
+- Eksempler og oppgaver med løsning

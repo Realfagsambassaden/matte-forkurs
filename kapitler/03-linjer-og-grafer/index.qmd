@@ -1,0 +1,21 @@
+---
+title: "Linjer og grafer"
+toc: false
+---
+
+::: {.intro}
+
+En graf viser en sammenheng på ett blikk. Her ser vi på rette linjer, tegner grafer digitalt, løser likninger grafisk og blir kjent med funksjonsbegrepet og andregradsfunksjoner.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva forteller stigningstallet og konstantleddet?
+
+2.  Hva er en funksjon?
+
+3.  Hvordan ser grafen til en andregradsfunksjon ut?
+
+:::

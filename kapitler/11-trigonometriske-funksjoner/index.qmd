@@ -1,0 +1,21 @@
+---
+title: "Trigonometriske funksjoner"
+toc: false
+---
+
+::: {.intro}
+
+Sinusfunksjonen beskriver alt som gjentar seg: svingninger, bølger, vekselstrøm og tidevann. Her ser vi på amplitude, periode og likevektslinje, og deriverer og drøfter trigonometriske funksjoner.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva betyr amplitude, periode og likevektslinje?
+
+2.  Hvordan deriverer vi sin x og cos x?
+
+3.  Hvordan drøfter vi en trigonometrisk funksjon?
+
+:::

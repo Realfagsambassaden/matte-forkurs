@@ -1,0 +1,20 @@
+---
+title: "Tallfølger og rekker"
+tema: folger-og-rekker
+undertema: tallfolger
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/15-01-tallfolger-og-rekker) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Eksplisitt og rekursiv formel
+- Summetegnet
+- Eksempler og oppgaver med løsning

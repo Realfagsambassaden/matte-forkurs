@@ -1,0 +1,20 @@
+---
+title: "Funksjonen f(x) = ln x"
+tema: eksponential-og-logaritme
+undertema: drofting
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/08-04-funksjonen-ln-x) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Grafen og egenskapene
+- Derivasjon og drøfting av logaritmefunksjoner
+- Eksempler og oppgaver med løsning

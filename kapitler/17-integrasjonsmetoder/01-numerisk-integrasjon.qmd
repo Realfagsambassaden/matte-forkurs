@@ -1,0 +1,21 @@
+---
+title: "Numerisk integrasjon"
+tema: integrasjonsteknikker
+undertema: numerisk
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/17-01-numerisk-integrasjon) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Tilnærming med rektangler
+- Trapesmetoden
+- Simpsons metode
+- Eksempler og oppgaver med løsning

@@ -1,0 +1,19 @@
+---
+title: "Integrasjon og volum"
+tema: anvendelser-integrasjon
+undertema: volum
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/17-05-integrasjon-og-volum) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Omdreiningslegemer
+- Eksempler og oppgaver med løsning

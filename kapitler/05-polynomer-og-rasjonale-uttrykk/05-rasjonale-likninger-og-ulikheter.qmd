@@ -1,0 +1,21 @@
+---
+title: "Rasjonale likninger og ulikheter"
+tema: algebra-og-likninger
+undertema: rasjonale-uttrykk
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/05-05-rasjonale-likninger-og-ulikheter) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Rasjonale likninger
+- Doble andregradsulikheter
+- Rasjonale ulikheter
+- Eksempler og oppgaver med løsning

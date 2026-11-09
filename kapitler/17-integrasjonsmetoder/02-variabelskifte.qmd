@@ -1,0 +1,20 @@
+---
+title: "Variabelskifte"
+tema: integrasjonsteknikker
+undertema: variabelskifte
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/17-02-variabelskifte) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Substitusjon
+- Grenser ved variabelskifte
+- Eksempler og oppgaver med løsning

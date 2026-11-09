@@ -1,0 +1,20 @@
+---
+title: "Tangenslikninger og andregradslikninger i sinus og cosinus"
+tema: trigonometri
+undertema: trigonometriske-likninger
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/10-04-tangenslikninger) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Tangenslikninger
+- Andregradslikninger med sin x og cos x
+- Eksempler og oppgaver med løsning

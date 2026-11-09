@@ -1,0 +1,21 @@
+---
+title: "Integralregning"
+toc: false
+---
+
+::: {.intro}
+
+Integrasjon er det motsatte av derivasjon, og samtidig en måte å regne ut arealer og summere små biter på. I fysikken gir integralet strekning fra fart og arbeid fra kraft.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva er en antiderivert?
+
+2.  Hva sier analysens fundamentalsetning?
+
+3.  Hvordan finner vi arealet mellom to grafer?
+
+:::

@@ -1,0 +1,21 @@
+---
+title: "Regning med vektorer"
+tema: vektorer
+undertema: vektorer-i-planet
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/12-02-regning-med-vektorer) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Sum, differanse og tall ganger vektor
+- Koordinatformlene
+- Regneregler
+- Eksempler og oppgaver med løsning

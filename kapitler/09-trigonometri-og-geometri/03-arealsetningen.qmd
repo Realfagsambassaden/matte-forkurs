@@ -1,0 +1,19 @@
+---
+title: "Arealsetningen"
+tema: trigonometri
+undertema: trekantsetninger
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/09-03-arealsetningen) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Areal av en vilkårlig trekant
+- Eksempler og oppgaver med løsning

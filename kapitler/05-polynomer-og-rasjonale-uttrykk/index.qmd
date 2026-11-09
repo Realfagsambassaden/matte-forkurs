@@ -1,0 +1,21 @@
+---
+title: "Polynomer og rasjonale uttrykk"
+toc: false
+---
+
+::: {.intro}
+
+Polynomer er summer av potenser av x. Her lærer vi polynomdivisjon, faktoriserer polynomer av tredje grad og løser rasjonale og irrasjonale likninger og ulikheter.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva er et polynom?
+
+2.  Hvordan dividerer vi polynomer?
+
+3.  Hvordan løser vi likninger med x i nevneren eller under rottegnet?
+
+:::

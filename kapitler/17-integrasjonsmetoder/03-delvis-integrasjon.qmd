@@ -1,0 +1,19 @@
+---
+title: "Delvis integrasjon"
+tema: integrasjonsteknikker
+undertema: delvis
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/17-03-delvis-integrasjon) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Formelen og når den brukes
+- Eksempler og oppgaver med løsning

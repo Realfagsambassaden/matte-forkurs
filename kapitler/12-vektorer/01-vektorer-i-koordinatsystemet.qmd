@@ -1,0 +1,21 @@
+---
+title: "Vektorer i koordinatsystemet"
+tema: vektorer
+undertema: vektorer-i-planet
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/12-01-vektorer-i-koordinatsystemet) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Vektorer på koordinatform
+- Lengden av en vektor
+- Vektoren mellom to punkter
+- Eksempler og oppgaver med løsning

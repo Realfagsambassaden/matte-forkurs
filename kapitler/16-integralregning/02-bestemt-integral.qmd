@@ -1,0 +1,20 @@
+---
+title: "Bestemt integral og fundamentalsetningen"
+tema: integrasjon
+undertema: bestemt-integral
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/16-02-bestemt-integral) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Integral som grense for en sum
+- Fundamentalsetningen
+- Eksempler og oppgaver med løsning

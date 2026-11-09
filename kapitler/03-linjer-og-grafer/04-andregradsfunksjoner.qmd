@@ -1,0 +1,21 @@
+---
+title: "Andregradsfunksjoner"
+tema: funksjoner
+undertema: andregradsfunksjoner
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/03-04-andregradsfunksjoner) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Parabelen
+- Nullpunkter og toppunkt/bunnpunkt
+- Symmetrilinja
+- Eksempler og oppgaver med løsning

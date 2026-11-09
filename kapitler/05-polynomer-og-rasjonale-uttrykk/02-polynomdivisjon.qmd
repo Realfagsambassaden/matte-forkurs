@@ -1,0 +1,21 @@
+---
+title: "Polynomdivisjon og restsetningen"
+tema: algebra-og-likninger
+undertema: polynomer
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/05-02-polynomdivisjon) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Polynomdivisjon
+- Resten ved en polynomdivisjon
+- Faktorsetningen
+- Eksempler og oppgaver med løsning

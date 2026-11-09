@@ -1,0 +1,21 @@
+---
+title: "Skalarprodukt og parameterframstilling"
+toc: false
+---
+
+::: {.intro}
+
+Skalarproduktet måler hvor mye to vektorer peker samme vei, og gir oss vinkelen mellom dem. Med parameterframstillinger beskriver vi linjer og bevegelse.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva er skalarproduktet?
+
+2.  Hvordan finner vi vinkelen mellom to vektorer?
+
+3.  Hvordan beskriver vi en bevegelse med vektorer?
+
+:::

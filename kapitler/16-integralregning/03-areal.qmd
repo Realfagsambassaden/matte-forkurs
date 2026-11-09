@@ -1,0 +1,20 @@
+---
+title: "Areal ved integrasjon"
+tema: integrasjon
+undertema: areal
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/16-03-areal) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Areal under en graf
+- Areal mellom to grafer
+- Eksempler og oppgaver med løsning

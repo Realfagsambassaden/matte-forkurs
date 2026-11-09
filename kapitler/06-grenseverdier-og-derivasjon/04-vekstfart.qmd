@@ -1,0 +1,21 @@
+---
+title: "Vekstfart"
+tema: derivasjon
+undertema: vekstfart
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/06-04-vekstfart) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Gjennomsnittlig vekstfart
+- Momentan vekstfart
+- Definisjonen av den deriverte
+- Eksempler og oppgaver med løsning

@@ -1,0 +1,21 @@
+---
+title: "Vektorer"
+toc: false
+---
+
+::: {.intro}
+
+En vektor har både størrelse og retning, som en kraft, en fart eller en forflytning. Her regner vi med vektorer i koordinatsystemet, også i Python.
+
+:::
+
+::: {.spm}
+[Spørsmål vi jobber med i dette kapitlet]{.spm-tittel}
+
+1.  Hva er en vektor?
+
+2.  Hvordan regner vi med vektorer på koordinatform?
+
+3.  Hva betyr det å dekomponere en vektor?
+
+:::

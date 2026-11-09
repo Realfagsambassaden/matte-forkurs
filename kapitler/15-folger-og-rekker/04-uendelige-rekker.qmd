@@ -1,0 +1,20 @@
+---
+title: "Uendelige geometriske rekker"
+tema: folger-og-rekker
+undertema: uendelige
+plassholder: true
+---
+
+<!-- video: kommer (videoer/matte-forkurs/15-04-uendelige-rekker) -->
+![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
+
+<!-- tillegg: Claude -->
+::: {.callout-note title="Kommer snart"}
+Denne siden skrives nå. Innholdet kommer snart.
+:::
+
+## Dette kommer på siden
+
+- Konvergens
+- Rekker med variabel kvotient
+- Eksempler og oppgaver med løsning
