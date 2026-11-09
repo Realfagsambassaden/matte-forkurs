@@ -2,19 +2,92 @@
 title: "Aritmetiske følger og rekker"
 tema: folger-og-rekker
 undertema: aritmetiske
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/15-02-aritmetiske-folger-og-rekker) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+I en **aritmetisk følge** øker leddene med det samme tallet hver gang, som $5, 8, 11, 14, \dots$ Det er den diskrete utgaven av en rett linje. Summen av en aritmetisk rekke har en elegant formel som (ifølge historien) ble funnet av en skolegutt.
+
+## Aritmetisk følge
+
+::: {.graa}
+$$
+a_n = a_1 + (n - 1)d
+$$
+der $d$ er **differansen** mellom to ledd som følger etter hverandre.
 :::
 
-## Dette kommer på siden
+## Summen av en aritmetisk rekke
 
-- Konstant differanse
-- Summen av en aritmetisk rekke
-- Eksempler og oppgaver med løsning
+Skriv summen forlengs og baklengs, og legg sammen:
+$$
+\begin{aligned}
+S_n &= a_1 + a_2 + \dots + a_n \\
+S_n &= a_n + a_{n-1} + \dots + a_1 \\
+2S_n &= n(a_1 + a_n)
+\end{aligned}
+$$
+Hvert par summerer til det samme, $a_1 + a_n$, og det er $n$ par:
+
+::: {.graa}
+$$
+S_n = \frac{n(a_1 + a_n)}{2}
+$$
+Antall ledd ganger gjennomsnittet av første og siste ledd.
+:::
+
+::: {.eksempel}
+**Eksempel: Summen 1 + 2 + … + 100.** Regn ut summen av de 100 første positive heltallene.
+
+::: {.losning}
+$S_{100} = \frac{100(1 + 100)}{2} = \underline{\underline{5050}}$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Trapp.** En trapp av murstein har 40 steiner i nederste rad, 38 i neste, og så videre, med 2 færre for hver rad. Den øverste raden har 2 steiner. Hvor mange steiner er det?
+
+::: {.losning}
+$a_1 = 40$, $d = -2$. Siste ledd 2: $40 + (n - 1)(-2) = 2$ gir $n = 20$ rader.
+
+$S_{20} = \frac{20(40 + 2)}{2} = \underline{\underline{420 \text{ steiner}}}$
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Ledd"}
+Finn ledd nummer 50 i følgen $7, 11, 15, \dots$
+
+::: {.losning}
+$a_{50} = 7 + 49\cdot 4 = \underline{\underline{203}}$
+:::
+:::
+
+::: {.oppgave tittel="Sum"}
+Regn ut $5 + 9 + 13 + \dots + 101$.
+
+::: {.losning}
+$101 = 5 + (n - 1)4$ gir $n = 25$. $S = \frac{25(5 + 101)}{2} = \underline{\underline{1325}}$
+:::
+:::
+
+::: {.oppgave tittel="Sparing" niva="Middels"}
+Du sparer 500 kr den første måneden og øker med 100 kr hver måned. Hvor mye har du spart etter to år?
+
+::: {.losning}
+$a_{24} = 500 + 23\cdot 100 = 2800$. $S_{24} = \frac{24(500 + 2800)}{2} = \underline{\underline{39600 \text{ kr}}}$
+:::
+:::
+
+::: {.oppgave tittel="Fritt fall" niva="Utfordrende"}
+En stein faller fra ro. Strekningen den faller i sekund nummer $n$ er $4.9(2n - 1)$ meter. Vis at den totale strekningen etter $n$ sekunder er $4.9n^2$.
+
+::: {.losning}
+Aritmetisk rekke med $a_1 = 4.9$ og $a_n = 4.9(2n - 1)$: $S_n = \frac{n(4.9 + 4.9(2n - 1))}{2} = \frac{n\cdot 4.9\cdot 2n}{2} = 4.9n^2$. Det stemmer med $s = \frac12\mathrm{g}t^2$.
+:::
+:::
+
+::::

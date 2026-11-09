@@ -2,19 +2,87 @@
 title: "Geometriske følger og rekker"
 tema: folger-og-rekker
 undertema: geometriske
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/15-03-geometriske-folger-og-rekker) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+I en **geometrisk følge** ganges hvert ledd med det samme tallet, som $3, 6, 12, 24, \dots$ Det er den diskrete utgaven av eksponentiell vekst. Renter, nedbetaling av lån og spretthøyden til en ball følger slike mønstre.
+
+## Geometrisk følge
+
+::: {.graa}
+$$
+a_n = a_1\cdot k^{n - 1}
+$$
+der $k$ er **kvotienten** mellom to ledd som følger etter hverandre.
 :::
 
-## Dette kommer på siden
+## Summen av en geometrisk rekke
 
-- Konstant kvotient
-- Summen av en geometrisk rekke
-- Eksempler og oppgaver med løsning
+Gang summen med $k$ og trekk fra:
+$$
+S_n - kS_n = a_1 - a_1k^n \quad\Longrightarrow\quad S_n(1 - k) = a_1(1 - k^n)
+$$
+
+::: {.graa}
+$$
+S_n = a_1\frac{k^n - 1}{k - 1}, \qquad k \ne 1
+$$
+:::
+
+::: {.eksempel}
+**Eksempel: Sparing med rente.** Du setter inn 10000 kr hvert år i 10 år, med 4 % rente. Hvor mye står på kontoen rett etter siste innskudd?
+
+::: {.losning}
+Det siste innskuddet har ingen rente, det nest siste har ett års rente, og så videre. Summen er
+$$
+10000 + 10000\cdot 1.04 + \dots + 10000\cdot 1.04^9 = 10000\cdot\frac{1.04^{10} - 1}{1.04 - 1} = \underline{\underline{120061 \text{ kr}}}
+$$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Ballen spretter.** En ball slippes fra $2.0\ \mathrm{m}$ og spretter hver gang opp til 70 % av høyden. Hvor høyt spretter den etter sprett nummer 5?
+
+::: {.losning}
+$h_5 = 2.0\cdot 0.70^5 = \underline{\underline{0.34\ \mathrm{m}}}$
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Ledd"}
+Finn ledd nummer 8 i følgen $5, 10, 20, \dots$
+
+::: {.losning}
+$a_8 = 5\cdot 2^7 = \underline{\underline{640}}$
+:::
+:::
+
+::: {.oppgave tittel="Sum"}
+Regn ut $1 + 3 + 9 + \dots + 3^9$.
+
+::: {.losning}
+$S_{10} = \frac{3^{10} - 1}{2} = \underline{\underline{29524}}$
+:::
+:::
+
+::: {.oppgave tittel="Sjakkbrettet" niva="Middels"}
+Ett riskorn på første rute, to på andre, fire på tredje, og så videre. Hvor mange korn er det på hele sjakkbrettet (64 ruter)? Svar på standardform.
+
+::: {.losning}
+$S_{64} = 2^{64} - 1 = \underline{\underline{1.84\cdot 10^{19}}}$
+:::
+:::
+
+::: {.oppgave tittel="Lån" niva="Utfordrende"}
+Et lån på 200000 kr skal betales med like store årlige beløp $B$ over 10 år, med 5 % rente. Nåverdien av betalingene skal være lik lånet: $\sum_{i = 1}^{10}\frac{B}{1.05^i} = 200000$. Finn $B$.
+
+::: {.losning}
+Geometrisk rekke med $a_1 = \frac{B}{1.05}$ og $k = \frac{1}{1.05}$: summen er $B\cdot\frac{1 - 1.05^{-10}}{0.05} = 7.722B$. Så $B = \frac{200000}{7.722} = \underline{\underline{25901 \text{ kr}}}$.
+:::
+:::
+
+::::
