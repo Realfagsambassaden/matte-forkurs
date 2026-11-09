@@ -2,20 +2,112 @@
 title: "Lineære ulikheter"
 tema: algebra-og-likninger
 undertema: ulikheter
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/02-04-lineare-ulikheter) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+En ulikhet sier at noe er større eller mindre enn noe annet, for eksempel $2x + 3 > 11$. Løsningen er ikke ett tall, men et helt område av tall. Vi løser ulikheter nesten som likninger, med én viktig forskjell.
+
+## Ulikhetstegnene
+
+::: {.graa}
+| Tegn | Betyr | Eksempel |
+|:---:|:---|:---|
+| $<$ | mindre enn | $3 < 5$ |
+| $>$ | større enn | $5 > 3$ |
+| $\le$ | mindre enn eller lik | $x \le 4$: 4 er med |
+| $\ge$ | større enn eller lik | $x \ge 0$: 0 er med |
 :::
 
-## Dette kommer på siden
+## Regler for å løse ulikheter
 
-- Ulikhetstegnene
-- Når ulikhetstegnet snur
-- Fortegnslinje
-- Eksempler og oppgaver med løsning
+::: {.kort}
+- **Legge til og trekke fra** Det samme på begge sider. Ulikhetstegnet står.
+- **Gange og dele med et positivt tall** Ulikhetstegnet står.
+- **Gange og dele med et negativt tall** Ulikhetstegnet **snur**.
+:::
+
+Hvorfor snur tegnet? Vi vet at $2 < 5$. Ganger vi med $-1$, får vi $-2$ og $-5$, og nå er $-2 > -5$. Å gange med et negativt tall speiler tallinja, så rekkefølgen snus.
+
+::: {.eksempel}
+**Eksempel: Tegnet snur.** Løs ulikheten $7 - 3x \ge 2x - 8$.
+
+::: {.losning}
+Samle $x$ til venstre og tall til høyre:
+$$
+-3x - 2x \ge -8 - 7 \quad\Longrightarrow\quad -5x \ge -15
+$$
+Del på $-5$. Tallet er negativt, så tegnet snur:
+$$
+\underline{\underline{x \le 3}}
+$$
+Kontroll med $x = 0$ (som skal passe): $7 \ge -8$. Det stemmer. Med $x = 4$ (som ikke skal passe): $-5 \ge 0$ er galt. Bra.
+:::
+:::
+
+## Fortegnslinje
+
+En **fortegnslinje** viser hvor et uttrykk er positivt, null og negativt. For $f(x) = 2x - 6$ er nullpunktet $x = 3$. Til venstre for 3 er uttrykket negativt, til høyre positivt:
+
+```{=html}
+<div class="graa" style="font-family: monospace; padding: .6rem 1rem;">
+x:        ────────────── 3 ──────────────<br>
+2x − 6:   − − − − − − − −  0  + + + + + + + +
+</div>
+```
+
+Ulikheten $2x - 6 > 0$ har derfor løsningen $x > 3$. Fortegnslinjer blir uunnværlige når vi skal løse andregradsulikheter senere.
+
+## Prøv selv
+
+```{.python .kjor}
+from sympy import symbols, solve_univariate_inequality
+
+x = symbols("x", real=True)
+print(solve_univariate_inequality(7 - 3*x >= 2*x - 8, x))   # x <= 3
+print(solve_univariate_inequality(2*x - 6 > 0, x))          # x > 3
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Løs ulikhetene"}
+a) $3x + 4 < 19$ b) $5 - x \ge 2$ c) $2(x - 1) > 4x + 6$
+
+::: {.losning}
+a) $3x < 15$, så $\underline{\underline{x < 5}}$.
+
+b) $-x \ge -3$. Gang med $-1$, tegnet snur: $\underline{\underline{x \le 3}}$.
+
+c) $2x - 2 > 4x + 6$ gir $-2x > 8$. Del på $-2$, tegnet snur: $\underline{\underline{x < -4}}$.
+:::
+:::
+
+::: {.oppgave tittel="Brøk i ulikheten"}
+Løs ulikheten $\dfrac{x}{2} - 1 \le \dfrac{x + 4}{3}$.
+
+::: {.losning}
+Gang med 6 (positivt, tegnet står): $3x - 6 \le 2x + 8$. Da er $\underline{\underline{x \le 14}}$.
+:::
+:::
+
+::: {.oppgave tittel="Mobilabonnement" niva="Middels"}
+Abonnement A koster $99$ kr i måneden pluss $0.50$ kr per minutt. Abonnement B koster $249$ kr i måneden uten minuttpris. Når lønner B seg?
+
+::: {.losning}
+B lønner seg når $249 < 99 + 0.50x$, der $x$ er antall minutter. Da er $150 < 0.50x$, så $\underline{\underline{x > 300}}$. B lønner seg når du ringer mer enn 300 minutter i måneden.
+:::
+:::
+
+::: {.oppgave tittel="Bremselengde" niva="Utfordrende"}
+En bil bremser fra farten $v_0 = 25\ \mathrm{m/s}$ med akselerasjonen $-5.0\ \mathrm{m/s^2}$. Farten etter tiden $t$ er $v = 25 - 5.0t$ (i m/s). I hvilket tidsrom er farten større enn $10\ \mathrm{m/s}$, men bilen fortsatt i bevegelse framover?
+
+::: {.losning}
+Farten større enn 10: $25 - 5.0t > 10$ gir $-5.0t > -15$, så $t < 3.0$. Tiden er også $t \ge 0$.
+
+Svar: $\underline{\underline{0 \le t < 3.0\ \mathrm{s}}}$. (Bilen står stille ved $t = 5.0\ \mathrm{s}$, så den er i bevegelse hele dette tidsrommet.)
+:::
+:::
+
+::::

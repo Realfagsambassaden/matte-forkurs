@@ -2,20 +2,104 @@
 title: "Intervaller og mengder"
 tema: algebra-og-likninger
 undertema: intervall-og-mengder
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/02-05-intervaller-og-mengder) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Løsningen av en ulikhet er et område på tallinja. I stedet for å skrive «alle $x$ som er større enn 2 og mindre enn eller lik 5», skriver vi kort $\langle 2, 5]$. Her lærer vi intervallnotasjon og litt mengdelære, så vi kan skrive løsninger presist.
+
+## Intervaller
+
+Et **intervall** er alle tallene mellom to grenser. Klammeparentesen viser om endepunktet er med:
+
+::: {.graa}
+| Intervall | Betyr | Endepunkter |
+|:---|:---|:---|
+| $[a, b]$ | $a \le x \le b$ | begge med (lukket) |
+| $\langle a, b\rangle$ | $a < x < b$ | ingen med (åpent) |
+| $[a, b\rangle$ | $a \le x < b$ | bare $a$ med |
+| $\langle a, b]$ | $a < x \le b$ | bare $b$ med |
+| $[a, \rightarrow\rangle$ | $x \ge a$ | ingen øvre grense |
+| $\langle\leftarrow, b\rangle$ | $x < b$ | ingen nedre grense |
 :::
 
-## Dette kommer på siden
+Uendelig er ikke et tall, så pilene har alltid åpen parentes. Mange bøker og kalkulatorer skriver $(a, b)$ for åpne intervaller og $\infty$ i stedet for pil, for eksempel $[a, \infty)$. Det betyr det samme.
 
-- Tallinja og intervaller
-- Mengder, union og snitt
-- Å skrive løsningsmengder
-- Eksempler og oppgaver med løsning
+På tallinja tegner vi en **fylt** prikk når endepunktet er med, og en **åpen** prikk når det ikke er med.
+
+## Mengder
+
+En **mengde** er en samling elementer. Vi skriver elementene i krøllparenteser: $A = \{1, 2, 3\}$. At 2 er med i $A$, skriver vi $2 \in A$.
+
+::: {.kort}
+- **Union $A \cup B$** Alt som er med i $A$ **eller** $B$ (eller begge).
+- **Snitt $A \cap B$** Det som er med i **både** $A$ og $B$.
+- **Tom mengde $\emptyset$** Mengden uten elementer. En likning uten løsning har løsningsmengden $\emptyset$.
+- **Løsningsmengde $L$** Mengden av alle løsninger. Ulikheten $x \le 3$ har $L = \langle\leftarrow, 3]$.
+:::
+
+::: {.eksempel}
+**Eksempel: Union og snitt av intervaller.** La $A = [-1, 4\rangle$ og $B = \langle 2, 6]$. Finn $A \cup B$ og $A \cap B$.
+
+::: {.losning}
+Tegn intervallene på tallinja. Til sammen dekker de alt fra $-1$ (med) til $6$ (med):
+$$
+A \cup B = \underline{\underline{[-1, 6]}}
+$$
+De overlapper fra 2 (ikke med i $B$) til 4 (ikke med i $A$):
+$$
+A \cap B = \underline{\underline{\langle 2, 4\rangle}}
+$$
+:::
+:::
+
+## Prøv selv
+
+```{.python .kjor}
+from sympy import Interval, Union, Intersection
+
+A = Interval.Ropen(-1, 4)       # [-1, 4>
+B = Interval.Lopen(2, 6)        # <2, 6]
+print(Union(A, B))              # Interval(-1, 6)
+print(Intersection(A, B))       # Interval.open(2, 4)
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Skriv som intervall"}
+Skriv som intervall: a) $-2 \le x < 5$ b) $x > 0$ c) $x \le -1$
+
+::: {.losning}
+a) $\underline{\underline{[-2, 5\rangle}}$ b) $\underline{\underline{\langle 0, \rightarrow\rangle}}$ c) $\underline{\underline{\langle\leftarrow, -1]}}$
+:::
+:::
+
+::: {.oppgave tittel="Skriv som ulikhet"}
+Skriv som ulikhet: a) $\langle 3, 7]$ b) $[0, \rightarrow\rangle$
+
+::: {.losning}
+a) $\underline{\underline{3 < x \le 7}}$ b) $\underline{\underline{x \ge 0}}$
+:::
+:::
+
+::: {.oppgave tittel="Union og snitt" niva="Middels"}
+La $A = \langle\leftarrow, 2]$ og $B = [0, 5\rangle$. Finn $A \cup B$ og $A \cap B$.
+
+::: {.losning}
+$A \cup B = \underline{\underline{\langle\leftarrow, 5\rangle}}$ og $A \cap B = \underline{\underline{[0, 2]}}$.
+:::
+:::
+
+::: {.oppgave tittel="Løsningsmengde" niva="Middels"}
+Finn løsningsmengden: a) $3x - 1 = 3x + 2$ b) $2x + 1 \ge 2x$
+
+::: {.losning}
+a) $-1 = 2$ er aldri sant: $\underline{\underline{L = \emptyset}}$.
+
+b) $1 \ge 0$ er alltid sant: $\underline{\underline{L = \mathbb{R}}}$, alle reelle tall.
+:::
+:::
+
+::::
