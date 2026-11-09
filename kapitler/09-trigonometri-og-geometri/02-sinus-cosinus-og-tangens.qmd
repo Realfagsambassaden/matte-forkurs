@@ -2,20 +2,113 @@
 title: "Sinus, cosinus og tangens"
 tema: trigonometri
 undertema: rettvinklet
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/09-02-sinus-cosinus-og-tangens) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+I alle rettvinklede trekanter med samme vinkel $v$ er forholdet mellom sidene det samme, uansett hvor store trekantene er. Disse forholdene har egne navn: sinus, cosinus og tangens. Med dem kan vi regne ut sider og vinkler, og i fysikken dekomponere krefter og farter.
+
+![](../../bilder/figurer/rettvinklet.svg){.tikz-fig style="width:380px" fig-alt="En rettvinklet trekant med vinkelen v nede til venstre. Hypotenusen er den skrå siden, den hosliggende kateten ligger langs bunnen, og den motstående kateten står loddrett til høyre."}
+
+## Definisjonene
+
+::: {.graa}
+$$
+\sin v = \frac{\text{motstående katet}}{\text{hypotenus}} \qquad \cos v = \frac{\text{hosliggende katet}}{\text{hypotenus}} \qquad \tan v = \frac{\text{motstående katet}}{\text{hosliggende katet}}
+$$
 :::
 
-## Dette kommer på siden
+Legg merke til at $\tan v = \dfrac{\sin v}{\cos v}$.
 
-- Definisjonene i en rettvinklet trekant
-- Å finne sider
-- Å finne vinkler
-- Eksempler og oppgaver med løsning
+## Å finne sider
+
+Kjenner vi en vinkel og én side, kan vi finne de andre sidene. Snu definisjonen:
+
+::: {.eksempel}
+**Eksempel: Kraft på skrå.** Et tau drar i en kasse med kraften $F = 200\ \mathrm{N}$ i en vinkel $30^\circ$ over vannrett. Hvor stor er den vannrette og den loddrette delen av kraften?
+
+::: {.losning}
+Kraften er hypotenusen. Den vannrette delen er hosliggende katet, den loddrette motstående:
+$$
+F_x = F\cos 30^\circ = 200\ \mathrm{N}\cdot 0.866 = \underline{\underline{173\ \mathrm{N}}} \qquad F_y = F\sin 30^\circ = 200\ \mathrm{N}\cdot 0.500 = \underline{\underline{100\ \mathrm{N}}}
+$$
+Kontroll med Pytagoras: $\sqrt{173^2 + 100^2} = 200$.
+:::
+:::
+
+## Å finne vinkler
+
+Kjenner vi to sider, finner vi vinkelen med de **omvendte** funksjonene $\sin^{-1}$, $\cos^{-1}$ og $\tan^{-1}$ (på kalkulatoren ofte SIN⁻¹ osv., i Python `arcsin`, `arccos`, `arctan`):
+
+::: {.eksempel}
+**Eksempel: Stigningsvinkel.** En vei stiger $12\ \mathrm{m}$ over en vannrett strekning på $150\ \mathrm{m}$. Hvor stor er stigningsvinkelen?
+
+::: {.losning}
+$\tan v = \frac{12}{150} = 0.080$, så $v = \tan^{-1} 0.080 = \underline{\underline{4.6^\circ}}$.
+:::
+:::
+
+::: {.callout-warning title="Grader eller radianer?"}
+Sjekk at kalkulatoren står på grader (DEG) når vinklene er i grader. Python bruker alltid radianer: `np.sin(np.radians(30))` gir $0.5$.
+:::
+
+## Eksakte verdier
+
+::: {.graa}
+| $v$ | $0^\circ$ | $30^\circ$ | $45^\circ$ | $60^\circ$ | $90^\circ$ |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| $\sin v$ | $0$ | $\frac12$ | $\frac{\sqrt2}{2}$ | $\frac{\sqrt3}{2}$ | $1$ |
+| $\cos v$ | $1$ | $\frac{\sqrt3}{2}$ | $\frac{\sqrt2}{2}$ | $\frac12$ | $0$ |
+| $\tan v$ | $0$ | $\frac{\sqrt3}{3}$ | $1$ | $\sqrt3$ | ikke definert |
+:::
+
+::: {.callout-tip title="I fysikken"}
+Dekomponering av krefter og farter bruker nettopp $F_x = F\cos v$ og $F_y = F\sin v$. Se [trigonometri](https://fysikkhjelp.no/fysikk-forkurs/kapitler/02-matematikk/03-trigonometri.html) og [krefter i planet](https://fysikkhjelp.no/fysikk-forkurs/kapitler/04-krefter/04-krefter-i-planet-dekomponering.html) på fysikkhjelp.no.
+:::
+
+## Prøv selv
+
+```{.python .kjor}
+import numpy as np
+F, v = 200, 30                      # N og grader
+print(F*np.cos(np.radians(v)), F*np.sin(np.radians(v)))
+print(np.degrees(np.arctan(12/150)))  # stigningsvinkel
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Finn sidene"}
+I en rettvinklet trekant er hypotenusen $10\ \mathrm{cm}$ og en vinkel $40^\circ$. Finn katetene.
+
+::: {.losning}
+Motstående: $10\sin 40^\circ = \underline{\underline{6.4\ \mathrm{cm}}}$. Hosliggende: $10\cos 40^\circ = \underline{\underline{7.7\ \mathrm{cm}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Finn vinkelen"}
+Katetene i en rettvinklet trekant er $5.0$ og $12$. Finn de spisse vinklene.
+
+::: {.losning}
+$\tan v = \frac{5.0}{12}$ gir $\underline{\underline{v = 22.6^\circ}}$, og den andre er $\underline{\underline{67.4^\circ}}$.
+:::
+:::
+
+::: {.oppgave tittel="Skråplan" niva="Middels"}
+En kasse med tyngde $G = 400\ \mathrm{N}$ står på et skråplan med helningsvinkel $25^\circ$. Finn komponentene av tyngden langs og vinkelrett på planet.
+
+::: {.losning}
+Langs planet: $G\sin 25^\circ = \underline{\underline{169\ \mathrm{N}}}$. Vinkelrett: $G\cos 25^\circ = \underline{\underline{363\ \mathrm{N}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Høyden av et tre" niva="Utfordrende"}
+Du står $20\ \mathrm{m}$ fra et tre og ser toppen i en vinkel $35^\circ$ over vannrett. Øynene er $1.6\ \mathrm{m}$ over bakken. Hvor høyt er treet?
+
+::: {.losning}
+$h = 1.6 + 20\tan 35^\circ = 1.6 + 14.0 = \underline{\underline{15.6\ \mathrm{m}}}$
+:::
+:::
+
+::::

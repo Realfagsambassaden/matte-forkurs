@@ -2,18 +2,45 @@
 title: "Blandede oppgaver: trigonometri og geometri"
 tema: trigonometri
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/09-06-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander Pytagoras, trigonometri i rettvinklede og vilkårlige trekanter, og romgeometri. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Rampe"}
+En rampe er $6.0\ \mathrm{m}$ lang og stiger $0.50\ \mathrm{m}$. Hva er helningsvinkelen?
+
+::: {.losning}
+$\sin v = \frac{0.50}{6.0}$, så $\underline{\underline{v = 4.8^\circ}}$.
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Dekomponering"}
+En fotball sparkes med farten $18\ \mathrm{m/s}$ i en vinkel $35^\circ$ over bakken. Finn den vannrette og den loddrette startfarten.
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$v_x = 18\cos 35^\circ = \underline{\underline{14.7\ \mathrm{m/s}}}$ og $v_y = 18\sin 35^\circ = \underline{\underline{10.3\ \mathrm{m/s}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Avstand over en innsjø" niva="Middels"}
+Fra punkt $C$ er det $320\ \mathrm{m}$ til $A$ og $450\ \mathrm{m}$ til $B$ på hver sin side av en innsjø. Vinkelen $ACB$ er $72^\circ$. Hvor bredt er det fra $A$ til $B$?
+
+::: {.losning}
+$AB^2 = 320^2 + 450^2 - 2\cdot 320\cdot 450\cos 72^\circ = 102400 + 202500 - 88998 = 215902$, så $AB = \underline{\underline{465\ \mathrm{m}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Pyramide" niva="Utfordrende"}
+En pyramide har kvadratisk grunnflate med side $6.0\ \mathrm{m}$, og hver sidekant (fra hjørne til topp) er $5.0\ \mathrm{m}$. Finn høyden og volumet.
+
+::: {.losning}
+Halve diagonalen i grunnflaten er $\frac{6.0\sqrt2}{2} = 4.24\ \mathrm{m}$. Høyden: $h = \sqrt{5.0^2 - 4.24^2} = \sqrt{25 - 18} = \sqrt7 = \underline{\underline{2.6\ \mathrm{m}}}$.
+
+Volumet: $V = \frac13\cdot 36\cdot 2.65 = \underline{\underline{32\ \mathrm{m^3}}}$.
+:::
+:::
+
+::::
