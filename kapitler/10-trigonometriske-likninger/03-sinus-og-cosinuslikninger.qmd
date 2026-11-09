@@ -2,19 +2,104 @@
 title: "Sinus- og cosinuslikninger"
 tema: trigonometri
 undertema: trigonometriske-likninger
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/10-03-sinus-og-cosinuslikninger) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Likningen $\sin x = \frac12$ har ikke bare løsningen $x = 30^\circ$. Også $150^\circ$ passer, og alle vinkler vi får ved å legge til hele runder. En trigonometrisk likning har derfor uendelig mange løsninger, og vi må finne dem alle systematisk.
+
+## sin x = a
+
+I enhetssirkelen er $\sin x$ $y$-koordinaten. Den vannrette linja $y = a$ skjærer sirkelen i to punkter, symmetrisk om $y$-aksen. Derfor:
+
+::: {.graa}
+$$
+\sin x = a \quad\Longleftrightarrow\quad x = \sin^{-1} a + k\cdot 2\pi \quad\text{eller}\quad x = \pi - \sin^{-1} a + k\cdot 2\pi
+$$
+der $k$ er et helt tall. Løsningen finnes bare når $-1 \le a \le 1$.
 :::
 
-## Dette kommer på siden
+## cos x = a
 
-- Grunnlikningene
-- Alle løsninger
-- Eksempler og oppgaver med løsning
+$\cos x$ er $x$-koordinaten. Den loddrette linja $x = a$ skjærer sirkelen i to punkter, symmetrisk om $x$-aksen:
+
+::: {.graa}
+$$
+\cos x = a \quad\Longleftrightarrow\quad x = \pm\cos^{-1} a + k\cdot 2\pi
+$$
+:::
+
+::: {.eksempel}
+**Eksempel: Sinuslikning.** Løs $2\sin x = \sqrt3$ for $x \in [0, 2\pi\rangle$.
+
+::: {.losning}
+$\sin x = \frac{\sqrt3}{2}$. Den kjente vinkelen er $\frac{\pi}{3}$. Den andre løsningen er $\pi - \frac{\pi}{3} = \frac{2\pi}{3}$.
+$$
+\underline{\underline{x = \frac{\pi}{3} \quad\text{eller}\quad x = \frac{2\pi}{3}}}
+$$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Med koeffisient i vinkelen.** Løs $\cos(2x) = 0.4$ for $x \in [0, 2\pi\rangle$.
+
+::: {.losning}
+$2x = \pm\cos^{-1} 0.4 + k\cdot 2\pi = \pm 1.159 + k\cdot 2\pi$. Del på 2:
+$$
+x = \pm 0.580 + k\cdot\pi
+$$
+I intervallet: $\underline{\underline{x = 0.580,\ 2.562,\ 3.722,\ 5.704}}$. Faktoren 2 i vinkelen gir dobbelt så mange løsninger.
+:::
+:::
+
+::: {.callout-tip title="Kontroller grafisk"}
+Tegn $y = \cos(2x)$ og $y = 0.4$ og tell skjæringspunktene. Det er en rask måte å sjekke at du har fått med alle løsningene.
+:::
+
+## Prøv selv
+
+```{.python .kjor}
+import numpy as np
+a = 0.4
+grunn = np.arccos(a)
+losn = sorted({(s*grunn + k*2*np.pi)/2 for s in (1, -1) for k in range(-1, 4)})
+print([round(x, 3) for x in losn if 0 <= x < 2*np.pi])
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Grunnlikninger"}
+Løs for $x \in [0, 2\pi\rangle$: a) $\sin x = \frac12$ b) $\cos x = -\frac{\sqrt2}{2}$ c) $\sin x = -1$
+
+::: {.losning}
+a) $\underline{\underline{\frac{\pi}{6}, \frac{5\pi}{6}}}$ b) $\underline{\underline{\frac{3\pi}{4}, \frac{5\pi}{4}}}$ c) $\underline{\underline{\frac{3\pi}{2}}}$
+:::
+:::
+
+::: {.oppgave tittel="Med kalkulator"}
+Løs $3\cos x - 1 = 0$ for $x \in [0, 2\pi\rangle$.
+
+::: {.losning}
+$\cos x = \frac13$, $\cos^{-1}\frac13 = 1.231$. Løsningene: $\underline{\underline{x = 1.231 \text{ og } x = 2\pi - 1.231 = 5.052}}$.
+:::
+:::
+
+::: {.oppgave tittel="Svingning" niva="Middels"}
+Et lodd svinger med posisjonen $y(t) = 5.0\sin(2.0t)$ cm. Når er $y = 2.5\ \mathrm{cm}$ de første to gangene?
+
+::: {.losning}
+$\sin(2.0t) = 0.5$ gir $2.0t = \frac{\pi}{6}$ eller $\frac{5\pi}{6}$. Altså $t = \underline{\underline{0.26\ \mathrm{s} \text{ og } 1.31\ \mathrm{s}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Alle løsninger" niva="Utfordrende"}
+Skriv opp alle løsningene av $\sin\left(x - \frac{\pi}{4}\right) = 0$.
+
+::: {.losning}
+$\sin u = 0$ gir $u = k\pi$. Så $x - \frac{\pi}{4} = k\pi$, altså $\underline{\underline{x = \frac{\pi}{4} + k\pi}}$, $k$ helt tall.
+:::
+:::
+
+::::
