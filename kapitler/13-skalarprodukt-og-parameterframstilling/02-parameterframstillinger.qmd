@@ -2,19 +2,96 @@
 title: "Parameterframstillinger"
 tema: vektorer
 undertema: parameterframstilling
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/13-02-parameterframstillinger) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+En linje kan beskrives som veien et punkt følger når det starter et sted og beveger seg i en fast retning. Med en **parameter** $t$ (gjerne tiden) får vi en formel for hvor punktet er. Det kalles en **parameterframstilling**, og den virker like godt for linjer som for kurver som en kastebane.
+
+## Parameterframstilling for en linje
+
+Linja gjennom punktet $P_0 = (x_0, y_0)$ med retningsvektor $\vec r = [a, b]$ er alle punktene
+
+::: {.graa}
+$$
+\begin{aligned} x &= x_0 + at \\ y &= y_0 + bt \end{aligned} \qquad t \in \mathbb{R}
+$$
 :::
 
-## Dette kommer på siden
+For hver verdi av $t$ får vi ett punkt. $t = 0$ gir $P_0$, $t = 1$ gir $P_0 + \vec r$, og negative $t$ gir punkter på den andre siden.
 
-- Linjer med parameter
-- Regning med parameterframstillinger
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: Linja gjennom to punkter.** Finn en parameterframstilling for linja gjennom $A = (1, 2)$ og $B = (4, 0)$. Ligger $(7, -2)$ på linja?
+
+::: {.losning}
+Retningsvektor $\overrightarrow{AB} = [3, -2]$:
+$$
+\underline{\underline{x = 1 + 3t, \quad y = 2 - 2t}}
+$$
+For $(7, -2)$: $1 + 3t = 7$ gir $t = 2$, og da er $y = 2 - 4 = -2$. Det stemmer, så punktet **ligger** på linja.
+:::
+:::
+
+## Skjæringspunkt
+
+To linjer på parameterform skjærer hverandre der begge koordinatene er like. Bruk **forskjellige** parametre ($t$ og $s$) for de to linjene.
+
+::: {.eksempel}
+**Eksempel: Skjæring.** Finn skjæringspunktet mellom $l: x = 1 + 3t,\ y = 2 - 2t$ og $m: x = s,\ y = s - 3$.
+
+::: {.losning}
+$1 + 3t = s$ og $2 - 2t = s - 3$. Sett inn: $2 - 2t = 1 + 3t - 3$, så $5t = 4$ og $t = 0.8$.
+
+Punktet er $(1 + 2.4,\ 2 - 1.6) = \underline{\underline{(3.4,\ 0.4)}}$.
+:::
+:::
+
+## Kurver
+
+Parameterframstillinger kan også beskrive kurver. Banen til et skrått kast er
+$$
+x = v_0\cos\alpha\cdot t, \qquad y = v_0\sin\alpha\cdot t - \tfrac12\mathrm{g}t^2
+$$
+
+```{.python .kjor}
+import numpy as np
+import matplotlib.pyplot as plt
+v0, a, g = 15.0, np.radians(40), 9.81
+t = np.linspace(0, 2*v0*np.sin(a)/g, 100)
+plt.plot(v0*np.cos(a)*t, v0*np.sin(a)*t - 0.5*g*t**2)
+plt.gca().set_aspect("equal"); plt.grid(True); plt.xlabel("x (m)"); plt.ylabel("y (m)"); plt.show()
+```
+
+::: {.callout-tip title="I fysikken"}
+Se [bevegelse i to dimensjoner på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/06-bevegelse-i-to-dimensjoner.html).
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Lag parameterframstilling"}
+Finn en parameterframstilling for linja gjennom $(-1, 3)$ med retningsvektor $[2, 5]$, og finn punktet der $t = 2$.
+
+::: {.losning}
+$x = -1 + 2t$, $y = 3 + 5t$. $t = 2$ gir $\underline{\underline{(3, 13)}}$.
+:::
+:::
+
+::: {.oppgave tittel="Fra parameter til likning" niva="Middels"}
+Skriv linja $x = 2 + t$, $y = 1 + 3t$ på formen $y = ax + b$.
+
+::: {.losning}
+$t = x - 2$, så $y = 1 + 3(x - 2) = \underline{\underline{3x - 5}}$.
+:::
+:::
+
+::: {.oppgave tittel="Skjæring med aksen" niva="Middels"}
+Hvor skjærer linja $x = 4 - 2t$, $y = -1 + t$ $x$-aksen?
+
+::: {.losning}
+$y = 0$ gir $t = 1$, og da er $x = 2$: $\underline{\underline{(2, 0)}}$.
+:::
+:::
+
+::::
