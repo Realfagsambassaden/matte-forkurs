@@ -2,19 +2,76 @@
 title: "Vektorregning i Python"
 tema: vektorer
 undertema: vektorer-i-planet
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/12-03-vektorregning-i-python) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Med mange vektorer, eller vektorer i tre dimensjoner, blir håndregning tungvint. I Python lagrer vi en vektor som en `numpy`-array. Da virker `+`, `-` og ganging med tall nøyaktig som i matematikken, og vi kan tegne vektorene som piler.
+
+## Vektorer med numpy
+
+```{.python .kjor}
+import numpy as np
+
+u = np.array([2, -1])
+v = np.array([-3, 4])
+
+print("u + v   =", u + v)
+print("2u + v  =", 2*u + v)
+print("|u - v| =", np.linalg.norm(u - v))    # lengden
+```
+
+`np.linalg.norm` regner ut lengden $\sqrt{x^2 + y^2}$.
+
+## Tegne vektorer
+
+`plt.quiver` tegner piler. Her tegner vi to krefter og summen av dem.
+
+```{.python .kjor}
+import numpy as np
+import matplotlib.pyplot as plt
+
+F1 = np.array([120, 50])
+F2 = np.array([80, -90])
+S = F1 + F2
+
+for start, vek, farge, navn in [((0, 0), F1, "C0", "F1"), (tuple(F1), F2, "C3", "F2"), ((0, 0), S, "C2", "sum")]:
+    plt.quiver(*start, *vek, angles="xy", scale_units="xy", scale=1, color=farge, label=navn)
+plt.xlim(-20, 230); plt.ylim(-80, 80); plt.gca().set_aspect("equal")
+plt.legend(); plt.grid(True); plt.show()
+print("Sum:", S, " størrelse:", round(np.linalg.norm(S), 1), "N")
+```
+
+## Fra lengde og vinkel til koordinater
+
+Er en vektor gitt med lengde $r$ og vinkel $v$ fra $x$-aksen, er $\vec a = [r\cos v,\ r\sin v]$. Omvendt finner `np.arctan2(y, x)` vinkelen i riktig kvadrant.
+
+```{.python .kjor}
+import numpy as np
+r, v = 20.0, np.radians(150)
+a = np.array([r*np.cos(v), r*np.sin(v)])
+print(a)
+print(np.degrees(np.arctan2(a[1], a[0])))   # 150 igjen
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Tre krefter"}
+Bruk Python og finn summen og størrelsen av $[12, 5]$, $[-4, 8]$ og $[3, -15]$ (newton).
+
+::: {.losning}
+Summen er $\underline{\underline{[11, -2]\ \mathrm{N}}}$, størrelsen $\sqrt{125} = \underline{\underline{11.2\ \mathrm{N}}}$.
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Polarform" niva="Middels"}
+En kraft på $50\ \mathrm{N}$ virker i retningen $210^\circ$ fra $x$-aksen. Finn koordinatene med Python, og sjekk at lengden blir 50.
 
-- Vektorer med numpy
-- Lengde, sum og plott
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$[50\cos 210^\circ, 50\sin 210^\circ] = \underline{\underline{[-43.3, -25.0]\ \mathrm{N}}}$, og `np.linalg.norm` gir 50.
+:::
+:::
+
+::::

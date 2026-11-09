@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=1.0]
+\def\a{25}
+\draw[thick] (0,0)--(6,0)--(6,{6*tan(\a)})--cycle;
+\draw (1.0,0) arc (0:\a:1.0); \node at (1.35,0.25) {$\alpha$};
+\begin{scope}[shift={(3.6,{3.6*tan(\a)})},rotate=\a]
+\draw[thick,fill=black!10] (-0.6,0) rectangle (0.6,0.9);
+\coordinate (M) at (0,0.45);
+\end{scope}
+\draw[vek,black] (M)--++(0,-2.2) node[below]{$G$};
+\draw[vek,rod] (M)--++({180+\a}:{2.2*sin(\a)});
+\draw[vek,rod] (M)--++({-90+\a}:{2.2*cos(\a)}) node[below right]{$G\cos\alpha$};
+\node[rod] at ($(M)+({180+\a}:{2.2*sin(\a)})+(-0.75,0)$) {$G\sin\alpha$};
+\end{tikzpicture}
