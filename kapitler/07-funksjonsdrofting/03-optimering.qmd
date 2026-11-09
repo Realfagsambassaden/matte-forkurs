@@ -74,7 +74,7 @@ Målene er $\underline{\underline{15\ \mathrm{m}\times 30\ \mathrm{m}}}$, med ar
 En konsertarrangør selger $2000 - 10p$ billetter når prisen er $p$ kroner. Hvilken pris gir størst inntekt?
 
 ::: {.losning}
-$I(p) = p(2000 - 10p)$, $I'(p) = 2000 - 20p = 0$ gir $\underline{\underline{p = 100 \text{ kr}}}$. Da selges 1000 billetter, og inntekten er $100\,000$ kr.
+$I(p) = p(2000 - 10p)$, $I'(p) = 2000 - 20p = 0$ gir $\underline{\underline{p = 100 \text{ kr}}}$. Da selges 1000 billetter, og inntekten er $100000$ kr.
 :::
 :::
 

@@ -8,7 +8,7 @@ undertema: standardform
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-Avstanden til sola er $150\,000\,000\,000$ meter, og et hydrogenatom er $0.000\,000\,000\,1$ meter bredt. Tall med så mange nuller er vanskelige å lese og lette å skrive feil. På **standardform** skriver vi dem i stedet som $1.5\cdot 10^{11}\ \mathrm{m}$ og $1\cdot 10^{-10}\ \mathrm{m}$.
+Avstanden til sola er $150000000000$ meter, og et hydrogenatom er $0.0000000001$ meter bredt. Tall med så mange nuller er vanskelige å lese og lette å skrive feil. På **standardform** skriver vi dem i stedet som $1.5\cdot 10^{11}\ \mathrm{m}$ og $1\cdot 10^{-10}\ \mathrm{m}$.
 
 ## Definisjon
 
@@ -22,7 +22,7 @@ $$
 Eksponenten $n$ forteller hvor mange plasser kommaet er flyttet: positiv $n$ for store tall, negativ $n$ for små.
 
 ::: {.kort}
-- **Stort tall** $45\,000 = 4.5\cdot 10^4$. Kommaet flyttes 4 plasser mot venstre.
+- **Stort tall** $45000 = 4.5\cdot 10^4$. Kommaet flyttes 4 plasser mot venstre.
 - **Lite tall** $0.0032 = 3.2\cdot 10^{-3}$. Kommaet flyttes 3 plasser mot høyre.
 - **Gjeldende siffer** $a$ viser hvor nøyaktig tallet er: $4.50\cdot 10^4$ har tre gjeldende siffer, $4.5\cdot 10^4$ har to.
 :::
@@ -73,7 +73,7 @@ print(f"{6.02e23 * 2:.3e}")
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Skriv på standardform"}
-Skriv på standardform: a) $73\,000$ b) $0.000\,58$ c) $602\,000\,000$ d) $0.07$
+Skriv på standardform: a) $73000$ b) $0.00058$ c) $602000000$ d) $0.07$
 
 ::: {.losning}
 a) $\underline{\underline{7.3\cdot 10^4}}$ b) $\underline{\underline{5.8\cdot 10^{-4}}}$ c) $\underline{\underline{6.02\cdot 10^{8}}}$ d) $\underline{\underline{7\cdot 10^{-2}}}$
@@ -84,7 +84,7 @@ a) $\underline{\underline{7.3\cdot 10^4}}$ b) $\underline{\underline{5.8\cdot 10
 Skriv som vanlige tall: a) $2.4\cdot 10^3$ b) $9.1\cdot 10^{-5}$ c) $1.0\cdot 10^0$
 
 ::: {.losning}
-a) $\underline{\underline{2400}}$ b) $\underline{\underline{0.000\,091}}$ c) $\underline{\underline{1.0}}$
+a) $\underline{\underline{2400}}$ b) $\underline{\underline{0.000091}}$ c) $\underline{\underline{1.0}}$
 :::
 :::
 

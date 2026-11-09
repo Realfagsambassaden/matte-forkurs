@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.8]
+\draw[akse] (-3,0)--(5.5,0) node[right]{$x$};
+\draw[akse] (0,-3)--(0,5.5) node[above]{$y$};
+\draw[dashed,black!50] (-2.8,-2.8)--(5.2,5.2) node[above right]{$y = x$};
+\draw[very thick,rod,domain=-3:1.65,samples=80] plot (\x,{exp(\x)}) node[above]{$\mathrm{e}^x$};
+\draw[very thick,bla,domain=0.06:5.3,samples=100] plot (\x,{ln(\x)}) node[right]{$\ln x$};
+\fill (1,0) circle (2pt) node[below right]{$(1, 0)$};
+\fill (0,1) circle (2pt) node[above left]{$(0, 1)$};
+\end{tikzpicture}

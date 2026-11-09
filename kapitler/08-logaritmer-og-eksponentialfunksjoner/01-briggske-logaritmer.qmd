@@ -2,19 +2,98 @@
 title: "Briggske logaritmer"
 tema: eksponential-og-logaritme
 undertema: logaritmer
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/08-01-briggske-logaritmer) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Hvilken potens av 10 gir 1000? Svaret er 3, fordi $10^3 = 1000$. Det tallet kalles **logaritmen** til 1000. Logaritmen er det motsatte av å opphøye, på samme måte som roten er det motsatte av å kvadrere. Med den kan vi løse likninger der den ukjente står i eksponenten.
+
+## Definisjon
+
+::: {.callout-note title="Definisjon: Briggsk logaritme"}
+For $x > 0$ er $\lg x$ det tallet som 10 må opphøyes i for å gi $x$:
+$$
+10^{\lg x} = x \qquad\text{og}\qquad \lg(10^a) = a
+$$
 :::
 
-## Dette kommer på siden
+::: {.graa}
+| $x$ | $0.001$ | $0.1$ | $1$ | $10$ | $100$ | $10^6$ |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| $\lg x$ | $-3$ | $-1$ | $0$ | $1$ | $2$ | $6$ |
+:::
 
-- Hva lg x betyr
-- Logaritmereglene
-- Eksempler og oppgaver med løsning
+Logaritmen til et tall mellom 1 og 10 ligger mellom 0 og 1: $\lg 2 \approx 0.301$. Logaritmen til et negativt tall eller null finnes ikke, fordi $10^a$ alltid er positivt.
+
+## Logaritmereglene
+
+Fordi logaritmer er eksponenter, gir potensreglene tre regler:
+
+::: {.graa}
+$$
+\lg(a\cdot b) = \lg a + \lg b \qquad \lg\frac{a}{b} = \lg a - \lg b \qquad \lg\left(a^n\right) = n\lg a
+$$
+:::
+
+Logaritmen gjør altså multiplikasjon til addisjon og potenser til multiplikasjon. Det var derfor logaritmer ble oppfunnet: før kalkulatoren gjorde de lange utregninger mye enklere.
+
+::: {.eksempel}
+**Eksempel: Bruk reglene.** Regn ut uten kalkulator: $\lg 4 + \lg 25$ og $\lg\sqrt{1000}$.
+
+::: {.losning}
+$\lg 4 + \lg 25 = \lg(4\cdot 25) = \lg 100 = \underline{\underline{2}}$
+
+$\lg\sqrt{1000} = \lg\left(10^{3}\right)^{1/2} = \lg 10^{3/2} = \underline{\underline{\tfrac32}}$
+:::
+:::
+
+::: {.callout-tip title="Logaritmiske skalaer"}
+Desibel, pH og Richterskalaen er logaritmiske: Ett trinn opp betyr ti ganger mer. En lyd på 80 dB har ti ganger så stor intensitet som en på 70 dB.
+:::
+
+## Prøv selv
+
+```{.python .kjor}
+import numpy as np
+print(np.log10(1000), np.log10(2))
+print(np.log10(4) + np.log10(25))      # 2
+print(10**np.log10(7.3))                # 7.3
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Uten kalkulator"}
+a) $\lg 10000$ b) $\lg 0.01$ c) $\lg\sqrt{10}$ d) $10^{\lg 5}$
+
+::: {.losning}
+a) $\underline{\underline{4}}$ b) $\underline{\underline{-2}}$ c) $\underline{\underline{\frac12}}$ d) $\underline{\underline{5}}$
+:::
+:::
+
+::: {.oppgave tittel="Logaritmereglene"}
+Skriv som én logaritme og regn ut: a) $\lg 5 + \lg 20$ b) $\lg 300 - \lg 3$ c) $2\lg 5 + \lg 4$
+
+::: {.losning}
+a) $\lg 100 = \underline{\underline{2}}$ b) $\lg 100 = \underline{\underline{2}}$ c) $\lg(25\cdot 4) = \lg 100 = \underline{\underline{2}}$
+:::
+:::
+
+::: {.oppgave tittel="Desibel" niva="Middels"}
+Lydnivået er $L = 10\lg\dfrac{I}{I_0}$ dB. Hvor mye øker lydnivået når intensiteten dobles?
+
+::: {.losning}
+$10\lg\frac{2I}{I_0} = 10\lg 2 + 10\lg\frac{I}{I_0}$. Økningen er $10\lg 2 = \underline{\underline{3.0\ \mathrm{dB}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Forenkle" niva="Utfordrende"}
+Skriv så enkelt som mulig: $\lg(a^2 b) - 2\lg a + \lg\dfrac{1}{b}$
+
+::: {.losning}
+$2\lg a + \lg b - 2\lg a - \lg b = \underline{\underline{0}}$
+:::
+:::
+
+::::

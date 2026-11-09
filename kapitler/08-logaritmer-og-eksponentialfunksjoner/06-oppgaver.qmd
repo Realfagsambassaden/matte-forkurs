@@ -2,18 +2,55 @@
 title: "Blandede oppgaver: logaritmer"
 tema: eksponential-og-logaritme
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/08-06-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander logaritmer, likninger og eksponentielle modeller. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Logaritmereglene"}
+Skriv som én logaritme: $\ln 8 - 2\ln 2 + \ln 3$.
+
+::: {.losning}
+$\ln\frac{8\cdot 3}{4} = \underline{\underline{\ln 6}}$
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Likninger"}
+Løs: a) $5\mathrm{e}^{x} = 20$ b) $\ln(x + 2) = \ln(3x - 4)$
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+a) $\mathrm{e}^x = 4$, så $x = \ln 4 = \underline{\underline{1.39}}$
+
+b) $x + 2 = 3x - 4$, så $\underline{\underline{x = 3}}$ (begge sider definert: $5 > 0$).
+:::
+:::
+
+::: {.oppgave tittel="Befolkning" niva="Middels"}
+En by har 40000 innbyggere og vokser med 1.5 % per år. Når passerer den 50000?
+
+::: {.losning}
+$40000\cdot 1.015^t = 50000$ gir $1.015^t = 1.25$ og $t = \frac{\ln 1.25}{\ln 1.015} = \underline{\underline{15 \text{ år}}}$.
+:::
+:::
+
+::: {.oppgave tittel="Medisin i blodet" niva="Middels"}
+Konsentrasjonen av et legemiddel er $C(t) = 8.0\mathrm{e}^{-0.35t}$ (mg/L, timer). a) Finn halveringstiden. b) Hvor fort synker konsentrasjonen etter 2.0 timer?
+
+::: {.losning}
+a) $t = \frac{\ln 2}{0.35} = \underline{\underline{2.0 \text{ timer}}}$
+
+b) $C'(t) = -2.8\mathrm{e}^{-0.35t}$, $C'(2.0) = -2.8\mathrm{e}^{-0.70} = \underline{\underline{-1.4\ \mathrm{mg/(L\cdot h)}}}$
+:::
+:::
+
+::: {.oppgave tittel="Toppunkt" niva="Utfordrende"}
+Effekten av et medikament er $E(t) = 10t\,\mathrm{e}^{-0.5t}$. Når er effekten størst, og hvor stor er den?
+
+::: {.losning}
+$E'(t) = 10\mathrm{e}^{-0.5t}(1 - 0.5t) = 0$ gir $t = 2$. $E(2) = 20\mathrm{e}^{-1} = \underline{\underline{7.4}}$ ved $\underline{\underline{t = 2}}$.
+:::
+:::
+
+::::
