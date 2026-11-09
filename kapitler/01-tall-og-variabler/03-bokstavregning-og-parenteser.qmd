@@ -2,20 +2,147 @@
 title: "Bokstavregning og parenteser"
 tema: tall-og-regneregler
 undertema: bokstavregning
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/01-03-bokstavregning-og-parenteser) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+I matematikk og fysikk står bokstaver for tall vi ikke kjenner ennå, eller for tall som kan variere: $x$, $t$, $m$, $v$. Reglene er de samme som for tall. Den store forskjellen er at vi ikke kan regne ut $2x + 3$ til ett tall, men vi kan ofte skrive uttrykket enklere.
+
+## Ledd og faktorer
+
+::: {.kort}
+- **Ledd** Det som står mellom pluss- og minustegn. $3x^2 - 5x + 2$ har tre ledd.
+- **Faktorer** Det som ganges sammen inni et ledd. Leddet $3x^2$ har faktorene $3$, $x$ og $x$.
+- **Koeffisient** Tallfaktoren foran bokstavene. I $-5x$ er koeffisienten $-5$.
+- **Like ledd** Ledd med nøyaktig de samme bokstavene og potensene. $4x$ og $-7x$ er like ledd, men $4x$ og $4x^2$ er ikke.
 :::
 
-## Dette kommer på siden
+Bare like ledd kan **trekkes sammen**:
+$$
+4x + 3y - 7x + 2y = (4 - 7)x + (3 + 2)y = -3x + 5y
+$$
 
-- Ledd og faktorer
-- Å løse opp parenteser
-- Å sette utenfor parentes
-- Eksempler og oppgaver med løsning
+Gangetegnet skrives som regel ikke mellom tall og bokstaver: $3\cdot x\cdot y = 3xy$.
+
+## Å løse opp parenteser
+
+::: {.graa}
+$$
+a(b + c) = ab + ac \qquad\qquad (a + b)(c + d) = ac + ad + bc + bd
+$$
+:::
+
+Den første regelen kalles den **distributive loven**. Den andre får vi ved å bruke den første to ganger: hvert ledd i den første parentesen ganges med hvert ledd i den andre.
+
+::: {.callout-warning title="Minus foran en parentes"}
+Står det minus foran en parentes, skifter **alle** leddene inni fortegn når parentesen fjernes:
+$$
+5 - (2x - 3) = 5 - 2x + 3 = 8 - 2x
+$$
+Det er det samme som å gange parentesen med $-1$.
+:::
+
+::: {.eksempel}
+**Eksempel: Gang ut og trekk sammen.** Skriv så enkelt som mulig: $(2x - 3)(x + 4) - 2(x^2 - x)$.
+
+::: {.losning}
+Første produkt, hvert ledd med hvert ledd:
+$$
+(2x - 3)(x + 4) = 2x^2 + 8x - 3x - 12 = 2x^2 + 5x - 12
+$$
+Andre ledd: $-2(x^2 - x) = -2x^2 + 2x$. Til sammen:
+$$
+2x^2 + 5x - 12 - 2x^2 + 2x = \underline{\underline{7x - 12}}
+$$
+:::
+:::
+
+## Å sette utenfor parentes
+
+Den distributive loven kan også brukes baklengs. Har alle leddene en felles faktor, kan vi sette den utenfor en parentes:
+$$
+6x^2 - 9x = 3x(2x - 3)
+$$
+Sjekk alltid ved å gange ut igjen: $3x\cdot 2x - 3x\cdot 3 = 6x^2 - 9x$. Dette kalles å **faktorisere**, og vi kommer tilbake til det i kapitlet om faktorisering.
+
+::: {.callout-tip title="I fysikken"}
+Formelen for posisjon ved konstant akselerasjon, $s = v_0 t + \frac12 a t^2$, kan skrives $s = t\left(v_0 + \frac12 at\right)$ ved å sette $t$ utenfor. Da ser vi straks at $s = 0$ når $t = 0$. Se [bevegelseslikningene på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/04-bevegelseslikningene-for-konstant-akselerasjon.html).
+:::
+
+## Prøv selv
+
+Python-biblioteket `sympy` regner med bokstaver. `expand` ganger ut, og `factor` setter utenfor parentes. Prøv dine egne uttrykk.
+
+```{.python .kjor}
+from sympy import symbols, expand, factor
+
+x = symbols("x")
+print(expand((2*x - 3)*(x + 4) - 2*(x**2 - x)))   # 7*x - 12
+print(factor(6*x**2 - 9*x))                        # 3*x*(2*x - 3)
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Trekk sammen"}
+Skriv så enkelt som mulig: a) $3a + 5b - a + 2b$ b) $x^2 + 3x - 2x^2 + x$ c) $4xy - 2x + xy + 5x$
+
+::: {.losning}
+a) $\underline{\underline{2a + 7b}}$
+
+b) $\underline{\underline{-x^2 + 4x}}$
+
+c) $\underline{\underline{5xy + 3x}}$
+:::
+:::
+
+::: {.oppgave tittel="Løs opp parentesene"}
+Skriv uten parenteser og trekk sammen: a) $3(2x - 5) - 4(x - 2)$ b) $(x + 3)(x - 5)$ c) $(2a - b)(a + 3b)$
+
+::: {.losning}
+a) $6x - 15 - 4x + 8 = \underline{\underline{2x - 7}}$
+
+b) $x^2 - 5x + 3x - 15 = \underline{\underline{x^2 - 2x - 15}}$
+
+c) $2a^2 + 6ab - ab - 3b^2 = \underline{\underline{2a^2 + 5ab - 3b^2}}$
+:::
+:::
+
+::: {.oppgave tittel="Sett utenfor parentes"}
+Faktoriser: a) $8x + 12$ b) $5x^2 - 15x$ c) $4a^2b - 6ab^2$
+
+::: {.losning}
+a) $\underline{\underline{4(2x + 3)}}$
+
+b) $\underline{\underline{5x(x - 3)}}$
+
+c) $\underline{\underline{2ab(2a - 3b)}}$
+:::
+:::
+
+::: {.oppgave tittel="Finn feilen" niva="Middels"}
+En elev har regnet slik: $7 - 2(x - 4) = 7 - 2x - 8 = -2x - 1$. Hva er feil, og hva er riktig svar? Kontroller ved å sette inn $x = 0$ i begge uttrykkene.
+
+::: {.losning}
+Minus foran parentesen gjelder begge leddene: $-2\cdot(-4) = +8$, ikke $-8$. Riktig:
+$$
+7 - 2x + 8 = \underline{\underline{15 - 2x}}
+$$
+Kontroll med $x = 0$: det opprinnelige uttrykket gir $7 - 2\cdot(-4) = 15$. Elevens svar gir $-1$, det riktige gir $15$.
+:::
+:::
+
+::: {.oppgave tittel="Areal av en ramme" niva="Utfordrende"}
+Et bilde er $x$ cm bredt og $x + 10$ cm høyt. Rundt bildet er det en ramme som er $2$ cm bred. Finn et uttrykk for arealet av selve rammen, og forenkle det.
+
+::: {.losning}
+Hele bildet med ramme er $(x + 4)$ cm bredt og $(x + 14)$ cm høyt. Arealet av rammen er arealet av alt minus arealet av bildet:
+$$
+(x + 4)(x + 14) - x(x + 10) = x^2 + 18x + 56 - x^2 - 10x = \underline{\underline{8x + 56}}
+$$
+Arealet er i $\mathrm{cm^2}$. Kontroll med $x = 10$: $14\cdot 24 - 10\cdot 20 = 336 - 200 = 136$, og $8\cdot 10 + 56 = 136$.
+:::
+:::
+
+::::
