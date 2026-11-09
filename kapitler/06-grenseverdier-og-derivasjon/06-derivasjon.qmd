@@ -59,7 +59,7 @@ f'(x) \qquad \frac{\mathrm{d}f}{\mathrm{d}x} \qquad \frac{\mathrm{d}y}{\mathrm{d
 $$
 I fysikk skrives den deriverte med hensyn på tiden ofte med prikk: $\dot s = \frac{\mathrm{d}s}{\mathrm{d}t} = v$.
 
-Senere lærer vi regler for produkter, brøker og sammensatte funksjoner (kjerneregelen), og deriverte av $e^x$, $\ln x$ og de trigonometriske funksjonene.
+Senere lærer vi regler for produkter, brøker og sammensatte funksjoner (kjerneregelen), og deriverte av $\mathrm{e}^x$, $\ln x$ og de trigonometriske funksjonene.
 
 ## Prøv selv
 

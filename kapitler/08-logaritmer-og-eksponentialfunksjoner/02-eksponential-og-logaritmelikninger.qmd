@@ -2,19 +2,98 @@
 title: "Eksponential- og logaritmelikninger"
 tema: eksponential-og-logaritme
 undertema: eksponentiallikninger
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/08-02-eksponential-og-logaritmelikninger) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Hvor mange år tar det før 10000 kr på konto med 4 % rente har blitt 15000 kr? Likningen er $10000\cdot 1.04^x = 15000$, og den ukjente står i eksponenten. Slike **eksponentiallikninger** løser vi med logaritmer.
+
+## Eksponentiallikninger
+
+::: {.steg}
+1. Få potensen alene på én side: $a^x = b$.
+2. Ta logaritmen på begge sider: $\lg(a^x) = \lg b$.
+3. Bruk regelen $\lg(a^x) = x\lg a$ og løs: $x = \dfrac{\lg b}{\lg a}$.
 :::
 
-## Dette kommer på siden
+::: {.eksempel}
+**Eksempel: Rente.** Løs $10000\cdot 1.04^x = 15000$.
 
-- Eksponentiallikninger
-- Logaritmelikninger
-- Eksempler og oppgaver med løsning
+::: {.losning}
+Del på $10000$: $1.04^x = 1.5$. Ta logaritmen:
+$$
+x\lg 1.04 = \lg 1.5 \quad\Longrightarrow\quad x = \frac{\lg 1.5}{\lg 1.04} = \underline{\underline{10.3}}
+$$
+Det tar litt over 10 år.
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Andregrad i forkledning.** Løs $10^{2x} - 5\cdot 10^x + 6 = 0$.
+
+::: {.losning}
+Sett $u = 10^x$. Da er $10^{2x} = u^2$, og $u^2 - 5u + 6 = 0$ gir $u = 2$ eller $u = 3$.
+
+$10^x = 2$ gir $x = \lg 2 \approx 0.301$, og $10^x = 3$ gir $x = \lg 3 \approx 0.477$.
+:::
+:::
+
+## Logaritmelikninger
+
+En likning med $\lg x$ løser vi ved å samle logaritmene til én, og så opphøye 10 i begge sider:
+$$
+\lg x = c \quad\Longleftrightarrow\quad x = 10^c
+$$
+Husk at $\lg x$ bare er definert for $x > 0$. Sett prøve.
+
+::: {.eksempel}
+**Eksempel: Logaritmelikning.** Løs $\lg x + \lg(x - 3) = 1$.
+
+::: {.losning}
+Forutsetning: $x > 3$. Slå sammen: $\lg\big(x(x - 3)\big) = 1$, så $x(x - 3) = 10$ og $x^2 - 3x - 10 = 0$. Det gir $(x - 5)(x + 2) = 0$.
+
+$x = -2$ oppfyller ikke $x > 3$. Svaret er $\underline{\underline{x = 5}}$. Prøve: $\lg 5 + \lg 2 = \lg 10 = 1$.
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Eksponentiallikninger"}
+Løs: a) $2^x = 50$ b) $3\cdot 5^x = 75$ c) $0.9^x = 0.5$
+
+::: {.losning}
+a) $x = \frac{\lg 50}{\lg 2} = \underline{\underline{5.64}}$
+
+b) $5^x = 25$, så $\underline{\underline{x = 2}}$
+
+c) $x = \frac{\lg 0.5}{\lg 0.9} = \underline{\underline{6.58}}$
+:::
+:::
+
+::: {.oppgave tittel="Logaritmelikninger"}
+Løs: a) $\lg x = 2.5$ b) $\lg(2x + 4) = 2$
+
+::: {.losning}
+a) $x = 10^{2.5} = \underline{\underline{316}}$ b) $2x + 4 = 100$, så $\underline{\underline{x = 48}}$
+:::
+:::
+
+::: {.oppgave tittel="Halveringstid" niva="Middels"}
+Et radioaktivt stoff avtar med 12 % per time. Hvor lang tid tar det før halvparten er igjen?
+
+::: {.losning}
+$0.88^t = 0.5$ gir $t = \frac{\lg 0.5}{\lg 0.88} = \underline{\underline{5.4 \text{ timer}}}$. Se [radioaktivitet på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/12-atom-og-kjernefysikk/03-radioaktivitet-og-straling.html).
+:::
+:::
+
+::: {.oppgave tittel="Substitusjon" niva="Utfordrende"}
+Løs $4^x - 3\cdot 2^x - 4 = 0$.
+
+::: {.losning}
+Sett $u = 2^x$, så $4^x = u^2$: $u^2 - 3u - 4 = 0$ gir $u = 4$ eller $u = -1$. $2^x$ er alltid positiv, så bare $2^x = 4$: $\underline{\underline{x = 2}}$.
+:::
+:::
+
+::::

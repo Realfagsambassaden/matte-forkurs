@@ -27,7 +27,7 @@ Det betyr tre ting på en gang: $f(a)$ finnes, grenseverdien finnes, og de to er
 - **Asymptote** Funksjonen går mot $\pm\infty$ nær $a$.
 :::
 
-Polynomer, $\sqrt x$, $e^x$, $\ln x$, $\sin x$ og $\cos x$ er kontinuerlige der de er definert. Summer, produkter og brøker av kontinuerlige funksjoner er også kontinuerlige, så lenge vi ikke deler på null.
+Polynomer, $\sqrt x$, $\mathrm{e}^x$, $\ln x$, $\sin x$ og $\cos x$ er kontinuerlige der de er definert. Summer, produkter og brøker av kontinuerlige funksjoner er også kontinuerlige, så lenge vi ikke deler på null.
 
 ## Delt funksjonsforskrift
 
