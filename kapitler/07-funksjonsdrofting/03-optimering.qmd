@@ -2,19 +2,90 @@
 title: "Optimering"
 tema: anvendelser-derivasjon
 undertema: optimering
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/07-03-optimering) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Hvilken form på boksen bruker minst materiale? Hvilken pris gir størst inntekt? Hvilken vinkel gir lengst kast? Slike spørsmål heter **optimering**, og de løses ved å finne topp- og bunnpunkter med den deriverte.
+
+## Fremgangsmåten
+
+::: {.steg}
+1. Tegn en figur og gi navn til størrelsene.
+2. Skriv størrelsen som skal bli størst eller minst, som en funksjon av **én** variabel. Bruk en bibetingelse til å fjerne de andre.
+3. Finn definisjonsmengden.
+4. Deriver, sett $f' = 0$ og løs.
+5. Sjekk at det er et maksimum eller minimum (fortegnslinje, $f''$ eller endepunkter), og svar på spørsmålet.
 :::
 
-## Dette kommer på siden
+::: {.eksempel}
+**Eksempel: Esken.** Fra en kvadratisk plate på $30\ \mathrm{cm}\times 30\ \mathrm{cm}$ klipper vi bort et kvadrat med side $x$ i hvert hjørne og bretter opp kantene. Hvilken $x$ gir størst volum?
 
-- Største og minste verdi
-- Optimering i geometri
-- Eksempler og oppgaver med løsning
+::: {.losning}
+Volumet er $V(x) = x(30 - 2x)^2$ for $0 < x < 15$. Ganger ut: $V(x) = 4x^3 - 120x^2 + 900x$.
+$$
+V'(x) = 12x^2 - 240x + 900 = 12(x^2 - 20x + 75) = 12(x - 5)(x - 15)
+$$
+I definisjonsmengden er bare $x = 5$ aktuell. $V'$ er positiv for $x < 5$ og negativ for $5 < x < 15$, så det er et toppunkt.
+
+Største volum: $V(5) = 5\cdot 20^2 = \underline{\underline{2000\ \mathrm{cm^3}}}$ med $\underline{\underline{x = 5\ \mathrm{cm}}}$.
+:::
+:::
+
+## Optimering i geometri
+
+::: {.eksempel}
+**Eksempel: Sylinderboksen.** En sylinderformet boks skal romme $1.00\ \mathrm{L} = 1000\ \mathrm{cm^3}$. Hvilken radius gir minst overflate (minst materiale)?
+
+::: {.losning}
+Overflaten er $O = 2\pi r^2 + 2\pi rh$, og bibetingelsen er $\pi r^2 h = 1000$, så $h = \frac{1000}{\pi r^2}$:
+$$
+O(r) = 2\pi r^2 + \frac{2000}{r} \qquad O'(r) = 4\pi r - \frac{2000}{r^2}
+$$
+$O'(r) = 0$ gir $4\pi r^3 = 2000$, så $r = \sqrt[3]{\frac{500}{\pi}} = \underline{\underline{5.42\ \mathrm{cm}}}$. Da er $h = \frac{1000}{\pi\cdot 5.42^2} = 10.8\ \mathrm{cm} = 2r$.
+
+Den beste boksen er like høy som den er bred. $O''(r) = 4\pi + \frac{4000}{r^3} > 0$, så det er et minimum.
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Største produkt"}
+To positive tall har summen 20. Hvilke tall gir størst produkt?
+
+::: {.losning}
+$P(x) = x(20 - x)$, $P'(x) = 20 - 2x = 0$ gir $x = 10$. Tallene er $\underline{\underline{10 \text{ og } 10}}$, med produkt 100.
+:::
+:::
+
+::: {.oppgave tittel="Innhegning mot en vegg" niva="Middels"}
+Du har $60\ \mathrm{m}$ gjerde og skal lage en rektangulær innhegning mot en lang vegg (ingen gjerde langs veggen). Hvilke mål gir størst areal?
+
+::: {.losning}
+La sidene vinkelrett på veggen være $x$. Siden langs veggen er $60 - 2x$. $A(x) = x(60 - 2x)$, $A'(x) = 60 - 4x = 0$ gir $x = 15$.
+
+Målene er $\underline{\underline{15\ \mathrm{m}\times 30\ \mathrm{m}}}$, med areal $450\ \mathrm{m^2}$.
+:::
+:::
+
+::: {.oppgave tittel="Inntekt" niva="Middels"}
+En konsertarrangør selger $2000 - 10p$ billetter når prisen er $p$ kroner. Hvilken pris gir størst inntekt?
+
+::: {.losning}
+$I(p) = p(2000 - 10p)$, $I'(p) = 2000 - 20p = 0$ gir $\underline{\underline{p = 100 \text{ kr}}}$. Da selges 1000 billetter, og inntekten er $100\,000$ kr.
+:::
+:::
+
+::: {.oppgave tittel="Nærmeste punkt" niva="Utfordrende"}
+Hvilket punkt på parabelen $y = x^2$ ligger nærmest punktet $(0, 2)$? (Hint: minimer kvadratet av avstanden.)
+
+::: {.losning}
+$d^2 = x^2 + (x^2 - 2)^2 = x^4 - 3x^2 + 4$. Derivert: $4x^3 - 6x = 2x(2x^2 - 3) = 0$ gir $x = 0$ eller $x = \pm\sqrt{1.5}$.
+
+$d^2(0) = 4$ og $d^2(\pm\sqrt{1.5}) = 2.25 - 4.5 + 4 = 1.75$. Nærmest er $\underline{\underline{\left(\pm\sqrt{1.5},\ 1.5\right) \approx (\pm 1.22,\ 1.5)}}$, med avstand $\sqrt{1.75} \approx 1.32$.
+:::
+:::
+
+::::

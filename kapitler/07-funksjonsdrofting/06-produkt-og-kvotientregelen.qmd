@@ -2,19 +2,103 @@
 title: "Produkt- og kvotientregelen"
 tema: derivasjon
 undertema: produkt-og-kvotient
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/07-06-produkt-og-kvotientregelen) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Den deriverte av en sum er summen av de deriverte. Men den deriverte av et produkt er **ikke** produktet av de deriverte. For produkter og brøker trenger vi egne regler.
+
+## Produktregelen
+
+::: {.graa}
+$$
+(u\cdot v)' = u'\cdot v + u\cdot v'
+$$
 :::
 
-## Dette kommer på siden
+Deriver den ene faktoren og la den andre stå, og legg til omvendt.
 
-- Derivasjon av et produkt
-- Derivasjon av en kvotient
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: Produktregelen.** Deriver $f(x) = x^2\sqrt{x + 1}$.
+
+::: {.losning}
+$u = x^2$, $u' = 2x$. $v = \sqrt{x + 1}$, $v' = \frac{1}{2\sqrt{x + 1}}$ (kjerneregelen).
+$$
+f'(x) = 2x\sqrt{x + 1} + x^2\cdot\frac{1}{2\sqrt{x + 1}} = \frac{4x(x + 1) + x^2}{2\sqrt{x + 1}} = \underline{\underline{\frac{5x^2 + 4x}{2\sqrt{x + 1}}}}
+$$
+:::
+:::
+
+## Kvotientregelen
+
+::: {.graa}
+$$
+\left(\frac{u}{v}\right)' = \frac{u'\cdot v - u\cdot v'}{v^2}
+$$
+:::
+
+Rekkefølgen i telleren er viktig, fordi det er et minustegn. Huskeregel: «derivert teller ganger nevner, minus teller ganger derivert nevner, over nevner i andre».
+
+::: {.eksempel}
+**Eksempel: Kvotientregelen.** Deriver $g(x) = \dfrac{2x + 1}{x - 3}$.
+
+::: {.losning}
+$u = 2x + 1$, $u' = 2$. $v = x - 3$, $v' = 1$.
+$$
+g'(x) = \frac{2(x - 3) - (2x + 1)\cdot 1}{(x - 3)^2} = \underline{\underline{\frac{-7}{(x - 3)^2}}}
+$$
+Den deriverte er alltid negativ, så $g$ avtar overalt der den er definert.
+:::
+:::
+
+::: {.callout-tip title="Skriv om når det går"}
+$\dfrac{3}{x^2}$ deriveres enklere som $3x^{-2}$ enn med kvotientregelen. Bruk kvotientregelen når det står $x$ i både teller og nevner.
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Produktregelen"}
+Deriver: a) $(x^2 + 1)(3x - 2)$ b) $x\sqrt x$ (på to måter)
+
+::: {.losning}
+a) $2x(3x - 2) + (x^2 + 1)\cdot 3 = \underline{\underline{9x^2 - 4x + 3}}$
+
+b) Produktregel: $\sqrt x + x\cdot\frac{1}{2\sqrt x} = \frac32\sqrt x$. Som potens: $(x^{3/2})' = \frac32 x^{1/2}$. Samme svar: $\underline{\underline{\frac32\sqrt x}}$.
+:::
+:::
+
+::: {.oppgave tittel="Kvotientregelen"}
+Deriver: a) $\dfrac{x}{x + 1}$ b) $\dfrac{x^2}{x - 2}$
+
+::: {.losning}
+a) $\frac{(x + 1) - x}{(x + 1)^2} = \underline{\underline{\frac{1}{(x + 1)^2}}}$
+
+b) $\frac{2x(x - 2) - x^2}{(x - 2)^2} = \underline{\underline{\frac{x^2 - 4x}{(x - 2)^2}}}$
+:::
+:::
+
+::: {.oppgave tittel="Drøfting" niva="Middels"}
+Finn ekstremalpunktene til $f(x) = \dfrac{x^2}{x - 2}$ (bruk svaret over).
+
+::: {.losning}
+$f'(x) = \frac{x(x - 4)}{(x - 2)^2} = 0$ gir $x = 0$ og $x = 4$. Nevneren er positiv, så fortegnet bestemmes av $x(x - 4)$: positiv, negativ, negativ (forbi $x = 2$), positiv.
+
+Toppunkt $\underline{\underline{(0, 0)}}$, bunnpunkt $\underline{\underline{(4, 8)}}$.
+:::
+:::
+
+::: {.oppgave tittel="Effekt i en krets" niva="Utfordrende"}
+Effekten i en motstand $R$ koblet til et batteri med indre resistans $r$ er $P(R) = \dfrac{E^2 R}{(R + r)^2}$. Vis at effekten er størst når $R = r$.
+
+::: {.losning}
+Kvotientregelen (med $E$ og $r$ konstante):
+$$
+P'(R) = E^2\frac{(R + r)^2 - R\cdot 2(R + r)}{(R + r)^4} = E^2\frac{(R + r) - 2R}{(R + r)^3} = E^2\frac{r - R}{(R + r)^3}
+$$
+$P' = 0$ når $R = r$. $P'$ er positiv for $R < r$ og negativ for $R > r$, så det er et maksimum.
+:::
+:::
+
+::::
