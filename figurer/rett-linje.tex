@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.9]
+\draw[akse] (-0.5,0)--(6.5,0) node[right]{$x$};
+\draw[akse] (0,-0.5)--(0,5.2) node[above]{$y$};
+\draw[very thick,bla,domain=-0.3:6.2] plot (\x,{1+0.6*\x}) node[right]{$y = ax + b$};
+\fill (0,1) circle (2pt) node[left]{$b$};
+\draw[thick,rod] (1.5,1.9)--(4.5,1.9) node[midway,below]{$\Delta x$};
+\draw[thick,rod] (4.5,1.9)--(4.5,3.7) node[midway,right]{$\Delta y$};
+\node[align=left] at (4.6,0.8) {$a = \dfrac{\Delta y}{\Delta x}$};
+\end{tikzpicture}

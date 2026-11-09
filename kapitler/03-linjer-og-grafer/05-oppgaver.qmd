@@ -2,18 +2,61 @@
 title: "Blandede oppgaver: linjer og grafer"
 tema: funksjoner
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/03-05-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander rette linjer, grafisk løsning, funksjoner og parabler. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Linje fra stigningstall og punkt"}
+Finn likningen for linja med stigningstall $\frac23$ som går gjennom $(3, -1)$.
+
+::: {.losning}
+$y + 1 = \frac23(x - 3)$, så $y = \frac23 x - 2 - 1 = \underline{\underline{\frac23 x - 3}}$.
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Linje og parabel"}
+Finn skjæringspunktene mellom $y = x^2 - 1$ og $y = x + 1$.
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+$x^2 - 1 = x + 1$ gir $x^2 - x - 2 = 0$, altså $(x - 2)(x + 1) = 0$. Da er $x = 2$ eller $x = -1$. Punktene er $\underline{\underline{(2, 3)}}$ og $\underline{\underline{(-1, 0)}}$.
+:::
+:::
+
+::: {.oppgave tittel="Fart fra graf" niva="Middels"}
+En bil er $50\ \mathrm{m}$ fra et kryss ved $t = 2.0\ \mathrm{s}$ og $170\ \mathrm{m}$ fra krysset ved $t = 8.0\ \mathrm{s}$. Posisjonen er en lineær funksjon av tiden. a) Finn farten. b) Finn posisjonen som funksjon av tiden. c) Hvor var bilen ved $t = 0$?
+
+::: {.losning}
+a) Farten er stigningstallet: $v = \frac{170 - 50}{8.0 - 2.0} = \frac{120}{6.0} = \underline{\underline{20\ \mathrm{m/s}}}$.
+
+b) $s - 50 = 20(t - 2.0)$, så $\underline{\underline{s(t) = 20t + 10}}$ (meter).
+
+c) $s(0) = \underline{\underline{10\ \mathrm{m}}}$ fra krysset.
+:::
+:::
+
+::: {.oppgave tittel="Parabel gjennom tre punkter" niva="Middels"}
+En parabel $f(x) = ax^2 + bx + c$ går gjennom $(0, 2)$, $(1, 1)$ og $(2, 4)$. Finn $a$, $b$ og $c$.
+
+::: {.losning}
+$f(0) = c = 2$. $f(1) = a + b + 2 = 1$, så $a + b = -1$. $f(2) = 4a + 2b + 2 = 4$, så $2a + b = 1$.
+
+Trekker vi den første fra den andre: $a = 2$, og da er $b = -3$. Svaret er $\underline{\underline{f(x) = 2x^2 - 3x + 2}}$.
+:::
+:::
+
+::: {.oppgave tittel="Bremselengde" niva="Utfordrende"}
+Bremselengden til en bil er tilnærmet $L(v) = 0.0075v^2 + 0.28v$, med $v$ i km/h og $L$ i meter. a) Finn $L(50)$ og $L(100)$. b) Hvor mange ganger lengre blir bremselengden når farten dobles fra 50 til 100 km/h? c) Hvilken fart gir en bremselengde på $60\ \mathrm{m}$? Løs grafisk.
+
+::: {.losning}
+a) $L(50) = 18.75 + 14 = \underline{\underline{32.8\ \mathrm{m}}}$ og $L(100) = 75 + 28 = \underline{\underline{103\ \mathrm{m}}}$.
+
+b) $\frac{103}{32.75} \approx \underline{\underline{3.1}}$. Mer enn dobbelt så lang, fordi leddet med $v^2$ blir fire ganger så stort.
+
+c) Grafen til $L$ krysser $y = 60$ ved $\underline{\underline{v \approx 73\ \mathrm{km/h}}}$. (Kontroll: $L(73) = 39.97 + 20.44 = 60.4$.)
+:::
+:::
+
+::::
