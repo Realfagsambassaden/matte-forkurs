@@ -2,18 +2,86 @@
 title: "Delvis integrasjon"
 tema: integrasjonsteknikker
 undertema: delvis
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/17-03-delvis-integrasjon) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Hvordan integrerer vi et produkt som $x\,\mathrm{e}^{x}$? Produktregelen for derivasjon, lest baklengs, gir **delvis integrasjon**. Ideen er å flytte derivasjonen fra den ene faktoren til den andre, slik at integralet blir enklere.
+
+## Formelen
+
+Fra $(uv)' = u'v + uv'$ får vi, ved å integrere og flytte om:
+
+::: {.graa}
+$$
+\int u'v\,\mathrm{d}x = uv - \int uv'\,\mathrm{d}x
+$$
 :::
 
-## Dette kommer på siden
+::: {.kort}
+- **Velg $v$** som blir enklere når den deriveres: $x$, $x^2$, $\ln x$.
+- **Velg $u'$** som er lett å integrere: $\mathrm{e}^{x}$, $\sin x$, $\cos x$.
+:::
 
-- Formelen og når den brukes
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: x ganger eksponential.** Finn $\displaystyle\int x\,\mathrm{e}^{x}\,\mathrm{d}x$.
+
+::: {.losning}
+$u' = \mathrm{e}^{x}$, $u = \mathrm{e}^{x}$, $v = x$, $v' = 1$:
+$$
+\int x\,\mathrm{e}^{x}\,\mathrm{d}x = x\,\mathrm{e}^{x} - \int \mathrm{e}^{x}\,\mathrm{d}x = \underline{\underline{(x - 1)\mathrm{e}^{x} + C}}
+$$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Logaritmen.** Finn $\displaystyle\int \ln x\,\mathrm{d}x$.
+
+::: {.losning}
+Skriv $\ln x = 1\cdot\ln x$. $u' = 1$, $u = x$, $v = \ln x$, $v' = \frac1x$:
+$$
+\int \ln x\,\mathrm{d}x = x\ln x - \int x\cdot\frac1x\,\mathrm{d}x = \underline{\underline{x\ln x - x + C}}
+$$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Bestemt integral.** Regn ut $\displaystyle\int_0^{\pi} x\sin x\,\mathrm{d}x$.
+
+::: {.losning}
+$u' = \sin x$, $u = -\cos x$, $v = x$:
+$$
+\Big[-x\cos x\Big]_0^{\pi} + \int_0^{\pi}\cos x\,\mathrm{d}x = \pi + \Big[\sin x\Big]_0^{\pi} = \underline{\underline{\pi}}
+$$
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Integrer"}
+a) $\int x\cos x\,\mathrm{d}x$ b) $\int x\,\mathrm{e}^{2x}\,\mathrm{d}x$
+
+::: {.losning}
+a) $\underline{\underline{x\sin x + \cos x + C}}$ b) $\frac12x\,\mathrm{e}^{2x} - \int\frac12\mathrm{e}^{2x}\,\mathrm{d}x = \underline{\underline{\left(\frac x2 - \frac14\right)\mathrm{e}^{2x} + C}}$
+:::
+:::
+
+::: {.oppgave tittel="Bestemt" niva="Middels"}
+Regn ut $\int_1^{\mathrm{e}} \ln x\,\mathrm{d}x$.
+
+::: {.losning}
+$\Big[x\ln x - x\Big]_1^{\mathrm{e}} = (\mathrm{e} - \mathrm{e}) - (0 - 1) = \underline{\underline{1}}$
+:::
+:::
+
+::: {.oppgave tittel="To ganger" niva="Utfordrende"}
+Finn $\int x^2\mathrm{e}^{x}\,\mathrm{d}x$. (Du må integrere delvis to ganger.)
+
+::: {.losning}
+$x^2\mathrm{e}^{x} - \int 2x\,\mathrm{e}^{x}\,\mathrm{d}x = x^2\mathrm{e}^{x} - 2(x - 1)\mathrm{e}^{x} + C = \underline{\underline{(x^2 - 2x + 2)\mathrm{e}^{x} + C}}$
+:::
+:::
+
+::::

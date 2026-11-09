@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=1.0]
+\fill[bla!12,domain=0:4,samples=60] plot (\x,{sqrt(\x)}) -- plot[domain=4:0] (\x,{-sqrt(\x)});
+\draw[akse] (-0.4,0)--(5,0) node[right]{$x$};
+\draw[akse] (0,-2.4)--(0,2.6) node[above]{$y$};
+\draw[very thick,rod,domain=0:4,samples=80] plot (\x,{sqrt(\x)}) node[above right]{$y = f(x)$};
+\draw[thick,rod,dashed,domain=0:4,samples=80] plot (\x,{-sqrt(\x)});
+\draw[bla,thick] (4,0) ellipse (0.35 and 2);
+\fill[gronn!35,draw=gronn!70!black,thick] (2.5,0) ellipse (0.12 and 1.58);
+\draw[gronn!70!black,thick] (2.62,0) ellipse (0.12 and 1.58);
+\draw[gronn!60!black,->] (2.75,-1.75) to[bend right=20] (3.3,-2.2) node[right]{skive, $\pi f(x)^2\,\Delta x$};
+\draw[->,thick] (4.6,0.55) arc (40:320:0.25 and 0.7);
+\end{tikzpicture}

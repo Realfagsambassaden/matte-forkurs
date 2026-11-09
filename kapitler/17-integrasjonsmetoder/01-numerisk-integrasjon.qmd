@@ -2,20 +2,88 @@
 title: "Numerisk integrasjon"
 tema: integrasjonsteknikker
 undertema: numerisk
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/17-01-numerisk-integrasjon) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Mange integraler har ingen antiderivert vi kan skrive opp, for eksempel $\int_0^1 \mathrm{e}^{-x^2}\,\mathrm{d}x$, som brukes i statistikk. Og i fysikken har vi ofte bare målinger, ikke en formel. Da regner vi integralet ut **numerisk**: vi tilnærmer arealet med figurer vi kan regne ut.
+
+## Trapesmetoden
+
+Del $[a, b]$ i $n$ biter med bredde $h = \frac{b - a}{n}$, og erstatt grafen over hver bit med en rett linje. Da får vi trapeser i stedet for rektangler:
+
+::: {.graa}
+$$
+\int_a^b f(x)\,\mathrm{d}x \approx h\left(\frac{f(x_0)}{2} + f(x_1) + \dots + f(x_{n-1}) + \frac{f(x_n)}{2}\right)
+$$
 :::
 
-## Dette kommer på siden
+## Simpsons metode
 
-- Tilnærming med rektangler
-- Trapesmetoden
-- Simpsons metode
-- Eksempler og oppgaver med løsning
+Bytt linjestykkene ut med parabler gjennom tre og tre punkter. Det gir mye bedre nøyaktighet for samme antall punkter ($n$ må være et partall):
+
+::: {.graa}
+$$
+\int_a^b f(x)\,\mathrm{d}x \approx \frac{h}{3}\Big(f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + \dots + 4f(x_{n-1}) + f(x_n)\Big)
+$$
+:::
+
+::: {.eksempel}
+**Eksempel: Gauss-kurven.** Tilnærm $\int_0^1 \mathrm{e}^{-x^2}\,\mathrm{d}x$ med $n = 4$. Det nøyaktige svaret er $0.746824\ldots$
+
+::: {.losning}
+$h = 0.25$. Funksjonsverdiene: $1,\ 0.9394,\ 0.7788,\ 0.5698,\ 0.3679$.
+
+**Trapes:** $0.25\left(\frac{1}{2} + 0.9394 + 0.7788 + 0.5698 + \frac{0.3679}{2}\right) = \underline{\underline{0.7430}}$
+
+**Simpson:** $\frac{0.25}{3}(1 + 4\cdot 0.9394 + 2\cdot 0.7788 + 4\cdot 0.5698 + 0.3679) = \underline{\underline{0.7469}}$
+
+Simpson treffer på fire desimaler med bare fem punkter.
+:::
+:::
+
+## Prøv selv
+
+```{.python .kjor}
+import numpy as np
+from scipy.integrate import quad
+
+f = lambda x: np.exp(-x**2)
+a, b = 0, 1
+for n in [4, 10, 100]:
+    x = np.linspace(a, b, n + 1); y = f(x); h = (b - a)/n
+    trapes = h*(y[0]/2 + y[1:-1].sum() + y[-1]/2)
+    simpson = h/3*(y[0] + 4*y[1:-1:2].sum() + 2*y[2:-1:2].sum() + y[-1])
+    print(n, trapes, simpson)
+print("scipy:", quad(f, a, b)[0])
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Trapes for hånd"}
+Bruk trapesmetoden med $n = 2$ til å tilnærme $\int_0^2 x^2\,\mathrm{d}x$. Sammenlign med det nøyaktige svaret.
+
+::: {.losning}
+$h = 1$: $1\cdot\left(\frac02 + 1 + \frac42\right) = \underline{\underline{3}}$. Nøyaktig: $\frac83 = 2.67$. Trapesene ligger over den krumme grafen.
+:::
+:::
+
+::: {.oppgave tittel="Fra målinger" niva="Middels"}
+Farten til en syklist er målt hvert 10. sekund: $0,\ 4.0,\ 6.0,\ 7.0,\ 7.5\ \mathrm{m/s}$. Hvor langt har hen syklet etter 40 s? Bruk trapesmetoden.
+
+::: {.losning}
+$10\left(\frac02 + 4.0 + 6.0 + 7.0 + \frac{7.5}{2}\right) = \underline{\underline{208\ \mathrm{m}}}$
+:::
+:::
+
+::: {.oppgave tittel="Simpson er eksakt" niva="Utfordrende"}
+Bruk Simpsons metode med $n = 2$ på $\int_0^2 x^2\,\mathrm{d}x$. Hvorfor blir svaret helt riktig?
+
+::: {.losning}
+$\frac13(0 + 4\cdot 1 + 4) = \frac83$. Simpson bruker parabler, og grafen *er* en parabel.
+:::
+:::
+
+::::

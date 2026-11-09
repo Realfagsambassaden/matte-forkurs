@@ -2,18 +2,89 @@
 title: "Integrasjon av trigonometriske funksjoner"
 tema: integrasjonsteknikker
 undertema: variabelskifte
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/17-06-integrasjon-av-trigonometriske-funksjoner) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Svingninger, vekselstrøm og bølger beskrives med sinus og cosinus, så slike integraler dukker opp hele tiden i fysikken. Med variabelskifte og noen få trigonometriske identiteter kommer vi langt.
+
+## Grunnintegralene
+
+::: {.graa}
+$$
+\begin{aligned}
+\int\sin(kx)\,\mathrm{d}x &= -\frac1k\cos(kx) + C &
+\int\cos(kx)\,\mathrm{d}x &= \frac1k\sin(kx) + C
+\end{aligned}
+$$
 :::
 
-## Dette kommer på siden
+## Kvadrater: bruk dobbel vinkel
 
-- Integraler med sin og cos
-- Eksempler og oppgaver med løsning
+$\sin^2 x$ og $\cos^2 x$ har ingen direkte antiderivert, men identitetene
+$$
+\sin^2 x = \frac{1 - \cos 2x}{2}, \qquad \cos^2 x = \frac{1 + \cos 2x}{2}
+$$
+gjør dem om til ting vi kan integrere.
+
+::: {.eksempel}
+**Eksempel: Sinus i andre.** Regn ut $\displaystyle\int_0^{\pi}\sin^2 x\,\mathrm{d}x$.
+
+::: {.losning}
+$$
+\int_0^{\pi}\frac{1 - \cos 2x}{2}\,\mathrm{d}x = \left[\frac x2 - \frac{\sin 2x}{4}\right]_0^{\pi} = \underline{\underline{\frac{\pi}{2}}}
+$$
+Gjennomsnittet av $\sin^2 x$ over en periode er altså $\frac12$. Det er derfor effektivverdien av vekselstrøm er $\frac{I_0}{\sqrt2}$.
+:::
+:::
+
+## Produkter: variabelskifte
+
+::: {.eksempel}
+**Eksempel: Sinus ganger cosinus.** Finn $\displaystyle\int\sin x\cos x\,\mathrm{d}x$.
+
+::: {.losning}
+$u = \sin x$, $\mathrm{d}u = \cos x\,\mathrm{d}x$: $\int u\,\mathrm{d}u = \underline{\underline{\frac12\sin^2 x + C}}$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Tangens.** Finn $\displaystyle\int\tan x\,\mathrm{d}x$.
+
+::: {.losning}
+$\tan x = \frac{\sin x}{\cos x}$. $u = \cos x$, $\mathrm{d}u = -\sin x\,\mathrm{d}x$:
+$$
+-\int\frac{\mathrm{d}u}{u} = \underline{\underline{-\ln|\cos x| + C}}
+$$
+:::
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Integrer"}
+a) $\int 3\cos(2x)\,\mathrm{d}x$ b) $\int_0^{\pi/2}\sin(2x)\,\mathrm{d}x$
+
+::: {.losning}
+a) $\underline{\underline{\frac32\sin(2x) + C}}$ b) $\left[-\frac12\cos 2x\right]_0^{\pi/2} = \frac12 + \frac12 = \underline{\underline{1}}$
+:::
+:::
+
+::: {.oppgave tittel="Cosinus i andre" niva="Middels"}
+Finn $\int\cos^2 x\,\mathrm{d}x$.
+
+::: {.losning}
+$\underline{\underline{\frac x2 + \frac{\sin 2x}{4} + C}}$
+:::
+:::
+
+::: {.oppgave tittel="Svingning" niva="Utfordrende"}
+En pendel har farten $v(t) = 0.50\cos(2.0t)$ (m/s). Hvor langt har den beveget seg (med fortegn) fra $t = 0$ til $t = 0.50\ \mathrm{s}$?
+
+::: {.losning}
+$\int_0^{0.50}0.50\cos(2.0t)\,\mathrm{d}t = \Big[0.25\sin(2.0t)\Big]_0^{0.50} = 0.25\sin 1.0 = \underline{\underline{0.21\ \mathrm{m}}}$
+:::
+:::
+
+::::
