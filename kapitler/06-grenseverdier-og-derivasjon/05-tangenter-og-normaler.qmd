@@ -2,19 +2,79 @@
 title: "Tangenter og normaler"
 tema: derivasjon
 undertema: tangenter
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/06-05-tangenter-og-normaler) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Tangenten er den rette linja som best ligner grafen rundt et punkt. Zoomer du nok inn på en glatt graf, ser den ut som tangenten. Normalen er linja som står vinkelrett på tangenten i det samme punktet.
+
+## Likningen for tangenten
+
+Tangenten i punktet $(a, f(a))$ har stigningstallet $f'(a)$. Ettpunktsformelen gir:
+
+::: {.graa}
+$$
+y - f(a) = f'(a)(x - a)
+$$
 :::
 
-## Dette kommer på siden
+::: {.eksempel}
+**Eksempel: Tangent.** Finn likningen for tangenten til $f(x) = x^2 - 3x$ i punktet der $x = 4$. Bruk at $f'(x) = 2x - 3$.
 
-- Likningen for tangenten
-- Normalen står vinkelrett på tangenten
-- Eksempler og oppgaver med løsning
+::: {.losning}
+Punktet: $f(4) = 16 - 12 = 4$, altså $(4, 4)$. Stigningstallet: $f'(4) = 8 - 3 = 5$.
+$$
+y - 4 = 5(x - 4) \quad\Longrightarrow\quad \underline{\underline{y = 5x - 16}}
+$$
+:::
+:::
+
+## Normalen
+
+Normalen står vinkelrett på tangenten. To linjer er vinkelrette når produktet av stigningstallene er $-1$, så normalen har stigningstallet $-\dfrac{1}{f'(a)}$ (når $f'(a) \ne 0$):
+
+::: {.graa}
+$$
+y - f(a) = -\frac{1}{f'(a)}(x - a)
+$$
+:::
+
+I eksemplet over har normalen stigningstallet $-\frac15$: $y - 4 = -\frac15(x - 4)$, altså $y = -\frac15 x + \frac{24}{5}$.
+
+## Vannrett tangent
+
+Der $f'(a) = 0$, er tangenten vannrett. Det skjer i topp- og bunnpunkter, og det skal vi bruke mye i funksjonsdrøftingen.
+
+::: {.callout-tip title="Tangenten som tilnærming"}
+Nær $x = a$ er $f(x) \approx f(a) + f'(a)(x - a)$. I fysikk bruker vi denne lineære tilnærmingen hele tiden, for eksempel $\sin\theta \approx \theta$ for små vinkler i pendelen.
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Tangent"}
+Finn tangenten til $f(x) = x^2$ i $x = -1$. ($f'(x) = 2x$.)
+
+::: {.losning}
+Punktet $(-1, 1)$, stigningstall $-2$: $y - 1 = -2(x + 1)$, så $\underline{\underline{y = -2x - 1}}$.
+:::
+:::
+
+::: {.oppgave tittel="Normal" niva="Middels"}
+Finn normalen til $f(x) = x^2$ i $x = 1$.
+
+::: {.losning}
+Punktet $(1, 1)$, $f'(1) = 2$, normalens stigningstall $-\frac12$: $y - 1 = -\frac12(x - 1)$, så $\underline{\underline{y = -\frac12 x + \frac32}}$.
+:::
+:::
+
+::: {.oppgave tittel="Tangent med gitt stigning" niva="Utfordrende"}
+I hvilket punkt har $f(x) = x^2 - 4x + 1$ en tangent som er parallell med $y = 2x$? Finn tangentlikningen. ($f'(x) = 2x - 4$.)
+
+::: {.losning}
+$2x - 4 = 2$ gir $x = 3$, og $f(3) = -2$. Punktet er $(3, -2)$, og tangenten er $y + 2 = 2(x - 3)$, altså $\underline{\underline{y = 2x - 8}}$.
+:::
+:::
+
+::::

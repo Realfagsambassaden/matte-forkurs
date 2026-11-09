@@ -1,0 +1,15 @@
+\begin{tikzpicture}[scale=0.85]
+\draw[akse] (-0.3,0)--(6.5,0) node[right]{$x$};
+\draw[akse] (0,-0.3)--(0,5.5) node[above]{$y$};
+\draw[very thick,bla,domain=0.3:5.6,samples=80] plot (\x,{0.15*\x*\x+0.4});
+% P = (2, 1.0); f'(2)=0.6
+\foreach \b/\c in {5/black!35, 4/black!50, 3/black!65} {
+  \pgfmathsetmacro{\fb}{0.15*\b*\b+0.4}
+  \pgfmathsetmacro{\s}{(\fb-1.0)/(\b-2)}
+  \draw[\c,thick] (0.4,{1.0+\s*(0.4-2)})--(6,{1.0+\s*(6-2)});
+  \fill[\c] (\b,\fb) circle (2pt);
+}
+\draw[rod,very thick] (0.2,{1.0+0.6*(0.2-2)})--(6.2,{1.0+0.6*(6.2-2)}) node[right]{tangent};
+\fill (2,1.0) circle (2.5pt) node[below right]{$P$};
+\node[black!55] at (5.2,5.3) {sekanter};
+\end{tikzpicture}

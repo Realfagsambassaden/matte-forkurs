@@ -2,19 +2,79 @@
 title: "Kontinuerlige funksjoner"
 tema: grenseverdier
 undertema: kontinuitet
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/06-02-kontinuitet) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Løst sagt er en funksjon **kontinuerlig** hvis du kan tegne grafen uten å løfte blyanten. Grafen har ingen hull og ingen sprang. De fleste funksjoner vi møter, er kontinuerlige der de er definert. Men funksjoner med delt forskrift, og funksjoner med brøker, kan ha brudd.
+
+## Definisjon
+
+::: {.callout-note title="Definisjon: Kontinuitet"}
+$f$ er kontinuerlig i $x = a$ hvis
+$$
+\lim_{x\to a} f(x) = f(a).
+$$
 :::
 
-## Dette kommer på siden
+Det betyr tre ting på en gang: $f(a)$ finnes, grenseverdien finnes, og de to er like.
 
-- Hull og sprang
-- Delt funksjonsforskrift
-- Eksempler og oppgaver med løsning
+::: {.kort}
+- **Hull** Grenseverdien finnes, men $f(a)$ er ikke definert, eller har en annen verdi.
+- **Sprang** Grensene fra venstre og høyre er forskjellige.
+- **Asymptote** Funksjonen går mot $\pm\infty$ nær $a$.
+:::
+
+Polynomer, $\sqrt x$, $e^x$, $\ln x$, $\sin x$ og $\cos x$ er kontinuerlige der de er definert. Summer, produkter og brøker av kontinuerlige funksjoner er også kontinuerlige, så lenge vi ikke deler på null.
+
+## Delt funksjonsforskrift
+
+::: {.eksempel}
+**Eksempel: Velg konstanten.** Bestem $k$ slik at funksjonen blir kontinuerlig:
+$$
+f(x) = \begin{cases} x^2 + 1, & x < 2 \\ kx - 1, & x \ge 2 \end{cases}
+$$
+
+::: {.losning}
+Fra venstre: $\lim\limits_{x\to 2^-}(x^2 + 1) = 5$. Fra høyre, og i punktet: $f(2) = 2k - 1$. Kontinuitet krever $2k - 1 = 5$, så $\underline{\underline{k = 3}}$.
+:::
+:::
+
+::: {.callout-tip title="I fysikken"}
+Posisjonen til en gjenstand er alltid kontinuerlig: Den kan ikke hoppe fra ett sted til et annet. Farten kan derimot endre seg svært raskt i et støt, og i modeller tegner vi den ofte med sprang.
+:::
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Hvor er bruddet?"}
+Hvor er funksjonene ikke kontinuerlige? a) $f(x) = \dfrac{1}{x - 4}$ b) $g(x) = \dfrac{x^2 - 9}{x - 3}$
+
+::: {.losning}
+a) I $\underline{\underline{x = 4}}$ (asymptote).
+
+b) I $\underline{\underline{x = 3}}$, der $g$ ikke er definert. Grenseverdien er $6$, så grafen har et hull i $(3, 6)$.
+:::
+:::
+
+::: {.oppgave tittel="Sprang" niva="Middels"}
+Er funksjonen kontinuerlig i $x = 1$?
+$$
+f(x) = \begin{cases} 2x, & x < 1 \\ x + 2, & x \ge 1 \end{cases}
+$$
+
+::: {.losning}
+Fra venstre: $2$. Fra høyre: $f(1) = 3$. Forskjellige grenser, så **nei**. Grafen har et sprang på 1.
+:::
+:::
+
+::: {.oppgave tittel="Velg konstanten" niva="Utfordrende"}
+Bestem $a$ slik at $f(x) = \dfrac{x^2 - a^2}{x - a}$ for $x \ne a$ og $f(a) = 8$ blir kontinuerlig.
+
+::: {.losning}
+For $x \ne a$ er $f(x) = x + a$, som går mot $2a$. Kontinuitet krever $2a = 8$, så $\underline{\underline{a = 4}}$.
+:::
+:::
+
+::::

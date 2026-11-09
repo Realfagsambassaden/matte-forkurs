@@ -2,19 +2,105 @@
 title: "Grenseverdier"
 tema: grenseverdier
 undertema: grenseverdier
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/06-01-grenseverdier) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Hva er $\dfrac{x^2 - 1}{x - 1}$ når $x = 1$? Setter vi inn, får vi $\frac00$, som ikke er definert. Men vi kan spørre hva uttrykket **nærmer seg** når $x$ kommer nærmere og nærmere 1. Svaret kalles en **grenseverdi**, og den er selve grunnmuren for derivasjon.
+
+## Hva en grenseverdi er
+
+::: {.callout-note title="Definisjon: Grenseverdi"}
+$\displaystyle\lim_{x\to a} f(x) = L$ betyr at $f(x)$ kommer så nær $L$ vi vil, bare $x$ er nær nok $a$ (men $x \ne a$).
 :::
 
-## Dette kommer på siden
+Funksjonen trenger ikke være definert i $x = a$. Det er oppførselen **rundt** $a$ som teller.
 
-- Hva skjer når x nærmer seg et tall?
-- Regneregler og 0/0-uttrykk
-- Eksempler og oppgaver med løsning
+::: {.eksempel}
+**Eksempel: Tallene viser vei.** Finn $\displaystyle\lim_{x\to 1}\frac{x^2 - 1}{x - 1}$.
+
+::: {.losning}
+En tabell med $x$ nær 1:
+
+| $x$ | $0.9$ | $0.99$ | $0.999$ | $1.001$ | $1.01$ | $1.1$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $f(x)$ | $1.9$ | $1.99$ | $1.999$ | $2.001$ | $2.01$ | $2.1$ |
+
+Verdiene nærmer seg 2. Algebraisk: faktoriser og forkort (lov fordi $x \ne 1$):
+$$
+\frac{(x + 1)(x - 1)}{x - 1} = x + 1 \longrightarrow 2 \quad\text{når } x\to 1
+$$
+Svaret er $\underline{\underline{2}}$.
+:::
+:::
+
+## Regneregler
+
+Grenseverdier av summer, produkter og brøker kan regnes ledd for ledd, så lenge grensene finnes og vi ikke deler på null. For polynomer og andre «pene» funksjoner kan vi derfor bare sette inn: $\displaystyle\lim_{x\to 2}(x^2 + 3x) = 4 + 6 = 10$.
+
+::: {.steg}
+1. Prøv å sette inn $x = a$. Får du et tall, er det grenseverdien.
+2. Får du $\frac00$, faktoriser og forkort (eller utvid med konjugatet ved røtter), og prøv igjen.
+3. Får du $\frac{\text{tall}}{0}$, går funksjonen mot $\pm\infty$, og grenseverdien finnes ikke.
+:::
+
+## Ensidige grenseverdier
+
+Noen ganger nærmer funksjonen seg forskjellige verdier fra venstre og høyre. Vi skriver $\lim\limits_{x\to a^-}$ (fra venstre) og $\lim\limits_{x\to a^+}$ (fra høyre). Grenseverdien finnes bare hvis de to er like.
+
+## Grenseverdier når x går mot uendelig
+
+$\displaystyle\lim_{x\to\infty} f(x)$ forteller hva som skjer langt ute. For brøker av polynomer deler vi teller og nevner på den høyeste potensen i nevneren:
+$$
+\lim_{x\to\infty}\frac{3x^2 + 1}{x^2 - 5} = \lim_{x\to\infty}\frac{3 + \frac{1}{x^2}}{1 - \frac{5}{x^2}} = \frac{3 + 0}{1 - 0} = 3
+$$
+
+## Prøv selv
+
+```{.python .kjor}
+f = lambda x: (x**2 - 1) / (x - 1)
+for h in [0.1, 0.01, 0.001, 1e-6]:
+    print(1 - h, f(1 - h), "   ", 1 + h, f(1 + h))
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Sett inn"}
+Finn: a) $\displaystyle\lim_{x\to 3}(2x^2 - x)$ b) $\displaystyle\lim_{x\to 0}\frac{x + 4}{x - 2}$
+
+::: {.losning}
+a) $18 - 3 = \underline{\underline{15}}$ b) $\frac{4}{-2} = \underline{\underline{-2}}$
+:::
+:::
+
+::: {.oppgave tittel="0/0"}
+Finn: a) $\displaystyle\lim_{x\to 2}\frac{x^2 - 4}{x - 2}$ b) $\displaystyle\lim_{x\to -3}\frac{x^2 + x - 6}{x + 3}$
+
+::: {.losning}
+a) $\lim(x + 2) = \underline{\underline{4}}$ b) $\frac{(x + 3)(x - 2)}{x + 3} = x - 2 \to \underline{\underline{-5}}$
+:::
+:::
+
+::: {.oppgave tittel="Mot uendelig" niva="Middels"}
+Finn: a) $\displaystyle\lim_{x\to\infty}\frac{2x + 1}{5x - 3}$ b) $\displaystyle\lim_{x\to\infty}\frac{x}{x^2 + 1}$
+
+::: {.losning}
+a) Del på $x$: $\frac{2 + 1/x}{5 - 3/x} \to \underline{\underline{\frac25}}$
+
+b) Del på $x^2$: $\frac{1/x}{1 + 1/x^2} \to \underline{\underline{0}}$
+:::
+:::
+
+::: {.oppgave tittel="Med rot" niva="Utfordrende"}
+Finn $\displaystyle\lim_{x\to 0}\frac{\sqrt{x + 4} - 2}{x}$. (Hint: utvid med $\sqrt{x + 4} + 2$.)
+
+::: {.losning}
+$$
+\frac{(\sqrt{x + 4} - 2)(\sqrt{x + 4} + 2)}{x(\sqrt{x + 4} + 2)} = \frac{x + 4 - 4}{x(\sqrt{x + 4} + 2)} = \frac{1}{\sqrt{x + 4} + 2} \to \underline{\underline{\frac14}}
+$$
+:::
+:::
+
+::::

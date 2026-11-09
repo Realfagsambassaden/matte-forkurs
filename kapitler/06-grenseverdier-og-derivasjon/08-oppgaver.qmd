@@ -2,18 +2,57 @@
 title: "Blandede oppgaver: grenseverdier og derivasjon"
 tema: derivasjon
 undertema: oppgaver
-plassholder: true
 ---
 
-<!-- video: kommer (videoer/matte-forkurs/06-08-oppgaver) -->
-![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
-
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Oppgavene blander grenseverdier, asymptoter, derivasjon og bevegelse. Prøv selv før du åpner løsningen.
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Grenseverdi"}
+Finn $\displaystyle\lim_{x\to 4}\frac{x^2 - 16}{x^2 - 4x}$.
+
+::: {.losning}
+$\frac{(x + 4)(x - 4)}{x(x - 4)} = \frac{x + 4}{x} \to \underline{\underline{2}}$
+:::
 :::
 
-## Dette kommer på siden
+::: {.oppgave tittel="Asymptoter"}
+Finn asymptotene til $f(x) = \dfrac{6x}{2x - 4}$.
 
-- Oppgaver som blander temaene i kapitlet
-- Eksempler og oppgaver med løsning
+::: {.losning}
+Vertikal $\underline{\underline{x = 2}}$, horisontal $\underline{\underline{y = 3}}$.
+:::
+:::
+
+::: {.oppgave tittel="Deriver"}
+Deriver: a) $f(x) = 2x^4 - 3x + \dfrac{1}{x}$ b) $g(t) = 5t^2 - 4\sqrt t$
+
+::: {.losning}
+a) $\underline{\underline{8x^3 - 3 - \frac{1}{x^2}}}$ b) $\underline{\underline{10t - \frac{2}{\sqrt t}}}$
+:::
+:::
+
+::: {.oppgave tittel="Tangent og normal" niva="Middels"}
+Finn tangenten og normalen til $f(x) = \sqrt x$ i $x = 4$.
+
+::: {.losning}
+$f(4) = 2$, $f'(x) = \frac{1}{2\sqrt x}$, $f'(4) = \frac14$.
+
+Tangent: $y - 2 = \frac14(x - 4)$, så $\underline{\underline{y = \frac14 x + 1}}$. Normal: $y - 2 = -4(x - 4)$, så $\underline{\underline{y = -4x + 18}}$.
+:::
+:::
+
+::: {.oppgave tittel="Heis" niva="Utfordrende"}
+En heis starter fra ro, og posisjonen de første $4.0\ \mathrm{s}$ er $s(t) = 0.75t^2 - 0.125t^3$ (meter, sekunder). a) Finn farten og akselerasjonen. b) Når er farten størst, og hvor stor er den? c) Når er akselerasjonen null?
+
+::: {.losning}
+a) $v(t) = 1.5t - 0.375t^2$ og $a(t) = 1.5 - 0.75t$.
+
+b) Farten er størst når $a = 0$: $t = 2.0\ \mathrm{s}$. Da er $v = 3.0 - 1.5 = \underline{\underline{1.5\ \mathrm{m/s}}}$.
+
+c) $\underline{\underline{t = 2.0\ \mathrm{s}}}$ (samme tidspunkt). Etterpå er akselerasjonen negativ, og heisen bremser til den står stille ved $t = 4.0\ \mathrm{s}$.
+:::
+:::
+
+::::

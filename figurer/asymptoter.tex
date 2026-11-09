@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.7]
+\draw[akse] (-4.2,0)--(6.2,0) node[right]{$x$};
+\draw[akse] (0,-4)--(0,7.5) node[above]{$y$};
+\draw[dashed,rod,thick] (1,-4)--(1,7.3) node[above]{$x = 1$};
+\draw[dashed,rod,thick] (-4.2,2)--(6.2,2) node[above left]{$y = 2$};
+\draw[very thick,bla,domain=-4:0.5,samples=80] plot (\x,{(2*\x+1)/(\x-1)});
+\draw[very thick,bla,domain=1.55:6,samples=80] plot (\x,{(2*\x+1)/(\x-1)});
+\node[bla] at (4.3,4.3) {$f(x) = \dfrac{2x+1}{x-1}$};
+\end{tikzpicture}

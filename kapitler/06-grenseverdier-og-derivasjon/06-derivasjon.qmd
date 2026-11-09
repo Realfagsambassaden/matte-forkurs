@@ -2,20 +2,112 @@
 title: "Derivasjonsregler"
 tema: derivasjon
 undertema: derivasjonsregler
-plassholder: true
 ---
 
 <!-- video: kommer (videoer/matte-forkurs/06-06-derivasjon) -->
 ![Video kommer](../../bilder/video-kommer.png){fig-alt="Video kommer"}
 
 <!-- tillegg: Claude -->
-::: {.callout-note title="Kommer snart"}
-Denne siden skrives nå. Innholdet kommer snart.
+Å derivere med definisjonen hver gang er tungvint. Heldigvis gir definisjonen noen enkle regler som dekker alle polynomer og mange andre funksjoner. Med dem kan vi derivere på sekunder.
+
+## Grunnreglene
+
+::: {.graa}
+| Funksjon | Derivert |
+|:---|:---|
+| $c$ (konstant) | $0$ |
+| $x$ | $1$ |
+| $x^n$ | $n x^{n - 1}$ |
+| $c\cdot f(x)$ | $c\cdot f'(x)$ |
+| $f(x) + g(x)$ | $f'(x) + g'(x)$ |
 :::
 
-## Dette kommer på siden
+**Potensregelen** $\left(x^n\right)' = nx^{n - 1}$ gjelder for alle reelle eksponenter, også negative og brøker. Vi skriver om røtter og brøker til potenser først.
 
-- Derivasjon av potenser
-- Sum og konstant faktor
-- Den deriverte som funksjon
-- Eksempler og oppgaver med løsning
+::: {.kort}
+- **Konstanter forsvinner** En konstant endrer seg ikke, så vekstfarten er null.
+- **Konstant faktor står** $(5x^3)' = 5\cdot 3x^2 = 15x^2$.
+- **Summer ledd for ledd** Deriver hvert ledd for seg.
+:::
+
+::: {.eksempel}
+**Eksempel: Polynom.** Deriver $f(x) = 4x^3 - 2x^2 + 7x - 9$.
+
+::: {.losning}
+$$
+f'(x) = 4\cdot 3x^2 - 2\cdot 2x + 7 - 0 = \underline{\underline{12x^2 - 4x + 7}}
+$$
+:::
+:::
+
+::: {.eksempel}
+**Eksempel: Røtter og brøker.** Deriver $g(x) = \sqrt{x} + \dfrac{3}{x^2}$.
+
+::: {.losning}
+Skriv som potenser: $g(x) = x^{1/2} + 3x^{-2}$.
+$$
+g'(x) = \tfrac12 x^{-1/2} + 3\cdot(-2)x^{-3} = \underline{\underline{\frac{1}{2\sqrt x} - \frac{6}{x^3}}}
+$$
+:::
+:::
+
+## Skrivemåter
+
+Den deriverte skrives på flere måter. Alle betyr det samme:
+$$
+f'(x) \qquad \frac{\mathrm{d}f}{\mathrm{d}x} \qquad \frac{\mathrm{d}y}{\mathrm{d}x}
+$$
+I fysikk skrives den deriverte med hensyn på tiden ofte med prikk: $\dot s = \frac{\mathrm{d}s}{\mathrm{d}t} = v$.
+
+Senere lærer vi regler for produkter, brøker og sammensatte funksjoner (kjerneregelen), og deriverte av $e^x$, $\ln x$ og de trigonometriske funksjonene.
+
+## Prøv selv
+
+`sympy` deriverer med `diff`. Prøv dine egne funksjoner.
+
+```{.python .kjor}
+from sympy import symbols, diff, sqrt
+x = symbols("x", positive=True)
+print(diff(4*x**3 - 2*x**2 + 7*x - 9, x))
+print(diff(sqrt(x) + 3/x**2, x))
+```
+
+:::: {.oppgaver}
+
+::: {.oppgave tittel="Deriver polynomer"}
+a) $f(x) = x^5$ b) $g(x) = 3x^2 - 5x + 1$ c) $h(x) = \frac12 x^4 - x^3 + 2$
+
+::: {.losning}
+a) $\underline{\underline{5x^4}}$ b) $\underline{\underline{6x - 5}}$ c) $\underline{\underline{2x^3 - 3x^2}}$
+:::
+:::
+
+::: {.oppgave tittel="Skriv om først"}
+Deriver: a) $f(x) = \dfrac{1}{x}$ b) $g(x) = \sqrt[3]{x^2}$ c) $h(x) = \dfrac{x^2 + 1}{x}$
+
+::: {.losning}
+a) $(x^{-1})' = \underline{\underline{-\frac{1}{x^2}}}$
+
+b) $(x^{2/3})' = \underline{\underline{\frac23 x^{-1/3}}} = \frac{2}{3\sqrt[3]{x}}$
+
+c) $h = x + x^{-1}$, så $\underline{\underline{h' = 1 - \frac{1}{x^2}}}$
+:::
+:::
+
+::: {.oppgave tittel="Tangent" niva="Middels"}
+Finn tangenten til $f(x) = x^3 - 2x$ i $x = 1$.
+
+::: {.losning}
+$f(1) = -1$ og $f'(x) = 3x^2 - 2$, så $f'(1) = 1$. Tangenten: $y + 1 = x - 1$, altså $\underline{\underline{y = x - 2}}$.
+:::
+:::
+
+::: {.oppgave tittel="Vannrette tangenter" niva="Utfordrende"}
+Hvor har $f(x) = x^3 - 3x^2 - 9x + 2$ vannrett tangent?
+
+::: {.losning}
+$f'(x) = 3x^2 - 6x - 9 = 3(x - 3)(x + 1) = 0$ gir $\underline{\underline{x = -1 \text{ og } x = 3}}$, altså i punktene $(-1, 7)$ og $(3, -25)$.
+:::
+:::
+
+::::
