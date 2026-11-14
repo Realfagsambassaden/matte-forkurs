@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.5]
+\draw[akse] (-1.5,0) -- (7,0) node[right]{$x$}; \draw[akse] (0,-4) -- (0,10) node[above]{$y$};
+\foreach \x in {2,4,6} \draw (\x,0.12) -- (\x,-0.12) node[below,font=\scriptsize]{$\x$};
+\draw[bla,very thick,domain=-1.2:5.3,samples=60] plot (\x,{\x*\x-3*\x});
+\draw[rod,very thick] (2.6,-3) -- (5.2,10); \node[rod,font=\small,right] at (5.2,9.6) {tangent $y = 5x - 16$};
+\draw[gronn,very thick] (-1,5) -- (7,3.4); \node[gronn,font=\small,above] at (6.2,3.6) {normal};
+\fill (4,4) circle (5pt) node[above left,font=\small]{$(4, 4)$};
+\node[bla,font=\small] at (1.2,8.5) {$f(x) = x^2 - 3x$};
+\end{tikzpicture}

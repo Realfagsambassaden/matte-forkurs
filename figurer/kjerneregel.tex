@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+\node[draw,thick,rounded corners,fill=bla!10,minimum width=1.4cm,minimum height=0.9cm] (x) at (0,0) {$x$};
+\node[draw,thick,rounded corners,fill=gronn!10,minimum width=2.2cm,minimum height=0.9cm] (u) at (3.6,0) {$u = 3x + 1$};
+\node[draw,thick,rounded corners,fill=rod!10,minimum width=2.2cm,minimum height=0.9cm] (y) at (7.6,0) {$y = u^5$};
+\draw[->,thick] (x) -- node[above,font=\small]{indre $g$} node[below,font=\small]{$u' = 3$} (u);
+\draw[->,thick] (u) -- node[above,font=\small]{ytre $f$} node[below,font=\small]{$\frac{\mathrm{d}y}{\mathrm{d}u} = 5u^4$} (y);
+\node[font=\small] at (3.8,-1.5) {$y' = 5u^4\cdot u' = 5(3x+1)^4\cdot3 = 15(3x+1)^4$};
+\end{tikzpicture}

@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+\draw[thick,rounded corners,fill=bla!10] (-2.2,-1.8) rectangle (-0.8,1.8); \node at (-1.5,2.2) {$x$};
+\draw[thick,rounded corners,fill=rod!10] (1.2,-1.8) rectangle (2.6,1.8); \node at (1.9,2.2) {$f(x)$};
+\foreach \y/\v in {1.2/-1,0.4/0,-0.4/1,-1.2/2} \node at (-1.5,\y) {$\v$};
+\foreach \y/\v in {1.2/0,0.2/1,-0.8/4} \node at (1.9,\y) {$\v$};
+\draw[->] (-1.2,1.2) -- (1.6,0.25); \draw[->] (-1.2,0.4) -- (1.6,1.15); \draw[->] (-1.2,-0.4) -- (1.6,0.15); \draw[->] (-1.2,-1.2) -- (1.6,-0.75);
+\node[font=\small] at (0.2,-2.3) {$f(x) = x^2$: hver $x$ får nøyaktig én verdi};
+\begin{scope}[xshift=5.2cm,yscale=0.8]
+\draw[akse] (-0.3,0) -- (3.2,0) node[right]{\small$x$}; \draw[akse] (0,-2.3) -- (0,2.3) node[above]{\small$y$};
+\draw[bla,very thick,domain=-1.6:1.6,samples=60] plot ({\x*\x},\x);
+\draw[rod,dashed,thick] (1.5,-2.2) -- (1.5,2.2);
+\fill[rod] (1.5,1.225) circle (2.5pt) (1.5,-1.225) circle (2.5pt);
+\node[font=\small,align=center] at (1.5,-2.85) {ikke en funksjon:\\én $x$ gir to $y$};
+\end{scope}
+\end{tikzpicture}

@@ -21,6 +21,9 @@ En ulikhet sier at noe er større eller mindre enn noe annet, for eksempel $2x +
 | $\ge$ | større enn eller lik | $x \ge 0$: 0 er med |
 :::
 
+<!-- tillegg: Claude -->
+![Løsningen av en ulikhet er et område på tallinja. Fylt prikk betyr at endepunktet er med, åpen prikk at det ikke er med.](../../bilder/figurer/tallinje-ulikhet.svg){.tikz-fig style="width:460px"}
+
 ## Regler for å løse ulikheter
 
 ::: {.kort}
@@ -44,6 +47,19 @@ $$
 \underline{\underline{x \le 3}}
 $$
 Kontroll med $x = 0$ (som skal passe): $7 \ge -8$. Det stemmer. Med $x = 4$ (som ikke skal passe): $-5 \ge 0$ er galt. Bra.
+:::
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Hvilket abonnement lønner seg?** Abonnement A koster $200$ kr i måneden med fri data. Abonnement B koster $50$ kr i måneden pluss $30$ kr per GB. For hvor mye data er A billigst?
+
+::: {.losning}
+La $x$ være antall GB. A er billigst når
+$$
+200 < 50 + 30x \quad\Leftrightarrow\quad 150 < 30x \quad\Leftrightarrow\quad x > 5
+$$
+A lønner seg når du bruker **mer enn 5 GB** i måneden. Ved akkurat $5$ GB koster de det samme.
 :::
 :::
 

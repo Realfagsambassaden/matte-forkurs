@@ -23,6 +23,9 @@ Likningen $x^2 = 25$ har to løsninger, $x = 5$ og $x = -5$, men $\sqrt{25}$ bet
 
 Tilsvarende er den **n-te roten** $\sqrt[n]{a}$ det tallet som opphøyd i $n$ gir $a$. For eksempel er $\sqrt[3]{8} = 2$ fordi $2^3 = 8$, og $\sqrt[3]{-27} = -3$. Kubikkroten (tredjeroten) av et negativt tall finnes, men kvadratroten gjør ikke det blant de reelle tallene.
 
+<!-- tillegg: Claude -->
+![Kvadratroten er siden i et kvadrat med et gitt areal. Tredjeroten er siden i en terning med et gitt volum.](../../bilder/figurer/rot-kvadrat.svg){.tikz-fig style="width:340px"}
+
 ## Regneregler for røtter
 
 ::: {.graa}
@@ -71,6 +74,19 @@ Det er vanlig å unngå røtter i nevneren. Vi utvider brøken med roten:
 $$
 \frac{6}{\sqrt3} = \frac{6\sqrt3}{\sqrt3\cdot\sqrt3} = \frac{6\sqrt3}{3} = 2\sqrt3
 $$
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Konjugatsetningen i nevneren.** Skriv $\dfrac{4}{\sqrt5 - 1}$ uten rot i nevneren.
+
+::: {.losning}
+Vi utvider med $\sqrt5 + 1$. Konjugatsetningen $(a-b)(a+b) = a^2 - b^2$ fjerner roten:
+$$
+\frac{4(\sqrt5 + 1)}{(\sqrt5 - 1)(\sqrt5 + 1)} = \frac{4(\sqrt5 + 1)}{5 - 1} = \underline{\underline{\sqrt5 + 1}}
+$$
+Kontroll med kalkulator: begge sider er $3.236$.
+:::
+:::
 
 ::: {.callout-tip title="I fysikken"}
 Røtter dukker opp når vi løser for fart: Fra $v^2 = v_0^2 + 2as$ får vi $v = \sqrt{v_0^2 + 2as}$, og svingetiden for en pendel er $T = 2\pi\sqrt{L/\mathrm{g}}$. Se [fjær og pendel på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/07-svingninger/02-fjaer-og-pendel.html).

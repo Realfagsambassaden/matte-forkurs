@@ -56,6 +56,21 @@ Hvordan vi løser andregradslikninger systematisk, lærer vi i kapitlet om fakto
 Høyden til en ball som kastes rett opp, er $y(t) = y_0 + v_0 t - \frac12\mathrm{g}t^2$. Det er en andregradsfunksjon i $t$ med $a = -\frac12\mathrm{g} < 0$, så grafen har et toppunkt: den høyeste høyden. Se [skrått kast på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/06-bevegelse-i-to-dimensjoner.html).
 :::
 
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Ballkast.** Høyden til en ball er $h(t) = -4.9t^2 + 10t + 1.5$ (meter, sekunder). Når er ballen høyest, og hvor høyt kommer den?
+
+::: {.losning}
+Grafen er en parabel med $a < 0$, så den har et toppunkt. Symmetrilinja:
+$$
+t = -\frac{b}{2a} = -\frac{10}{2\cdot(-4.9)} = \underline{\underline{1.02\ \mathrm{s}}}
+$$
+$$
+h(1.02) = -4.9\cdot1.02^2 + 10\cdot1.02 + 1.5 = \underline{\underline{6.6\ \mathrm{m}}}
+$$
+:::
+:::
+
 ## Prøv selv
 
 Endre $a$, $b$ og $c$ og se hvordan parabelen endrer seg.

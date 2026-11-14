@@ -40,6 +40,9 @@ Skrevet i vanlig rekkefølge: $-2 < x \le 2$, altså $\underline{\underline{x \i
 :::
 :::
 
+<!-- tillegg: Claude -->
+![En dobbel ulikhet gir et intervall med to endepunkter.](../../bilder/figurer/dobbel-ulikhet.svg){.tikz-fig style="width:420px"}
+
 ## Når x står i flere deler
 
 Står $x$ i både den midterste og en av de ytre delene, må vi dele opp i to vanlige ulikheter, løse hver for seg og ta **snittet** av løsningene.

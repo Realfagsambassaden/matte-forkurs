@@ -14,6 +14,9 @@ En likning er to uttrykk med et likhetstegn imellom, for eksempel $3x + 5 = 20$.
 
 En likning er som en skålvekt i balanse. Gjør vi det samme med begge sidene, er den fortsatt i balanse. Vi får lov til å
 
+<!-- tillegg: Claude -->
+![Likningen $3x + 2 = 11$ som en skålvekt i balanse. Det vi gjør på den ene siden, må vi gjøre på den andre.](../../bilder/figurer/skalvekt.svg){.tikz-fig style="width:420px"}
+
 ::: {.kort}
 - **Legge til eller trekke fra** det samme tallet eller uttrykket på begge sider.
 - **Gange eller dele** begge sidene med det samme tallet, så lenge det ikke er null.

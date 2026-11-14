@@ -43,12 +43,28 @@ $$
 
 I eksemplet over har normalen stigningstallet $-\frac15$: $y - 4 = -\frac15(x - 4)$, altså $y = -\frac15 x + \frac{24}{5}$.
 
+<!-- tillegg: Claude -->
+![Tangenten og normalen til $f(x) = x^2 - 3x$ i punktet $(4, 4)$. Normalen står vinkelrett på tangenten.](../../bilder/figurer/tangent-normal.svg){.tikz-fig style="width:380px"}
+
 ## Vannrett tangent
 
 Der $f'(a) = 0$, er tangenten vannrett. Det skjer i topp- og bunnpunkter, og det skal vi bruke mye i funksjonsdrøftingen.
 
 ::: {.callout-tip title="Tangenten som tilnærming"}
 Nær $x = a$ er $f(x) \approx f(a) + f'(a)(x - a)$. I fysikk bruker vi denne lineære tilnærmingen hele tiden, for eksempel $\sin\theta \approx \theta$ for små vinkler i pendelen.
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Hvor er tangenten vannrett?** Finn punktene på grafen til $f(x) = x^3 - 3x$ der tangenten er vannrett.
+
+::: {.losning}
+Vannrett tangent betyr stigningstall null: $f'(x) = 3x^2 - 3 = 0$, så $x^2 = 1$ og $x = \pm1$.
+$$
+f(-1) = -1 + 3 = 2, \qquad f(1) = 1 - 3 = -2
+$$
+Punktene er $\underline{\underline{(-1, 2)}}$ og $\underline{\underline{(1, -2)}}$. Det er toppunktet og bunnpunktet på grafen.
+:::
 :::
 
 :::: {.oppgaver}

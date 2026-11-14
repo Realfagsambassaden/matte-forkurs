@@ -64,6 +64,9 @@ Hver lineære likning med to ukjente er en rett linje i et koordinatsystem. Løs
 - **Linjene ligger oppå hverandre** Uendelig mange løsninger.
 :::
 
+<!-- tillegg: Claude -->
+![Tre muligheter for to rette linjer: De skjærer hverandre i ett punkt, de er parallelle, eller de ligger oppå hverandre.](../../bilder/figurer/to-linjer.svg){.tikz-fig style="width:560px"}
+
 ## Prøv selv
 
 Programmet løser likningssettet og tegner de to linjene. Endre tallene og se hvordan skjæringspunktet flytter seg.

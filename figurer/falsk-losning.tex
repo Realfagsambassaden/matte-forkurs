@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.55]
+\draw[akse] (-6.5,0) -- (5,0) node[right]{$x$}; \draw[akse] (0,-4.5) -- (0,4.5) node[above]{$y$};
+\foreach \x in {-6,-4,-2,2,4} \draw (\x,0.1) -- (\x,-0.1) node[below,font=\scriptsize]{$\x$};
+\draw[bla,very thick,domain=-6:4.5,samples=100] plot (\x,{sqrt(\x+6)}); \node[bla,font=\small] at (-4.6,2.2) {$y = \sqrt{x+6}$};
+\draw[bla,thick,dashed,domain=-6:4.5,samples=100] plot (\x,{-sqrt(\x+6)}); \node[bla,font=\small] at (-4.3,-2.4) {$y = -\sqrt{x+6}$};
+\draw[rod,very thick] (-4.5,-4.5) -- (4.5,4.5); \node[rod,font=\small] at (4.2,4.9) {$y = x$};
+\fill (3,3) circle (4pt) node[above left,font=\small]{$x = 3$};
+\draw[thick] (-2,-2) circle (4pt); \node[font=\small,right] (fl) at (0.8,-3.6) {falsk løsning $x = -2$}; \draw[->] (fl.west) -- (-1.75,-2.15);
+\end{tikzpicture}

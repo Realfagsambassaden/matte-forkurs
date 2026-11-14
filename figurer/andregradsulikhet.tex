@@ -1,0 +1,8 @@
+\begin{tikzpicture}[xscale=0.7,yscale=0.32]
+\draw[akse] (-4,0) -- (5,0) node[right]{$x$}; \draw[akse] (0,-7.5) -- (0,8) node[above]{$y$};
+\foreach \x in {-3,-2,-1,1,2,3,4} \draw (\x,0.25) -- (\x,-0.25) node[below,font=\scriptsize]{$\x$};
+\draw[bla,very thick,domain=-3.3:4.3,samples=60] plot (\x,{\x*\x-\x-6});
+\draw[gronn,line width=3pt] (-2,0) -- (3,0); \draw[gronn,thick,fill=white] (-2,0) circle (5pt) (3,0) circle (5pt);
+\node[bla,font=\small] at (3.4,7.5) {$y = x^2 - x - 6$};
+\node[gronn,font=\small] at (0.5,-9.0) {$y < 0$ for $-2 < x < 3$};
+\end{tikzpicture}

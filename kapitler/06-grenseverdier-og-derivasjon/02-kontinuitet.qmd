@@ -46,6 +46,22 @@ Fra venstre: $\lim\limits_{x\to 2^-}(x^2 + 1) = 5$. Fra høyre, og i punktet: $f
 Posisjonen til en gjenstand er alltid kontinuerlig: Den kan ikke hoppe fra ett sted til et annet. Farten kan derimot endre seg svært raskt i et støt, og i modeller tegner vi den ofte med sprang.
 :::
 
+<!-- tillegg: Claude -->
+![Med $k = 3$ henger grafen sammen i $x = 2$. Med en annen $k$ blir det et sprang.](../../bilder/figurer/kontinuitet.svg){.tikz-fig style="width:480px"}
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Tett hullet.** Funksjonen $f(x) = \dfrac{x^2 - 4}{x - 2}$ er ikke definert for $x = 2$. Hvilken verdi må vi gi $f(2)$ for at funksjonen skal bli kontinuerlig?
+
+::: {.losning}
+For $x \ne 2$ er $f(x) = \dfrac{(x - 2)(x + 2)}{x - 2} = x + 2$. Grenseverdien er
+$$
+\lim_{x\to2} f(x) = 2 + 2 = 4
+$$
+Med $\underline{\underline{f(2) = 4}}$ blir funksjonen kontinuerlig.
+:::
+:::
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Hvor er bruddet?"}

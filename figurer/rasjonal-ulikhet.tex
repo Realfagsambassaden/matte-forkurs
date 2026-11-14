@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=0.5]
+\draw[akse] (-6,0) -- (9,0) node[right]{$x$}; \draw[akse] (0,-6) -- (0,8) node[above]{$y$};
+\foreach \x in {-4,-2,2,4,6,8} \draw (\x,0.12) -- (\x,-0.12) node[below,font=\scriptsize]{$\x$};
+\draw[dashed,black!50] (1,-6) -- (1,7.8);
+\draw[bla,very thick,domain=-6:0.4,samples=60] plot (\x,{(\x+3)/(\x-1)});
+\draw[bla,very thick,domain=1.5:9,samples=60] plot (\x,{(\x+3)/(\x-1)});
+\draw[rod,very thick] (-6,2) -- (9,2); \node[rod,font=\small,above] at (8,2) {$y = 2$};
+\draw[gronn,line width=3pt] (1,0) -- (5,0); \draw[gronn,thick,fill=white] (1,0) circle (5pt); \fill[gronn] (5,0) circle (5pt);
+\fill (5,2) circle (4pt);
+\node[bla,font=\small] at (3.6,6.5) {$y = \dfrac{x+3}{x-1}$};
+\end{tikzpicture}

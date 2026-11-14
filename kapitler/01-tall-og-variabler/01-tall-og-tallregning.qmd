@@ -23,6 +23,9 @@ Tallene vi bruker, kan sorteres i mengder der hver mengde inneholder den forrige
 
 Et rasjonalt tall har en desimalutvikling som enten stopper ($\frac34 = 0.75$) eller gjentar seg ($\frac13 = 0.333\ldots$). Et irrasjonalt tall har uendelig mange desimaler uten mønster: $\pi = 3.14159\ldots$
 
+<!-- tillegg: Claude -->
+![Tallmengdene ligger inni hverandre: Alle naturlige tall er hele tall, alle hele tall er rasjonale, og alle rasjonale tall er reelle.](../../bilder/figurer/tallmengder.svg){.tikz-fig style="width:420px"}
+
 ## Regnerekkefølge
 
 Når et uttrykk har flere regneoperasjoner, regner vi alltid i denne rekkefølgen:
@@ -75,6 +78,19 @@ $$
 \frac{48.7\cdot 9.81}{2.1} \approx \frac{50\cdot 10}{2} = 250
 $$
 Det nøyaktige svaret er $227.5$. Overslaget viser at svaret skal være et par hundre, ikke $2.3$ eller $2300$.
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Fortegn og overslag.** a) Regn ut $(-3)\cdot(-4) - (-2)^3 : 4$. b) Gjør et overslag over $48.7\cdot0.21$, og sammenlign med det nøyaktige svaret.
+
+::: {.losning}
+**a)** Potensen først: $(-2)^3 = -8$. Så ganging og deling: $(-3)\cdot(-4) = 12$ og $-8 : 4 = -2$. Til slutt:
+$$
+12 - (-2) = \underline{\underline{14}}
+$$
+**b)** Rund av til tall som er lette å regne med: $48.7\cdot0.21 \approx 50\cdot0.2 = \underline{\underline{10}}$. Det nøyaktige svaret er $10.227$, så overslaget er godt. Et overslag avslører tastefeil: Viser kalkulatoren $102.27$, har du trykket feil.
+:::
+:::
 
 ## Prøv selv
 

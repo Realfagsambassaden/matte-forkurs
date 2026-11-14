@@ -26,6 +26,9 @@ Deriver den ytre funksjonen med kjernen urørt, og gang med den deriverte av kje
 
 Med Leibniz' skrivemåte ser regelen ut som en brøkforkorting: $\dfrac{\mathrm{d}f}{\mathrm{d}x} = \dfrac{\mathrm{d}f}{\mathrm{d}u}\cdot\dfrac{\mathrm{d}u}{\mathrm{d}x}$.
 
+<!-- tillegg: Claude -->
+![Kjerneregelen: Deriver den ytre funksjonen med kjernen $u$ som variabel, og gang med den deriverte av kjernen.](../../bilder/figurer/kjerneregel.svg){.tikz-fig style="width:520px"}
+
 ::: {.eksempel}
 **Eksempel: Kjerneregelen to ganger.** Deriver a) $f(x) = (3x + 1)^5$ og b) $g(x) = \sqrt{x^2 + 4}$.
 
@@ -44,6 +47,19 @@ $$
 
 ::: {.callout-warning title="Ikke glem kjernen"}
 Den vanligste feilen er å glemme å gange med $u'$. $(3x + 1)^5$ derivert er **ikke** $5(3x + 1)^4$. Sjekk deg selv: Er kjernen bare $x$, er $u' = 1$, og da merker du ingenting.
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Kjernen i nevneren.** Deriver $f(x) = \dfrac{1}{x^2 + 1}$.
+
+::: {.losning}
+Skriv $f(x) = (x^2 + 1)^{-1}$. Kjernen er $u = x^2 + 1$ med $u' = 2x$:
+$$
+f'(x) = -1\cdot(x^2 + 1)^{-2}\cdot2x = \underline{\underline{-\frac{2x}{(x^2 + 1)^2}}}
+$$
+Den deriverte er null bare for $x = 0$, der grafen har toppunktet $(0, 1)$.
+:::
 :::
 
 :::: {.oppgaver}

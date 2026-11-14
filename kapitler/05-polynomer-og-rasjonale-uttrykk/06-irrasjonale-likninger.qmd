@@ -47,6 +47,9 @@ Svaret er $\underline{\underline{x = 5}}$.
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Når vi kvadrerer $\sqrt{x + 6} = x$, får vi også med løsningene av $-\sqrt{x + 6} = x$. Derfor dukker den falske løsningen $x = -2$ opp, og derfor må vi sette prøve.](../../bilder/figurer/falsk-losning.svg){.tikz-fig style="width:420px"}
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Løs likningene"}

@@ -53,6 +53,26 @@ f(x):    vokser  avtar     vokser</div>
 Et toppunkt er **lokalt**: høyest i nærheten. Den **største verdien** (globalt maksimum) på et intervall kan også ligge i et endepunkt. Når definisjonsmengden er et lukket intervall, må vi derfor også sjekke endepunktene.
 :::
 
+<!-- tillegg: Claude -->
+![Grafen til $f(x) = x^3 - 3x^2 - 9x + 5$ med fortegnslinja for $f'(x)$ under. Der $f'$ skifter fortegn, har $f$ topp- eller bunnpunkt.](../../bilder/figurer/drofting.svg){.tikz-fig style="width:460px"}
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Fjerdegradspolynom.** Finn topp- og bunnpunktene til $f(x) = x^4 - 2x^2$.
+
+::: {.losning}
+$$
+f'(x) = 4x^3 - 4x = 4x(x - 1)(x + 1)
+$$
+Nullpunkter: $x = -1$, $0$ og $1$. Fortegnslinja gir $f' < 0$ for $x < -1$, $f' > 0$ for $-1 < x < 0$, $f' < 0$ for $0 < x < 1$ og $f' > 0$ for $x > 1$.
+
+- **Bunnpunkter:** $(-1, -1)$ og $(1, -1)$
+- **Toppunkt:** $(0, 0)$
+
+Grafen ser ut som en W.
+:::
+:::
+
 ## Prøv selv
 
 ```{.python .kjor}

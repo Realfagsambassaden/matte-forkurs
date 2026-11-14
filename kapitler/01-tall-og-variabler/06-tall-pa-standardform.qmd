@@ -27,6 +27,9 @@ Eksponenten $n$ forteller hvor mange plasser kommaet er flyttet: positiv $n$ for
 - **Gjeldende siffer** $a$ viser hvor nøyaktig tallet er: $4.50\cdot 10^4$ har tre gjeldende siffer, $4.5\cdot 10^4$ har to.
 :::
 
+<!-- tillegg: Claude -->
+![Størrelser i naturen spenner over mange tierpotenser. Hvert merke på aksen er $10^5$ ganger større enn det forrige.](../../bilder/figurer/storrelsesskala.svg){.tikz-fig style="width:600px"}
+
 ## Regning på standardform
 
 Ved multiplikasjon og divisjon regner vi med tallene og tierpotensene hver for seg, og bruker potensreglene:
@@ -57,6 +60,18 @@ Kalkulatorer og Python skriver $6.02\cdot 10^{23}$ som `6.02E23` eller `6.02e23`
 
 ::: {.callout-tip title="I fysikken"}
 Fysikken bruker standardform hele tiden, ofte sammen med prefikser som kilo ($10^3$), mega ($10^6$), milli ($10^{-3}$) og mikro ($10^{-6}$). Se [tall på standardform på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/01-hva-er-fysikk/06-tall-pa-standardform.html).
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Molekyler i en liter vann.** Et vannmolekyl har massen $3.0\cdot10^{-26}\ \mathrm{kg}$. Hvor mange molekyler er det i $1.0\ \mathrm{kg}$ vann?
+
+::: {.losning}
+$$
+N = \frac{1.0\ \mathrm{kg}}{3.0\cdot10^{-26}\ \mathrm{kg}} = \frac{1.0}{3.0}\cdot10^{0-(-26)} = 0.33\cdot10^{26} = \underline{\underline{3.3\cdot10^{25}}}
+$$
+Husk å skrive svaret på standardform til slutt: $0.33\cdot10^{26} = 3.3\cdot10^{25}$.
+:::
 :::
 
 ## Prøv selv

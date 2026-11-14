@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=0.8]
+\fill[bla!25] (0,0) rectangle (4,3); \fill[gronn!25] (4,0) rectangle (6,3);
+\fill[rod!20] (0,3) rectangle (4,4.5); \fill[lilla!20] (4,3) rectangle (6,4.5);
+\draw[thick] (0,0) rectangle (6,4.5); \draw (4,0) -- (4,4.5); \draw (0,3) -- (6,3);
+\node at (2,1.5) {$ac$}; \node at (5,1.5) {$bc$}; \node at (2,3.75) {$ad$}; \node at (5,3.75) {$bd$};
+\draw[decorate,decoration={brace,mirror,amplitude=5pt}] (0,-0.15) -- node[below=5pt]{$a$} (4,-0.15);
+\draw[decorate,decoration={brace,mirror,amplitude=5pt}] (4,-0.15) -- node[below=5pt]{$b$} (6,-0.15);
+\draw[decorate,decoration={brace,amplitude=5pt}] (-0.15,0) -- node[left=5pt]{$c$} (-0.15,3);
+\draw[decorate,decoration={brace,amplitude=5pt}] (-0.15,3) -- node[left=5pt]{$d$} (-0.15,4.5);
+\node[right,align=left] at (6.4,2.25) {$(a+b)(c+d)$\\$= ac + bc + ad + bd$};
+\end{tikzpicture}

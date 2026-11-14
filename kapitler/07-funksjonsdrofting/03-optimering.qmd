@@ -20,6 +20,9 @@ Hvilken form på boksen bruker minst materiale? Hvilken pris gir størst inntekt
 5. Sjekk at det er et maksimum eller minimum (fortegnslinje, $f''$ eller endepunkter), og svar på spørsmålet.
 :::
 
+<!-- tillegg: Claude -->
+![Vi klipper bort et kvadrat med side $x$ i hvert hjørne og bretter opp kantene.](../../bilder/figurer/esken.svg){.tikz-fig style="width:520px"}
+
 ::: {.eksempel}
 **Eksempel: Esken.** Fra en kvadratisk plate på $30\ \mathrm{cm}\times 30\ \mathrm{cm}$ klipper vi bort et kvadrat med side $x$ i hvert hjørne og bretter opp kantene. Hvilken $x$ gir størst volum?
 

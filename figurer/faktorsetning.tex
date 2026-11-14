@@ -1,0 +1,8 @@
+\begin{tikzpicture}[xscale=0.75,yscale=0.32]
+\draw[akse] (-3.5,0) -- (4.5,0) node[right]{$x$}; \draw[akse] (0,-8) -- (0,10) node[above]{$y$};
+\foreach \x in {-3,-2,-1,1,2,3,4} \draw (\x,0.25) -- (\x,-0.25) node[below,font=\scriptsize]{$\x$};
+\draw[bla,very thick,domain=-2.6:3.7,samples=80] plot (\x,{\x*\x*\x-2*\x*\x-5*\x+6});
+\fill[rod] (-2,0) circle (5pt) (1,0) circle (5pt) (3,0) circle (5pt);
+\node[bla,font=\small,right] at (1.3,8.5) {$P(x) = x^3 - 2x^2 - 5x + 6$};
+\node[rod,font=\small,align=left,right] at (4.6,3) {$P(3) = 0$, så\\$(x - 3)$ er en faktor};
+\end{tikzpicture}

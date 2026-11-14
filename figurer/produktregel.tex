@@ -1,0 +1,12 @@
+\begin{tikzpicture}[scale=0.8]
+\fill[bla!20] (0,0) rectangle (4,3); \node at (2,1.5) {$u\cdot v$};
+\fill[gronn!25] (4,0) rectangle (5.6,3); \node[font=\small] at (4.8,1.5) {$\Delta u\cdot v$};
+\fill[rod!20] (0,3) rectangle (4,3.8); \node[font=\small] at (2,3.4) {$u\cdot\Delta v$};
+\fill[black!15] (4,3) rectangle (5.6,3.8);
+\draw[thick] (0,0) rectangle (5.6,3.8); \draw (4,0) -- (4,3.8) (0,3) -- (5.6,3);
+\draw[decorate,decoration={brace,mirror,amplitude=4pt}] (0,-0.15) -- node[below=4pt]{$u$} (4,-0.15);
+\draw[decorate,decoration={brace,mirror,amplitude=4pt}] (4,-0.15) -- node[below=4pt]{$\Delta u$} (5.6,-0.15);
+\draw[decorate,decoration={brace,amplitude=4pt}] (-0.15,0) -- node[left=4pt]{$v$} (-0.15,3);
+\draw[decorate,decoration={brace,amplitude=4pt}] (-0.15,3) -- node[left=4pt]{$\Delta v$} (-0.15,3.8);
+\node[right,align=left,font=\small] at (6.0,1.9) {Økningen i arealet er\\$\Delta u\cdot v + u\cdot\Delta v$ + (en bitte liten rute).\\Del på $\Delta x$: $(uv)' = u'v + uv'$};
+\end{tikzpicture}

@@ -41,6 +41,21 @@ Graden er 3 og $a_3 = 1 > 0$, så grafen kommer nedenfra til venstre og går opp
 :::
 :::
 
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Fra nullpunkter til polynom.** Et tredjegradspolynom har nullpunktene $-1$, $2$ og $4$, og $P(0) = 16$. Finn $P(x)$.
+
+::: {.losning}
+Hvert nullpunkt gir en faktor, så $P(x) = a(x + 1)(x - 2)(x - 4)$. Konstanten $a$ finner vi fra $P(0)$:
+$$
+P(0) = a\cdot1\cdot(-2)\cdot(-4) = 8a = 16 \quad\Rightarrow\quad a = 2
+$$
+$$
+P(x) = \underline{\underline{2(x + 1)(x - 2)(x - 4)}}
+$$
+:::
+:::
+
 ## Prøv selv
 
 ```{.python .kjor}

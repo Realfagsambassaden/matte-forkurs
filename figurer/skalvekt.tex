@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+\fill[black!25] (-0.4,0) -- (0.4,0) -- (0,1.8) -- cycle; \draw[thick] (-0.4,0) -- (0.4,0) -- (0,1.8) -- cycle;
+\draw[very thick] (-3,1.8) -- (3,1.8);
+\draw (-3,1.8) -- (-4.0,1.0) (-3,1.8) -- (-2.0,1.0); \draw[thick] (-4.2,1.0) -- (-1.8,1.0);
+\draw (3,1.8) -- (2.0,1.0) (3,1.8) -- (4.0,1.0); \draw[thick] (1.8,1.0) -- (4.2,1.0);
+\foreach \i in {0,1,2} \draw[fill=bla!35] (-4.1+\i*0.5,1.0) rectangle ++(0.44,0.44) node[midway,font=\small]{$x$};
+\foreach \i in {0,1} \draw[fill=rod!35] (-2.45+\i*0.28,1.13) circle (0.12);
+\foreach \i in {0,...,10} \draw[fill=rod!35] ({2.2+mod(\i,6)*0.3},{1.13+floor(\i/6)*0.26}) circle (0.12);
+\node[font=\small] at (-3,0.6) {$3x + 2$}; \node[font=\small] at (3,0.6) {$11$};
+\node[font=\small] at (0,-0.5) {Ta bort 2 kuler på hver side, og del i tre: $x = 3$};
+\end{tikzpicture}

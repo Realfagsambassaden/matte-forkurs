@@ -1,0 +1,16 @@
+\begin{tikzpicture}[scale=0.13]
+\draw[thick] (0,0) rectangle (30,30);
+\foreach \a/\b in {0/0,24/0,0/24,24/24} \fill[rod!25] (\a,\b) rectangle (\a+6,\b+6);
+\draw[dashed] (6,0) -- (6,30) (24,0) -- (24,30) (0,6) -- (30,6) (0,24) -- (30,24);
+\draw[<->] (0,-2) -- node[below,font=\small]{$30\ \mathrm{cm}$} (30,-2);
+\draw[<->] (24,31.5) -- node[above,font=\small]{$x$} (30,31.5);
+\node[font=\small] at (15,15) {bunn};
+\begin{scope}[xshift=42cm,yshift=4cm]
+\draw[thick,fill=bla!10] (0,0) -- (18,0) -- (18,7) -- (0,7) -- cycle;
+\draw[thick,fill=bla!20] (18,0) -- (25,6) -- (25,13) -- (18,7) -- cycle;
+\draw[thick,fill=bla!5] (0,7) -- (7,13) -- (25,13) -- (18,7) -- cycle;
+\draw[<->] (0,-2) -- node[below,font=\small]{$30 - 2x$} (18,-2);
+\draw[<->] (-2,0) -- node[left,font=\small]{$x$} (-2,7);
+\node[font=\small,right] at (26,6) {$V = x(30 - 2x)^2$};
+\end{scope}
+\end{tikzpicture}

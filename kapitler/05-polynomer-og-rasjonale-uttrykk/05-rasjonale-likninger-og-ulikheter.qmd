@@ -59,6 +59,9 @@ $$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Ulikheten $\dfrac{x + 3}{x - 1} \ge 2$ er oppfylt der grafen ligger på eller over linja $y = 2$: for $1 < x \le 5$.](../../bilder/figurer/rasjonal-ulikhet.svg){.tikz-fig style="width:440px"}
+
 ## Doble andregradsulikheter
 
 En dobbel ulikhet som $-1 \le x^2 - 2x \le 3$ deler vi i to ulikheter, løser hver for seg og tar snittet.
