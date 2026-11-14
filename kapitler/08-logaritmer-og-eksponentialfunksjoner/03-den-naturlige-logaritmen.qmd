@@ -18,6 +18,9 @@ $$
 $$
 Det spesielle med $\mathrm{e}$ er at funksjonen $\mathrm{e}^x$ er sin egen deriverte: $(\mathrm{e}^x)' = \mathrm{e}^x$. Det ser vi nærmere på senere i kapitlet.
 
+<!-- tillegg: Claude -->
+![Følgen $\left(1 + \frac1n\right)^n$ nærmer seg tallet $\mathrm{e}$ når $n$ vokser.](../../bilder/figurer/tallet-e.svg){.tikz-fig style="width:420px"}
+
 ## ln x
 
 ::: {.callout-note title="Definisjon: Den naturlige logaritmen"}

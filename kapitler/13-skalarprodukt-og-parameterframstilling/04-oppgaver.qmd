@@ -33,4 +33,15 @@ Bruk ulike tider: A er i $(2t, t)$ og B i $(10 - s, -5 + 2s)$. Like koordinater:
 :::
 :::
 
+::: {.oppgave tittel="Står de vinkelrett?"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-skalar.svg){.tikz-fig style="width:200px"}
+
+Les av $\vec a$ og $\vec b$ (hver rute er 1). Står vektorene vinkelrett på hverandre? Bruk skalarproduktet.
+
+::: {.losning}
+$\vec a = [2, 3]$ og $\vec b = [3, -2]$. $\vec a\cdot\vec b = 6 - 6 = 0$, så **ja**, vektorene står vinkelrett på hverandre.
+:::
+:::
+
 ::::

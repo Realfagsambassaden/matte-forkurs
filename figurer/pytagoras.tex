@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.62]
+\coordinate (A) at (0,0); \coordinate (B) at (4,0); \coordinate (C) at (0,3);
+\fill[bla!25] (0,0) rectangle (4,-4); \node at (2,-2) {$a^2 = 16$};
+\fill[gronn!25] (0,0) rectangle (-3,3); \node at (-1.5,1.5) {$b^2 = 9$};
+\fill[rod!25] (4,0) -- (7,4) -- (3,7) -- (0,3) -- cycle; \node at (3.5,3.5) {$c^2 = 25$};
+\draw[thick] (0,0) rectangle (4,-4) (0,0) rectangle (-3,3) (4,0) -- (7,4) -- (3,7) -- (0,3) -- cycle;
+\draw[very thick] (A) -- (B) -- (C) -- cycle; \node[font=\scriptsize] at (2.0,0.35) {$a = 4$}; \node[font=\scriptsize,rotate=90] at (0.35,1.6) {$b = 3$}; \node[font=\scriptsize,rotate=-36.87] at (2.25,1.75) {$c = 5$};
+\draw (0,0.4) -- (0.4,0.4) -- (0.4,0);
+\end{tikzpicture}

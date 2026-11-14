@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=1.7]
+\draw[akse] (-1.25,0) -- (1.35,0) node[right]{\small$x$}; \draw[akse] (0,-1.25) -- (0,1.35) node[above]{\small$y$};
+\draw[thick] (0,0) circle (1);
+\draw[rod,thick] (-1.2,0.866) -- (1.25,0.866) node[right,font=\small]{$y = \frac{\sqrt3}{2}$};
+\draw[bla,very thick] (0,0) -- (60:1); \draw[bla,very thick] (0,0) -- (120:1);
+\fill[bla] (60:1) circle (1.2pt) (120:1) circle (1.2pt);
+\draw (0.25,0) arc (0:60:0.25); \node[font=\scriptsize] at (30:0.42) {$\frac\pi3$};
+\draw[gronn] (0.15,0) arc (0:120:0.15); \node[gronn,font=\scriptsize] at (150:0.32) {$\frac{2\pi}3$};
+\end{tikzpicture}

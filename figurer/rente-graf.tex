@@ -1,0 +1,10 @@
+\begin{tikzpicture}[xscale=0.3,yscale=0.25]
+\draw[akse] (0,0) -- (21,0) node[right]{år}; \draw[akse] (0,0) -- (0,24) node[above]{kr (tusen)};
+\foreach \x in {5,10,15,20} \draw (\x,0.3) -- (\x,-0.3) node[below,font=\scriptsize]{$\x$};
+\foreach \y in {5,10,15,20} \draw (0.2,\y) -- (-0.2,\y) node[left,font=\scriptsize]{$\y$};
+\draw[bla,very thick,domain=0:20,samples=50] plot (\x,{10*1.04^\x});
+\draw[rod,thick,dashed] (0,15) -- (20,15);
+\draw[dashed] (10.34,15) -- (10.34,0) node[below=10pt,font=\small]{$10.3$};
+\fill (10.34,15) circle (0.25 and 0.3);
+\node[bla,font=\small] at (14,21) {$10000\cdot1.04^x$};
+\end{tikzpicture}

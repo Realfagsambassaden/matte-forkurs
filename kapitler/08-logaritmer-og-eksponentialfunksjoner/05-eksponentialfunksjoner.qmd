@@ -54,6 +54,9 @@ $T'(0) = \underline{\underline{-3.5\ ^\circ\mathrm{C/min}}}$ og $T'(20) = -3.5\m
 Radioaktiv nedbrytning, $N = N_0\mathrm{e}^{-\lambda t}$, har aktiviteten $A = -N'(t) = \lambda N$: Jo flere kjerner, desto flere henfall per sekund. Se [radioaktivitet og stråling](https://fysikkhjelp.no/fysikk-forkurs/kapitler/12-atom-og-kjernefysikk/03-radioaktivitet-og-straling.html) på fysikkhjelp.no.
 :::
 
+<!-- tillegg: Claude -->
+![Grafen til $f(x) = x\mathrm{e}^{-x}$ fra eksempelet: toppunkt i $x = 1$ og vendepunkt i $x = 2$.](../../bilder/figurer/xe-x.svg){.tikz-fig style="width:380px"}
+
 ## Prøv selv
 
 ```{.python .kjor}

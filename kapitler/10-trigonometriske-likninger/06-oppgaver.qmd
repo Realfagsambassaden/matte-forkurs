@@ -41,4 +41,18 @@ $1.5\cos\left(\frac{2\pi t}{12.4}\right) = 0.5$ gir $\cos\left(\frac{2\pi t}{12.
 :::
 :::
 
+::: {.oppgave tittel="Les av enhetssirkelen"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-enhetssirkel.svg){.tikz-fig style="width:220px"}
+
+Figuren viser løsningene av en likning på enhetssirkelen. Hvilken likning, og hva er løsningene i $[0, 2\pi\rangle$?
+
+::: {.losning}
+Linja $x = -\frac12$ gir likningen $\cos v = -\frac12$. Punktene ligger i andre og tredje kvadrant:
+$$
+\underline{\underline{v = \frac{2\pi}{3}}} \quad\text{og}\quad \underline{\underline{v = \frac{4\pi}{3}}}
+$$
+:::
+:::
+
 ::::

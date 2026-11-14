@@ -40,6 +40,9 @@ Gjennomsnittet av $\sin^2 x$ over en periode er altså $\frac12$. Det er derfor 
 :::
 :::
 
+<!-- tillegg: Claude -->
+![$\sin^2 x$ svinger rundt $\frac12$. Derfor er $\int_0^\pi\sin^2 x\,\mathrm{d}x = \frac\pi2$.](../../bilder/figurer/sin-kvadrat.svg){.tikz-fig style="width:460px"}
+
 ## Produkter: variabelskifte
 
 ::: {.eksempel}

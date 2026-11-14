@@ -34,6 +34,9 @@ c) Kjerneregelen: $h'(x) = 2\sin x\cos x = \underline{\underline{\sin 2x}}$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Den deriverte av $\sin x$ er $\cos x$: Der sinusgrafen er brattest (i nullpunktene), er cosinus $\pm1$. Der sinus har topp eller bunn, er cosinus null.](../../bilder/figurer/sin-derivert.svg){.tikz-fig style="width:440px"}
+
 ## Svingninger og fart
 
 Er posisjonen $x(t) = A\cos(\omega t)$, er farten og akselerasjonen

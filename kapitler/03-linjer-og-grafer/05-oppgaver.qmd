@@ -59,4 +59,17 @@ c) Grafen til $L$ krysser $y = 60$ ved $\underline{\underline{v \approx 73\ \mat
 :::
 :::
 
+::: {.oppgave tittel="Linja fra grafen"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-linje.svg){.tikz-fig style="width:300px"}
+
+Finn likningen for linja. Hvor skjærer den $x$-aksen?
+
+::: {.losning}
+Linja går gjennom $(0, -1)$ og $(3, 1)$: $a = \frac{1 - (-1)}{3 - 0} = \frac23$ og $b = -1$, så $\underline{\underline{y = \frac23x - 1}}$.
+
+$x$-aksen: $\frac23x - 1 = 0$ gir $\underline{\underline{x = 1.5}}$.
+:::
+:::
+
 ::::

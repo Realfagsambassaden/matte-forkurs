@@ -43,4 +43,19 @@ Volumet: $V = \frac13\cdot 36\cdot 2.65 = \underline{\underline{32\ \mathrm{m^3}
 :::
 :::
 
+::: {.oppgave tittel="Trekanten" niva="Middels"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-trekant.svg){.tikz-fig style="width:260px"}
+
+Finn den tredje siden $c$ og arealet av trekanten.
+
+::: {.losning}
+Cosinussetningen:
+$$
+c^2 = 7.0^2 + 9.0^2 - 2\cdot7.0\cdot9.0\cos40^\circ = 33.5 \quad\Rightarrow\quad c = \underline{\underline{5.8}}
+$$
+Arealsetningen: $A = \frac12\cdot7.0\cdot9.0\sin40^\circ = \underline{\underline{20}}$.
+:::
+:::
+
 ::::

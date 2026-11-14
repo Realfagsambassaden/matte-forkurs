@@ -44,6 +44,9 @@ Kontroll: $B$ gir $6$, og $C$ gir $6$. Det stemmer.
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Planet gjennom $A$, $B$ og $C$ skjærer aksene i de tre punktene.](../../bilder/figurer/plan-tre-punkter.svg){.tikz-fig style="width:360px"}
+
 ## Linje og plan
 
 Der en linje treffer et plan, setter vi parameterframstillingen inn i planlikningen og løser for $t$.

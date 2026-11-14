@@ -25,6 +25,9 @@ der $v$ er vinkelen mellom vektorene ($0^\circ \le v \le 180^\circ$).
 - **Motsatt retning** Skalarproduktet er negativt når vinkelen er over $90^\circ$.
 :::
 
+<!-- tillegg: Claude -->
+![Skalarproduktet er lengden av $\vec v$ ganget med projeksjonen av $\vec u$ ned på $\vec v$. Står vektorene vinkelrett, er projeksjonen null.](../../bilder/figurer/skalarprodukt.svg){.tikz-fig style="width:480px"}
+
 ## Koordinatformelen
 
 ::: {.graa}

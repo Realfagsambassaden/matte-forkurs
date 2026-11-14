@@ -91,4 +91,15 @@ $$
 :::
 :::
 
+::: {.oppgave tittel="Les av figuren"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-brok.svg){.tikz-fig style="width:160px"}
+
+a) Hvor stor brøkdel av rektangelet er farget? b) Hvor mye blir det hvis vi farger $\frac13$ av rektangelet i tillegg?
+
+::: {.losning}
+a) 5 av 12 ruter: $\underline{\underline{\frac{5}{12}}}$. b) $\frac13 = \frac{4}{12}$, så $\frac{5}{12} + \frac{4}{12} = \frac{9}{12} = \underline{\underline{\frac34}}$.
+:::
+:::
+
 ::::

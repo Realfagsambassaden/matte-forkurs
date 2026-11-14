@@ -19,6 +19,9 @@ $$
 
 I fysikken velger vi gjerne cosinus når svingningen starter i et ytterpunkt (et lodd som trekkes ut og slippes), og sinus når den starter i likevekt.
 
+<!-- tillegg: Claude -->
+![Cosinusgrafen er sinusgrafen flyttet $\frac\pi2$ mot venstre. Tangens har periode $\pi$ og loddrette asymptoter der $\cos x = 0$.](../../bilder/figurer/cos-tan.svg){.tikz-fig style="width:420px"}
+
 ## Tangensfunksjonen
 
 $\tan x = \dfrac{\sin x}{\cos x}$ er ikke definert der $\cos x = 0$, altså for $x = \frac{\pi}{2} + k\pi$. Der har grafen **loddrette asymptoter**.
@@ -35,6 +38,18 @@ $\tan x = \dfrac{\sin x}{\cos x}$ er ikke definert der $\cos x = 0$, altså for 
 
 ::: {.losning}
 $f(x) = 4\cos x$. Nullpunkter: $\cos x = 0$ gir $\underline{\underline{x = \frac{\pi}{2} \text{ og } \frac{3\pi}{2}}}$.
+:::
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Tangens med koeffisient.** Finn perioden og de loddrette asymptotene til $f(x) = \tan(2x)$.
+
+::: {.losning}
+$\tan u$ har periode $\pi$, så $\tan(2x)$ har periode $\underline{\underline{\frac\pi2}}$. Asymptotene er der $\cos(2x) = 0$:
+$$
+2x = \frac\pi2 + k\pi \quad\Rightarrow\quad \underline{\underline{x = \frac\pi4 + k\cdot\frac\pi2}}
+$$
 :::
 :::
 

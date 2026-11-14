@@ -65,4 +65,17 @@ $2.89\ \mathrm{h} \approx 2$ timer og 53 minutter, så de møtes $\underline{\un
 :::
 :::
 
+::: {.oppgave tittel="Løsning fra grafen"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-to-linjer.svg){.tikz-fig style="width:280px"}
+
+Finn likningene for linjene $l$ og $m$ fra figuren. Les av løsningen av likningssettet, og kontroller ved regning.
+
+::: {.losning}
+$l$ går gjennom $(0, -1)$ og $(2, 3)$: $\underline{\underline{y = 2x - 1}}$. $m$ går gjennom $(0, 5)$ og $(5, 0)$: $\underline{\underline{y = -x + 5}}$.
+
+Skjæringspunktet er $(2, 3)$. Kontroll: $2x - 1 = -x + 5$ gir $3x = 6$, $x = 2$ og $y = 3$. ✓
+:::
+:::
+
 ::::

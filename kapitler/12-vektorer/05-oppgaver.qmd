@@ -33,4 +33,15 @@ Symmetri: de vannrette komponentene opphever hverandre. De loddrette: $2S\sin 30
 :::
 :::
 
+::: {.oppgave tittel="Vektorer i rutenett"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-vektorer.svg){.tikz-fig style="width:240px"}
+
+Hver rute er 1. Les av koordinatene til $\vec u$ og $\vec v$. Finn $\vec u + \vec v$ og $|\vec u - \vec v|$.
+
+::: {.losning}
+$\vec u = [3, 1]$ og $\vec v = [-1, 2]$. $\vec u + \vec v = \underline{\underline{[2, 3]}}$. $\vec u - \vec v = [4, -1]$, så $|\vec u - \vec v| = \sqrt{16 + 1} = \underline{\underline{\sqrt{17} \approx 4.1}}$.
+:::
+:::
+
 ::::

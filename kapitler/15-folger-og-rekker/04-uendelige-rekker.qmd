@@ -43,6 +43,9 @@ $$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Den uendelige rekka $\frac12 + \frac14 + \frac18 + \dots$ konvergerer mot 1.](../../bilder/figurer/halv-rekke.svg){.tikz-fig style="width:380px"}
+
 ## Rekker med variabel kvotient
 
 Er kvotienten et uttrykk med $x$, konvergerer rekka bare for noen $x$-verdier. $1 + x + x^2 + \dots$ konvergerer for $-1 < x < 1$, og summen er $\frac{1}{1 - x}$. Dette er et første eksempel på en **potensrekke**, som brukes til å tilnærme funksjoner.

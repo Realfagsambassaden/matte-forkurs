@@ -1,0 +1,8 @@
+\begin{tikzpicture}[xscale=0.33,yscale=2.6]
+\draw[akse] (0,1.8) -- (21,1.8) node[right]{$n$}; \draw[akse] (0,1.8) -- (0,2.85);
+\foreach \x in {5,10,15,20} \draw (\x,1.83) -- (\x,1.77) node[below,font=\scriptsize]{$\x$};
+\foreach \y in {2.0,2.5} \draw (0.2,\y) -- (-0.2,\y) node[left,font=\scriptsize]{$\y$};
+\draw[rod,dashed] (0,2.71828) -- (20.5,2.71828) node[right,font=\small]{$\mathrm{e} = 2.718\ldots$};
+\foreach \n in {1,...,20} \fill[bla] (\n,{(1+1/\n)^\n}) circle (0.18 and 0.023);
+\node[bla,font=\small] at (11,2.25) {$\left(1 + \frac1n\right)^n$};
+\end{tikzpicture}

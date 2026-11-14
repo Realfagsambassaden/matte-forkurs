@@ -49,4 +49,19 @@ $u^2 - u - 6 = 0$ gir $(u - 3)(u + 2) = 0$. $u = \sqrt x \ge 0$, så bare $u = 3
 :::
 :::
 
+::: {.oppgave tittel="Polynom fra graf" niva="Middels"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-tredjegrad.svg){.tikz-fig style="width:280px"}
+
+Grafen viser et tredjegradspolynom. Les av nullpunktene og $P(0)$, og finn $P(x)$.
+
+::: {.losning}
+Nullpunktene er $-2$, $1$ og $3$, så $P(x) = a(x + 2)(x - 1)(x - 3)$. Fra grafen er $P(0) = 12$:
+$$
+a\cdot2\cdot(-1)\cdot(-3) = 6a = 12 \quad\Rightarrow\quad a = 2
+$$
+$P(x) = \underline{\underline{2(x + 2)(x - 1)(x - 3)}}$.
+:::
+:::
+
 ::::

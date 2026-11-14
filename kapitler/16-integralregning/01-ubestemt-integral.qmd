@@ -61,6 +61,9 @@ $$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Alle antideriverte av $f(x) = 1.5x$ er $F(x) = 0.75x^2 + C$. Grafene er like, bare forskjøvet opp eller ned. En startbetingelse velger én av dem.](../../bilder/figurer/antideriverte.svg){.tikz-fig style="width:340px"}
+
 ## Startbetingelse
 
 Kjenner vi én verdi av $F$, kan vi bestemme $C$.

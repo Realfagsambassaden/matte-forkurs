@@ -33,4 +33,15 @@ $[1, 1, 0]\times[0, 1, 1] = [1, -1, 1]$, lengde $\sqrt3$. En enhetsvektor er $\u
 :::
 :::
 
+::: {.oppgave tittel="Romdiagonalen"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-kasse.svg){.tikz-fig style="width:300px"}
+
+En eske er $12 \times 4 \times 3$ (cm). Hvor lang er den røde romdiagonalen? Får en blyant på $12.5\ \mathrm{cm}$ plass i esken?
+
+::: {.losning}
+Diagonalen er lengden av $[12, 4, 3]$: $\sqrt{144 + 16 + 9} = \sqrt{169} = \underline{\underline{13\ \mathrm{cm}}}$. Ja, blyanten får plass på skrå.
+:::
+:::
+
 ::::

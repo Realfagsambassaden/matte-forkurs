@@ -20,6 +20,9 @@ $$
 $$
 :::
 
+<!-- tillegg: Claude -->
+![Trapesmetoden med $n = 4$ for $\int_0^1\mathrm{e}^{-x^2}\,\mathrm{d}x$. Trapesene følger grafen tett.](../../bilder/figurer/trapesmetoden.svg){.tikz-fig style="width:380px"}
+
 ## Simpsons metode
 
 Bytt linjestykkene ut med parabler gjennom tre og tre punkter. Det gir mye bedre nøyaktighet for samme antall punkter ($n$ må være et partall):

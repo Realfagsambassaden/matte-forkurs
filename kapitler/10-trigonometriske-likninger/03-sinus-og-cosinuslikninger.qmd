@@ -21,6 +21,9 @@ $$
 der $k$ er et helt tall. Løsningen finnes bare når $-1 \le a \le 1$.
 :::
 
+<!-- tillegg: Claude -->
+![$\sin x = \frac{\sqrt3}{2}$: Linja $y = \frac{\sqrt3}2$ treffer enhetssirkelen i to punkter, $x = \frac\pi3$ og $x = \frac{2\pi}3$.](../../bilder/figurer/sinuslikning.svg){.tikz-fig style="width:320px"}
+
 ## cos x = a
 
 $\cos x$ er $x$-koordinaten. Den loddrette linja $x = a$ skjærer sirkelen i to punkter, symmetrisk om $x$-aksen:

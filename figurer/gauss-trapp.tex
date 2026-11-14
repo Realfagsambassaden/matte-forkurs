@@ -1,0 +1,7 @@
+\begin{tikzpicture}[scale=0.42]
+\foreach \i in {1,...,6} { \foreach \j in {1,...,\i} \draw[fill=bla!35] (\i-1,\j-1) rectangle (\i,\j);
+  \pgfmathtruncatemacro{\k}{7-\i} \foreach \j in {1,...,\k} \draw[fill=rod!30] (\i-1,\i+\j-1) rectangle (\i,\i+\j); }
+\draw[decorate,decoration={brace,mirror,amplitude=4pt}] (0,-0.2) -- node[below=4pt,font=\small]{$n = 6$} (6,-0.2);
+\draw[decorate,decoration={brace,amplitude=4pt}] (-0.2,0) -- node[left=4pt,font=\small]{$n + 1 = 7$} (-0.2,7);
+\node[font=\small,align=left,right] at (7,3.5) {to like trapper gir et rektangel:\\$2(1 + 2 + \dots + n) = n(n+1)$};
+\end{tikzpicture}

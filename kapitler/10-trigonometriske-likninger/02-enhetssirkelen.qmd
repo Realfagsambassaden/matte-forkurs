@@ -46,6 +46,17 @@ $\frac{7\pi}{4} = 315^\circ$ ligger i 4. kvadrant: $\sin = -\frac{\sqrt2}{2}$ og
 :::
 :::
 
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Fra punkt til vinkel.** Punktet $(-0.6, 0.8)$ ligger på enhetssirkelen. Finn $\sin v$, $\cos v$, $\tan v$ og vinkelen $v$.
+
+::: {.losning}
+Koordinatene er cosinus og sinus: $\cos v = -0.6$ og $\sin v = 0.8$, så $\tan v = \dfrac{0.8}{-0.6} = -\tfrac43$.
+
+Punktet ligger i andre kvadrant, så $v = 180^\circ - 53.1^\circ = \underline{\underline{126.9^\circ}}$. (Kontroll: $\cos126.9^\circ = -0.60$.)
+:::
+:::
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Fortegn"}

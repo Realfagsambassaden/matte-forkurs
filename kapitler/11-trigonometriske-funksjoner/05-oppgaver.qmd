@@ -38,4 +38,18 @@ Svaret er omtrent $\underline{\underline{50\ \%}}$ av tiden.
 :::
 :::
 
+::: {.oppgave tittel="Finn funksjonsuttrykket" niva="Middels"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-sinus.svg){.tikz-fig style="width:380px"}
+
+Grafen har formen $f(x) = A\sin(kx) + d$. Les av amplitude, likevektslinje og periode, og finn $A$, $k$ og $d$.
+
+::: {.losning}
+Toppverdi 3 og bunnverdi $-1$: likevektslinje $d = \frac{3 + (-1)}{2} = 1$ og amplitude $A = 2$. Perioden er 4 (fra topp i $x = 1$ til neste topp i $x = 5$), så $k = \frac{2\pi}{4} = \frac\pi2$.
+$$
+\underline{\underline{f(x) = 2\sin\left(\tfrac\pi2x\right) + 1}}
+$$
+:::
+:::
+
 ::::

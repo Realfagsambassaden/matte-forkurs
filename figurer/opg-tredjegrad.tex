@@ -1,0 +1,6 @@
+\begin{tikzpicture}[xscale=0.6,yscale=0.18]
+\draw[black!12,ystep=4,xstep=1] (-3,-20) grid (4,24);
+\draw[akse] (-3,0) -- (4.4,0) node[right]{$x$}; \draw[akse] (0,-20) -- (0,25) node[above]{$y$};
+\foreach \x in {-2,-1,1,2,3} \node[below,font=\scriptsize] at (\x,0) {$\x$}; \foreach \y in {-16,-8,8,16} \node[left,font=\scriptsize] at (0,\y) {$\y$};
+\draw[bla,very thick,domain=-2.4:3.55,samples=80] plot (\x,{2*(\x+2)*(\x-1)*(\x-3)});
+\end{tikzpicture}

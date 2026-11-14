@@ -41,6 +41,9 @@ $\vec v(t) = [8.0,\ 6.0 - 9.8t]$ og $\vec a = [0, -9.8]\ \mathrm{m/s^2}$: tyngde
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Banene til de to skipene. Den stiplede linja viser hvor nær de kommer hverandre, etter $2.1$ timer.](../../bilder/figurer/to-skip.svg){.tikz-fig style="width:440px"}
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Fart"}
