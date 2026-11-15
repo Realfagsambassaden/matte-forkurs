@@ -48,6 +48,9 @@ Produktet er negativt for $\underline{\underline{\frac{\pi}{3} < x < \pi \text{ 
 :::
 :::
 
+<!-- tillegg: Claude -->
+![$\sin x > \frac12$ der sinusgrafen ligger over linja $y = \frac12$: for $\frac\pi6 < x < \frac{5\pi}6$.](../../bilder/figurer/sinusulikhet.svg){.tikz-fig style="width:440px"}
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Cosinus"}

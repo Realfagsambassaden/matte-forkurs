@@ -1,0 +1,11 @@
+\begin{tikzpicture}[xscale=0.065,yscale=1.1]
+\draw[akse] (-5,0) -- (108,0) node[right]{$x$}; \draw[akse] (0,-1.4) -- (0,2.6) node[above]{$y$};
+\foreach \x in {10,50,100} \draw (\x,0.06) -- (\x,-0.06) node[below,font=\scriptsize]{$\x$};
+\foreach \y in {-1,1,2} \draw (1.2,\y) -- (-1.2,\y) node[left,font=\scriptsize]{$\y$};
+\draw[bla,very thick,domain=0.06:105,samples=200] plot (\x,{log10(\x)});
+\fill (1,0) circle (0.9 and 0.05) node[above right,font=\scriptsize]{$(1,0)$};
+\fill (10,1) circle (0.9 and 0.05) node[above left,font=\scriptsize]{$(10,1)$};
+\fill (100,2) circle (0.9 and 0.05) node[below right,font=\scriptsize]{$(100,2)$};
+\node[bla,font=\small] at (70,2.3) {$y = \lg x$};
+\node[font=\small,align=left,right] at (25,0.65) {ti ganger større $x$\\gir én mer $y$};
+\end{tikzpicture}

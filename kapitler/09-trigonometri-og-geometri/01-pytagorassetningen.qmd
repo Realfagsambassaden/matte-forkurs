@@ -41,6 +41,9 @@ $$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Pytagoras med tall: Kvadratet på hypotenusen er like stort som de to andre kvadratene til sammen, $9 + 16 = 25$.](../../bilder/figurer/pytagoras.svg){.tikz-fig style="width:300px"}
+
 ## Avstand mellom to punkter
 
 Avstanden mellom $(x_1, y_1)$ og $(x_2, y_2)$ er hypotenusen i en trekant med katetene $\Delta x$ og $\Delta y$:
@@ -53,6 +56,18 @@ $$
 
 ::: {.callout-tip title="I fysikken"}
 Lengden av en vektor $\vec F = [F_x, F_y]$ er $|\vec F| = \sqrt{F_x^2 + F_y^2}$. Det er Pytagoras. Se [vektorer på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/02-matematikk/04-vektorer.html).
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Avstand.** Finn avstanden mellom punktene $(2, 1)$ og $(7, 13)$.
+
+::: {.losning}
+Forskjellen i $x$ er $5$ og i $y$ er $12$. Det er katetene i en rettvinklet trekant:
+$$
+d = \sqrt{5^2 + 12^2} = \sqrt{169} = \underline{\underline{13}}
+$$
+:::
 :::
 
 :::: {.oppgaver}

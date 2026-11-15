@@ -34,6 +34,9 @@ Med kant 1: diagonalen er $[1, 1, 1]$ og kanten $[1, 0, 0]$. $\cos v = \frac{1}{
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Romdiagonalen $[1, 1, 1]$ i en kube danner vinkelen $54.7^\circ$ med kanten $[1, 0, 0]$.](../../bilder/figurer/romdiagonal.svg){.tikz-fig style="width:320px"}
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Vinkelrett?"}

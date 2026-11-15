@@ -1,0 +1,7 @@
+\begin{tikzpicture}[xscale=0.4,yscale=0.045]
+\draw[black!12,xstep=2.5,ystep=10] (0,0) grid (20,90);
+\draw[akse] (0,0) -- (20.8,0) node[right]{$t$ (min)}; \draw[akse] (0,0) -- (0,95) node[above]{$T - 20$ (°C)};
+\foreach \x in {5,10,15,20} \node[below,font=\scriptsize] at (\x,0) {$\x$}; \foreach \y in {20,40,60,80} \node[left,font=\scriptsize] at (0,\y) {$\y$};
+\draw[bla,very thick,domain=0:20,samples=60] plot (\x,{80*0.5^(\x/5)});
+\fill (0,80) circle (0.25 and 2.2) (5,40) circle (0.25 and 2.2) (10,20) circle (0.25 and 2.2);
+\end{tikzpicture}

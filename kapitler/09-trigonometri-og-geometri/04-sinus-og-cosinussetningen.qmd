@@ -59,6 +59,9 @@ $$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![De to båtene og havna danner en trekant der vi kjenner to sider og vinkelen mellom dem. Da gir cosinussetningen den tredje siden.](../../bilder/figurer/bater.svg){.tikz-fig style="width:320px"}
+
 ## Hvilken setning?
 
 ::: {.kort}

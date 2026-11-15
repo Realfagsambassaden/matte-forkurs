@@ -33,4 +33,17 @@ Tilleggene: $3\cdot\frac19 + 12\cdot\frac{1}{81} + \dots = \frac13 + \frac{4}{27
 :::
 :::
 
+::: {.oppgave tittel="Følgen i søylene"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-folge.svg){.tikz-fig style="width:240px"}
+
+Søylene viser de fem første leddene i en følge. Hva slags følge er det? Finn $a_n$ og summen av de ti første leddene.
+
+::: {.losning}
+Leddene er $3, 7, 11, 15, 19$: En **aritmetisk** følge med $a_1 = 3$ og $d = 4$. $a_n = 3 + 4(n - 1) = \underline{\underline{4n - 1}}$.
+
+$a_{10} = 39$, så $S_{10} = \frac{10(3 + 39)}{2} = \underline{\underline{210}}$.
+:::
+:::
+
 ::::

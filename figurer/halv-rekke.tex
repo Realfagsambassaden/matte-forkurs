@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=3.2]
+\draw[thick] (0,0) rectangle (1,1);
+\fill[bla!45] (0,0) rectangle (0.5,1); \node at (0.25,0.5) {$\tfrac12$};
+\fill[bla!35] (0.5,0) rectangle (1,0.5); \node at (0.75,0.25) {$\tfrac14$};
+\fill[bla!25] (0.5,0.5) rectangle (0.75,1); \node[font=\small] at (0.625,0.75) {$\tfrac18$};
+\fill[bla!18] (0.75,0.5) rectangle (1,0.75); \node[font=\scriptsize] at (0.875,0.625) {$\tfrac1{16}$};
+\fill[bla!12] (0.75,0.75) rectangle (0.875,1);
+\fill[bla!8] (0.875,0.75) rectangle (1,0.875);
+\draw (0.5,0) -- (0.5,1) (0.5,0.5) -- (1,0.5) (0.75,0.5) -- (0.75,1) (0.75,0.75) -- (1,0.75) (0.875,0.75) -- (0.875,1) (0.875,0.875) -- (1,0.875);
+\node[right,align=left,font=\small] at (1.1,0.5) {$\tfrac12 + \tfrac14 + \tfrac18 + \dots = 1$\\bitene fyller hele kvadratet};
+\end{tikzpicture}

@@ -1,0 +1,8 @@
+\begin{tikzpicture}[xscale=0.6,yscale=2.2]
+\draw[akse] (0,0) -- (11,0) node[right]{$n$}; \draw[akse] (0,0) -- (0,1.75) node[above]{$a_n$};
+\foreach \n in {2,4,6,8,10} \draw (\n,0.03) -- (\n,-0.03) node[below,font=\scriptsize]{$\n$};
+\foreach \y in {0.5,1,1.5} \draw (0.1,\y) -- (-0.1,\y) node[left,font=\scriptsize]{$\y$};
+\draw[rod,dashed] (0,1) -- (10.5,1);
+\foreach \n in {1,...,10} \fill[bla] (\n,{1+(-1)^\n/\n}) circle (0.12 and 0.033);
+\node[bla,font=\small] at (6.5,1.5) {$a_n = 1 + \dfrac{(-1)^n}{n}$};
+\end{tikzpicture}

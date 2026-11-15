@@ -51,6 +51,9 @@ $h_5 = 2.0\cdot 0.70^5 = \underline{\underline{0.34\ \mathrm{m}}}$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Høyden etter hvert sprett er en geometrisk følge med kvotient $0.70$.](../../bilder/figurer/sprettball.svg){.tikz-fig style="width:400px"}
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Ledd"}

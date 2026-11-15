@@ -61,4 +61,17 @@ Uten å ta hensyn til lyden ville vi fått $4.9\cdot 2.50^2 = 30.6\ \mathrm{m}$.
 :::
 :::
 
+::: {.oppgave tittel="Finn uttrykket"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-parabel.svg){.tikz-fig style="width:260px"}
+
+Parabelen har formen $f(x) = x^2 + bx + c$. Les av nullpunktene, og skriv $f(x)$ på faktorisert form og på vanlig form. Kontroller med skjæringen med $y$-aksen.
+
+::: {.losning}
+Nullpunktene er $x = -1$ og $x = 3$, så $f(x) = \underline{\underline{(x + 1)(x - 3)}} = \underline{\underline{x^2 - 2x - 3}}$.
+
+Kontroll: $f(0) = -3$, som stemmer med figuren.
+:::
+:::
+
 ::::

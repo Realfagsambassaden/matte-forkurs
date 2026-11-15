@@ -55,4 +55,15 @@ c) $\underline{\underline{t = 2.0\ \mathrm{s}}}$ (samme tidspunkt). Etterpå er 
 :::
 :::
 
+::: {.oppgave tittel="Stigningstall fra tangenten"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-tangent.svg){.tikz-fig style="width:240px"}
+
+Figuren viser grafen til $f(x) = x^2$ og tangenten i $x = 1$. Les av stigningstallet til tangenten, og sammenlign med $f'(1)$.
+
+::: {.losning}
+Tangenten går gjennom $(1, 1)$ og $(2, 3)$: stigningstallet er $\underline{\underline{2}}$. Og $f'(x) = 2x$ gir $f'(1) = 2$. ✓ Tangenten er $y = 2x - 1$.
+:::
+:::
+
 ::::

@@ -41,4 +41,18 @@ $\mathrm{e}^b - 1 = 10$ gir $b = \ln 11 = \underline{\underline{2.40}}$.
 :::
 :::
 
+::: {.oppgave tittel="Strekning fra fartsgraf" niva="Middels"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-fartsgraf.svg){.tikz-fig style="width:320px"}
+
+Grafen viser farten til en sykkel. Hvor langt sykler den på de første 10 sekundene?
+
+::: {.losning}
+Strekningen er arealet under fartsgrafen, $\int_0^{10}v(t)\,\mathrm{d}t$: en trekant og et rektangel.
+$$
+s = \tfrac12\cdot4\cdot8 + 6\cdot8 = 16 + 48 = \underline{\underline{64\ \mathrm{m}}}
+$$
+:::
+:::
+
 ::::

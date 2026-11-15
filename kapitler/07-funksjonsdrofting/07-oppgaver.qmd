@@ -53,4 +53,17 @@ $B' = 0$ gir $h = \frac{1}{\sqrt2} = \underline{\underline{0.71\ \mathrm{m}}}$. 
 :::
 :::
 
+::: {.oppgave tittel="Fra f′ til f" niva="Middels"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-fderivert.svg){.tikz-fig style="width:260px"}
+
+Figuren viser grafen til den **deriverte** $f'$. Hvor vokser $f$, og hvor avtar den? Har $f$ topp- eller bunnpunkter?
+
+::: {.losning}
+$f' > 0$ for $x < -1$ og $x > 2$: Der **vokser** $f$. $f' < 0$ for $-1 < x < 2$: Der **avtar** $f$.
+
+$f'$ skifter fra $+$ til $-$ i $x = -1$: **toppunkt**. Fra $-$ til $+$ i $x = 2$: **bunnpunkt**.
+:::
+:::
+
 ::::

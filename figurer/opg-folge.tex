@@ -1,0 +1,6 @@
+\begin{tikzpicture}[xscale=0.7,yscale=0.18]
+\draw[black!12,ystep=5,xstep=1] (0,0) grid (6,25);
+\draw[akse] (0,0) -- (6.5,0) node[right]{$n$}; \draw[akse] (0,0) -- (0,26) node[above]{$a_n$};
+\foreach \y in {5,10,15,20} \node[left,font=\scriptsize] at (0,\y) {$\y$};
+\foreach \n in {1,...,5} { \fill[bla!40] (\n-0.3,0) rectangle (\n+0.3,{4*\n-1}); \draw (\n-0.3,0) rectangle (\n+0.3,{4*\n-1}); \node[below,font=\scriptsize] at (\n,0) {$\n$}; }
+\end{tikzpicture}

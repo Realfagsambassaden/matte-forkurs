@@ -46,6 +46,9 @@ $S_{100} = \frac{100(1 + 100)}{2} = \underline{\underline{5050}}$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Gauss-trikset som figur: To like trapper med $1 + 2 + \dots + n$ ruter passer sammen til et rektangel med $n(n+1)$ ruter.](../../bilder/figurer/gauss-trapp.svg){.tikz-fig style="width:420px"}
+
 ::: {.eksempel}
 **Eksempel: Trapp.** En trapp av murstein har 40 steiner i nederste rad, 38 i neste, og så videre, med 2 færre for hver rad. Den øverste raden har 2 steiner. Hvor mange steiner er det?
 

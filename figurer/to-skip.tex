@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=0.17]
+\draw[akse] (-2,0) -- (48,0) node[right]{\small$x$ (km)}; \draw[akse] (0,-2) -- (0,34) node[above]{\small$y$ (km)};
+\foreach \x in {10,20,30,40} \draw (\x,0.5) -- (\x,-0.5) node[below,font=\scriptsize]{$\x$};
+\foreach \y in {10,20,30} \draw (0.5,\y) -- (-0.5,\y) node[left,font=\scriptsize]{$\y$};
+\draw[bla,thick] (0,0) -- (42,17.5); \draw[rod,thick] (30,0) -- (30,32);
+\foreach \t in {0,1,2,3} { \fill[bla] ({12*\t},{5*\t}) circle (12pt); \fill[rod] (30,{10*\t}) circle (12pt); }
+\node[bla,font=\small] at (40,20) {A}; \node[rod,font=\small,right] at (30.5,31) {B};
+\draw[dashed,thick] ({12*2.13},{5*2.13}) -- (30,21.3) node[midway,above,font=\small]{$11.5$ km};
+\node[font=\small,align=left,right] at (33,8) {prikkene viser\\$t = 0, 1, 2, 3$ h};
+\end{tikzpicture}

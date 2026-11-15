@@ -58,6 +58,9 @@ $$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![$\int_0^\pi x\sin x\,\mathrm{d}x = \pi$ er arealet under grafen.](../../bilder/figurer/xsinx.svg){.tikz-fig style="width:360px"}
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Integrer"}

@@ -1,0 +1,7 @@
+\begin{tikzpicture}[scale=0.8]
+\draw[black!15] (-1,-1) grid (3,5);
+\draw[akse] (-1,0) -- (3.4,0) node[right]{$x$}; \draw[akse] (0,-1) -- (0,5.4) node[above]{$y$};
+\foreach \x in {1,2} \node[below,font=\scriptsize] at (\x,0) {$\x$}; \foreach \y in {1,...,4} \node[left,font=\scriptsize] at (0,\y) {$\y$};
+\draw[bla,very thick,domain=-1:2.2,samples=50] plot (\x,{\x*\x}); \node[bla,font=\small] at (2.5,4.6) {$f$};
+\draw[rod,thick] (-0.25,-1.5) -- (2.75,4.5); \fill (1,1) circle (2.5pt);
+\end{tikzpicture}

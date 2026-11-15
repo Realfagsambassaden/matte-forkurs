@@ -37,4 +37,18 @@ Med `scipy.integrate.quad(lambda x: np.sinc(x/np.pi), 0, np.pi)` blir svaret $\u
 :::
 :::
 
+::: {.oppgave tittel="Arealet under 1/x"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-1x.svg){.tikz-fig style="width:260px"}
+
+Finn arealet av det skraverte området. Gjør et overslag fra figuren først.
+
+::: {.losning}
+Overslag: Bredden er ca. $1.7$ og høyden går fra 1 til ca. $0.37$, gjennomsnittlig litt under $0.6$. Det gir ca. $1$.
+$$
+\int_1^{\mathrm{e}}\frac1x\,\mathrm{d}x = \Big[\ln x\Big]_1^{\mathrm{e}} = 1 - 0 = \underline{\underline{1}}
+$$
+:::
+:::
+
 ::::

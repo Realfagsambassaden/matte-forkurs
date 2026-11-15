@@ -19,6 +19,9 @@ Leddene i en følge kaller vi $a_1, a_2, a_3, \dots$, og ledd nummer $n$ er $a_n
 - **Rekursiv formel** Hvert ledd uttrykt ved det forrige, pluss et startledd. For $2, 5, 8, 11, \dots$ er $a_1 = 2$ og $a_{n} = a_{n-1} + 3$. Passer godt i Python.
 :::
 
+<!-- tillegg: Claude -->
+![En følge tegnet som punkter. Denne hopper opp og ned, men nærmer seg 1.](../../bilder/figurer/folge-punkter.svg){.tikz-fig style="width:420px"}
+
 ## Rekker og summetegnet
 
 En rekke er summen av leddene: $a_1 + a_2 + \dots + a_n$. Vi skriver den kort med **summetegnet** $\sum$:

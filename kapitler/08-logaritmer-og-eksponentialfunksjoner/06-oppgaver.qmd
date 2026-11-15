@@ -53,4 +53,17 @@ $E'(t) = 10\mathrm{e}^{-0.5t}(1 - 0.5t) = 0$ gir $t = 2$. $E(2) = 20\mathrm{e}^{
 :::
 :::
 
+::: {.oppgave tittel="Avkjøling fra graf" niva="Middels"}
+<!-- tillegg: Claude -->
+![](../../bilder/figurer/opg-eksp.svg){.tikz-fig style="width:340px"}
+
+Grafen viser hvor mye varmere enn rommet en kopp te er. Les av hvor lang tid det tar før temperaturforskjellen halveres, og lag en modell $T - 20 = 80\cdot\left(\frac12\right)^{t/T_{1/2}}$. Når er forskjellen $5\ ^\circ\mathrm{C}$?
+
+::: {.losning}
+Forskjellen går fra 80 til 40 på 5 minutter, og fra 40 til 20 på nye 5: halveringstiden er $\underline{\underline{5\ \mathrm{min}}}$. Modell: $T - 20 = 80\cdot0.5^{t/5}$.
+
+$80\cdot0.5^{t/5} = 5$ gir $0.5^{t/5} = \frac1{16} = 0.5^4$, så $t/5 = 4$ og $\underline{\underline{t = 20\ \mathrm{min}}}$.
+:::
+:::
+
 ::::

@@ -40,6 +40,9 @@ $10^x = 2$ gir $x = \lg 2 \approx 0.301$, og $10^x = 3$ gir $x = \lg 3 \approx 0
 :::
 :::
 
+<!-- tillegg: Claude -->
+![$10000\cdot1.04^x = 15000$ grafisk: Beløpet passerer $15000$ kr etter $10.3$ år.](../../bilder/figurer/rente-graf.svg){.tikz-fig style="width:360px"}
+
 ## Logaritmelikninger
 
 En likning med $\lg x$ løser vi ved å samle logaritmene til én, og så opphøye 10 i begge sider:

@@ -34,6 +34,9 @@ For $(7, -2)$: $1 + 3t = 7$ gir $t = 2$, og da er $y = 2 - 4 = -2$. Det stemmer,
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Linja gjennom $A$ og $B$. Parameteren $t$ forteller hvor mange retningsvektorer vi har gått fra $A$.](../../bilder/figurer/parameterlinje.svg){.tikz-fig style="width:380px"}
+
 ## Skjæringspunkt
 
 To linjer på parameterform skjærer hverandre der begge koordinatene er like. Bruk **forskjellige** parametre ($t$ og $s$) for de to linjene.

@@ -1,0 +1,22 @@
+\begin{tikzpicture}[scale=0.8]
+% sylinder
+\draw[thick,fill=bla!10] (-1,0) -- (-1,2.4) arc (180:0:1 and 0.3) -- (1,0) arc (0:-180:1 and 0.3);
+\draw[thick] (0,2.4) ellipse (1 and 0.3); \draw[dashed] (1,0) arc (0:180:1 and 0.3);
+\draw (0,2.4) -- node[above,font=\scriptsize]{$r$} (1,2.4);
+\draw[<->] (1.3,0) -- node[right,font=\scriptsize]{$h$} (1.3,2.4);
+\node[font=\small] at (0,-1) {$V = \pi r^2h$};
+% kjegle
+\begin{scope}[xshift=4cm]
+\draw[thick,fill=gronn!10] (-1,0) -- (0,2.4) -- (1,0) arc (0:-180:1 and 0.3);
+\draw[dashed] (1,0) arc (0:180:1 and 0.3); \draw[dashed] (0,0) -- (0,2.4); \draw (0,0) -- node[below,font=\scriptsize]{$r$} (1,0);
+\node[font=\scriptsize,left] at (0,1.2) {$h$};
+\node[font=\small] at (0,-1) {$V = \tfrac13\pi r^2h$};
+\end{scope}
+% kule
+\begin{scope}[xshift=8cm,yshift=1.1cm]
+\shade[ball color=rod!25] (0,0) circle (1.15); \draw[thick] (0,0) circle (1.15);
+\draw[dashed] (1.15,0) arc (0:180:1.15 and 0.3); \draw (-1.15,0) arc (180:360:1.15 and 0.3);
+\draw (0,0) -- node[above,font=\scriptsize]{$r$} (1.15,0);
+\node[font=\small] at (0,-2.1) {$V = \tfrac43\pi r^3$};
+\end{scope}
+\end{tikzpicture}

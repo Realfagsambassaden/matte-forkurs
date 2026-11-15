@@ -61,6 +61,9 @@ $\underline{\underline{x = \frac{\pi}{6},\ \frac{\pi}{2},\ \frac{5\pi}{6},\ \fra
 Rekkevidden til et skrått kast fra bakken er $R = \dfrac{v_0^2\sin 2\alpha}{\mathrm{g}}$, der formelen for dobbel vinkel er brukt. Den er størst når $\sin 2\alpha = 1$, altså $\alpha = 45^\circ$. Se [skrått kast på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/06-bevegelse-i-to-dimensjoner.html).
 :::
 
+<!-- tillegg: Claude -->
+![$\sin 2x = \cos x$ har fire løsninger i $[0, 2\pi\rangle$: $\frac\pi6$, $\frac\pi2$, $\frac{5\pi}6$ og $\frac{3\pi}2$.](../../bilder/figurer/sin2x-cosx.svg){.tikz-fig style="width:440px"}
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Eksakte verdier"}

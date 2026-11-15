@@ -32,6 +32,9 @@ $$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![$\tan x = \sqrt3$: Linja gjennom origo treffer enhetssirkelen i to motsatte punkter. Løsningene ligger $\pi$ fra hverandre.](../../bilder/figurer/tangenslikning.svg){.tikz-fig style="width:360px"}
+
 ## Andregradslikninger i sin x eller cos x
 
 Sett $u = \sin x$ (eller $\cos x$), løs andregradslikningen i $u$, og løs så grunnlikningene. Husk at $u$ må ligge mellom $-1$ og $1$.

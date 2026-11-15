@@ -27,6 +27,9 @@ $$
 
 Logaritmen til et tall mellom 1 og 10 ligger mellom 0 og 1: $\lg 2 \approx 0.301$. Logaritmen til et negativt tall eller null finnes ikke, fordi $10^a$ alltid er positivt.
 
+<!-- tillegg: Claude -->
+![Grafen til $\lg x$. Hver gang $x$ blir ti ganger så stor, øker $\lg x$ med 1. Logaritmen er bare definert for $x > 0$.](../../bilder/figurer/lg-graf.svg){.tikz-fig style="width:420px"}
+
 ## Logaritmereglene
 
 Fordi logaritmer er eksponenter, gir potensreglene tre regler:
@@ -51,6 +54,21 @@ $\lg\sqrt{1000} = \lg\left(10^{3}\right)^{1/2} = \lg 10^{3/2} = \underline{\unde
 
 ::: {.callout-tip title="Logaritmiske skalaer"}
 Desibel, pH og Richterskalaen er logaritmiske: Ett trinn opp betyr ti ganger mer. En lyd på 80 dB har ti ganger så stor intensitet som en på 70 dB.
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: pH og desibel.** a) En løsning har $[\mathrm{H^+}] = 3.2\cdot10^{-4}\ \mathrm{mol/L}$. Finn $\mathrm{pH} = -\lg[\mathrm{H^+}]$. b) Lydnivået er $L = 10\lg\dfrac{I}{I_0}$ dB. Hvor mye øker lydnivået når intensiteten dobles?
+
+::: {.losning}
+**a)** $\mathrm{pH} = -\lg(3.2\cdot10^{-4}) = -(\lg3.2 + \lg10^{-4}) = -(0.505 - 4) = \underline{\underline{3.49}}$
+
+**b)** Med logaritmeregelen for produkt:
+$$
+10\lg\frac{2I}{I_0} = 10\lg2 + 10\lg\frac{I}{I_0} = L + 3.0
+$$
+Lydnivået øker med $\underline{\underline{3.0\ \mathrm{dB}}}$ – uansett hvor sterk lyden var fra før.
+:::
 :::
 
 ## Prøv selv

@@ -37,6 +37,9 @@ $135^\circ = 135\cdot\frac{\pi}{180} = \underline{\underline{\frac{3\pi}{4}}}$ o
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Én radian er vinkelen der buen er like lang som radien. Hele sirkelen er $2\pi \approx 6.28$ radianer.](../../bilder/figurer/radian.svg){.tikz-fig style="width:460px"}
+
 ## Sirkelsektorer
 
 Med vinkelen $v$ i radianer blir formlene for en **sirkelsektor** (et «kakestykke») svært enkle:

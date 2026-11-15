@@ -1,0 +1,6 @@
+\begin{tikzpicture}[scale=0.4]
+\coordinate (H) at (0,0); \coordinate (A) at (12,0); \coordinate (B) at ({8*cos(50)},{8*sin(50)});
+\draw[very thick] (H) -- node[below,font=\small]{$12\ \mathrm{km}$} (A) -- node[above right,font=\small]{$x$} (B) -- node[above left,font=\small]{$8.0\ \mathrm{km}$} cycle;
+\draw (1.6,0) arc (0:50:1.6); \node[font=\small] at (25:2.4) {$50^\circ$};
+\fill (H) circle (5pt) node[below left,font=\small]{havn}; \fill (A) circle (5pt); \fill (B) circle (5pt);
+\end{tikzpicture}

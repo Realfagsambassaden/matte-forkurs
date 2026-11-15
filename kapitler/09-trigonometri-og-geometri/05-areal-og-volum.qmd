@@ -18,6 +18,9 @@ Hvor mye vann er det i et basseng? Hvor mye maling trengs til en tank? Hvor stor
 - **Kule** $V = \frac43\pi r^3$.
 :::
 
+<!-- tillegg: Claude -->
+![Volumet av sylinder, kjegle og kule. En kjegle har en tredjedel av volumet til sylinderen med samme grunnflate og høyde.](../../bilder/figurer/romfigurer.svg){.tikz-fig style="width:520px"}
+
 ## Overflate
 
 ::: {.graa}
@@ -45,6 +48,18 @@ Dobles alle lengder, blir arealer $2^2 = 4$ ganger så store og volumer $2^3 = 8
 
 ::: {.callout-tip title="I fysikken"}
 Volum og massetetthet trengs for trykk og oppdrift. Se [oppdrift og Arkimedes' lov på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/08-fluider/04-oppdrift-og-arkimedes-lov.html).
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Iskremkjeks.** En kjeks har form som en kjegle med radius $3.0\ \mathrm{cm}$ og høyde $10\ \mathrm{cm}$. Hvor mye iskrem får plass i den (uten topp)?
+
+::: {.losning}
+$$
+V = \tfrac13\pi r^2h = \tfrac13\pi\cdot3.0^2\cdot10\ \mathrm{cm^3} = \underline{\underline{94\ \mathrm{cm^3}}}
+$$
+Det er knapt en desiliter.
+:::
 :::
 
 :::: {.oppgaver}
