@@ -1,0 +1,6 @@
+\begin{tikzpicture}
+\draw[akse] (-3.5,0) -- (4.5,0) node[right]{$x$};
+\foreach \x in {-3,...,4} \draw (\x,0.1) -- (\x,-0.1) node[below,font=\small]{$\x$};
+\draw[bla,line width=3pt] (-2,0) -- (3,0); \draw[bla,thick,fill=white] (-2,0) circle (4pt); \fill[bla] (3,0) circle (4pt);
+\node[bla,above] at (0.5,0.25) {$-2 < x \le 3$, \ altså $x \in \langle -2, 3]$};
+\end{tikzpicture}

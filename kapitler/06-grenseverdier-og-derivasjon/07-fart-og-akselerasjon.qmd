@@ -57,6 +57,9 @@ Akselerasjonen er $h''(t) = -9.8\ \mathrm{m/s^2}$ hele tiden: tyngdeakselerasjon
 Se [akselerasjon](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/03-akselerasjon.html) og [bevegelseslikningene for konstant akselerasjon](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/04-bevegelseslikningene-for-konstant-akselerasjon.html) på fysikkhjelp.no. Med derivasjon gjelder sammenhengene også når akselerasjonen **ikke** er konstant.
 :::
 
+<!-- tillegg: Claude -->
+![Høyden og farten til ballen som kastes rett opp. Toppunktet på høydegrafen svarer til nullpunktet på fartsgrafen.](../../bilder/figurer/posisjon-fart.svg){.tikz-fig style="width:540px"}
+
 ## Prøv selv
 
 ```{.python .kjor}

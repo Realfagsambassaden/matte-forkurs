@@ -47,6 +47,9 @@ Produktet er positivt for $\underline{\underline{-2 < x < 0 \text{ eller } x > 2
 Har alle faktorene grad 1 og ingen gjentar seg, skifter fortegnet i hvert nullpunkt. Da holder det å finne fortegnet langt til høyre (samme som $a_n$) og bytte fortegn for hvert nullpunkt mot venstre. Står en faktor i andre potens, som $(x - 1)^2$, skifter fortegnet **ikke** der.
 :::
 
+<!-- tillegg: Claude -->
+![Fortegnslinje for $x^3 - 4x = x(x + 2)(x - 2)$. Fortegnet til produktet finner vi ved å telle negative faktorer i hvert intervall.](../../bilder/figurer/fortegnsskjema.svg){.tikz-fig style="width:480px"}
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Løs likningene"}

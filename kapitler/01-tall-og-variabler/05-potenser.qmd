@@ -42,6 +42,9 @@ Hva betyr $a^0$ og $a^{-2}$? Vi velger betydningen slik at regelen for divisjon 
 
 En negativ eksponent betyr altså «én delt på». Den gjør ikke tallet negativt: $2^{-3} = \frac18 = 0.125$.
 
+<!-- tillegg: Claude -->
+![Hvert steg mot venstre deler på 2. Mønsteret fortsetter forbi null: $2^0 = 1$, $2^{-1} = \tfrac12$, $2^{-2} = \tfrac14$.](../../bilder/figurer/potenstrapp.svg){.tikz-fig style="width:420px"}
+
 ::: {.eksempel}
 **Eksempel: Bruk reglene.** Skriv så enkelt som mulig: $\dfrac{(2a^3)^2\cdot a^{-4}}{4a}$.
 
@@ -60,6 +63,18 @@ $$
 
 ::: {.callout-tip title="I fysikken"}
 Enheter følger de samme reglene: $\mathrm{m/s^2} = \mathrm{m\cdot s^{-2}}$, og $\mathrm{N} = \mathrm{kg\cdot m\cdot s^{-2}}$. Se [å regne med enheter på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/01-hva-er-fysikk/04-a-regne-med-enheter.html).
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Flere variabler.** Skriv så enkelt som mulig, uten negative eksponenter: $\dfrac{(x^2y^{-1})^3\cdot(xy)^2}{x^5}$.
+
+::: {.losning}
+Potens av potens og potens av produkt først: $(x^2y^{-1})^3 = x^6y^{-3}$ og $(xy)^2 = x^2y^2$. Så samler vi like grunntall:
+$$
+\frac{x^6y^{-3}\cdot x^2y^2}{x^5} = x^{6+2-5}\,y^{-3+2} = x^3y^{-1} = \underline{\underline{\frac{x^3}{y}}}
+$$
+:::
 :::
 
 ## Prøv selv

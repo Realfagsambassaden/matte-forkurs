@@ -37,6 +37,9 @@ $$
 $$
 :::
 
+<!-- tillegg: Claude -->
+![Grafen til $\dfrac{x^2 + x - 6}{x^2 - 9} = \dfrac{x - 2}{x - 3}$. Faktoren $x + 3$ er forkortet bort, men det gir et hull i $x = -3$. Faktoren $x - 3$ som er igjen i nevneren, gir en loddrett asymptote.](../../bilder/figurer/forkort-graf.svg){.tikz-fig style="width:440px"}
+
 ## Fellesnevner med faktorisering
 
 Fellesnevneren blir minst når vi faktoriserer nevnerne først og bare tar med hver faktor én gang.

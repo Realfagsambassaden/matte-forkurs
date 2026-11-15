@@ -59,6 +59,22 @@ $$
 
 Kvadratsetningene gjør noen utregninger enkle i hodet: $51^2 = (50 + 1)^2 = 2500 + 100 + 1 = 2601$, og $29\cdot 31 = (30 - 1)(30 + 1) = 900 - 1 = 899$.
 
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Kvadratsetningene baklengs.** Faktoriser a) $9x^2 - 12x + 4$ b) $50x^2 - 8$.
+
+::: {.losning}
+**a)** Første og siste ledd er kvadrater: $9x^2 = (3x)^2$ og $4 = 2^2$. Midtleddet er $2\cdot3x\cdot2 = 12x$, med minus. Det er andre kvadratsetning:
+$$
+9x^2 - 12x + 4 = \underline{\underline{(3x - 2)^2}}
+$$
+**b)** Sett først $2$ utenfor: $50x^2 - 8 = 2(25x^2 - 4)$. Parentesen er en differanse mellom to kvadrater, så konjugatsetningen gir
+$$
+50x^2 - 8 = \underline{\underline{2(5x - 2)(5x + 2)}}
+$$
+:::
+:::
+
 ## Prøv selv
 
 ```{.python .kjor}

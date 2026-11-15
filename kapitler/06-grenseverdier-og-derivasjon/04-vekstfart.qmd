@@ -52,6 +52,21 @@ Gjør vi det samme for en vilkårlig $x$, får vi $\dfrac{(x + h)^2 - x^2}{h} = 
 Farten er den deriverte av posisjonen, og akselerasjonen er den deriverte av farten. Se [strekning og hastighet](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/02-strekning-s-og-hastighet-v.html) og [akselerasjon](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/03-akselerasjon.html) på fysikkhjelp.no.
 :::
 
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Fallende stein.** En stein faller strekningen $s(t) = 4.9t^2$ (meter, sekunder). Finn gjennomsnittsfarten fra $t = 1.0\ \mathrm{s}$ til $t = 2.0\ \mathrm{s}$, og den momentane farten ved $t = 1.5\ \mathrm{s}$.
+
+::: {.losning}
+Gjennomsnittlig vekstfart:
+$$
+\frac{s(2.0) - s(1.0)}{2.0 - 1.0} = \frac{19.6 - 4.9}{1.0}\ \mathrm{m/s} = \underline{\underline{14.7\ \mathrm{m/s}}}
+$$
+Momentan vekstfart: $s'(t) = 9.8t$, så $s'(1.5) = \underline{\underline{14.7\ \mathrm{m/s}}}$.
+
+For en andregradsfunksjon er gjennomsnittsfarten over et intervall lik den momentane farten midt i intervallet.
+:::
+:::
+
 ## Prøv selv
 
 Programmet regner ut stigningstallet til sekanten for mindre og mindre $h$. Se at det nærmer seg $f'(3) = 6$.

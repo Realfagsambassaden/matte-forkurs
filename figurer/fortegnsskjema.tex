@@ -1,0 +1,11 @@
+\begin{tikzpicture}[x=1.0cm,y=0.75cm]
+\foreach \x/\l in {1.5/-2,3.5/0,5.5/2} \node[font=\small] at (\x,0.6) {$\l$};
+\foreach \r/\lab/\z in {0/{x+2}/1.5,1/{x}/3.5,2/{x-2}/5.5} {
+ \node[left] at (0,-\r) {$\lab$};
+ \draw[dashed] (0,-\r) -- (\z,-\r); \draw[thick] (\z,-\r) -- (7,-\r); \node at (\z,-\r) {$0$};}
+\node[left] at (0,-3.2) {$x^3 - 4x$};
+\draw[dashed] (0,-3.2) -- (1.5,-3.2); \draw[thick] (1.5,-3.2) -- (3.5,-3.2); \draw[dashed] (3.5,-3.2) -- (5.5,-3.2); \draw[thick] (5.5,-3.2) -- (7,-3.2);
+\foreach \x in {1.5,3.5,5.5} \node at (\x,-3.2) {$0$};
+\draw (0,-2.6) -- (7,-2.6);
+\node[font=\small,align=left,right] at (7.3,-1.5) {heltrukket: positiv\\stiplet: negativ};
+\end{tikzpicture}

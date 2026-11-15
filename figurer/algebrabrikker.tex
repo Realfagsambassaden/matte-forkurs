@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=0.55]
+\fill[bla!30] (0,0) rectangle (5,5); \node at (2.5,2.5) {$x^2$};
+\foreach \i in {0,1,2} {\fill[gronn!30] (5+\i,0) rectangle (6+\i,5); \draw (5+\i,0) rectangle (6+\i,5); \node[font=\small] at (5.5+\i,2.5) {$x$};}
+\foreach \j in {0,1} {\fill[gronn!30] (0,5+\j) rectangle (5,6+\j); \draw (0,5+\j) rectangle (5,6+\j); \node[font=\small] at (2.5,5.5+\j) {$x$};}
+\foreach \i in {0,1,2} \foreach \j in {0,1} {\fill[rod!30] (5+\i,5+\j) rectangle (6+\i,6+\j); \draw (5+\i,5+\j) rectangle (6+\i,6+\j); \node[font=\scriptsize] at (5.5+\i,5.5+\j) {1};}
+\draw[thick] (0,0) rectangle (8,7); \draw (0,0) rectangle (5,5);
+\draw[decorate,decoration={brace,mirror,amplitude=5pt}] (0,-0.2) -- node[below=5pt]{$x + 3$} (8,-0.2);
+\draw[decorate,decoration={brace,amplitude=5pt}] (-0.2,0) -- node[left=5pt]{$x + 2$} (-0.2,7);
+\node[right,align=left] at (8.6,3.5) {$x^2 + 5x + 6$\\$= (x+2)(x+3)$};
+\end{tikzpicture}

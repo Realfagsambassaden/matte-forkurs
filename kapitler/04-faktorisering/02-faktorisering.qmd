@@ -48,6 +48,9 @@ Kontroll av b): $(x + 3)(x - 5) = x^2 - 5x + 3x - 15 = x^2 - 2x - 15$.
 List opp faktorparene til $c$. Er $c$ positiv, har tallene samme fortegn som $b$. Er $c$ negativ, har de ulikt fortegn, og det største (i tallverdi) har samme fortegn som $b$.
 :::
 
+<!-- tillegg: Claude -->
+![Faktorisering som et rektangel: Brikkene $x^2$, fem $x$-er og seks enere kan legges som et rektangel med sider $x + 2$ og $x + 3$.](../../bilder/figurer/algebrabrikker.svg){.tikz-fig style="width:460px"}
+
 ## Kombiner metodene
 
 ::: {.eksempel}

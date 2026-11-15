@@ -28,6 +28,9 @@ Vi bruker de samme reglene som for likninger: Gjør det samme på begge sider, t
 4. Del (eller ta roten) til den ukjente står alene.
 :::
 
+<!-- tillegg: Claude -->
+![Arealet av et trapes med parallelle sider $a$ og $b$ og høyde $h$.](../../bilder/figurer/trapes.svg){.tikz-fig style="width:400px"}
+
 ::: {.eksempel}
 **Eksempel: Snu trapesformelen.** Løs $A = \dfrac{(a + b)h}{2}$ med hensyn på $b$.
 

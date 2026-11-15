@@ -48,6 +48,9 @@ Formelen kommer fra å fullføre kvadratet. Tallet under roten kalles **diskrimi
 - **$D < 0$** Ingen reelle løsninger. Parabelen skjærer ikke $x$-aksen.
 :::
 
+<!-- tillegg: Claude -->
+![Diskriminanten $D = b^2 - 4ac$ forteller hvor mange ganger parabelen treffer $x$-aksen.](../../bilder/figurer/diskriminant.svg){.tikz-fig style="width:560px"}
+
 ::: {.eksempel}
 **Eksempel: abc-formelen.** Løs $2x^2 - 3x - 4 = 0$.
 

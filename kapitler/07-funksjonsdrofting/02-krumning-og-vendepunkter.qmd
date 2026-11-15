@@ -38,6 +38,21 @@ Andrederivert-testen bekrefter forrige side: $f''(-1) = -12 < 0$ (toppunkt) og $
 Akselerasjonen er den andrederiverte av posisjonen. Krummer posisjonsgrafen oppover, er akselerasjonen positiv. I et vendepunkt for posisjonen er farten størst eller minst.
 :::
 
+<!-- tillegg: Claude -->
+![Til venstre for vendepunktet er grafen hul ned ($f'' < 0$), til høyre hul opp ($f'' > 0$). Vendetangenten krysser grafen.](../../bilder/figurer/krumning.svg){.tikz-fig style="width:440px"}
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: To vendepunkter.** Finn vendepunktene til $f(x) = x^4 - 6x^2$.
+
+::: {.losning}
+$$
+f'(x) = 4x^3 - 12x, \qquad f''(x) = 12x^2 - 12 = 12(x - 1)(x + 1)
+$$
+$f''$ skifter fortegn i $x = -1$ og $x = 1$. Med $f(\pm1) = 1 - 6 = -5$ er vendepunktene $\underline{\underline{(-1, -5)}}$ og $\underline{\underline{(1, -5)}}$. Grafen er hul opp utenfor $[-1, 1]$ og hul ned mellom.
+:::
+:::
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Krumning"}

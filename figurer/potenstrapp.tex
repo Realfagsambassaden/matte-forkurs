@@ -1,0 +1,7 @@
+\begin{tikzpicture}[xscale=1.1,yscale=0.55]
+\draw[akse] (-3.7,0) -- (3.8,0) node[right]{$n$}; \draw[akse] (-3.7,-0.3) -- (-3.7,8.8) node[above]{$2^n$};
+\foreach \n/\v/\lab in {-3/0.125/{\tfrac18},-2/0.25/{\tfrac14},-1/0.5/{\tfrac12},0/1/1,1/2/2,2/4/4,3/8/8} {
+ \fill[bla!35] (\n-0.3,0) rectangle (\n+0.3,\v); \draw (\n-0.3,0) rectangle (\n+0.3,\v);
+ \node[above,font=\small] at (\n,\v) {$\lab$}; \node[below,font=\small] at (\n,0) {$\n$};}
+\node[rod,font=\small,align=left] at (-1.6,6.5) {hvert steg mot venstre\\deler på 2};
+\end{tikzpicture}

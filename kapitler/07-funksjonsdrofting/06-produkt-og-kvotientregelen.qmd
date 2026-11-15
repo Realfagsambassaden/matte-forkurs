@@ -20,6 +20,9 @@ $$
 
 Deriver den ene faktoren og la den andre stå, og legg til omvendt.
 
+<!-- tillegg: Claude -->
+![Hvorfor produktregelen ser ut som den gjør: Når både $u$ og $v$ vokser litt, vokser arealet $uv$ med to striper.](../../bilder/figurer/produktregel.svg){.tikz-fig style="width:540px"}
+
 ::: {.eksempel}
 **Eksempel: Produktregelen.** Deriver $f(x) = x^2\sqrt{x + 1}$.
 

@@ -20,6 +20,9 @@ En **potensfunksjon** har formen $f(x) = a\cdot x^b$, der eksponenten $b$ kan v�
 
 For $x > 0$ går alle grafene $y = x^b$ gjennom punktet $(1, 1)$.
 
+<!-- tillegg: Claude -->
+![Noen potensfunksjoner $x^r$ for $x > 0$. For $r > 1$ krummer grafen oppover, for $0 < r < 1$ nedover, og for $r < 0$ avtar den.](../../bilder/figurer/potensfunksjoner.svg){.tikz-fig style="width:380px"}
+
 ## Rotfunksjoner
 
 $f(x) = \sqrt x = x^{1/2}$ er bare definert for $x \ge 0$. Potensregelen for derivasjon gjelder:
@@ -40,6 +43,19 @@ $f$ avtar på $[0, 1]$ og vokser for $x > 1$. Bunnpunkt $\underline{\underline{(
 
 ::: {.callout-tip title="Proporsjonalitet i fysikken"}
 Skriver vi $y \propto x^b$, betyr det at $y$ er proporsjonal med $x^b$. Dobles $x$, blir $y$ ganget med $2^b$. For en pendel er $T \propto \sqrt L$, så fire ganger så lang pendel gir dobbelt så lang svingetid. Se [fjær og pendel på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/07-svingninger/02-fjaer-og-pendel.html).
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Derivere en rot.** Deriver $f(x) = \sqrt[3]{x^2}$. Hva skjer i $x = 0$?
+
+::: {.losning}
+Skriv roten som potens: $f(x) = x^{2/3}$. Potensregelen gir
+$$
+f'(x) = \tfrac23x^{-1/3} = \underline{\underline{\frac{2}{3\sqrt[3]{x}}}}
+$$
+I $x = 0$ er den deriverte ikke definert. Grafen har en spiss der: Tangenten blir loddrett.
+:::
 :::
 
 :::: {.oppgaver}

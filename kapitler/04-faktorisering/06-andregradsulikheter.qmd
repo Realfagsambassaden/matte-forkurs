@@ -61,6 +61,9 @@ For $a > 0$ smiler parabelen, så uttrykket er negativt **mellom** nullpunktene 
 I ulikheter kan vi ikke gange eller dele med uttrykk som inneholder $x$, fordi vi ikke vet om de er positive eller negative. Flytt heller alt over på én side og faktoriser.
 :::
 
+<!-- tillegg: Claude -->
+![Ulikheten $x^2 - x - 6 < 0$ er oppfylt der parabelen ligger under $x$-aksen, altså mellom nullpunktene $-2$ og $3$.](../../bilder/figurer/andregradsulikhet.svg){.tikz-fig style="width:400px"}
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Nullpunktsfaktoriser"}

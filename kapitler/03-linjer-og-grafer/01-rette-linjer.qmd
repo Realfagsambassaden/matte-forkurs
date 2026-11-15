@@ -67,6 +67,19 @@ To linjer er **parallelle** når de har samme stigningstall. To linjer står **v
 I et posisjon–tid-diagram er stigningstallet farten, og i et fart–tid-diagram er det akselerasjonen. En rett linje betyr at farten (eller akselerasjonen) er konstant. Se [strekning og hastighet](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/02-strekning-s-og-hastighet-v.html) og [grafer og regresjon](https://fysikkhjelp.no/fysikk-forkurs/kapitler/01-hva-er-fysikk/09-grafer-og-regresjon.html) på fysikkhjelp.no.
 :::
 
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Vinkelrett linje.** Finn likningen for linja som står vinkelrett på $y = 2x + 1$ og går gjennom punktet $(4, 1)$.
+
+::: {.losning}
+For vinkelrette linjer er $a_1\cdot a_2 = -1$, så $a_2 = -\tfrac12$. Ettpunktsformelen gir
+$$
+y - 1 = -\tfrac12(x - 4) \quad\Leftrightarrow\quad \underline{\underline{y = -\tfrac12x + 3}}
+$$
+Kontroll: $x = 4$ gir $y = -2 + 3 = 1$. ✓
+:::
+:::
+
 ## Prøv selv
 
 ```{.python .kjor}

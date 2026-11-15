@@ -55,6 +55,24 @@ $$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![$A = [-1, 4\rangle$ og $B = \langle 2, 6]$. Unionen er alt som er med i minst én av dem, snittet det som er med i begge.](../../bilder/figurer/intervaller-union.svg){.tikz-fig style="width:440px"}
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Fra ulikhet til intervall.** Skriv mengdene som intervaller: a) $\{x \in \mathbb{R} \mid x^2 \le 9\}$ b) $\mathbb{R}\setminus\{2\}$ (alle reelle tall unntatt 2).
+
+::: {.losning}
+**a)** $x^2 \le 9$ betyr at $x$ ligger mellom $-3$ og $3$, endepunktene med: $\underline{\underline{[-3, 3]}}$.
+
+**b)** Alt til venstre for 2 og alt til høyre, men ikke 2 selv. Det er en union av to intervaller:
+$$
+\underline{\underline{\langle\leftarrow, 2\rangle \cup \langle 2, \rightarrow\rangle}}
+$$
+Slike mengder dukker opp som definisjonsmengder, for eksempel for $f(x) = \dfrac{1}{x-2}$.
+:::
+:::
+
 ## Prøv selv
 
 ```{.python .kjor}

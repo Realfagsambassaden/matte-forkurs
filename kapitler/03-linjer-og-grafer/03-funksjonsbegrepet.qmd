@@ -42,6 +42,22 @@ c) En brøk er null når telleren er null: $x + 1 = 0$, så nullpunktet er $\und
 :::
 :::
 
+<!-- tillegg: Claude -->
+![En funksjon gir hver $x$ nøyaktig én verdi. Til høyre: en kurve der en loddrett linje treffer to punkter, er ikke grafen til en funksjon.](../../bilder/figurer/funksjonsmaskin.svg){.tikz-fig style="width:520px"}
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Rotfunksjon.** La $f(x) = \sqrt{4 - x}$. Finn definisjonsmengden, $f(0)$ og nullpunktet.
+
+::: {.losning}
+Vi kan bare ta kvadratroten av tall som ikke er negative: $4 - x \ge 0$, altså $x \le 4$.
+$$
+D_f = \underline{\underline{\langle\leftarrow, 4]}}, \qquad f(0) = \sqrt4 = \underline{\underline{2}}
+$$
+Nullpunkt: $\sqrt{4 - x} = 0$ gir $\underline{\underline{x = 4}}$.
+:::
+:::
+
 ## Funksjoner i fysikk
 
 I fysikk bruker vi gjerne andre bokstaver: posisjonen $s(t)$, farten $v(t)$ og temperaturen $T(t)$ er funksjoner av tiden $t$. Tegner vi grafen, kan vi lese av mye: Hvor bratt den er, forteller hvor fort størrelsen endrer seg.

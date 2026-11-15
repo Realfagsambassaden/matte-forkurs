@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=0.55]
+\draw[akse] (-6,0) -- (8,0) node[right]{$x$}; \draw[akse] (0,-5) -- (0,6.5) node[above]{$y$};
+\foreach \x in {-4,-2,2,4,6} \draw (\x,0.1) -- (\x,-0.1) node[below,font=\scriptsize]{$\x$};
+\draw[dashed,black!60] (3,-5) -- (3,6.3) node[above,font=\small]{$x = 3$};
+\draw[dashed,black!60] (-6,1) -- (8,1); \node[font=\small,above] at (7,1) {$y = 1$};
+\draw[bla,very thick,domain=-6:2.83,samples=80] plot (\x,{(\x-2)/(\x-3)});
+\draw[bla,very thick,domain=3.17:8,samples=60] plot (\x,{(\x-2)/(\x-3)});
+\draw[bla,thick,fill=white] (-3,{5/6}) circle (4pt);
+\node[font=\small,below] at (-3,0.2) {hull};
+\end{tikzpicture}

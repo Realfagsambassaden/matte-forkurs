@@ -1,0 +1,10 @@
+\begin{tikzpicture}[x=0.9cm]
+\foreach \yy/\lab in {0/A,-1/B,-2.1/{A\cup B},-3.2/{A\cap B}} {
+ \draw[->] (-2.5,\yy) -- (7.3,\yy); \node[left] at (-2.6,\yy) {$\lab$};
+ \foreach \x in {-2,...,7} \draw (\x,\yy+0.08) -- (\x,\yy-0.08);}
+\foreach \x in {-2,...,7} \node[below,font=\small] at (\x,-3.3) {$\x$};
+\draw[bla,line width=3pt] (-1,0) -- (4,0); \fill[bla] (-1,0) circle (3.5pt); \draw[bla,thick,fill=white] (4,0) circle (3.5pt);
+\draw[rod,line width=3pt] (2,-1) -- (6,-1); \draw[rod,thick,fill=white] (2,-1) circle (3.5pt); \fill[rod] (6,-1) circle (3.5pt);
+\draw[lilla,line width=3pt] (-1,-2.1) -- (6,-2.1); \fill[lilla] (-1,-2.1) circle (3.5pt); \fill[lilla] (6,-2.1) circle (3.5pt);
+\draw[gronn,line width=3pt] (2,-3.2) -- (4,-3.2); \draw[gronn,thick,fill=white] (2,-3.2) circle (3.5pt); \draw[gronn,thick,fill=white] (4,-3.2) circle (3.5pt);
+\end{tikzpicture}

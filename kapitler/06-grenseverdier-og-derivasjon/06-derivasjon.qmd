@@ -51,6 +51,9 @@ $$
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Den deriverte er null der grafen til $f$ har vannrett tangent, positiv der $f$ vokser, og negativ der $f$ avtar.](../../bilder/figurer/f-og-fderivert.svg){.tikz-fig style="width:440px"}
+
 ## Skrivemåter
 
 Den deriverte skrives på flere måter. Alle betyr det samme:

@@ -25,6 +25,9 @@ $$
 $$
 Regelen er den samme som for tallbrøker: Bare faktorer kan forkortes, aldri ledd. I $\dfrac{x + 3}{x}$ kan $x$-ene **ikke** strykes, fordi $x$ i telleren er et ledd.
 
+<!-- tillegg: Claude -->
+![Grafen til $\frac{x^2-1}{x-1}$ er linja $y = x + 1$ – bortsett fra et hull i $x = 1$, der uttrykket ikke er definert. Forkortingen gjelder bare når $x \ne 1$.](../../bilder/figurer/hull-graf.svg){.tikz-fig style="width:320px"}
+
 ## Fellesnevner
 
 For å legge sammen rasjonale uttrykk finner vi en fellesnevner, akkurat som med tall. Fellesnevneren må inneholde alle faktorene i alle nevnerne.

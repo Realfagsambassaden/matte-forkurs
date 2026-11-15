@@ -1,0 +1,16 @@
+\begin{tikzpicture}[xscale=1.1,yscale=0.18]
+\foreach \k/\lab/\c in {0/{h (m)}/bla,1/{v (m/s)}/rod} {
+\begin{scope}[xshift=\k*5.2cm]
+\draw[akse] (0,0) -- (3.6,0) node[right]{\small$t$}; \draw[akse] (0,-16) -- (0,16) node[above]{\small\lab};
+\foreach \t in {1,2,3} \draw (\t,0.6) -- (\t,-0.6) node[below,font=\scriptsize]{$\t$};
+\foreach \y in {-10,10} \draw (0.06,\y) -- (-0.06,\y) node[left,font=\scriptsize]{$\y$};
+\end{scope}}
+\draw[bla,very thick,domain=0:3.1,samples=60] plot (\x,{1.5+14.7*\x-4.9*\x*\x});
+\draw[dashed] (1.5,0) -- (1.5,12.5); \fill (1.5,12.5) circle (0.06 and 0.35);
+\begin{scope}[xshift=5.2cm]
+\draw[rod,very thick] (0,14.7) -- (3.1,-15.7);
+\fill (1.5,0) circle (0.06 and 0.35); \node[font=\small,above right] at (1.5,0.5) {$v = 0$};
+\end{scope}
+\node[font=\small] at (1.8,-20) {$h(t)$: toppen ved $t = 1.5\ \mathrm{s}$};
+\node[font=\small] at (7.0,-20) {$v(t) = h'(t)$, $a = -9.8\ \mathrm{m/s^2}$};
+\end{tikzpicture}

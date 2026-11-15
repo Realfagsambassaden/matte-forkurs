@@ -62,6 +62,22 @@ Ganger vi opp, får vi $P(x) = Q(x)(x - a) + r$. Setter vi inn $x = a$, forsvinn
 
 Vi kan altså sjekke om divisjonen går opp uten å dele: Sett inn $x = a$ og se om du får null.
 
+<!-- tillegg: Claude -->
+![Hvert nullpunkt $x = a$ gir en faktor $(x - a)$: $P(x) = (x + 2)(x - 1)(x - 3)$.](../../bilder/figurer/faktorsetning.svg){.tikz-fig style="width:480px"}
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Resten uten å dividere.** Hva blir resten når $P(x) = x^3 + 2x - 5$ deles på $x - 2$?
+
+::: {.losning}
+Restsetningen sier at resten er $P(2)$:
+$$
+P(2) = 2^3 + 2\cdot2 - 5 = \underline{\underline{7}}
+$$
+Siden resten ikke er null, er $x - 2$ ikke en faktor i $P(x)$.
+:::
+:::
+
 ## Prøv selv
 
 ```{.python .kjor}

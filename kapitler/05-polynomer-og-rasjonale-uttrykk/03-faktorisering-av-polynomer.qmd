@@ -38,6 +38,22 @@ $$
 Er $P(x) = (x - a)(x - b)(x - c)$, er konstantleddet $-abc$. Hele tall $a$, $b$ og $c$ må derfor gå opp i konstantleddet. Prøv de små tallene først.
 :::
 
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Prøv deg fram.** Faktoriser $P(x) = x^3 - 7x + 6$.
+
+::: {.losning}
+Heltallige nullpunkter må gå opp i konstantleddet $6$. Vi prøver $x = 1$: $P(1) = 1 - 7 + 6 = 0$. Altså er $x - 1$ en faktor. Polynomdivisjon gir
+$$
+(x^3 - 7x + 6) : (x - 1) = x^2 + x - 6 = (x - 2)(x + 3)
+$$
+$$
+P(x) = \underline{\underline{(x - 1)(x - 2)(x + 3)}}
+$$
+Husk ledd med null foran ($0\cdot x^2$) når du stiller opp divisjonen.
+:::
+:::
+
 :::: {.oppgaver}
 
 ::: {.oppgave tittel="Faktoriser"}

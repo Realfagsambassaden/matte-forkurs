@@ -44,6 +44,9 @@ Tallene er $\underline{\underline{3 \text{ og } 7}}$.
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Løsningene av likningssettet er skjæringspunktene mellom linja og parabelen.](../../bilder/figurer/linje-parabel.svg){.tikz-fig style="width:340px"}
+
 ## Hvor mange løsninger?
 
 En linje kan skjære en parabel i to punkter, berøre den i ett punkt (da er linja en **tangent**), eller ikke treffe den i det hele tatt. Diskriminanten i andregradslikningen forteller hvilket tilfelle vi har.

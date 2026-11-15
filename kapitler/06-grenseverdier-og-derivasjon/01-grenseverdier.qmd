@@ -36,6 +36,9 @@ Svaret er $\underline{\underline{2}}$.
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Grenseverdien handler om hva $f(x)$ nærmer seg når $x$ nærmer seg $a$ – ikke om hva som skjer akkurat i $a$. Funksjonen trenger ikke engang være definert der.](../../bilder/figurer/grenseverdi.svg){.tikz-fig style="width:400px"}
+
 ## Regneregler
 
 Grenseverdier av summer, produkter og brøker kan regnes ledd for ledd, så lenge grensene finnes og vi ikke deler på null. For polynomer og andre «pene» funksjoner kan vi derfor bare sette inn: $\displaystyle\lim_{x\to 2}(x^2 + 3x) = 4 + 6 = 10$.
@@ -56,6 +59,19 @@ $\displaystyle\lim_{x\to\infty} f(x)$ forteller hva som skjer langt ute. For br�
 $$
 \lim_{x\to\infty}\frac{3x^2 + 1}{x^2 - 5} = \lim_{x\to\infty}\frac{3 + \frac{1}{x^2}}{1 - \frac{5}{x^2}} = \frac{3 + 0}{1 - 0} = 3
 $$
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Når x går mot uendelig.** Finn $\displaystyle\lim_{x\to\infty}\frac{3x^2 - x}{2x^2 + 5}$.
+
+::: {.losning}
+Del teller og nevner på den høyeste potensen, $x^2$:
+$$
+\lim_{x\to\infty}\frac{3 - \frac1x}{2 + \frac{5}{x^2}} = \frac{3 - 0}{2 + 0} = \underline{\underline{\frac32}}
+$$
+For store $x$ er det bare leddene med høyest grad som betyr noe.
+:::
+:::
 
 ## Prøv selv
 

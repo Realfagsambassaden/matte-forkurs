@@ -44,6 +44,9 @@ $$
 Det er det samme som å gange parentesen med $-1$.
 :::
 
+<!-- tillegg: Claude -->
+![Arealet av rektangelet kan regnes som hele lengden ganger hele bredden, eller som summen av de fire delene. Hvert ledd i den ene parentesen ganges med hvert ledd i den andre.](../../bilder/figurer/arealmodell.svg){.tikz-fig style="width:440px"}
+
 ::: {.eksempel}
 **Eksempel: Gang ut og trekk sammen.** Skriv så enkelt som mulig: $(2x - 3)(x + 4) - 2(x^2 - x)$.
 
@@ -69,6 +72,19 @@ Sjekk alltid ved å gange ut igjen: $3x\cdot 2x - 3x\cdot 3 = 6x^2 - 9x$. Dette 
 
 ::: {.callout-tip title="I fysikken"}
 Formelen for posisjon ved konstant akselerasjon, $s = v_0 t + \frac12 a t^2$, kan skrives $s = t\left(v_0 + \frac12 at\right)$ ved å sette $t$ utenfor. Da ser vi straks at $s = 0$ når $t = 0$. Se [bevegelseslikningene på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/03-kinematikk/04-bevegelseslikningene-for-konstant-akselerasjon.html).
+:::
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Sett utenfor parentes.** Faktoriser $6x^2y - 9xy^2 + 3xy$.
+
+::: {.losning}
+Alle leddene har faktoren $3$, minst én $x$ og minst én $y$. Den største felles faktoren er $3xy$:
+$$
+6x^2y - 9xy^2 + 3xy = \underline{\underline{3xy(2x - 3y + 1)}}
+$$
+Kontroll: Ganger vi ut, får vi tilbake det vi startet med. Legg merke til ettallet i parentesen: Leddet $3xy$ blir $3xy\cdot1$.
+:::
 :::
 
 ## Prøv selv

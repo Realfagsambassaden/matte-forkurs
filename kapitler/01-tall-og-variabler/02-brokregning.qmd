@@ -29,6 +29,9 @@ En brøk er **fullstendig forkortet** når teller og nevner ikke har noen felles
 - **Hele tall** Et helt tall er en brøk med nevner 1: $3 = \frac31$.
 :::
 
+<!-- tillegg: Claude -->
+![Halvdeler og tredeler kan ikke legges sammen direkte. Deler vi alt i sjettedeler, går det: $\tfrac12 + \tfrac13 = \tfrac36 + \tfrac26 = \tfrac56$.](../../bilder/figurer/brok-sum.svg){.tikz-fig style="width:500px"}
+
 Den **minste fellesnevneren** finner du ved å faktorisere nevnerne og ta med hver faktor så mange ganger som den forekommer i en av nevnerne.
 
 ::: {.eksempel}

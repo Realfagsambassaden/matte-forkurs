@@ -1,0 +1,6 @@
+\begin{tikzpicture}[x=0.42cm]
+\draw[akse] (-16,0) -- (13,0) node[right]{m};
+\foreach \e in {-15,-10,-5,0,5,10} \draw (\e,0.12) -- (\e,-0.12) node[below,font=\small]{$10^{\e}$};
+\foreach \e/\t/\h in {-15/{atomkjerne}/1, -10/{atom}/0.5, -7/{virus}/1.1, -5/{celle}/0.5, 0/{menneske}/1.1, 4/{Mount Everest}/0.5, 7/{jorda}/1.1, 11/{avstand til sola}/0.5} {
+ \draw[bla] (\e,0) -- (\e,\h); \fill[bla] (\e,0) circle (2pt); \node[above,font=\small,align=center] at (\e,\h) {\t};}
+\end{tikzpicture}

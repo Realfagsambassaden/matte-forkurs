@@ -52,9 +52,25 @@ Kontroll: $2^{2.44} \approx 5.43$ og $2.44 + 3 = 5.44$. Det stemmer godt.
 :::
 :::
 
+<!-- tillegg: Claude -->
+![Likningen $2^x = x + 3$ har to løsninger: $x$-koordinatene til skjæringspunktene mellom grafene.](../../bilder/figurer/grafisk-losning.svg){.tikz-fig style="width:380px"}
+
 ## Grafisk løsning av ulikheter
 
 Ulikheten $f(x) > g(x)$ er oppfylt der grafen til $f$ ligger **over** grafen til $g$. Les av hvilke $x$-verdier det gjelder for, med skjæringspunktene som grenser. I eksemplet over er $2^x > x + 3$ for $x < -2.86$ og for $x > 2.44$.
+
+::: {.eksempel}
+<!-- tillegg: Claude -->
+**Eksempel: Ulikhet med graf.** Løs $x^2 < x + 2$ grafisk.
+
+::: {.losning}
+Tegn $y = x^2$ og $y = x + 2$. Grafene skjærer hverandre der $x^2 = x + 2$, altså i $x = -1$ og $x = 2$. Parabelen ligger **under** linja mellom skjæringspunktene:
+$$
+\underline{\underline{-1 < x < 2}}
+$$
+Endepunktene er ikke med, fordi ulikheten er streng ($<$).
+:::
+:::
 
 ## Prøv selv
 

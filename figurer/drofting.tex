@@ -1,0 +1,14 @@
+\begin{tikzpicture}[xscale=0.8,yscale=0.13]
+\draw[akse] (-3,0) -- (5.6,0) node[right]{$x$}; \draw[akse] (0,-26) -- (0,15) node[above]{$y$};
+\foreach \x in {-2,-1,1,2,3,4,5} \draw (\x,0.6) -- (\x,-0.6) node[below,font=\scriptsize]{$\x$};
+\foreach \y in {-20,-10,10} \draw (0.08,\y) -- (-0.08,\y) node[left,font=\scriptsize]{$\y$};
+\draw[bla,very thick,domain=-2.6:5.2,samples=80] plot (\x,{\x*\x*\x-3*\x*\x-9*\x+5});
+\fill (-1,10) circle (0.1 and 0.75) node[above,font=\small]{toppunkt $(-1, 10)$};
+\fill (3,-22) circle (0.1 and 0.75) node[below,font=\small]{bunnpunkt $(3, -22)$};
+\begin{scope}[yshift=-36cm,yscale=7.5]
+\node[left,font=\small] at (-3,0) {$f'(x)$};
+\draw[thick] (-3,0) -- (-1,0); \draw[dashed] (-1,0) -- (3,0); \draw[thick] (3,0) -- (5.6,0);
+\node at (-1,0) {$0$}; \node at (3,0) {$0$};
+\node[font=\small] at (-2,0.6) {$+$, vokser}; \node[font=\small] at (1,0.6) {$-$, avtar}; \node[font=\small] at (4.3,0.6) {$+$, vokser};
+\end{scope}
+\end{tikzpicture}

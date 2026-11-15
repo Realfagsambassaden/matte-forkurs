@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=0.55]
+\foreach \k/\c/\tit in {0/-1.5/{$D > 0$: to løsninger},1/0/{$D = 0$: én løsning},2/1.2/{$D < 0$: ingen løsning}} {
+\begin{scope}[xshift=\k*7cm]
+\draw[akse] (-3,0) -- (3.2,0) node[right]{\small$x$}; \draw[akse] (0,-2) -- (0,4.5);
+\draw[bla,very thick,domain=-2.3:2.3,samples=50] plot (\x,{0.6*\x*\x+\c});
+\node[font=\small] at (0,-2.7) {\tit};
+\end{scope}}
+\fill (-1.58,0) circle (3pt) (1.58,0) circle (3pt);
+\fill (7,0) circle (3pt);
+\end{tikzpicture}
