@@ -1,5 +1,5 @@
 ---
-title: "Blandede oppgaver: faktorisering"
+title: "Sammensatte oppgaver: faktorisering"
 tema: algebra-og-likninger
 undertema: oppgaver
 ---
@@ -9,7 +9,7 @@ Oppgavene blander kvadratsetninger, faktorisering, andregradslikninger og -ulikh
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Faktoriser"}
+::: {.oppgave tittel="Faktoriser" krever="algebra-og-likninger/faktorisering"}
 Faktoriser fullstendig: a) $4x^2 - 25$ b) $x^3 - 6x^2 + 9x$ c) $2x^2 + 2x - 24$
 
 ::: {.losning}
@@ -17,7 +17,7 @@ a) $\underline{\underline{(2x + 5)(2x - 5)}}$ b) $x(x^2 - 6x + 9) = \underline{\
 :::
 :::
 
-::: {.oppgave tittel="Andregradslikninger"}
+::: {.oppgave tittel="Andregradslikninger" krever="algebra-og-likninger/andregradslikninger"}
 Løs: a) $x^2 = 5x$ b) $2x^2 + 3x - 2 = 0$ c) $x^2 + 6x + 10 = 0$
 
 ::: {.losning}
@@ -29,7 +29,7 @@ c) $D = 36 - 40 < 0$: $\underline{\underline{\text{ingen løsning}}}$
 :::
 :::
 
-::: {.oppgave tittel="Forkort" niva="Middels"}
+::: {.oppgave tittel="Forkort" niva="Middels" krever="algebra-og-likninger/faktorisering, algebra-og-likninger/rasjonale-uttrykk"}
 Forkort $\dfrac{2x^2 - 8}{x^2 + 4x + 4}$.
 
 ::: {.losning}
@@ -39,7 +39,7 @@ $$
 :::
 :::
 
-::: {.oppgave tittel="Ulikhet" niva="Middels"}
+::: {.oppgave tittel="Ulikhet" niva="Middels" krever="algebra-og-likninger/ulikheter, algebra-og-likninger/andregradslikninger"}
 Løs ulikheten $x^2 \ge 3x + 10$.
 
 ::: {.losning}
@@ -47,7 +47,7 @@ $x^2 - 3x - 10 \ge 0$, altså $(x - 5)(x + 2) \ge 0$. Parabelen smiler: $\underl
 :::
 :::
 
-::: {.oppgave tittel="Steinen i brønnen" niva="Utfordrende"}
+::: {.oppgave tittel="Steinen i brønnen" niva="Utfordrende" krever="algebra-og-likninger/andregradslikninger, algebra-og-likninger/likninger"}
 En stein slippes ned i en brønn. Etter $t$ sekunder har den falt $4.9t^2$ meter. Lyden av plasket går opp med $340\ \mathrm{m/s}$. Du hører plasket $2.50\ \mathrm{s}$ etter at du slapp steinen. Hvor dyp er brønnen?
 
 ::: {.losning}
@@ -61,7 +61,7 @@ Uten å ta hensyn til lyden ville vi fått $4.9\cdot 2.50^2 = 30.6\ \mathrm{m}$.
 :::
 :::
 
-::: {.oppgave tittel="Finn uttrykket"}
+::: {.oppgave tittel="Finn uttrykket" krever="algebra-og-likninger/andregradslikninger, algebra-og-likninger/faktorisering"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-parabel.svg){.tikz-fig style="width:260px"}
 

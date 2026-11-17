@@ -1,5 +1,5 @@
 ---
-title: "Blandede oppgaver: funksjonsdrøfting"
+title: "Sammensatte oppgaver: funksjonsdrøfting"
 tema: anvendelser-derivasjon
 undertema: oppgaver
 ---
@@ -9,7 +9,7 @@ Oppgavene blander derivasjonsreglene, drøfting og optimering. Prøv selv før d
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Deriver"}
+::: {.oppgave tittel="Deriver" krever="derivasjon/kjerneregelen, derivasjon/produkt-og-kvotient"}
 a) $f(x) = (x^2 - 1)^3$ b) $g(x) = x(2x + 1)^2$ c) $h(x) = \dfrac{x - 1}{x^2}$
 
 ::: {.losning}
@@ -21,7 +21,7 @@ c) $\frac{x^2 - (x - 1)2x}{x^4} = \frac{-x^2 + 2x}{x^4} = \underline{\underline{
 :::
 :::
 
-::: {.oppgave tittel="Drøft" niva="Middels"}
+::: {.oppgave tittel="Drøft" niva="Middels" krever="anvendelser-derivasjon/drofting"}
 Drøft $f(x) = x^4 - 4x^3$: ekstremalpunkter og vendepunkter.
 
 ::: {.losning}
@@ -31,7 +31,7 @@ $f''(x) = 12x^2 - 24x = 12x(x - 2)$. Vendepunkter $\underline{\underline{(0, 0) 
 :::
 :::
 
-::: {.oppgave tittel="Billigste rør" niva="Middels"}
+::: {.oppgave tittel="Billigste rør" niva="Middels" krever="anvendelser-derivasjon/optimering"}
 En lukket kasse med kvadratisk bunn skal ha volum $32\ \mathrm{dm^3}$. Hvilke mål gir minst overflate?
 
 ::: {.losning}
@@ -41,7 +41,7 @@ $O'(x) = 4x - \frac{128}{x^2} = 0$ gir $x^3 = 32$, så $x = \sqrt[3]{32} = 3.17\
 :::
 :::
 
-::: {.oppgave tittel="Lys fra en lampe" niva="Utfordrende"}
+::: {.oppgave tittel="Lys fra en lampe" niva="Utfordrende" krever="anvendelser-derivasjon/optimering, derivasjon/kjerneregelen"}
 Belysningsstyrken på et bord fra en lampe i høyden $h$ over bordkanten, i horisontal avstand $1.0\ \mathrm{m}$, er proporsjonal med $B(h) = \dfrac{h}{(h^2 + 1)^{3/2}}$. Hvilken høyde gir sterkest lys på bordkanten?
 
 ::: {.losning}
@@ -53,7 +53,7 @@ $B' = 0$ gir $h = \frac{1}{\sqrt2} = \underline{\underline{0.71\ \mathrm{m}}}$. 
 :::
 :::
 
-::: {.oppgave tittel="Fra f′ til f" niva="Middels"}
+::: {.oppgave tittel="Fra f′ til f" niva="Middels" krever="anvendelser-derivasjon/drofting"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-fderivert.svg){.tikz-fig style="width:260px"}
 

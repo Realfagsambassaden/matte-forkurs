@@ -1,5 +1,5 @@
 ---
-title: "Blandede oppgaver: vektorer i rommet"
+title: "Sammensatte oppgaver: vektorer i rommet"
 tema: vektorer
 undertema: oppgaver
 ---
@@ -9,7 +9,7 @@ Oppgavene blander lengder, vinkler, kryssprodukt og plan i rommet. Prøv selv f�
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Vinkel"}
+::: {.oppgave tittel="Vinkel" krever="vektorer/vektorer-i-rommet, vektorer/skalarprodukt"}
 Finn vinkelen mellom $[1, 0, 1]$ og $[0, 1, 1]$.
 
 ::: {.losning}
@@ -17,7 +17,7 @@ $\cos v = \frac{1}{\sqrt2\sqrt2} = \frac12$, så $\underline{\underline{v = 60^\
 :::
 :::
 
-::: {.oppgave tittel="Volum av pyramide" niva="Middels"}
+::: {.oppgave tittel="Volum av pyramide" niva="Middels" krever="vektorer/vektorprodukt"}
 Finn volumet av pyramiden med hjørnene $O = (0, 0, 0)$, $A = (2, 0, 0)$, $B = (0, 3, 0)$ og $C = (1, 1, 4)$.
 
 ::: {.losning}
@@ -25,7 +25,7 @@ $\overrightarrow{OA}\times\overrightarrow{OB} = [0, 0, 6]$, prikket med $\overri
 :::
 :::
 
-::: {.oppgave tittel="Normal fra to vektorer" niva="Utfordrende"}
+::: {.oppgave tittel="Normal fra to vektorer" niva="Utfordrende" krever="vektorer/vektorprodukt"}
 Finn en vektor med lengde 1 som står vinkelrett på både $[1, 1, 0]$ og $[0, 1, 1]$.
 
 ::: {.losning}
@@ -33,7 +33,7 @@ $[1, 1, 0]\times[0, 1, 1] = [1, -1, 1]$, lengde $\sqrt3$. En enhetsvektor er $\u
 :::
 :::
 
-::: {.oppgave tittel="Romdiagonalen"}
+::: {.oppgave tittel="Romdiagonalen" krever="vektorer/vektorer-i-rommet"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-kasse.svg){.tikz-fig style="width:300px"}
 

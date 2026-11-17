@@ -1,6 +1,6 @@
 ---
-title: "Blandede oppgaver: trigonometriske funksjoner"
-tema: trigonometri
+title: "Sammensatte oppgaver: trigonometriske funksjoner"
+tema: derivasjon
 undertema: oppgaver
 ---
 
@@ -9,7 +9,7 @@ Oppgavene blander sinusfunksjoner, ulikheter og derivasjon. Prøv selv før du �
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Modell"}
+::: {.oppgave tittel="Modell" krever="trigonometri/trigonometriske-funksjoner"}
 Temperaturen i en by varierer mellom $-4\ ^\circ\mathrm{C}$ og $18\ ^\circ\mathrm{C}$ gjennom året. Lag en modell $T(t) = A\sin(kt + c) + d$ der $t$ er måneder, og forklar hva hver konstant er.
 
 ::: {.losning}
@@ -20,7 +20,7 @@ $$
 :::
 :::
 
-::: {.oppgave tittel="Derivert" niva="Middels"}
+::: {.oppgave tittel="Derivert" niva="Middels" krever="derivasjon/eksponential-og-trig, derivasjon/tangenter"}
 Finn likningen for tangenten til $f(x) = \sin x$ i $x = 0$, og forklar hvorfor $\sin x \approx x$ for små $x$.
 
 ::: {.losning}
@@ -28,7 +28,7 @@ $f(0) = 0$ og $f'(0) = \cos 0 = 1$. Tangenten er $\underline{\underline{y = x}}$
 :::
 :::
 
-::: {.oppgave tittel="Vekselstrøm" niva="Utfordrende"}
+::: {.oppgave tittel="Vekselstrøm" niva="Utfordrende" krever="trigonometri/trigonometriske-funksjoner, trigonometri/trigonometriske-likninger"}
 Spenningen er $U(t) = 325\sin(100\pi t)$. Hvor stor del av tiden er $|U| > 230\ \mathrm{V}$?
 
 ::: {.losning}
@@ -38,7 +38,7 @@ Svaret er omtrent $\underline{\underline{50\ \%}}$ av tiden.
 :::
 :::
 
-::: {.oppgave tittel="Finn funksjonsuttrykket" niva="Middels"}
+::: {.oppgave tittel="Finn funksjonsuttrykket" niva="Middels" krever="trigonometri/trigonometriske-funksjoner"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-sinus.svg){.tikz-fig style="width:380px"}
 

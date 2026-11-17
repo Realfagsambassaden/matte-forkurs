@@ -1,5 +1,5 @@
 ---
-title: "Blandede oppgaver: følger og rekker"
+title: "Sammensatte oppgaver: følger og rekker"
 tema: folger-og-rekker
 undertema: oppgaver
 ---
@@ -9,7 +9,7 @@ Oppgavene blander aritmetiske og geometriske følger og rekker. Prøv selv før 
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Hvilken type?"}
+::: {.oppgave tittel="Hvilken type?" krever="folger-og-rekker/aritmetiske, folger-og-rekker/geometriske"}
 Er følgene aritmetiske, geometriske eller ingen av delene? a) $2, 6, 18, 54$ b) $10, 7, 4, 1$ c) $1, 4, 9, 16$
 
 ::: {.losning}
@@ -17,7 +17,7 @@ a) Geometrisk, $k = 3$. b) Aritmetisk, $d = -3$. c) Ingen av delene (kvadrattall
 :::
 :::
 
-::: {.oppgave tittel="Lønnsøkning" niva="Middels"}
+::: {.oppgave tittel="Lønnsøkning" niva="Middels" krever="folger-og-rekker/aritmetiske, folger-og-rekker/geometriske"}
 Tilbud A: 500000 kr første år, og 15000 kr mer hvert år. Tilbud B: 500000 kr første år, og 3 % mer hvert år. Hvilket gir mest til sammen over 10 år?
 
 ::: {.losning}
@@ -25,7 +25,7 @@ A: $\frac{10(500000 + 635000)}{2} = 5675000$ kr. B: $500000\cdot\frac{1.03^{10} 
 :::
 :::
 
-::: {.oppgave tittel="Snøfnugget" niva="Utfordrende"}
+::: {.oppgave tittel="Snøfnugget" niva="Utfordrende" krever="folger-og-rekker/uendelige"}
 Kochs snøfnugg starter med en likesidet trekant med areal 1. I hvert steg legges det til nye trekanter: først 3 trekanter med areal $\frac19$, så 12 med areal $\frac{1}{81}$, og så videre (4 ganger så mange, $\frac19$ av arealet). Finn det totale arealet.
 
 ::: {.losning}
@@ -33,7 +33,7 @@ Tilleggene: $3\cdot\frac19 + 12\cdot\frac{1}{81} + \dots = \frac13 + \frac{4}{27
 :::
 :::
 
-::: {.oppgave tittel="Følgen i søylene"}
+::: {.oppgave tittel="Følgen i søylene" krever="folger-og-rekker/tallfolger"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-folge.svg){.tikz-fig style="width:240px"}
 
