@@ -1,5 +1,5 @@
 ---
-title: "Blandede oppgaver: trigonometriske likninger"
+title: "Sammensatte oppgaver: trigonometriske likninger"
 tema: trigonometri
 undertema: oppgaver
 ---
@@ -9,7 +9,7 @@ Oppgavene blander radianer, enhetssirkelen og trigonometriske likninger. Prøv s
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Radianer"}
+::: {.oppgave tittel="Radianer" krever="trigonometri/radianer-og-enhetssirkelen"}
 Et hjul med radius $0.35\ \mathrm{m}$ ruller $10\ \mathrm{m}$. Hvor mange radianer har det rotert, og hvor mange omdreininger er det?
 
 ::: {.losning}
@@ -17,7 +17,7 @@ $v = \frac{10}{0.35} = \underline{\underline{28.6\ \mathrm{rad}}}$, som er $\fra
 :::
 :::
 
-::: {.oppgave tittel="Likning"}
+::: {.oppgave tittel="Likning" krever="trigonometri/trigonometriske-likninger"}
 Løs $2\cos x + 1 = 0$ for $x \in [0, 2\pi\rangle$.
 
 ::: {.losning}
@@ -25,7 +25,7 @@ $\cos x = -\frac12$: $\underline{\underline{x = \frac{2\pi}{3} \text{ og } \frac
 :::
 :::
 
-::: {.oppgave tittel="Andregrad" niva="Middels"}
+::: {.oppgave tittel="Andregrad" niva="Middels" krever="trigonometri/trigonometriske-likninger, algebra-og-likninger/andregradslikninger"}
 Løs $\cos^2 x - \cos x = 0$ for $x \in [0, 2\pi\rangle$.
 
 ::: {.losning}
@@ -33,7 +33,7 @@ $\cos x(\cos x - 1) = 0$. $\cos x = 0$ gir $\frac{\pi}{2}, \frac{3\pi}{2}$, og $
 :::
 :::
 
-::: {.oppgave tittel="Tidevann" niva="Utfordrende"}
+::: {.oppgave tittel="Tidevann" niva="Utfordrende" krever="trigonometri/trigonometriske-likninger"}
 Vannstanden i en havn er $h(t) = 2.0 + 1.5\cos\left(\frac{2\pi}{12.4}t\right)$ meter, der $t$ er timer etter høyvann. En båt trenger minst $2.5\ \mathrm{m}$ vann. Hvor lenge etter høyvann kan den gå inn?
 
 ::: {.losning}
@@ -41,7 +41,7 @@ $1.5\cos\left(\frac{2\pi t}{12.4}\right) = 0.5$ gir $\cos\left(\frac{2\pi t}{12.
 :::
 :::
 
-::: {.oppgave tittel="Les av enhetssirkelen"}
+::: {.oppgave tittel="Les av enhetssirkelen" krever="trigonometri/trigonometriske-likninger"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-enhetssirkel.svg){.tikz-fig style="width:220px"}
 

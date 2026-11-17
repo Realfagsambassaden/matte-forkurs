@@ -1,5 +1,5 @@
 ---
-title: "Blandede oppgaver: logaritmer"
+title: "Sammensatte oppgaver: logaritmer"
 tema: eksponential-og-logaritme
 undertema: oppgaver
 ---
@@ -9,7 +9,7 @@ Oppgavene blander logaritmer, likninger og eksponentielle modeller. Prøv selv f
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Logaritmereglene"}
+::: {.oppgave tittel="Logaritmereglene" krever="eksponential-og-logaritme/logaritmer, eksponential-og-logaritme/ln-og-e"}
 Skriv som én logaritme: $\ln 8 - 2\ln 2 + \ln 3$.
 
 ::: {.losning}
@@ -17,7 +17,7 @@ $\ln\frac{8\cdot 3}{4} = \underline{\underline{\ln 6}}$
 :::
 :::
 
-::: {.oppgave tittel="Likninger"}
+::: {.oppgave tittel="Likninger" krever="eksponential-og-logaritme/eksponentiallikninger, eksponential-og-logaritme/ln-og-e"}
 Løs: a) $5\mathrm{e}^{x} = 20$ b) $\ln(x + 2) = \ln(3x - 4)$
 
 ::: {.losning}
@@ -27,7 +27,7 @@ b) $x + 2 = 3x - 4$, så $\underline{\underline{x = 3}}$ (begge sider definert: 
 :::
 :::
 
-::: {.oppgave tittel="Befolkning" niva="Middels"}
+::: {.oppgave tittel="Befolkning" niva="Middels" krever="eksponential-og-logaritme/eksponentiallikninger"}
 En by har 40000 innbyggere og vokser med 1.5 % per år. Når passerer den 50000?
 
 ::: {.losning}
@@ -35,7 +35,7 @@ $40000\cdot 1.015^t = 50000$ gir $1.015^t = 1.25$ og $t = \frac{\ln 1.25}{\ln 1.
 :::
 :::
 
-::: {.oppgave tittel="Medisin i blodet" niva="Middels"}
+::: {.oppgave tittel="Medisin i blodet" niva="Middels" krever="eksponential-og-logaritme/ln-og-e, eksponential-og-logaritme/drofting"}
 Konsentrasjonen av et legemiddel er $C(t) = 8.0\mathrm{e}^{-0.35t}$ (mg/L, timer). a) Finn halveringstiden. b) Hvor fort synker konsentrasjonen etter 2.0 timer?
 
 ::: {.losning}
@@ -45,7 +45,7 @@ b) $C'(t) = -2.8\mathrm{e}^{-0.35t}$, $C'(2.0) = -2.8\mathrm{e}^{-0.70} = \under
 :::
 :::
 
-::: {.oppgave tittel="Toppunkt" niva="Utfordrende"}
+::: {.oppgave tittel="Toppunkt" niva="Utfordrende" krever="eksponential-og-logaritme/drofting"}
 Effekten av et medikament er $E(t) = 10t\,\mathrm{e}^{-0.5t}$. Når er effekten størst, og hvor stor er den?
 
 ::: {.losning}
@@ -53,7 +53,7 @@ $E'(t) = 10\mathrm{e}^{-0.5t}(1 - 0.5t) = 0$ gir $t = 2$. $E(2) = 20\mathrm{e}^{
 :::
 :::
 
-::: {.oppgave tittel="Avkjøling fra graf" niva="Middels"}
+::: {.oppgave tittel="Avkjøling fra graf" niva="Middels" krever="eksponential-og-logaritme/eksponentiallikninger"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-eksp.svg){.tikz-fig style="width:340px"}
 

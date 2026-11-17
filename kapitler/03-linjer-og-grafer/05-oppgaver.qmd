@@ -1,5 +1,5 @@
 ---
-title: "Blandede oppgaver: linjer og grafer"
+title: "Sammensatte oppgaver: linjer og grafer"
 tema: funksjoner
 undertema: oppgaver
 ---
@@ -9,7 +9,7 @@ Oppgavene blander rette linjer, grafisk løsning, funksjoner og parabler. Prøv 
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Linje fra stigningstall og punkt"}
+::: {.oppgave tittel="Linje fra stigningstall og punkt" krever="funksjoner/rette-linjer"}
 Finn likningen for linja med stigningstall $\frac23$ som går gjennom $(3, -1)$.
 
 ::: {.losning}
@@ -17,7 +17,7 @@ $y + 1 = \frac23(x - 3)$, så $y = \frac23 x - 2 - 1 = \underline{\underline{\fr
 :::
 :::
 
-::: {.oppgave tittel="Linje og parabel"}
+::: {.oppgave tittel="Linje og parabel" krever="funksjoner/grafisk-losning, algebra-og-likninger/andregradslikninger"}
 Finn skjæringspunktene mellom $y = x^2 - 1$ og $y = x + 1$.
 
 ::: {.losning}
@@ -25,7 +25,7 @@ $x^2 - 1 = x + 1$ gir $x^2 - x - 2 = 0$, altså $(x - 2)(x + 1) = 0$. Da er $x =
 :::
 :::
 
-::: {.oppgave tittel="Fart fra graf" niva="Middels"}
+::: {.oppgave tittel="Fart fra graf" niva="Middels" krever="funksjoner/rette-linjer"}
 En bil er $50\ \mathrm{m}$ fra et kryss ved $t = 2.0\ \mathrm{s}$ og $170\ \mathrm{m}$ fra krysset ved $t = 8.0\ \mathrm{s}$. Posisjonen er en lineær funksjon av tiden. a) Finn farten. b) Finn posisjonen som funksjon av tiden. c) Hvor var bilen ved $t = 0$?
 
 ::: {.losning}
@@ -37,7 +37,7 @@ c) $s(0) = \underline{\underline{10\ \mathrm{m}}}$ fra krysset.
 :::
 :::
 
-::: {.oppgave tittel="Parabel gjennom tre punkter" niva="Middels"}
+::: {.oppgave tittel="Parabel gjennom tre punkter" niva="Middels" krever="algebra-og-likninger/likningssett, funksjoner/andregradsfunksjoner"}
 En parabel $f(x) = ax^2 + bx + c$ går gjennom $(0, 2)$, $(1, 1)$ og $(2, 4)$. Finn $a$, $b$ og $c$.
 
 ::: {.losning}
@@ -47,7 +47,7 @@ Trekker vi den første fra den andre: $a = 2$, og da er $b = -3$. Svaret er $\un
 :::
 :::
 
-::: {.oppgave tittel="Bremselengde" niva="Utfordrende"}
+::: {.oppgave tittel="Bremselengde" niva="Utfordrende" krever="funksjoner/andregradsfunksjoner"}
 Bremselengden til en bil er tilnærmet $L(v) = 0.0075v^2 + 0.28v$, med $v$ i km/h og $L$ i meter. a) Finn $L(50)$ og $L(100)$. b) Hvor mange ganger lengre blir bremselengden når farten dobles fra 50 til 100 km/h? c) Hvilken fart gir en bremselengde på $60\ \mathrm{m}$? Løs grafisk.
 
 ::: {.losning}
@@ -59,7 +59,7 @@ c) Grafen til $L$ krysser $y = 60$ ved $\underline{\underline{v \approx 73\ \mat
 :::
 :::
 
-::: {.oppgave tittel="Linja fra grafen"}
+::: {.oppgave tittel="Linja fra grafen" krever="funksjoner/rette-linjer"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-linje.svg){.tikz-fig style="width:300px"}
 

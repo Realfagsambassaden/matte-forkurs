@@ -1,5 +1,5 @@
 ---
-title: "Blandede oppgaver: skalarprodukt"
+title: "Sammensatte oppgaver: skalarprodukt"
 tema: vektorer
 undertema: oppgaver
 ---
@@ -9,7 +9,7 @@ Oppgavene blander skalarprodukt, vinkler og parameterframstillinger. Prøv selv 
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Vinkel i trekant"}
+::: {.oppgave tittel="Vinkel i trekant" krever="vektorer/skalarprodukt"}
 Finn vinkelen $A$ i trekanten med $A = (1, 1)$, $B = (5, 2)$ og $C = (2, 5)$.
 
 ::: {.losning}
@@ -17,7 +17,7 @@ $\overrightarrow{AB} = [4, 1]$, $\overrightarrow{AC} = [1, 4]$. $\cos A = \frac{
 :::
 :::
 
-::: {.oppgave tittel="Projeksjon" niva="Middels"}
+::: {.oppgave tittel="Projeksjon" niva="Middels" krever="vektorer/skalarprodukt"}
 Hvor lang er projeksjonen av $\vec u = [5, 2]$ ned på retningen til $\vec v = [3, 4]$?
 
 ::: {.losning}
@@ -25,7 +25,7 @@ $\frac{\vec u\cdot\vec v}{|\vec v|} = \frac{15 + 8}{5} = \underline{\underline{4
 :::
 :::
 
-::: {.oppgave tittel="Møtes de?" niva="Utfordrende"}
+::: {.oppgave tittel="Møtes de?" niva="Utfordrende" krever="vektorer/parameterframstilling"}
 To roboter starter samtidig: A i $(0, 0)$ med fart $[2, 1]$ m/s, B i $(10, -5)$ med fart $[-1, 2]$ m/s. Krysser banene hverandre? Kolliderer robotene?
 
 ::: {.losning}
@@ -33,7 +33,7 @@ Bruk ulike tider: A er i $(2t, t)$ og B i $(10 - s, -5 + 2s)$. Like koordinater:
 :::
 :::
 
-::: {.oppgave tittel="Står de vinkelrett?"}
+::: {.oppgave tittel="Står de vinkelrett?" krever="vektorer/skalarprodukt"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-skalar.svg){.tikz-fig style="width:200px"}
 

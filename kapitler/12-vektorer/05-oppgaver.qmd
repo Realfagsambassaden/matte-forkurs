@@ -1,5 +1,5 @@
 ---
-title: "Blandede oppgaver: vektorer"
+title: "Sammensatte oppgaver: vektorer"
 tema: vektorer
 undertema: oppgaver
 ---
@@ -9,7 +9,7 @@ Oppgavene blander koordinater, lengder, sum og dekomponering. Prøv selv før du
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Midtpunkt"}
+::: {.oppgave tittel="Midtpunkt" krever="vektorer/vektorer-i-planet"}
 Finn midtpunktet $M$ på linjestykket fra $A = (2, -1)$ til $B = (8, 5)$ ved hjelp av vektorer.
 
 ::: {.losning}
@@ -17,7 +17,7 @@ $\overrightarrow{AM} = \frac12\overrightarrow{AB} = \frac12[6, 6] = [3, 3]$, så
 :::
 :::
 
-::: {.oppgave tittel="Flyet og vinden" niva="Middels"}
+::: {.oppgave tittel="Flyet og vinden" niva="Middels" krever="vektorer/vektorer-i-planet, trigonometri/rettvinklet"}
 Et fly har farten $\vec v = [250, 0]$ km/h i forhold til lufta. Vinden blåser med $[0, -60]$ km/h. Finn farten i forhold til bakken og vinkelen flyet driver av kurs.
 
 ::: {.losning}
@@ -25,7 +25,7 @@ $[250, -60]$ km/h, størrelse $\sqrt{250^2 + 60^2} = \underline{\underline{257\ 
 :::
 :::
 
-::: {.oppgave tittel="Lampe i to snorer" niva="Utfordrende"}
+::: {.oppgave tittel="Lampe i to snorer" niva="Utfordrende" krever="vektorer/dekomponering"}
 En lampe med tyngde $G = 40\ \mathrm{N}$ henger i to snorer som begge danner $30^\circ$ med vannrett. Finn snorkraften $S$ i hver snor.
 
 ::: {.losning}
@@ -33,7 +33,7 @@ Symmetri: de vannrette komponentene opphever hverandre. De loddrette: $2S\sin 30
 :::
 :::
 
-::: {.oppgave tittel="Vektorer i rutenett"}
+::: {.oppgave tittel="Vektorer i rutenett" krever="vektorer/vektorer-i-planet"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-vektorer.svg){.tikz-fig style="width:240px"}
 

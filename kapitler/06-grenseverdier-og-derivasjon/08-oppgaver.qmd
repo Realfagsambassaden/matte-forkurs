@@ -1,6 +1,6 @@
 ---
-title: "Blandede oppgaver: grenseverdier og derivasjon"
-tema: derivasjon
+title: "Sammensatte oppgaver: grenseverdier og derivasjon"
+tema: anvendelser-derivasjon
 undertema: oppgaver
 ---
 
@@ -9,7 +9,7 @@ Oppgavene blander grenseverdier, asymptoter, derivasjon og bevegelse. Prøv selv
 
 :::: {.oppgaver}
 
-::: {.oppgave tittel="Grenseverdi"}
+::: {.oppgave tittel="Grenseverdi" krever="grenseverdier/grenseverdier"}
 Finn $\displaystyle\lim_{x\to 4}\frac{x^2 - 16}{x^2 - 4x}$.
 
 ::: {.losning}
@@ -17,7 +17,7 @@ $\frac{(x + 4)(x - 4)}{x(x - 4)} = \frac{x + 4}{x} \to \underline{\underline{2}}
 :::
 :::
 
-::: {.oppgave tittel="Asymptoter"}
+::: {.oppgave tittel="Asymptoter" krever="grenseverdier/asymptoter"}
 Finn asymptotene til $f(x) = \dfrac{6x}{2x - 4}$.
 
 ::: {.losning}
@@ -25,7 +25,7 @@ Vertikal $\underline{\underline{x = 2}}$, horisontal $\underline{\underline{y = 
 :::
 :::
 
-::: {.oppgave tittel="Deriver"}
+::: {.oppgave tittel="Deriver" krever="derivasjon/derivasjonsregler"}
 Deriver: a) $f(x) = 2x^4 - 3x + \dfrac{1}{x}$ b) $g(t) = 5t^2 - 4\sqrt t$
 
 ::: {.losning}
@@ -33,7 +33,7 @@ a) $\underline{\underline{8x^3 - 3 - \frac{1}{x^2}}}$ b) $\underline{\underline{
 :::
 :::
 
-::: {.oppgave tittel="Tangent og normal" niva="Middels"}
+::: {.oppgave tittel="Tangent og normal" niva="Middels" krever="derivasjon/tangenter"}
 Finn tangenten og normalen til $f(x) = \sqrt x$ i $x = 4$.
 
 ::: {.losning}
@@ -43,7 +43,7 @@ Tangent: $y - 2 = \frac14(x - 4)$, så $\underline{\underline{y = \frac14 x + 1}
 :::
 :::
 
-::: {.oppgave tittel="Heis" niva="Utfordrende"}
+::: {.oppgave tittel="Heis" niva="Utfordrende" krever="anvendelser-derivasjon/fart-og-akselerasjon"}
 En heis starter fra ro, og posisjonen de første $4.0\ \mathrm{s}$ er $s(t) = 0.75t^2 - 0.125t^3$ (meter, sekunder). a) Finn farten og akselerasjonen. b) Når er farten størst, og hvor stor er den? c) Når er akselerasjonen null?
 
 ::: {.losning}
@@ -55,7 +55,7 @@ c) $\underline{\underline{t = 2.0\ \mathrm{s}}}$ (samme tidspunkt). Etterpå er 
 :::
 :::
 
-::: {.oppgave tittel="Stigningstall fra tangenten"}
+::: {.oppgave tittel="Stigningstall fra tangenten" krever="derivasjon/tangenter"}
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-tangent.svg){.tikz-fig style="width:240px"}
 
