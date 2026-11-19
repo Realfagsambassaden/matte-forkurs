@@ -86,36 +86,32 @@ for h in [0.1, 0.01, 0.001, 1e-6]:
 ::: {.oppgave tittel="Sett inn"}
 Finn: a) $\displaystyle\lim_{x\to 3}(2x^2 - x)$ b) $\displaystyle\lim_{x\to 0}\frac{x + 4}{x - 2}$
 
-::: {.losning}
-a) $18 - 3 = \underline{\underline{15}}$ b) $\frac{4}{-2} = \underline{\underline{-2}}$
+::: {.fasit}
+$15$ · $-2$
 :::
 :::
 
 ::: {.oppgave tittel="0/0"}
 Finn: a) $\displaystyle\lim_{x\to 2}\frac{x^2 - 4}{x - 2}$ b) $\displaystyle\lim_{x\to -3}\frac{x^2 + x - 6}{x + 3}$
 
-::: {.losning}
-a) $\lim(x + 2) = \underline{\underline{4}}$ b) $\frac{(x + 3)(x - 2)}{x + 3} = x - 2 \to \underline{\underline{-5}}$
+::: {.fasit}
+$4$ · $-5$
 :::
 :::
 
 ::: {.oppgave tittel="Mot uendelig" niva="Middels"}
 Finn: a) $\displaystyle\lim_{x\to\infty}\frac{2x + 1}{5x - 3}$ b) $\displaystyle\lim_{x\to\infty}\frac{x}{x^2 + 1}$
 
-::: {.losning}
-a) Del på $x$: $\frac{2 + 1/x}{5 - 3/x} \to \underline{\underline{\frac25}}$
-
-b) Del på $x^2$: $\frac{1/x}{1 + 1/x^2} \to \underline{\underline{0}}$
+::: {.fasit}
+a) $\frac25$ · b) $0$
 :::
 :::
 
 ::: {.oppgave tittel="Med rot" niva="Utfordrende"}
 Finn $\displaystyle\lim_{x\to 0}\frac{\sqrt{x + 4} - 2}{x}$. (Hint: utvid med $\sqrt{x + 4} + 2$.)
 
-::: {.losning}
-$$
-\frac{(\sqrt{x + 4} - 2)(\sqrt{x + 4} + 2)}{x(\sqrt{x + 4} + 2)} = \frac{x + 4 - 4}{x(\sqrt{x + 4} + 2)} = \frac{1}{\sqrt{x + 4} + 2} \to \underline{\underline{\frac14}}
-$$
+::: {.fasit}
+$\frac14$
 :::
 :::
 

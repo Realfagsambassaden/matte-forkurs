@@ -77,30 +77,24 @@ plt.show()
 ::: {.oppgave tittel="Deriver"}
 a) $3\mathrm{e}^{2x}$ b) $\mathrm{e}^{x^2}$ c) $2^x$ d) $x^2\mathrm{e}^x$
 
-::: {.losning}
-a) $\underline{\underline{6\mathrm{e}^{2x}}}$ b) $\underline{\underline{2x\mathrm{e}^{x^2}}}$ c) $\underline{\underline{2^x\ln 2}}$ d) $2x\mathrm{e}^x + x^2\mathrm{e}^x = \underline{\underline{x(x + 2)\mathrm{e}^x}}$
+::: {.fasit}
+$6\mathrm{e}^{2x}$ · $2x\mathrm{e}^{x^2}$ · $2^x\ln 2$ · $x(x + 2)\mathrm{e}^x$
 :::
 :::
 
 ::: {.oppgave tittel="Vekstfart" niva="Middels"}
 En bakteriekultur har $N(t) = 500\mathrm{e}^{0.20t}$ bakterier etter $t$ timer. a) Hvor mange er det etter 10 timer? b) Hvor fort vokser kulturen da? c) Hvor lang er doblingstiden?
 
-::: {.losning}
-a) $N(10) = 500\mathrm{e}^{2} = \underline{\underline{3.7\cdot 10^3}}$
-
-b) $N'(t) = 0.20N(t)$, så $N'(10) = \underline{\underline{7.4\cdot 10^2 \text{ per time}}}$
-
-c) $\mathrm{e}^{0.20t} = 2$ gir $t = \frac{\ln 2}{0.20} = \underline{\underline{3.5 \text{ timer}}}$
+::: {.fasit}
+a) $3.7\cdot 10^3$ · b) $7.4\cdot 10^2 \text{ per time}$ · c) $3.5 \text{ timer}$
 :::
 :::
 
 ::: {.oppgave tittel="Drøfting" niva="Utfordrende"}
 Finn ekstremalpunktene til $f(x) = x^2\mathrm{e}^x$.
 
-::: {.losning}
-$f'(x) = x(x + 2)\mathrm{e}^x = 0$ gir $x = 0$ og $x = -2$. Fortegnet til $x(x + 2)$: pluss, minus, pluss.
-
-Toppunkt $\left(-2, 4\mathrm{e}^{-2}\right) \approx \underline{\underline{(-2,\ 0.54)}}$, bunnpunkt $\underline{\underline{(0, 0)}}$.
+::: {.fasit}
+$(-2,\ 0.54)$ · $(0, 0)$
 :::
 :::
 

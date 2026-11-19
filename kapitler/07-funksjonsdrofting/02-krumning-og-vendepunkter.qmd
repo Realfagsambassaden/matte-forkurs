@@ -58,25 +58,19 @@ $f''$ skifter fortegn i $x = -1$ og $x = 1$. Med $f(\pm1) = 1 - 6 = -5$ er vende
 ::: {.oppgave tittel="Krumning"}
 Hvor krummer $f(x) = x^4 - 6x^2$ oppover og nedover? Finn vendepunktene.
 
-::: {.losning}
-$f''(x) = 12x^2 - 12 = 12(x - 1)(x + 1)$. Oppover for $|x| > 1$, nedover for $|x| < 1$. Vendepunkter $\underline{\underline{(-1, -5) \text{ og } (1, -5)}}$.
+::: {.fasit}
+$(-1, -5) \text{ og } (1, -5)$
 :::
 :::
 
 ::: {.oppgave tittel="Andrederivert-testen" niva="Middels"}
 Bruk andrederivert-testen og avgjør om ekstremalpunktene til $g(x) = 2x^3 - 6x$ er topp- eller bunnpunkter.
 
-::: {.losning}
-$g'(x) = 6x^2 - 6 = 0$ gir $x = \pm 1$. $g''(x) = 12x$: $g''(-1) = -12 < 0$, toppunkt $(-1, 4)$. $g''(1) = 12 > 0$, bunnpunkt $(1, -4)$.
-:::
 :::
 
 ::: {.oppgave tittel="Når testen svikter" niva="Utfordrende"}
 Undersøk $f(x) = x^4$ i $x = 0$. Hva sier andrederivert-testen, og hva er riktig svar?
 
-::: {.losning}
-$f'(0) = 0$ og $f''(0) = 0$, så testen gir ikke svar. Men $f'(x) = 4x^3$ er negativ for $x < 0$ og positiv for $x > 0$, så $(0, 0)$ er et **bunnpunkt**. Det er heller ikke et vendepunkt, fordi $f''(x) = 12x^2$ ikke skifter fortegn.
-:::
 :::
 
 ::::

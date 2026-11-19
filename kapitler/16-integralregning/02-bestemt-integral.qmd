@@ -75,24 +75,24 @@ print("Eksakt:", 32/3)
 ::: {.oppgave tittel="Regn ut"}
 a) $\int_0^2 3x^2\,\mathrm{d}x$ b) $\int_1^{\mathrm{e}} \frac1x\,\mathrm{d}x$ c) $\int_0^{\pi}\sin x\,\mathrm{d}x$
 
-::: {.losning}
-a) $\Big[x^3\Big]_0^2 = \underline{\underline{8}}$ b) $\ln\mathrm{e} - \ln 1 = \underline{\underline{1}}$ c) $-\cos\pi + \cos 0 = \underline{\underline{2}}$
+::: {.fasit}
+$8$ · $1$ · $2$
 :::
 :::
 
 ::: {.oppgave tittel="Arbeid i en fjær" niva="Middels"}
 En fjær med fjærstivhet $k = 200\ \mathrm{N/m}$ strekkes $0.15\ \mathrm{m}$. Kraften er $F = kx$. Finn arbeidet $W = \int_0^{0.15} kx\,\mathrm{d}x$.
 
-::: {.losning}
-$W = \frac12k\cdot 0.15^2 = \underline{\underline{2.3\ \mathrm{J}}}$
+::: {.fasit}
+$2.3\ \mathrm{J}$
 :::
 :::
 
 ::: {.oppgave tittel="Negativt integral" niva="Middels"}
 Regn ut $\int_0^2 (x - 2)\,\mathrm{d}x$. Hvorfor blir svaret negativt?
 
-::: {.losning}
-$\left[\frac{x^2}{2} - 2x\right]_0^2 = 2 - 4 = \underline{\underline{-2}}$. Grafen ligger under $x$-aksen, og integralet teller areal under aksen som negativt.
+::: {.fasit}
+$-2$
 :::
 :::
 

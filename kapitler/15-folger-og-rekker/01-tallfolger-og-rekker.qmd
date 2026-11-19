@@ -68,24 +68,24 @@ print(sum(2*i + 1 for i in range(1, 5)))   # 24
 ::: {.oppgave tittel="Finn mønsteret"}
 Finn en eksplisitt formel: a) $3, 6, 9, 12, \dots$ b) $1, \frac12, \frac13, \frac14, \dots$ c) $2, 4, 8, 16, \dots$
 
-::: {.losning}
-a) $\underline{\underline{a_n = 3n}}$ b) $\underline{\underline{a_n = \frac1n}}$ c) $\underline{\underline{a_n = 2^n}}$
+::: {.fasit}
+$a_n = 3n$ · $a_n = \frac1n$ · $a_n = 2^n$
 :::
 :::
 
 ::: {.oppgave tittel="Summetegn"}
 Regn ut $\displaystyle\sum_{k = 1}^{5} k^2$.
 
-::: {.losning}
-$1 + 4 + 9 + 16 + 25 = \underline{\underline{55}}$
+::: {.fasit}
+$55$
 :::
 :::
 
 ::: {.oppgave tittel="Skriv med summetegn" niva="Middels"}
 Skriv $2 + 4 + 6 + \dots + 100$ med summetegn.
 
-::: {.losning}
-$\underline{\underline{\displaystyle\sum_{i = 1}^{50} 2i}}$
+::: {.fasit}
+$\displaystyle\sum_{i = 1}^{50} 2i$
 :::
 :::
 

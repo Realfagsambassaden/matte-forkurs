@@ -68,27 +68,22 @@ Toppunkt $\left(\frac{\pi}{6}, \frac{\pi}{6} + \sqrt3\right) \approx \underline{
 ::: {.oppgave tittel="Deriver"}
 a) $5\cos(3x)$ b) $\sin x\cos x$ c) $\tan(2x)$ d) $\mathrm{e}^x\sin x$
 
-::: {.losning}
-a) $\underline{\underline{-15\sin(3x)}}$ b) $\cos^2 x - \sin^2 x = \underline{\underline{\cos 2x}}$ c) $\underline{\underline{\frac{2}{\cos^2(2x)}}}$ d) $\underline{\underline{\mathrm{e}^x(\sin x + \cos x)}}$
+::: {.fasit}
+$-15\sin(3x)$ · $\cos 2x$ · $\frac{2}{\cos^2(2x)}$ · $\mathrm{e}^x(\sin x + \cos x)$
 :::
 :::
 
 ::: {.oppgave tittel="Største fart" niva="Middels"}
 Et lodd har posisjonen $x(t) = 0.050\cos(8.0t)$ (meter, sekunder). Finn den største farten og den største akselerasjonen.
 
-::: {.losning}
-$v_{\max} = A\omega = 0.050\cdot 8.0 = \underline{\underline{0.40\ \mathrm{m/s}}}$, $a_{\max} = A\omega^2 = \underline{\underline{3.2\ \mathrm{m/s^2}}}$.
+::: {.fasit}
+$0.40\ \mathrm{m/s}$ · $3.2\ \mathrm{m/s^2}$
 :::
 :::
 
 ::: {.oppgave tittel="Drøfting" niva="Utfordrende"}
 Finn topp- og bunnpunktene til $f(x) = \sin x + \cos x$ for $x \in [0, 2\pi]$.
 
-::: {.losning}
-$f'(x) = \cos x - \sin x = 0$ gir $\tan x = 1$: $x = \frac{\pi}{4}$ og $\frac{5\pi}{4}$.
-
-Toppunkt $\left(\frac{\pi}{4}, \sqrt2\right)$, bunnpunkt $\left(\frac{5\pi}{4}, -\sqrt2\right)$. (Faktisk er $\sin x + \cos x = \sqrt2\sin\left(x + \frac{\pi}{4}\right)$.)
-:::
 :::
 
 ::::

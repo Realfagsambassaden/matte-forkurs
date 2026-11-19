@@ -61,16 +61,16 @@ print(np.degrees(np.arctan2(a[1], a[0])))   # 150 igjen
 ::: {.oppgave tittel="Tre krefter"}
 Bruk Python og finn summen og størrelsen av $[12, 5]$, $[-4, 8]$ og $[3, -15]$ (newton).
 
-::: {.losning}
-Summen er $\underline{\underline{[11, -2]\ \mathrm{N}}}$, størrelsen $\sqrt{125} = \underline{\underline{11.2\ \mathrm{N}}}$.
+::: {.fasit}
+$[11, -2]\ \mathrm{N}$ · $11.2\ \mathrm{N}$
 :::
 :::
 
 ::: {.oppgave tittel="Polarform" niva="Middels"}
 En kraft på $50\ \mathrm{N}$ virker i retningen $210^\circ$ fra $x$-aksen. Finn koordinatene med Python, og sjekk at lengden blir 50.
 
-::: {.losning}
-$[50\cos 210^\circ, 50\sin 210^\circ] = \underline{\underline{[-43.3, -25.0]\ \mathrm{N}}}$, og `np.linalg.norm` gir 50.
+::: {.fasit}
+$[-43.3, -25.0]\ \mathrm{N}$
 :::
 :::
 

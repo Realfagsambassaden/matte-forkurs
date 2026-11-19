@@ -68,24 +68,21 @@ Se [krefter i planet og dekomponering på fysikkhjelp.no](https://fysikkhjelp.no
 ::: {.oppgave tittel="Parallelle?"}
 Er vektorene parallelle? a) $[4, -6]$ og $[-2, 3]$ b) $[1, 5]$ og $[2, 9]$
 
-::: {.losning}
-a) $[4, -6] = -2[-2, 3]$: **ja**. b) $\frac21 \ne \frac95$: **nei**.
-:::
 :::
 
 ::: {.oppgave tittel="Dekomponer"}
 En fart på $25\ \mathrm{m/s}$ har retning $40^\circ$ over vannrett. Finn komponentene.
 
-::: {.losning}
-$v_x = 25\cos 40^\circ = \underline{\underline{19.2\ \mathrm{m/s}}}$, $v_y = 25\sin 40^\circ = \underline{\underline{16.1\ \mathrm{m/s}}}$.
+::: {.fasit}
+$19.2\ \mathrm{m/s}$ · $16.1\ \mathrm{m/s}$
 :::
 :::
 
 ::: {.oppgave tittel="Akebrett" niva="Middels"}
 Et akebrett med tyngde $150\ \mathrm{N}$ trekkes opp en bakke med helning $15^\circ$. Snora er parallell med bakken. Uten friksjon: Hvor stor må snorkraften være for at akebrettet skal gå med konstant fart?
 
-::: {.losning}
-Snorkraften må balansere komponenten av tyngden langs bakken: $150\sin 15^\circ = \underline{\underline{38.8\ \mathrm{N}}}$.
+::: {.fasit}
+$38.8\ \mathrm{N}$
 :::
 :::
 

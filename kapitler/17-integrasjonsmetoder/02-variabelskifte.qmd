@@ -61,24 +61,24 @@ $$
 ::: {.oppgave tittel="Integrer"}
 a) $\int 3(3x + 2)^5\,\mathrm{d}x$ b) $\int \frac{2x}{x^2 + 4}\,\mathrm{d}x$
 
-::: {.losning}
-a) $u = 3x + 2$: $\underline{\underline{\frac{(3x + 2)^6}{6} + C}}$ b) $u = x^2 + 4$: $\underline{\underline{\ln(x^2 + 4) + C}}$
+::: {.fasit}
+$\frac{(3x + 2)^6}{6} + C$ · $\ln(x^2 + 4) + C$
 :::
 :::
 
 ::: {.oppgave tittel="Logaritme" niva="Middels"}
 Finn $\int \frac{\ln x}{x}\,\mathrm{d}x$.
 
-::: {.losning}
-$u = \ln x$, $\mathrm{d}u = \frac1x\mathrm{d}x$: $\int u\,\mathrm{d}u = \underline{\underline{\frac12(\ln x)^2 + C}}$
+::: {.fasit}
+$\frac12(\ln x)^2 + C$
 :::
 :::
 
 ::: {.oppgave tittel="Bestemt" niva="Utfordrende"}
 Regn ut $\int_0^2 \frac{x}{(x^2 + 1)^2}\,\mathrm{d}x$.
 
-::: {.losning}
-$u = x^2 + 1$, grenser 1 og 5: $\frac12\int_1^5 u^{-2}\,\mathrm{d}u = \frac12\left[-\frac1u\right]_1^5 = \frac12\left(1 - \frac15\right) = \underline{\underline{\frac25}}$
+::: {.fasit}
+$\frac25$
 :::
 :::
 

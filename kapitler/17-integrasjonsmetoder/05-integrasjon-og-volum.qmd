@@ -48,26 +48,21 @@ $$
 ::: {.oppgave tittel="Rotasjon"}
 Grafen til $f(x) = x^2$ for $0 \le x \le 1$ roteres om $x$-aksen. Finn volumet.
 
-::: {.losning}
-$\pi\int_0^1 x^4\,\mathrm{d}x = \underline{\underline{\frac{\pi}{5}}}$
+::: {.fasit}
+$\frac{\pi}{5}$
 :::
 :::
 
 ::: {.oppgave tittel="Kulevolum" niva="Middels"}
 Halvsirkelen $f(x) = \sqrt{R^2 - x^2}$, $-R \le x \le R$, roteres om $x$-aksen. Vis at volumet av kula er $\frac43\pi R^3$.
 
-::: {.losning}
-$\pi\int_{-R}^{R}(R^2 - x^2)\,\mathrm{d}x = \pi\left[R^2x - \frac{x^3}{3}\right]_{-R}^{R} = \pi\left(2R^3 - \frac23R^3\right) = \frac43\pi R^3$
-:::
 :::
 
 ::: {.oppgave tittel="Vase" niva="Utfordrende"}
 Profilen til en vase er $f(x) = 2 + \sin x$ (dm) for $0 \le x \le \pi$. Hvor mange liter rommer vasen? Bruk $\sin^2 x = \frac{1 - \cos 2x}{2}$.
 
-::: {.losning}
-$f^2 = 4 + 4\sin x + \sin^2 x$. $\int_0^{\pi}f^2\,\mathrm{d}x = 4\pi + 8 + \frac{\pi}{2}$.
-
-$V = \pi\left(\frac{9\pi}{2} + 8\right) = \underline{\underline{69.5\ \mathrm{L}}}$ (1 dm³ = 1 L)
+::: {.fasit}
+$69.5\ \mathrm{L}$
 :::
 :::
 

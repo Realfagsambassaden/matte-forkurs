@@ -82,32 +82,32 @@ print(np.degrees(np.arctan(12/150)))  # stigningsvinkel
 ::: {.oppgave tittel="Finn sidene"}
 I en rettvinklet trekant er hypotenusen $10\ \mathrm{cm}$ og en vinkel $40^\circ$. Finn katetene.
 
-::: {.losning}
-Motstående: $10\sin 40^\circ = \underline{\underline{6.4\ \mathrm{cm}}}$. Hosliggende: $10\cos 40^\circ = \underline{\underline{7.7\ \mathrm{cm}}}$.
+::: {.fasit}
+$6.4\ \mathrm{cm}$ · $7.7\ \mathrm{cm}$
 :::
 :::
 
 ::: {.oppgave tittel="Finn vinkelen"}
 Katetene i en rettvinklet trekant er $5.0$ og $12$. Finn de spisse vinklene.
 
-::: {.losning}
-$\tan v = \frac{5.0}{12}$ gir $\underline{\underline{v = 22.6^\circ}}$, og den andre er $\underline{\underline{67.4^\circ}}$.
+::: {.fasit}
+$v = 22.6^\circ$ · $67.4^\circ$
 :::
 :::
 
 ::: {.oppgave tittel="Skråplan" niva="Middels"}
 En kasse med tyngde $G = 400\ \mathrm{N}$ står på et skråplan med helningsvinkel $25^\circ$. Finn komponentene av tyngden langs og vinkelrett på planet.
 
-::: {.losning}
-Langs planet: $G\sin 25^\circ = \underline{\underline{169\ \mathrm{N}}}$. Vinkelrett: $G\cos 25^\circ = \underline{\underline{363\ \mathrm{N}}}$.
+::: {.fasit}
+$169\ \mathrm{N}$ · $363\ \mathrm{N}$
 :::
 :::
 
 ::: {.oppgave tittel="Høyden av et tre" niva="Utfordrende"}
 Du står $20\ \mathrm{m}$ fra et tre og ser toppen i en vinkel $35^\circ$ over vannrett. Øynene er $1.6\ \mathrm{m}$ over bakken. Hvor høyt er treet?
 
-::: {.losning}
-$h = 1.6 + 20\tan 35^\circ = 1.6 + 14.0 = \underline{\underline{15.6\ \mathrm{m}}}$
+::: {.fasit}
+$15.6\ \mathrm{m}$
 :::
 :::
 

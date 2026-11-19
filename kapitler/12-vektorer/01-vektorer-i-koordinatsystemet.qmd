@@ -72,24 +72,24 @@ $$
 ::: {.oppgave tittel="Koordinater og lengde"}
 Finn $\overrightarrow{AB}$ og lengden når a) $A = (0, 0)$, $B = (-3, 4)$ b) $A = (2, 5)$, $B = (-1, 1)$
 
-::: {.losning}
-a) $[-3, 4]$, lengde $\underline{\underline{5}}$ b) $[-3, -4]$, lengde $\underline{\underline{5}}$
+::: {.fasit}
+$5$
 :::
 :::
 
 ::: {.oppgave tittel="Finn endepunktet"}
 $\overrightarrow{AB} = [4, -1]$ og $A = (3, 2)$. Finn $B$.
 
-::: {.losning}
-$B = (3 + 4, 2 - 1) = \underline{\underline{(7, 1)}}$
+::: {.fasit}
+$(7, 1)$
 :::
 :::
 
 ::: {.oppgave tittel="Fart" niva="Middels"}
 En båt har farten $\vec v = [3.0, 4.0]$ m/s (øst og nord). Hvor stor er farten, og i hvilken retning går båten (vinkel fra øst)?
 
-::: {.losning}
-$|\vec v| = \underline{\underline{5.0\ \mathrm{m/s}}}$, retning $\tan^{-1}\frac{4.0}{3.0} = \underline{\underline{53^\circ}}$ nord for øst.
+::: {.fasit}
+$5.0\ \mathrm{m/s}$ · $53^\circ$
 :::
 :::
 

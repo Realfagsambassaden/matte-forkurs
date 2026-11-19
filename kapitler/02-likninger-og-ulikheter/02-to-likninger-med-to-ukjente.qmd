@@ -94,48 +94,37 @@ plt.legend(); plt.grid(True); plt.show()
 ::: {.oppgave tittel="Innsetting"}
 Løs likningssettet: $y = 2x - 1$ og $3x + y = 14$.
 
-::: {.losning}
-Sett inn: $3x + 2x - 1 = 14$, så $5x = 15$ og $x = 3$. Da er $y = 5$. Løsningen er $\underline{\underline{x = 3,\ y = 5}}$.
+::: {.fasit}
+$x = 3,\ y = 5$
 :::
 :::
 
 ::: {.oppgave tittel="Addisjon"}
 Løs likningssettet: $2x + 3y = 12$ og $2x - y = 4$.
 
-::: {.losning}
-Trekk den andre fra den første: $4y = 8$, så $y = 2$. Da er $2x - 2 = 4$, så $x = 3$. Løsningen er $\underline{\underline{x = 3,\ y = 2}}$.
+::: {.fasit}
+$x = 3,\ y = 2$
 :::
 :::
 
 ::: {.oppgave tittel="Hvor mange løsninger?"}
 Hvor mange løsninger har likningssettene? a) $x + 2y = 4$ og $2x + 4y = 8$ b) $x + 2y = 4$ og $2x + 4y = 5$
 
-::: {.losning}
-a) Den andre likningen er den første ganget med 2. Linjene ligger oppå hverandre: **uendelig mange løsninger**.
-
-b) Ganger vi den første med 2, får vi $2x + 4y = 8$, men den andre sier $2x + 4y = 5$. Det kan ikke begge være sant: linjene er parallelle, og det er **ingen løsning**.
-:::
 :::
 
 ::: {.oppgave tittel="Billetter" niva="Middels"}
 En klasse kjøper 30 billetter til en konsert, noen til voksenpris $250$ kr og resten til studentpris $150$ kr. Til sammen betaler de $5100$ kr. Hvor mange billetter av hver sort kjøpte de?
 
-::: {.losning}
-La $v$ være voksenbilletter og $s$ studentbilletter: $v + s = 30$ og $250v + 150s = 5100$. Sett $s = 30 - v$ inn i den andre:
-$$
-250v + 4500 - 150v = 5100 \quad\Longrightarrow\quad 100v = 600 \quad\Longrightarrow\quad v = 6
-$$
-De kjøpte $\underline{\underline{6 \text{ voksenbilletter og } 24 \text{ studentbilletter}}}$.
+::: {.fasit}
+$6 \text{ voksenbilletter og } 24 \text{ studentbilletter}$
 :::
 :::
 
 ::: {.oppgave tittel="Møtes de?" niva="Utfordrende"}
 En syklist starter i punkt A med farten $5.0\ \mathrm{m/s}$. Samtidig starter en løper 600 m lenger fram, i samme retning, med farten $3.0\ \mathrm{m/s}$. Posisjonene målt fra A er $x = 5.0t$ og $x = 600 + 3.0t$ (meter, sekunder). Når og hvor tar syklisten igjen løperen?
 
-::: {.losning}
-Like posisjoner: $5.0t = 600 + 3.0t$, så $2.0t = 600$ og $t = 300\ \mathrm{s}$. Posisjonen er $x = 5.0\cdot 300 = 1500\ \mathrm{m}$.
-
-Syklisten tar igjen løperen etter $\underline{\underline{300\ \mathrm{s} = 5.0\ \mathrm{min}}}$, $\underline{\underline{1.5\ \mathrm{km}}}$ fra A. Grafisk er dette skjæringspunktet mellom to rette linjer i et posisjon–tid-diagram.
+::: {.fasit}
+$300\ \mathrm{s} = 5.0\ \mathrm{min}$ · $1.5\ \mathrm{km}$
 :::
 :::
 

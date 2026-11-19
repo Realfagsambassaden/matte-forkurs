@@ -92,50 +92,37 @@ print(solve(Eq(x/3 - (x - 1)/4, Rational(5, 6)), x))              # [7]
 ::: {.oppgave tittel="Enkle likninger"}
 Løs likningene: a) $5x - 7 = 18$ b) $4 - 3x = x + 16$ c) $2(x + 5) = 3x - 1$
 
-::: {.losning}
-a) $5x = 25$, så $\underline{\underline{x = 5}}$.
-
-b) $-4x = 12$, så $\underline{\underline{x = -3}}$.
-
-c) $2x + 10 = 3x - 1$ gir $-x = -11$, så $\underline{\underline{x = 11}}$.
+::: {.fasit}
+a) $x = 5$ · b) $x = -3$ · c) $x = 11$
 :::
 :::
 
 ::: {.oppgave tittel="Brøker"}
 Løs likningene: a) $\dfrac{x}{2} + \dfrac{x}{3} = 10$ b) $\dfrac{2x - 1}{5} = \dfrac{x + 1}{3}$
 
-::: {.losning}
-a) Gang med 6: $3x + 2x = 60$, så $5x = 60$ og $\underline{\underline{x = 12}}$.
-
-b) Gang med 15: $3(2x - 1) = 5(x + 1)$, så $6x - 3 = 5x + 5$ og $\underline{\underline{x = 8}}$.
+::: {.fasit}
+a) $x = 12$ · b) $x = 8$
 :::
 :::
 
 ::: {.oppgave tittel="Ingen eller alle?"}
 Hvor mange løsninger har likningene? a) $2(x + 3) = 2x + 6$ b) $3x - 1 = 3(x + 1)$
 
-::: {.losning}
-a) $2x + 6 = 2x + 6$ gir $6 = 6$, som alltid er sant. **Alle tall** er løsninger.
-
-b) $3x - 1 = 3x + 3$ gir $-1 = 3$, som aldri er sant. **Ingen løsning.**
-:::
 :::
 
 ::: {.oppgave tittel="Taxituren" niva="Middels"}
 En taxitur koster en startpris på $65$ kr pluss $18$ kr per kilometer. Turen kostet $389$ kr. Sett opp en likning og finn hvor lang turen var.
 
-::: {.losning}
-La $x$ være antall kilometer: $65 + 18x = 389$. Da er $18x = 324$, og $\underline{\underline{x = 18}}$. Turen var 18 km.
+::: {.fasit}
+$x = 18$
 :::
 :::
 
 ::: {.oppgave tittel="Alder" niva="Utfordrende"}
 En mor er tre ganger så gammel som datteren. Om 12 år er hun dobbelt så gammel som datteren. Hvor gamle er de nå?
 
-::: {.losning}
-La datteren være $x$ år. Moren er $3x$ år. Om 12 år: $3x + 12 = 2(x + 12)$, så $3x + 12 = 2x + 24$ og $x = 12$.
-
-Datteren er $\underline{\underline{12 \text{ år}}}$ og moren $\underline{\underline{36 \text{ år}}}$. Kontroll: om 12 år er de 24 og 48, og 48 er det dobbelte av 24.
+::: {.fasit}
+$12 \text{ år}$ · $36 \text{ år}$
 :::
 :::
 

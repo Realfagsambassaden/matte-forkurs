@@ -58,36 +58,32 @@ Den beste boksen er like høy som den er bred. $O''(r) = 4\pi + \frac{4000}{r^3}
 ::: {.oppgave tittel="Største produkt"}
 To positive tall har summen 20. Hvilke tall gir størst produkt?
 
-::: {.losning}
-$P(x) = x(20 - x)$, $P'(x) = 20 - 2x = 0$ gir $x = 10$. Tallene er $\underline{\underline{10 \text{ og } 10}}$, med produkt 100.
+::: {.fasit}
+$10 \text{ og } 10$
 :::
 :::
 
 ::: {.oppgave tittel="Innhegning mot en vegg" niva="Middels"}
 Du har $60\ \mathrm{m}$ gjerde og skal lage en rektangulær innhegning mot en lang vegg (ingen gjerde langs veggen). Hvilke mål gir størst areal?
 
-::: {.losning}
-La sidene vinkelrett på veggen være $x$. Siden langs veggen er $60 - 2x$. $A(x) = x(60 - 2x)$, $A'(x) = 60 - 4x = 0$ gir $x = 15$.
-
-Målene er $\underline{\underline{15\ \mathrm{m}\times 30\ \mathrm{m}}}$, med areal $450\ \mathrm{m^2}$.
+::: {.fasit}
+$15\ \mathrm{m}\times 30\ \mathrm{m}$
 :::
 :::
 
 ::: {.oppgave tittel="Inntekt" niva="Middels"}
 En konsertarrangør selger $2000 - 10p$ billetter når prisen er $p$ kroner. Hvilken pris gir størst inntekt?
 
-::: {.losning}
-$I(p) = p(2000 - 10p)$, $I'(p) = 2000 - 20p = 0$ gir $\underline{\underline{p = 100 \text{ kr}}}$. Da selges 1000 billetter, og inntekten er $100000$ kr.
+::: {.fasit}
+$p = 100 \text{ kr}$
 :::
 :::
 
 ::: {.oppgave tittel="Nærmeste punkt" niva="Utfordrende"}
 Hvilket punkt på parabelen $y = x^2$ ligger nærmest punktet $(0, 2)$? (Hint: minimer kvadratet av avstanden.)
 
-::: {.losning}
-$d^2 = x^2 + (x^2 - 2)^2 = x^4 - 3x^2 + 4$. Derivert: $4x^3 - 6x = 2x(2x^2 - 3) = 0$ gir $x = 0$ eller $x = \pm\sqrt{1.5}$.
-
-$d^2(0) = 4$ og $d^2(\pm\sqrt{1.5}) = 2.25 - 4.5 + 4 = 1.75$. Nærmest er $\underline{\underline{\left(\pm\sqrt{1.5},\ 1.5\right) \approx (\pm 1.22,\ 1.5)}}$, med avstand $\sqrt{1.75} \approx 1.32$.
+::: {.fasit}
+$\left(\pm\sqrt{1.5},\ 1.5\right) \approx (\pm 1.22,\ 1.5)$
 :::
 :::
 

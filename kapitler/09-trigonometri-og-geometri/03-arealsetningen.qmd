@@ -55,25 +55,22 @@ Det gir **to** muligheter: $\underline{\underline{C = 30^\circ}}$ eller $\underl
 ::: {.oppgave tittel="Areal"}
 Finn arealet av en trekant med $a = 8.0$, $b = 6.0$ og $C = 45^\circ$.
 
-::: {.losning}
-$\frac12\cdot 8.0\cdot 6.0\cdot\sin 45^\circ = \underline{\underline{17}}$
+::: {.fasit}
+$17$
 :::
 :::
 
 ::: {.oppgave tittel="Finn vinkelen" niva="Middels"}
 En trekant har areal $20\ \mathrm{cm^2}$ og to sider på $8.0\ \mathrm{cm}$ og $10\ \mathrm{cm}$. Hvor stor kan vinkelen mellom dem være?
 
-::: {.losning}
-$\sin v = \frac{2\cdot 20}{8.0\cdot 10} = 0.50$. Det gir $\underline{\underline{v = 30^\circ}}$ eller $\underline{\underline{v = 150^\circ}}$. Begge trekantene finnes.
+::: {.fasit}
+$v = 30^\circ$ · $v = 150^\circ$
 :::
 :::
 
 ::: {.oppgave tittel="Sekskant" niva="Utfordrende"}
 En regulær sekskant har side $s$. Del den i seks likesidede trekanter, og vis at arealet er $\frac{3\sqrt3}{2}s^2$.
 
-::: {.losning}
-Hver trekant har to sider $s$ med $60^\circ$ mellom: $\frac12 s^2\sin 60^\circ = \frac{\sqrt3}{4}s^2$. Seks av dem: $\frac{6\sqrt3}{4}s^2 = \frac{3\sqrt3}{2}s^2$.
-:::
 :::
 
 ::::

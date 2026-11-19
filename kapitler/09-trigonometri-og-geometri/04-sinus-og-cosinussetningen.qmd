@@ -80,36 +80,32 @@ Summen av to krefter som ikke står vinkelrett på hverandre, finner vi med cosi
 ::: {.oppgave tittel="Cosinussetningen"}
 Finn $c$ når $a = 5.0$, $b = 7.0$ og $C = 60^\circ$.
 
-::: {.losning}
-$c^2 = 25 + 49 - 70\cdot 0.5 = 39$, så $\underline{\underline{c = 6.2}}$.
+::: {.fasit}
+$c = 6.2$
 :::
 :::
 
 ::: {.oppgave tittel="Vinkel fra tre sider" niva="Middels"}
 En trekant har sidene $4$, $5$ og $7$. Finn den største vinkelen.
 
-::: {.losning}
-Den største vinkelen ligger overfor den lengste siden: $\cos C = \frac{16 + 25 - 49}{2\cdot 4\cdot 5} = -0.2$, så $\underline{\underline{C = 101.5^\circ}}$.
+::: {.fasit}
+$C = 101.5^\circ$
 :::
 :::
 
 ::: {.oppgave tittel="To løsninger" niva="Utfordrende"}
 I trekant $ABC$ er $a = 6.0$, $b = 8.0$ og $A = 35^\circ$. Finn de mulige verdiene for $B$.
 
-::: {.losning}
-$\sin B = \frac{8.0\sin 35^\circ}{6.0} = 0.765$. $B = 49.9^\circ$ eller $B = 130.1^\circ$. Begge gir vinkelsum under $180^\circ$ ($35 + 130.1 = 165.1$), så $\underline{\underline{B = 49.9^\circ \text{ eller } 130.1^\circ}}$.
+::: {.fasit}
+$B = 49.9^\circ \text{ eller } 130.1^\circ$
 :::
 :::
 
 ::: {.oppgave tittel="Krefter" niva="Utfordrende"}
 To krefter på $30\ \mathrm{N}$ og $40\ \mathrm{N}$ virker på samme punkt, med $60^\circ$ mellom retningene. Hvor stor er summen?
 
-::: {.losning}
-Kreftene legges etter hverandre, og vinkelen i trekanten blir $180^\circ - 60^\circ = 120^\circ$:
-$$
-F^2 = 30^2 + 40^2 - 2\cdot 30\cdot 40\cos 120^\circ = 900 + 1600 + 1200 = 3700
-$$
-$F = \underline{\underline{61\ \mathrm{N}}}$
+::: {.fasit}
+$61\ \mathrm{N}$
 :::
 :::
 

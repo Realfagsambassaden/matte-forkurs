@@ -76,24 +76,24 @@ Se [bevegelse i to dimensjoner på fysikkhjelp.no](https://fysikkhjelp.no/fysikk
 ::: {.oppgave tittel="Lag parameterframstilling"}
 Finn en parameterframstilling for linja gjennom $(-1, 3)$ med retningsvektor $[2, 5]$, og finn punktet der $t = 2$.
 
-::: {.losning}
-$x = -1 + 2t$, $y = 3 + 5t$. $t = 2$ gir $\underline{\underline{(3, 13)}}$.
+::: {.fasit}
+$(3, 13)$
 :::
 :::
 
 ::: {.oppgave tittel="Fra parameter til likning" niva="Middels"}
 Skriv linja $x = 2 + t$, $y = 1 + 3t$ på formen $y = ax + b$.
 
-::: {.losning}
-$t = x - 2$, så $y = 1 + 3(x - 2) = \underline{\underline{3x - 5}}$.
+::: {.fasit}
+$3x - 5$
 :::
 :::
 
 ::: {.oppgave tittel="Skjæring med aksen" niva="Middels"}
 Hvor skjærer linja $x = 4 - 2t$, $y = -1 + t$ $x$-aksen?
 
-::: {.losning}
-$y = 0$ gir $t = 1$, og da er $x = 2$: $\underline{\underline{(2, 0)}}$.
+::: {.fasit}
+$(2, 0)$
 :::
 :::
 

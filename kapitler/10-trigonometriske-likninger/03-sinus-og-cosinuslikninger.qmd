@@ -76,32 +76,32 @@ print([round(x, 3) for x in losn if 0 <= x < 2*np.pi])
 ::: {.oppgave tittel="Grunnlikninger"}
 Løs for $x \in [0, 2\pi\rangle$: a) $\sin x = \frac12$ b) $\cos x = -\frac{\sqrt2}{2}$ c) $\sin x = -1$
 
-::: {.losning}
-a) $\underline{\underline{\frac{\pi}{6}, \frac{5\pi}{6}}}$ b) $\underline{\underline{\frac{3\pi}{4}, \frac{5\pi}{4}}}$ c) $\underline{\underline{\frac{3\pi}{2}}}$
+::: {.fasit}
+$\frac{\pi}{6}, \frac{5\pi}{6}$ · $\frac{3\pi}{4}, \frac{5\pi}{4}$ · $\frac{3\pi}{2}$
 :::
 :::
 
 ::: {.oppgave tittel="Med kalkulator"}
 Løs $3\cos x - 1 = 0$ for $x \in [0, 2\pi\rangle$.
 
-::: {.losning}
-$\cos x = \frac13$, $\cos^{-1}\frac13 = 1.231$. Løsningene: $\underline{\underline{x = 1.231 \text{ og } x = 2\pi - 1.231 = 5.052}}$.
+::: {.fasit}
+$x = 1.231 \text{ og } x = 2\pi - 1.231 = 5.052$
 :::
 :::
 
 ::: {.oppgave tittel="Svingning" niva="Middels"}
 Et lodd svinger med posisjonen $y(t) = 5.0\sin(2.0t)$ cm. Når er $y = 2.5\ \mathrm{cm}$ de første to gangene?
 
-::: {.losning}
-$\sin(2.0t) = 0.5$ gir $2.0t = \frac{\pi}{6}$ eller $\frac{5\pi}{6}$. Altså $t = \underline{\underline{0.26\ \mathrm{s} \text{ og } 1.31\ \mathrm{s}}}$.
+::: {.fasit}
+$0.26\ \mathrm{s} \text{ og } 1.31\ \mathrm{s}$
 :::
 :::
 
 ::: {.oppgave tittel="Alle løsninger" niva="Utfordrende"}
 Skriv opp alle løsningene av $\sin\left(x - \frac{\pi}{4}\right) = 0$.
 
-::: {.losning}
-$\sin u = 0$ gir $u = k\pi$. Så $x - \frac{\pi}{4} = k\pi$, altså $\underline{\underline{x = \frac{\pi}{4} + k\pi}}$, $k$ helt tall.
+::: {.fasit}
+$x = \frac{\pi}{4} + k\pi$
 :::
 :::
 

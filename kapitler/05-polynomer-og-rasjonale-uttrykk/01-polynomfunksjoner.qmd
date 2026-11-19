@@ -75,38 +75,29 @@ plt.axhline(0, color="gray"); plt.grid(True); plt.show()
 ::: {.oppgave tittel="Grad"}
 Hva er graden, og hvor skjærer grafen $y$-aksen? a) $P(x) = 3x^4 - x + 2$ b) $Q(x) = (x - 1)(x + 2)(x - 3)$ c) $R(x) = 7$
 
-::: {.losning}
-a) Grad 4, skjærer i $(0, 2)$. b) Grad 3, $Q(0) = (-1)(2)(-3) = 6$, skjærer i $(0, 6)$. c) Grad 0, skjærer i $(0, 7)$.
-:::
 :::
 
 ::: {.oppgave tittel="Nullpunkter"}
 Finn nullpunktene: a) $x^3 - 9x$ b) $x^4 - 5x^2 + 4$ (hint: sett $u = x^2$)
 
-::: {.losning}
-a) $x(x - 3)(x + 3)$: $\underline{\underline{x = 0, \pm 3}}$
-
-b) $u^2 - 5u + 4 = (u - 1)(u - 4) = 0$, så $x^2 = 1$ eller $x^2 = 4$: $\underline{\underline{x = \pm 1, \pm 2}}$
+::: {.fasit}
+a) $x = 0, \pm 3$ · b) $x = \pm 1, \pm 2$
 :::
 :::
 
 ::: {.oppgave tittel="Lag et polynom" niva="Middels"}
 Finn et tredjegradspolynom med nullpunktene $-1$, $2$ og $4$, som skjærer $y$-aksen i $(0, 16)$.
 
-::: {.losning}
-$P(x) = a(x + 1)(x - 2)(x - 4)$. $P(0) = a\cdot 1\cdot(-2)(-4) = 8a = 16$, så $a = 2$: $\underline{\underline{P(x) = 2(x + 1)(x - 2)(x - 4)}}$.
+::: {.fasit}
+$P(x) = 2(x + 1)(x - 2)(x - 4)$
 :::
 :::
 
 ::: {.oppgave tittel="Eske" niva="Utfordrende"}
 Fra en plate på $20\ \mathrm{cm}\times 20\ \mathrm{cm}$ klippes et kvadrat med side $x$ bort i hvert hjørne, og kantene brettes opp til en eske. a) Vis at volumet er $V(x) = x(20 - 2x)^2$. b) Hvilken definisjonsmengde gir mening? c) Finn grafisk hvilken $x$ som gir størst volum.
 
-::: {.losning}
-a) Bunnen blir $(20 - 2x)$ cm på hver side og høyden $x$ cm, så $V = x(20 - 2x)^2$.
-
-b) $0 < x < 10$.
-
-c) Grafen har toppunkt ved $\underline{\underline{x \approx 3.33\ \mathrm{cm}}}$, med $V \approx 593\ \mathrm{cm^3}$. (Med derivasjon finner vi eksakt $x = \frac{10}{3}$.)
+::: {.fasit}
+$x \approx 3.33\ \mathrm{cm}$
 :::
 :::
 

@@ -109,54 +109,40 @@ print(sqrt(72), Rational(27)**Rational(2, 3))   # eksakt: 6*sqrt(2) og 9
 ::: {.oppgave tittel="Regn ut"}
 Regn ut uten kalkulator: a) $\sqrt{81}$ b) $\sqrt[3]{125}$ c) $16^{1/4}$ d) $8^{-2/3}$
 
-::: {.losning}
-a) $\underline{\underline{9}}$ b) $\underline{\underline{5}}$ c) $\sqrt[4]{16} = \underline{\underline{2}}$ d) $\dfrac{1}{8^{2/3}} = \dfrac{1}{(\sqrt[3]8)^2} = \underline{\underline{\dfrac14}}$
+::: {.fasit}
+$9$ · $5$ · $2$ · $\dfrac14$
 :::
 :::
 
 ::: {.oppgave tittel="Forenkle røtter"}
 Forenkle: a) $\sqrt{50}$ b) $\sqrt{12} + \sqrt{27}$ c) $\sqrt{2}\cdot\sqrt{18}$
 
-::: {.losning}
-a) $\sqrt{25\cdot 2} = \underline{\underline{5\sqrt2}}$
-
-b) $2\sqrt3 + 3\sqrt3 = \underline{\underline{5\sqrt3}}$
-
-c) $\sqrt{36} = \underline{\underline{6}}$
+::: {.fasit}
+a) $5\sqrt2$ · b) $5\sqrt3$ · c) $6$
 :::
 :::
 
 ::: {.oppgave tittel="Skriv som potens"}
 Skriv som én potens av $a$: a) $\sqrt{a^3}$ b) $\dfrac{1}{\sqrt[4]{a}}$ c) $a\sqrt a$
 
-::: {.losning}
-a) $\underline{\underline{a^{3/2}}}$ b) $\underline{\underline{a^{-1/4}}}$ c) $a^{1 + 1/2} = \underline{\underline{a^{3/2}}}$
+::: {.fasit}
+$a^{3/2}$ · $a^{-1/4}$
 :::
 :::
 
 ::: {.oppgave tittel="Rasjonal nevner" niva="Middels"}
 Skriv uten rot i nevneren: a) $\dfrac{10}{\sqrt5}$ b) $\dfrac{1}{\sqrt2 + 1}$ (hint: utvid med $\sqrt2 - 1$)
 
-::: {.losning}
-a) $\dfrac{10\sqrt5}{5} = \underline{\underline{2\sqrt5}}$
-
-b) Konjugatsetningen gir $(\sqrt2 + 1)(\sqrt2 - 1) = 2 - 1 = 1$:
-$$
-\frac{\sqrt2 - 1}{(\sqrt2 + 1)(\sqrt2 - 1)} = \frac{\sqrt2 - 1}{1} = \underline{\underline{\sqrt2 - 1}}
-$$
+::: {.fasit}
+a) $2\sqrt5$ · b) $\sqrt2 - 1$
 :::
 :::
 
 ::: {.oppgave tittel="Fart fra fallhøyde" niva="Utfordrende"}
 En stein slippes fra høyden $h$ og får farten $v = \sqrt{2\mathrm{g}h}$ når den treffer bakken. a) Hvor mange ganger større blir farten hvis høyden blir fire ganger så stor? b) Skriv $v$ som en potens av $h$, og regn ut $v$ for $h = 20.0\ \mathrm{m}$ med $\mathrm{g} = 9.81\ \mathrm{m/s^2}$.
 
-::: {.losning}
-a) $\sqrt{2\mathrm{g}\cdot 4h} = \sqrt4\cdot\sqrt{2\mathrm{g}h} = 2v$. Farten blir $\underline{\underline{2 \text{ ganger}}}$ så stor.
-
-b) $v = (2\mathrm{g})^{1/2}\,h^{1/2}$. Med tall:
-$$
-v = \sqrt{2\cdot 9.81\ \mathrm{m/s^2}\cdot 20.0\ \mathrm{m}} = \sqrt{392.4\ \mathrm{m^2/s^2}} = \underline{\underline{19.8\ \mathrm{m/s}}}
-$$
+::: {.fasit}
+a) $2 \text{ ganger}$ · b) $19.8\ \mathrm{m/s}$
 :::
 :::
 

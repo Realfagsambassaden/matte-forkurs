@@ -56,34 +56,29 @@ En linje kan skjære en parabel i to punkter, berøre den i ett punkt (da er lin
 ::: {.oppgave tittel="Linje og parabel"}
 Løs likningssettet $y = x^2$ og $y = 2x + 3$.
 
-::: {.losning}
-$x^2 - 2x - 3 = 0$, så $(x - 3)(x + 1) = 0$. Løsningene er $\underline{\underline{(3, 9) \text{ og } (-1, 1)}}$.
+::: {.fasit}
+$(3, 9) \text{ og } (-1, 1)$
 :::
 :::
 
 ::: {.oppgave tittel="Tangent?" niva="Middels"}
 Vis at linja $y = 2x - 1$ bare har ett punkt felles med parabelen $y = x^2$. Hva kaller vi en slik linje?
 
-::: {.losning}
-$x^2 = 2x - 1$ gir $x^2 - 2x + 1 = 0$, altså $(x - 1)^2 = 0$. Bare $x = 1$, punktet $(1, 1)$. Diskriminanten er null. Linja er en **tangent** til parabelen.
-:::
 :::
 
 ::: {.oppgave tittel="Rektangel" niva="Middels"}
 Et rektangel har omkrets $26\ \mathrm{cm}$ og areal $40\ \mathrm{cm^2}$. Finn sidene.
 
-::: {.losning}
-$2x + 2y = 26$ gir $y = 13 - x$. Arealet: $x(13 - x) = 40$, så $x^2 - 13x + 40 = 0$ og $(x - 5)(x - 8) = 0$. Sidene er $\underline{\underline{5\ \mathrm{cm} \text{ og } 8\ \mathrm{cm}}}$.
+::: {.fasit}
+$5\ \mathrm{cm} \text{ og } 8\ \mathrm{cm}$
 :::
 :::
 
 ::: {.oppgave tittel="Linje og sirkel" niva="Utfordrende"}
 Sirkelen $x^2 + y^2 = 25$ har sentrum i origo og radius 5. Finn skjæringspunktene med linja $y = x + 1$.
 
-::: {.losning}
-$x^2 + (x + 1)^2 = 25$ gir $2x^2 + 2x - 24 = 0$, altså $x^2 + x - 12 = 0$ og $(x + 4)(x - 3) = 0$.
-
-$x = 3$ gir $y = 4$, og $x = -4$ gir $y = -3$. Skjæringspunktene er $\underline{\underline{(3, 4) \text{ og } (-4, -3)}}$.
+::: {.fasit}
+$(3, 4) \text{ og } (-4, -3)$
 :::
 :::
 

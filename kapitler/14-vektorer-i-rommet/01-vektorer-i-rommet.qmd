@@ -64,24 +64,24 @@ print(AB, np.linalg.norm(AB))
 ::: {.oppgave tittel="Vektor og lengde"}
 Finn $\overrightarrow{PQ}$ og $|\overrightarrow{PQ}|$ når $P = (2, 0, 3)$ og $Q = (4, 6, 6)$.
 
-::: {.losning}
-$[2, 6, 3]$, lengde $\sqrt{4 + 36 + 9} = \underline{\underline{7}}$.
+::: {.fasit}
+$7$
 :::
 :::
 
 ::: {.oppgave tittel="Regn ut"}
 $\vec u = [1, -2, 3]$ og $\vec v = [0, 4, -1]$. Finn $2\vec u - \vec v$.
 
-::: {.losning}
-$[2, -4, 6] - [0, 4, -1] = \underline{\underline{[2, -8, 7]}}$
+::: {.fasit}
+$[2, -8, 7]$
 :::
 :::
 
 ::: {.oppgave tittel="Midtpunkt" niva="Middels"}
 Finn midtpunktet mellom $A = (-1, 4, 2)$ og $B = (5, 0, 8)$, og avstanden fra midtpunktet til origo.
 
-::: {.losning}
-$M = (2, 2, 5)$, $|OM| = \sqrt{4 + 4 + 25} = \underline{\underline{\sqrt{33} \approx 5.7}}$.
+::: {.fasit}
+$\sqrt{33} \approx 5.7$
 :::
 :::
 

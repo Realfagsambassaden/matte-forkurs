@@ -69,24 +69,24 @@ $$
 ::: {.oppgave tittel="Integrer"}
 a) $\int 3\cos(2x)\,\mathrm{d}x$ b) $\int_0^{\pi/2}\sin(2x)\,\mathrm{d}x$
 
-::: {.losning}
-a) $\underline{\underline{\frac32\sin(2x) + C}}$ b) $\left[-\frac12\cos 2x\right]_0^{\pi/2} = \frac12 + \frac12 = \underline{\underline{1}}$
+::: {.fasit}
+$\frac32\sin(2x) + C$ · $1$
 :::
 :::
 
 ::: {.oppgave tittel="Cosinus i andre" niva="Middels"}
 Finn $\int\cos^2 x\,\mathrm{d}x$.
 
-::: {.losning}
-$\underline{\underline{\frac x2 + \frac{\sin 2x}{4} + C}}$
+::: {.fasit}
+$\frac x2 + \frac{\sin 2x}{4} + C$
 :::
 :::
 
 ::: {.oppgave tittel="Svingning" niva="Utfordrende"}
 En pendel har farten $v(t) = 0.50\cos(2.0t)$ (m/s). Hvor langt har den beveget seg (med fortegn) fra $t = 0$ til $t = 0.50\ \mathrm{s}$?
 
-::: {.losning}
-$\int_0^{0.50}0.50\cos(2.0t)\,\mathrm{d}t = \Big[0.25\sin(2.0t)\Big]_0^{0.50} = 0.25\sin 1.0 = \underline{\underline{0.21\ \mathrm{m}}}$
+::: {.fasit}
+$0.21\ \mathrm{m}$
 :::
 :::
 

@@ -12,52 +12,40 @@ Oppgavene blander kvadratsetninger, faktorisering, andregradslikninger og -ulikh
 ::: {.oppgave tittel="Faktoriser" krever="algebra-og-likninger/faktorisering"}
 Faktoriser fullstendig: a) $4x^2 - 25$ b) $x^3 - 6x^2 + 9x$ c) $2x^2 + 2x - 24$
 
-::: {.losning}
-a) $\underline{\underline{(2x + 5)(2x - 5)}}$ b) $x(x^2 - 6x + 9) = \underline{\underline{x(x - 3)^2}}$ c) $2(x^2 + x - 12) = \underline{\underline{2(x + 4)(x - 3)}}$
+::: {.fasit}
+$(2x + 5)(2x - 5)$ · $x(x - 3)^2$ · $2(x + 4)(x - 3)$
 :::
 :::
 
 ::: {.oppgave tittel="Andregradslikninger" krever="algebra-og-likninger/andregradslikninger"}
 Løs: a) $x^2 = 5x$ b) $2x^2 + 3x - 2 = 0$ c) $x^2 + 6x + 10 = 0$
 
-::: {.losning}
-a) $x(x - 5) = 0$: $\underline{\underline{x = 0 \text{ eller } x = 5}}$
-
-b) $x = \frac{-3 \pm 5}{4}$: $\underline{\underline{x = \frac12 \text{ eller } x = -2}}$
-
-c) $D = 36 - 40 < 0$: $\underline{\underline{\text{ingen løsning}}}$
+::: {.fasit}
+a) $x = 0 \text{ eller } x = 5$ · b) $x = \frac12 \text{ eller } x = -2$ · c) $\text{ingen løsning}$
 :::
 :::
 
 ::: {.oppgave tittel="Forkort" niva="Middels" krever="algebra-og-likninger/faktorisering, algebra-og-likninger/rasjonale-uttrykk"}
 Forkort $\dfrac{2x^2 - 8}{x^2 + 4x + 4}$.
 
-::: {.losning}
-$$
-\frac{2(x + 2)(x - 2)}{(x + 2)^2} = \underline{\underline{\frac{2(x - 2)}{x + 2}}}, \quad x \ne -2
-$$
+::: {.fasit}
+$\frac{2(x - 2)}{x + 2}$
 :::
 :::
 
 ::: {.oppgave tittel="Ulikhet" niva="Middels" krever="algebra-og-likninger/ulikheter, algebra-og-likninger/andregradslikninger"}
 Løs ulikheten $x^2 \ge 3x + 10$.
 
-::: {.losning}
-$x^2 - 3x - 10 \ge 0$, altså $(x - 5)(x + 2) \ge 0$. Parabelen smiler: $\underline{\underline{x \le -2 \text{ eller } x \ge 5}}$.
+::: {.fasit}
+$x \le -2 \text{ eller } x \ge 5$
 :::
 :::
 
 ::: {.oppgave tittel="Steinen i brønnen" niva="Utfordrende" krever="algebra-og-likninger/andregradslikninger, algebra-og-likninger/likninger"}
 En stein slippes ned i en brønn. Etter $t$ sekunder har den falt $4.9t^2$ meter. Lyden av plasket går opp med $340\ \mathrm{m/s}$. Du hører plasket $2.50\ \mathrm{s}$ etter at du slapp steinen. Hvor dyp er brønnen?
 
-::: {.losning}
-La $t$ være falltiden. Dybden er $h = 4.9t^2$, og lyden bruker $\frac{h}{340}$. Til sammen:
-$$
-t + \frac{4.9t^2}{340} = 2.50 \quad\Longrightarrow\quad 0.01441t^2 + t - 2.50 = 0
-$$
-abc-formelen gir den positive løsningen $t = 2.42\ \mathrm{s}$. Med den uavrundede verdien $t = 2.416\ \mathrm{s}$ blir dybden $h = 4.9\cdot 2.416^2 = \underline{\underline{28.6\ \mathrm{m}}}$.
-
-Uten å ta hensyn til lyden ville vi fått $4.9\cdot 2.50^2 = 30.6\ \mathrm{m}$.
+::: {.fasit}
+$28.6\ \mathrm{m}$
 :::
 :::
 
@@ -67,10 +55,8 @@ Uten å ta hensyn til lyden ville vi fått $4.9\cdot 2.50^2 = 30.6\ \mathrm{m}$.
 
 Parabelen har formen $f(x) = x^2 + bx + c$. Les av nullpunktene, og skriv $f(x)$ på faktorisert form og på vanlig form. Kontroller med skjæringen med $y$-aksen.
 
-::: {.losning}
-Nullpunktene er $x = -1$ og $x = 3$, så $f(x) = \underline{\underline{(x + 1)(x - 3)}} = \underline{\underline{x^2 - 2x - 3}}$.
-
-Kontroll: $f(0) = -3$, som stemmer med figuren.
+::: {.fasit}
+$(x + 1)(x - 3)$ · $x^2 - 2x - 3$
 :::
 :::
 

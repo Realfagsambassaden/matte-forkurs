@@ -49,17 +49,14 @@ $\vec v(t) = [8.0,\ 6.0 - 9.8t]$ og $\vec a = [0, -9.8]\ \mathrm{m/s^2}$: tyngde
 ::: {.oppgave tittel="Fart"}
 En partikkel har $\vec r(t) = [t^2, 3t]$. Finn $\vec v(t)$ og farten ved $t = 2$.
 
-::: {.losning}
-$\vec v = [2t, 3]$, $\vec v(2) = [4, 3]$, fart $\underline{\underline{5}}$.
+::: {.fasit}
+$5$
 :::
 :::
 
 ::: {.oppgave tittel="Toppunkt i kastet" niva="Middels"}
 Med $\vec r(t) = [8.0t,\ 6.0t - 4.9t^2]$: Når er ballen høyest, og hvor er den da?
 
-::: {.losning}
-$v_y = 6.0 - 9.8t = 0$ gir $t = 0.61\ \mathrm{s}$. Posisjon $[4.9,\ 1.8]$ m.
-:::
 :::
 
 ::::

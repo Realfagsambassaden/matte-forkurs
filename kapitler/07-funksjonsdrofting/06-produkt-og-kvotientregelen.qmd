@@ -65,43 +65,30 @@ $\dfrac{3}{x^2}$ deriveres enklere som $3x^{-2}$ enn med kvotientregelen. Bruk k
 ::: {.oppgave tittel="Produktregelen"}
 Deriver: a) $(x^2 + 1)(3x - 2)$ b) $x\sqrt x$ (på to måter)
 
-::: {.losning}
-a) $2x(3x - 2) + (x^2 + 1)\cdot 3 = \underline{\underline{9x^2 - 4x + 3}}$
-
-b) Produktregel: $\sqrt x + x\cdot\frac{1}{2\sqrt x} = \frac32\sqrt x$. Som potens: $(x^{3/2})' = \frac32 x^{1/2}$. Samme svar: $\underline{\underline{\frac32\sqrt x}}$.
+::: {.fasit}
+a) $9x^2 - 4x + 3$ · b) $\frac32\sqrt x$
 :::
 :::
 
 ::: {.oppgave tittel="Kvotientregelen"}
 Deriver: a) $\dfrac{x}{x + 1}$ b) $\dfrac{x^2}{x - 2}$
 
-::: {.losning}
-a) $\frac{(x + 1) - x}{(x + 1)^2} = \underline{\underline{\frac{1}{(x + 1)^2}}}$
-
-b) $\frac{2x(x - 2) - x^2}{(x - 2)^2} = \underline{\underline{\frac{x^2 - 4x}{(x - 2)^2}}}$
+::: {.fasit}
+a) $\frac{1}{(x + 1)^2}$ · b) $\frac{x^2 - 4x}{(x - 2)^2}$
 :::
 :::
 
 ::: {.oppgave tittel="Drøfting" niva="Middels"}
 Finn ekstremalpunktene til $f(x) = \dfrac{x^2}{x - 2}$ (bruk svaret over).
 
-::: {.losning}
-$f'(x) = \frac{x(x - 4)}{(x - 2)^2} = 0$ gir $x = 0$ og $x = 4$. Nevneren er positiv, så fortegnet bestemmes av $x(x - 4)$: positiv, negativ, negativ (forbi $x = 2$), positiv.
-
-Toppunkt $\underline{\underline{(0, 0)}}$, bunnpunkt $\underline{\underline{(4, 8)}}$.
+::: {.fasit}
+$(0, 0)$ · $(4, 8)$
 :::
 :::
 
 ::: {.oppgave tittel="Effekt i en krets" niva="Utfordrende"}
 Effekten i en motstand $R$ koblet til et batteri med indre resistans $r$ er $P(R) = \dfrac{E^2 R}{(R + r)^2}$. Vis at effekten er størst når $R = r$.
 
-::: {.losning}
-Kvotientregelen (med $E$ og $r$ konstante):
-$$
-P'(R) = E^2\frac{(R + r)^2 - R\cdot 2(R + r)}{(R + r)^4} = E^2\frac{(R + r) - 2R}{(R + r)^3} = E^2\frac{r - R}{(R + r)^3}
-$$
-$P' = 0$ når $R = r$. $P'$ er positiv for $R < r$ og negativ for $R > r$, så det er et maksimum.
-:::
 :::
 
 ::::

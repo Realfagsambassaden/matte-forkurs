@@ -69,44 +69,32 @@ I ulikheter kan vi ikke gange eller dele med uttrykk som inneholder $x$, fordi v
 ::: {.oppgave tittel="Nullpunktsfaktoriser"}
 Faktoriser ved å finne nullpunktene: a) $x^2 - 2x - 2$ b) $3x^2 + 5x - 2$
 
-::: {.losning}
-a) $x = 1 \pm\sqrt3$, så $\underline{\underline{\left(x - 1 - \sqrt3\right)\left(x - 1 + \sqrt3\right)}}$.
-
-b) $x = \frac{-5 \pm 7}{6}$ gir $x = \frac13$ og $x = -2$, så $3\left(x - \frac13\right)(x + 2) = \underline{\underline{(3x - 1)(x + 2)}}$.
+::: {.fasit}
+a) $\left(x - 1 - \sqrt3\right)\left(x - 1 + \sqrt3\right)$ · b) $(3x - 1)(x + 2)$
 :::
 :::
 
 ::: {.oppgave tittel="Løs ulikhetene"}
 a) $x^2 - 4 > 0$ b) $x^2 + 2x - 15 \le 0$ c) $-x^2 + 4x \ge 0$
 
-::: {.losning}
-a) $(x + 2)(x - 2) > 0$: $\underline{\underline{x < -2 \text{ eller } x > 2}}$
-
-b) $(x + 5)(x - 3) \le 0$: $\underline{\underline{-5 \le x \le 3}}$
-
-c) $-x(x - 4) \ge 0$. Parabelen er sur, så den er positiv mellom nullpunktene: $\underline{\underline{0 \le x \le 4}}$
+::: {.fasit}
+a) $x < -2 \text{ eller } x > 2$ · b) $-5 \le x \le 3$ · c) $0 \le x \le 4$
 :::
 :::
 
 ::: {.oppgave tittel="Ingen nullpunkter" niva="Middels"}
 Løs ulikhetene: a) $x^2 + x + 1 > 0$ b) $x^2 + x + 1 < 0$
 
-::: {.losning}
-Diskriminanten er $1 - 4 = -3 < 0$, så parabelen skjærer aldri $x$-aksen. Den smiler, så den ligger helt over $x$-aksen.
-
-a) $\underline{\underline{\text{alle } x}}$ b) $\underline{\underline{\text{ingen løsning}}}$
+::: {.fasit}
+$\text{alle } x$ · $\text{ingen løsning}$
 :::
 :::
 
 ::: {.oppgave tittel="Ballen over 5 meter" niva="Utfordrende"}
 Høyden til en ball er $y(t) = 1.0 + 12t - 4.9t^2$ (meter, sekunder). I hvilket tidsrom er ballen høyere enn $5.0\ \mathrm{m}$?
 
-::: {.losning}
-$1.0 + 12t - 4.9t^2 > 5.0$ gir $-4.9t^2 + 12t - 4.0 > 0$. Nullpunktene:
-$$
-t = \frac{-12 \pm\sqrt{144 - 78.4}}{-9.8} = \frac{-12 \pm 8.10}{-9.8}
-$$
-som gir $t = 0.40\ \mathrm{s}$ og $t = 2.05\ \mathrm{s}$. Parabelen er sur, så den er positiv mellom nullpunktene: $\underline{\underline{0.40\ \mathrm{s} < t < 2.0\ \mathrm{s}}}$.
+::: {.fasit}
+$0.40\ \mathrm{s} < t < 2.0\ \mathrm{s}$
 :::
 :::
 

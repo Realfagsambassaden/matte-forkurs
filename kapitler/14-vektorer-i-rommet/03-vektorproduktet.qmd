@@ -89,24 +89,24 @@ Grunnflaten har areal $2$, og høyden over den er $3$.
 ::: {.oppgave tittel="Regn ut"}
 Finn $[2, 0, 1]\times[1, 3, -1]$.
 
-::: {.losning}
-$[0\cdot(-1) - 1\cdot 3,\ 1\cdot 1 - 2\cdot(-1),\ 2\cdot 3 - 0\cdot 1] = \underline{\underline{[-3, 3, 6]}}$
+::: {.fasit}
+$[-3, 3, 6]$
 :::
 :::
 
 ::: {.oppgave tittel="Areal av trekant" niva="Middels"}
 Finn arealet av trekanten med hjørnene $A = (1, 0, 0)$, $B = (0, 2, 0)$ og $C = (0, 0, 3)$.
 
-::: {.losning}
-$\overrightarrow{AB} = [-1, 2, 0]$, $\overrightarrow{AC} = [-1, 0, 3]$. Kryssprodukt: $[6, 3, 2]$, lengde $7$. Areal $\underline{\underline{3.5}}$.
+::: {.fasit}
+$3.5$
 :::
 :::
 
 ::: {.oppgave tittel="Kraftmoment" niva="Utfordrende"}
 En kraft $\vec F = [0, 0, -50]$ N virker i punktet $\vec r = [0.30, 0.40, 0]$ m fra en akse gjennom origo. Finn kraftmomentet $\vec\tau = \vec r\times\vec F$ og størrelsen.
 
-::: {.losning}
-$\vec\tau = [0.40\cdot(-50) - 0,\ 0 - 0.30\cdot(-50),\ 0] = \underline{\underline{[-20, 15, 0]\ \mathrm{N\,m}}}$, størrelse $\underline{\underline{25\ \mathrm{N\,m}}}$.
+::: {.fasit}
+$[-20, 15, 0]\ \mathrm{N\,m}$ · $25\ \mathrm{N\,m}$
 :::
 :::
 

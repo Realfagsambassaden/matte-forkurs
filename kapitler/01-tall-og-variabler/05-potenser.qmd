@@ -94,55 +94,40 @@ print(simplify((2*a**3)**2 * a**-4 / (4*a)))   # a
 ::: {.oppgave tittel="Regn ut"}
 Regn ut uten kalkulator: a) $3^4$ b) $(-2)^5$ c) $10^{-3}$ d) $\left(\frac{2}{3}\right)^{-2}$
 
-::: {.losning}
-a) $\underline{\underline{81}}$
-
-b) $\underline{\underline{-32}}$ (oddetall minustegn gir minus)
-
-c) $\dfrac{1}{1000} = \underline{\underline{0.001}}$
-
-d) $\left(\frac32\right)^2 = \underline{\underline{\frac94}}$
+::: {.fasit}
+a) $81$ · b) $-32$ · c) $0.001$ · d) $\frac94$
 :::
 :::
 
 ::: {.oppgave tittel="Potensreglene"}
 Skriv som én potens: a) $x^5\cdot x^3$ b) $\dfrac{y^7}{y^{10}}$ c) $(a^{-2})^3$ d) $\dfrac{b^4\cdot b^{-1}}{b^2}$
 
-::: {.losning}
-a) $\underline{\underline{x^8}}$ b) $\underline{\underline{y^{-3}}} = \dfrac{1}{y^3}$ c) $\underline{\underline{a^{-6}}}$ d) $b^{4 - 1 - 2} = \underline{\underline{b}}$
+::: {.fasit}
+$x^8$ · $y^{-3}$ · $a^{-6}$ · $b$
 :::
 :::
 
 ::: {.oppgave tittel="Forenkle"}
 Forenkle: a) $(3x^2y)^3$ b) $\dfrac{12a^5b^2}{4a^2b^5}$
 
-::: {.losning}
-a) $3^3(x^2)^3y^3 = \underline{\underline{27x^6y^3}}$
-
-b) $3a^{3}b^{-3} = \underline{\underline{\dfrac{3a^3}{b^3}}}$
+::: {.fasit}
+a) $27x^6y^3$ · b) $\dfrac{3a^3}{b^3}$
 :::
 :::
 
 ::: {.oppgave tittel="Dobbel radius" niva="Middels"}
 Volumet av en kule er $V = \frac43\pi r^3$. Hvor mange ganger større blir volumet når radien dobles? Bruk potensreglene.
 
-::: {.losning}
-Med radius $2r$:
-$$
-V_2 = \frac43\pi(2r)^3 = \frac43\pi\cdot 2^3 r^3 = 8\cdot\frac43\pi r^3 = 8V
-$$
-Volumet blir $\underline{\underline{8 \text{ ganger}}}$ så stort.
+::: {.fasit}
+$8 \text{ ganger}$
 :::
 :::
 
 ::: {.oppgave tittel="Negative eksponenter" niva="Utfordrende"}
 Forenkle og skriv uten negative eksponenter: $\dfrac{(2x^{-1}y^2)^{-2}}{x^3 y^{-4}}$
 
-::: {.losning}
-Telleren: $(2x^{-1}y^2)^{-2} = 2^{-2}x^{2}y^{-4} = \frac14 x^2 y^{-4}$. Delt på $x^3y^{-4}$:
-$$
-\frac14 x^{2 - 3}y^{-4 - (-4)} = \frac14 x^{-1} y^{0} = \underline{\underline{\frac{1}{4x}}}
-$$
+::: {.fasit}
+$\frac{1}{4x}$
 :::
 :::
 

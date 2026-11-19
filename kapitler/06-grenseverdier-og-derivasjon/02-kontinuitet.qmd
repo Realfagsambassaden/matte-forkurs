@@ -67,10 +67,8 @@ Med $\underline{\underline{f(2) = 4}}$ blir funksjonen kontinuerlig.
 ::: {.oppgave tittel="Hvor er bruddet?"}
 Hvor er funksjonene ikke kontinuerlige? a) $f(x) = \dfrac{1}{x - 4}$ b) $g(x) = \dfrac{x^2 - 9}{x - 3}$
 
-::: {.losning}
-a) I $\underline{\underline{x = 4}}$ (asymptote).
-
-b) I $\underline{\underline{x = 3}}$, der $g$ ikke er definert. Grenseverdien er $6$, så grafen har et hull i $(3, 6)$.
+::: {.fasit}
+a) $x = 4$ · b) $x = 3$
 :::
 :::
 
@@ -80,16 +78,13 @@ $$
 f(x) = \begin{cases} 2x, & x < 1 \\ x + 2, & x \ge 1 \end{cases}
 $$
 
-::: {.losning}
-Fra venstre: $2$. Fra høyre: $f(1) = 3$. Forskjellige grenser, så **nei**. Grafen har et sprang på 1.
-:::
 :::
 
 ::: {.oppgave tittel="Velg konstanten" niva="Utfordrende"}
 Bestem $a$ slik at $f(x) = \dfrac{x^2 - a^2}{x - a}$ for $x \ne a$ og $f(a) = 8$ blir kontinuerlig.
 
-::: {.losning}
-For $x \ne a$ er $f(x) = x + a$, som går mot $2a$. Kontinuitet krever $2a = 8$, så $\underline{\underline{a = 4}}$.
+::: {.fasit}
+$a = 4$
 :::
 :::
 
