@@ -12,44 +12,32 @@ Oppgavene blander derivasjonsreglene, drøfting og optimering. Prøv selv før d
 ::: {.oppgave tittel="Deriver" krever="derivasjon/kjerneregelen, derivasjon/produkt-og-kvotient"}
 a) $f(x) = (x^2 - 1)^3$ b) $g(x) = x(2x + 1)^2$ c) $h(x) = \dfrac{x - 1}{x^2}$
 
-::: {.losning}
-a) $\underline{\underline{6x(x^2 - 1)^2}}$
-
-b) $(2x + 1)^2 + x\cdot 2(2x + 1)\cdot 2 = (2x + 1)(2x + 1 + 4x) = \underline{\underline{(2x + 1)(6x + 1)}}$
-
-c) $\frac{x^2 - (x - 1)2x}{x^4} = \frac{-x^2 + 2x}{x^4} = \underline{\underline{\frac{2 - x}{x^3}}}$
+::: {.fasit}
+a) $6x(x^2 - 1)^2$ · b) $(2x + 1)(6x + 1)$ · c) $\frac{2 - x}{x^3}$
 :::
 :::
 
 ::: {.oppgave tittel="Drøft" niva="Middels" krever="anvendelser-derivasjon/drofting"}
 Drøft $f(x) = x^4 - 4x^3$: ekstremalpunkter og vendepunkter.
 
-::: {.losning}
-$f'(x) = 4x^3 - 12x^2 = 4x^2(x - 3)$. Negativ for $x < 3$ (unntatt $x = 0$), positiv for $x > 3$. Bunnpunkt $\underline{\underline{(3, -27)}}$, terrassepunkt i $(0, 0)$.
-
-$f''(x) = 12x^2 - 24x = 12x(x - 2)$. Vendepunkter $\underline{\underline{(0, 0) \text{ og } (2, -16)}}$.
+::: {.fasit}
+$(3, -27)$ · $(0, 0) \text{ og } (2, -16)$
 :::
 :::
 
 ::: {.oppgave tittel="Billigste rør" niva="Middels" krever="anvendelser-derivasjon/optimering"}
 En lukket kasse med kvadratisk bunn skal ha volum $32\ \mathrm{dm^3}$. Hvilke mål gir minst overflate?
 
-::: {.losning}
-Bunnen er $x\times x$ og høyden $h = \frac{32}{x^2}$. $O(x) = 2x^2 + 4xh = 2x^2 + \frac{128}{x}$.
-
-$O'(x) = 4x - \frac{128}{x^2} = 0$ gir $x^3 = 32$, så $x = \sqrt[3]{32} = 3.17\ \mathrm{dm}$ og $h = 3.17\ \mathrm{dm}$. Kassen blir en $\underline{\underline{\text{kube med side } 3.17\ \mathrm{dm}}}$.
+::: {.fasit}
+$\text{kube med side } 3.17\ \mathrm{dm}$
 :::
 :::
 
 ::: {.oppgave tittel="Lys fra en lampe" niva="Utfordrende" krever="anvendelser-derivasjon/optimering, derivasjon/kjerneregelen"}
 Belysningsstyrken på et bord fra en lampe i høyden $h$ over bordkanten, i horisontal avstand $1.0\ \mathrm{m}$, er proporsjonal med $B(h) = \dfrac{h}{(h^2 + 1)^{3/2}}$. Hvilken høyde gir sterkest lys på bordkanten?
 
-::: {.losning}
-Kvotientregelen og kjerneregelen:
-$$
-B'(h) = \frac{(h^2 + 1)^{3/2} - h\cdot\frac32(h^2 + 1)^{1/2}\cdot 2h}{(h^2 + 1)^3} = \frac{(h^2 + 1) - 3h^2}{(h^2 + 1)^{5/2}} = \frac{1 - 2h^2}{(h^2 + 1)^{5/2}}
-$$
-$B' = 0$ gir $h = \frac{1}{\sqrt2} = \underline{\underline{0.71\ \mathrm{m}}}$. Fortegnet skifter fra pluss til minus, så det er et maksimum.
+::: {.fasit}
+$0.71\ \mathrm{m}$
 :::
 :::
 
@@ -59,11 +47,6 @@ $B' = 0$ gir $h = \frac{1}{\sqrt2} = \underline{\underline{0.71\ \mathrm{m}}}$. 
 
 Figuren viser grafen til den **deriverte** $f'$. Hvor vokser $f$, og hvor avtar den? Har $f$ topp- eller bunnpunkter?
 
-::: {.losning}
-$f' > 0$ for $x < -1$ og $x > 2$: Der **vokser** $f$. $f' < 0$ for $-1 < x < 2$: Der **avtar** $f$.
-
-$f'$ skifter fra $+$ til $-$ i $x = -1$: **toppunkt**. Fra $-$ til $+$ i $x = 2$: **bunnpunkt**.
-:::
 :::
 
 ::::

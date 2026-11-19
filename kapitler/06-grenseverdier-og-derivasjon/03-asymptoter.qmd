@@ -53,28 +53,24 @@ $\dfrac{x^2 - 1}{x - 1}$ har **ikke** en vertikal asymptote i $x = 1$, fordi tel
 ::: {.oppgave tittel="Finn asymptotene"}
 a) $f(x) = \dfrac{3}{x + 2}$ b) $g(x) = \dfrac{4x - 1}{2x + 6}$
 
-::: {.losning}
-a) Vertikal $\underline{\underline{x = -2}}$, horisontal $\underline{\underline{y = 0}}$.
-
-b) Vertikal $\underline{\underline{x = -3}}$, horisontal $\underline{\underline{y = 2}}$ (forholdet mellom koeffisientene $\frac42$).
+::: {.fasit}
+a) $x = -2$ · a) $y = 0$ · b) $x = -3$ · b) $y = 2$
 :::
 :::
 
 ::: {.oppgave tittel="Skrå asymptote" niva="Middels"}
 Finn alle asymptotene til $h(x) = \dfrac{x^2 - 3x}{x + 1}$.
 
-::: {.losning}
-Vertikal $\underline{\underline{x = -1}}$. Divisjon: $(x^2 - 3x) : (x + 1) = x - 4$ med rest $4$. Skrå asymptote $\underline{\underline{y = x - 4}}$.
+::: {.fasit}
+$x = -1$ · $y = x - 4$
 :::
 :::
 
 ::: {.oppgave tittel="Hull eller asymptote?" niva="Utfordrende"}
 Undersøk $f(x) = \dfrac{x^2 - 4}{x^2 - x - 2}$ nær $x = 2$ og $x = -1$, og finn den horisontale asymptoten.
 
-::: {.losning}
-$f(x) = \frac{(x + 2)(x - 2)}{(x - 2)(x + 1)} = \frac{x + 2}{x + 1}$ for $x \ne 2$.
-
-I $x = 2$ er det et **hull** (grenseverdien er $\frac43$). I $x = -1$ er det en **vertikal asymptote**. Horisontal asymptote $\underline{\underline{y = 1}}$.
+::: {.fasit}
+$y = 1$
 :::
 :::
 

@@ -59,29 +59,24 @@ Husk ledd med null foran ($0\cdot x^2$) når du stiller opp divisjonen.
 ::: {.oppgave tittel="Faktoriser"}
 Faktoriser: a) $x^3 - 7x + 6$ b) $x^3 - 2x^2 - x + 2$
 
-::: {.losning}
-a) $P(1) = 0$. $P : (x - 1) = x^2 + x - 6 = (x + 3)(x - 2)$: $\underline{\underline{(x - 1)(x - 2)(x + 3)}}$
-
-b) Gruppering: $x^2(x - 2) - (x - 2) = (x - 2)(x^2 - 1)$: $\underline{\underline{(x - 2)(x - 1)(x + 1)}}$
+::: {.fasit}
+a) $(x - 1)(x - 2)(x + 3)$ · b) $(x - 2)(x - 1)(x + 1)$
 :::
 :::
 
 ::: {.oppgave tittel="Med felles faktor" niva="Middels"}
 Faktoriser $2x^4 - 2x^3 - 12x^2$.
 
-::: {.losning}
-$2x^2(x^2 - x - 6) = \underline{\underline{2x^2(x - 3)(x + 2)}}$
+::: {.fasit}
+$2x^2(x - 3)(x + 2)$
 :::
 :::
 
 ::: {.oppgave tittel="Ett heltallig nullpunkt" niva="Utfordrende"}
 Faktoriser $P(x) = x^3 - 3x^2 - 2x + 6$ så langt det går.
 
-::: {.losning}
-$P(3) = 27 - 27 - 6 + 6 = 0$. Divisjonen gir $P : (x - 3) = x^2 - 2$. Nullpunktene til $x^2 - 2$ er $\pm\sqrt2$:
-$$
-P(x) = \underline{\underline{(x - 3)\left(x - \sqrt2\right)\left(x + \sqrt2\right)}}
-$$
+::: {.fasit}
+$(x - 3)\left(x - \sqrt2\right)\left(x + \sqrt2\right)$
 :::
 :::
 

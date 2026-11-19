@@ -80,58 +80,37 @@ print(cancel(4*x/y**2 * 3*y/(2*x**2)))    # 6/(x*y)
 ::: {.oppgave tittel="Forbudte verdier"}
 For hvilke verdier av $x$ er uttrykkene ikke definert? a) $\dfrac{1}{x + 5}$ b) $\dfrac{x}{2x - 6}$ c) $\dfrac{3}{x(x - 1)}$
 
-::: {.losning}
-a) $x + 5 = 0$ gir $\underline{\underline{x = -5}}$.
-
-b) $2x - 6 = 0$ gir $\underline{\underline{x = 3}}$.
-
-c) Nevneren er null når $x = 0$ eller $x - 1 = 0$, altså $\underline{\underline{x = 0 \text{ og } x = 1}}$.
+::: {.fasit}
+a) $x = -5$ · b) $x = 3$ · c) $x = 0 \text{ og } x = 1$
 :::
 :::
 
 ::: {.oppgave tittel="Forkort"}
 Forkort: a) $\dfrac{8a^3}{12a}$ b) $\dfrac{15x^2y}{5xy^2}$
 
-::: {.losning}
-a) $\dfrac{4a\cdot 2a^2}{4a\cdot 3} = \underline{\underline{\dfrac{2a^2}{3}}}$, $a \neq 0$
-
-b) $\dfrac{5xy\cdot 3x}{5xy\cdot y} = \underline{\underline{\dfrac{3x}{y}}}$, $x \neq 0$, $y \neq 0$
+::: {.fasit}
+a) $\dfrac{2a^2}{3}$ · b) $\dfrac{3x}{y}$
 :::
 :::
 
 ::: {.oppgave tittel="Fellesnevner"}
 Skriv som én brøk: a) $\dfrac{1}{x} + \dfrac{1}{2x}$ b) $\dfrac{3}{x} - \dfrac{2}{x - 4}$
 
-::: {.losning}
-a) Fellesnevner $2x$: $\dfrac{2}{2x} + \dfrac{1}{2x} = \underline{\underline{\dfrac{3}{2x}}}$
-
-b) Fellesnevner $x(x - 4)$:
-$$
-\frac{3(x - 4) - 2x}{x(x - 4)} = \underline{\underline{\frac{x - 12}{x(x - 4)}}}
-$$
+::: {.fasit}
+a) $\dfrac{3}{2x}$ · b) $\frac{x - 12}{x(x - 4)}$
 :::
 :::
 
 ::: {.oppgave tittel="Linselikningen" niva="Middels"}
 For en linse gjelder $\dfrac{1}{f} = \dfrac{1}{a} + \dfrac{1}{b}$, der $a$ er avstanden til tingen og $b$ avstanden til bildet. Skriv høyre side som én brøk, og vis at $f = \dfrac{ab}{a + b}$.
 
-::: {.losning}
-Fellesnevner $ab$:
-$$
-\frac{1}{a} + \frac{1}{b} = \frac{b}{ab} + \frac{a}{ab} = \frac{a + b}{ab}
-$$
-Så $\dfrac1f = \dfrac{a + b}{ab}$. Snur vi begge brøkene, får vi $f = \dfrac{ab}{a + b}$.
-:::
 :::
 
 ::: {.oppgave tittel="Tre brøker" niva="Utfordrende"}
 Skriv som én brøk og forenkle: $\dfrac{2}{x} - \dfrac{1}{x + 2} + \dfrac{4}{x(x + 2)}$
 
-::: {.losning}
-Fellesnevneren er $x(x + 2)$:
-$$
-\frac{2(x + 2) - x + 4}{x(x + 2)} = \frac{2x + 4 - x + 4}{x(x + 2)} = \underline{\underline{\frac{x + 8}{x(x + 2)}}}, \quad x \neq 0,\ x \neq -2
-$$
+::: {.fasit}
+$\frac{x + 8}{x(x + 2)}$
 :::
 :::
 

@@ -62,24 +62,24 @@ Punktet ligger i andre kvadrant, så $v = 180^\circ - 53.1^\circ = \underline{\u
 ::: {.oppgave tittel="Fortegn"}
 Hvilket fortegn har: a) $\sin 200^\circ$ b) $\cos 100^\circ$ c) $\tan 300^\circ$
 
-::: {.losning}
-a) 3. kvadrant: $\underline{\underline{-}}$ b) 2. kvadrant: $\underline{\underline{-}}$ c) 4. kvadrant, sin negativ og cos positiv: $\underline{\underline{-}}$
+::: {.fasit}
+$-$
 :::
 :::
 
 ::: {.oppgave tittel="Eksakte verdier"}
 Finn eksakt: a) $\cos\pi$ b) $\sin\frac{3\pi}{2}$ c) $\cos\frac{3\pi}{4}$ d) $\sin\left(-\frac{\pi}{6}\right)$
 
-::: {.losning}
-a) $\underline{\underline{-1}}$ b) $\underline{\underline{-1}}$ c) $\underline{\underline{-\frac{\sqrt2}{2}}}$ d) $\underline{\underline{-\frac12}}$
+::: {.fasit}
+$-1$ · $-\frac{\sqrt2}{2}$ · $-\frac12$
 :::
 :::
 
 ::: {.oppgave tittel="Enhetsformelen" niva="Middels"}
 $v$ ligger i 2. kvadrant og $\sin v = \frac35$. Finn $\cos v$ og $\tan v$.
 
-::: {.losning}
-$\cos^2 v = 1 - \frac{9}{25} = \frac{16}{25}$, og cos er negativ i 2. kvadrant: $\underline{\underline{\cos v = -\frac45}}$. $\underline{\underline{\tan v = -\frac34}}$.
+::: {.fasit}
+$\cos v = -\frac45$ · $\tan v = -\frac34$
 :::
 :::
 

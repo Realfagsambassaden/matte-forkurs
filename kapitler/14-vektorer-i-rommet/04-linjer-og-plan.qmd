@@ -68,24 +68,21 @@ Et plan kan også skrives med to parametre: $\vec r = \overrightarrow{OP_0} + s\
 ::: {.oppgave tittel="Planlikning"}
 Finn likningen for planet gjennom $(2, -1, 3)$ med normalvektor $[1, 4, -2]$.
 
-::: {.losning}
-$(x - 2) + 4(y + 1) - 2(z - 3) = 0$, altså $\underline{\underline{x + 4y - 2z + 8 = 0}}$.
+::: {.fasit}
+$x + 4y - 2z + 8 = 0$
 :::
 :::
 
 ::: {.oppgave tittel="Ligger punktet i planet?"}
 Ligger $(1, 1, 1)$ i planet $2x - y + 3z = 4$?
 
-::: {.losning}
-$2 - 1 + 3 = 4$: **ja**.
-:::
 :::
 
 ::: {.oppgave tittel="Avstand fra punkt til plan" niva="Utfordrende"}
 Avstanden fra punktet $(x_1, y_1, z_1)$ til planet $ax + by + cz + d = 0$ er $\dfrac{|ax_1 + by_1 + cz_1 + d|}{\sqrt{a^2 + b^2 + c^2}}$. Finn avstanden fra origo til planet $6x + 3y + 2z = 6$.
 
-::: {.losning}
-$\frac{|0 - 6|}{\sqrt{36 + 9 + 4}} = \underline{\underline{\frac67 \approx 0.86}}$
+::: {.fasit}
+$\frac67 \approx 0.86$
 :::
 :::
 

@@ -61,28 +61,24 @@ Står både $\sin^2 x$ og $\cos x$ i likningen, bytt $\sin^2 x = 1 - \cos^2 x$, 
 ::: {.oppgave tittel="Tangens"}
 Løs for $x \in [0, 2\pi\rangle$: a) $\tan x = 1$ b) $\tan x = -2$
 
-::: {.losning}
-a) $\underline{\underline{\frac{\pi}{4}, \frac{5\pi}{4}}}$
-
-b) $\tan^{-1}(-2) = -1.107$. I intervallet: $\underline{\underline{x = 2.034 \text{ og } x = 5.176}}$.
+::: {.fasit}
+a) $\frac{\pi}{4}, \frac{5\pi}{4}$ · b) $x = 2.034 \text{ og } x = 5.176$
 :::
 :::
 
 ::: {.oppgave tittel="Faktoriser" niva="Middels"}
 Løs $\sin x\cos x = \sin x$ for $x \in [0, 2\pi\rangle$.
 
-::: {.losning}
-$\sin x(\cos x - 1) = 0$. $\sin x = 0$ gir $x = 0, \pi$. $\cos x = 1$ gir $x = 0$. Løsningene: $\underline{\underline{x = 0 \text{ og } x = \pi}}$. (Ikke del på $\sin x$, da mister du løsninger.)
+::: {.fasit}
+$x = 0 \text{ og } x = \pi$
 :::
 :::
 
 ::: {.oppgave tittel="Med enhetsformelen" niva="Utfordrende"}
 Løs $2\sin^2 x + 3\cos x = 3$ for $x \in [0, 2\pi\rangle$.
 
-::: {.losning}
-$2(1 - \cos^2 x) + 3\cos x - 3 = 0$ gir $2\cos^2 x - 3\cos x + 1 = 0$, altså $\cos x = 1$ eller $\cos x = \frac12$.
-
-$\underline{\underline{x = 0,\ \frac{\pi}{3},\ \frac{5\pi}{3}}}$
+::: {.fasit}
+$x = 0,\ \frac{\pi}{3},\ \frac{5\pi}{3}$
 :::
 :::
 

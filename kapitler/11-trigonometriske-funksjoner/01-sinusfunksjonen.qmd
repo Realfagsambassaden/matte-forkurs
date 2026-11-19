@@ -73,24 +73,21 @@ print("Periode:", 2*np.pi/k)
 ::: {.oppgave tittel="Les av"}
 Finn amplitude, periode og likevektslinje: a) $2\sin x - 1$ b) $5\sin(\pi x)$ c) $0.5\sin\left(\frac{x}{2}\right) + 3$
 
-::: {.losning}
-a) $2$, $2\pi$, $y = -1$ b) $5$, $2$, $y = 0$ c) $0.5$, $4\pi$, $y = 3$
-:::
 :::
 
 ::: {.oppgave tittel="Finn funksjonen" niva="Middels"}
 En sinusfunksjon $f(x) = A\sin(kx) + d$ har toppverdi 7, bunnverdi 1 og periode 4. Finn $A$, $k$ og $d$.
 
-::: {.losning}
-$d = 4$, $A = 3$, $k = \frac{2\pi}{4} = \frac{\pi}{2}$: $\underline{\underline{f(x) = 3\sin\left(\frac{\pi}{2}x\right) + 4}}$.
+::: {.fasit}
+$f(x) = 3\sin\left(\frac{\pi}{2}x\right) + 4$
 :::
 :::
 
 ::: {.oppgave tittel="Vekselspenning" niva="Utfordrende"}
 Spenningen i stikkontakten er $U(t) = 325\sin(100\pi t)$ volt. Finn amplituden, perioden og frekvensen.
 
-::: {.losning}
-Amplitude $\underline{\underline{325\ \mathrm{V}}}$. Periode $T = \frac{2\pi}{100\pi} = \underline{\underline{0.020\ \mathrm{s}}}$. Frekvens $f = \frac1T = \underline{\underline{50\ \mathrm{Hz}}}$.
+::: {.fasit}
+$325\ \mathrm{V}$ · $0.020\ \mathrm{s}$ · $50\ \mathrm{Hz}$
 :::
 :::
 

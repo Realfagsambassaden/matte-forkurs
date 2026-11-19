@@ -85,32 +85,32 @@ print(10**np.log10(7.3))                # 7.3
 ::: {.oppgave tittel="Uten kalkulator"}
 a) $\lg 10000$ b) $\lg 0.01$ c) $\lg\sqrt{10}$ d) $10^{\lg 5}$
 
-::: {.losning}
-a) $\underline{\underline{4}}$ b) $\underline{\underline{-2}}$ c) $\underline{\underline{\frac12}}$ d) $\underline{\underline{5}}$
+::: {.fasit}
+$4$ · $-2$ · $\frac12$ · $5$
 :::
 :::
 
 ::: {.oppgave tittel="Logaritmereglene"}
 Skriv som én logaritme og regn ut: a) $\lg 5 + \lg 20$ b) $\lg 300 - \lg 3$ c) $2\lg 5 + \lg 4$
 
-::: {.losning}
-a) $\lg 100 = \underline{\underline{2}}$ b) $\lg 100 = \underline{\underline{2}}$ c) $\lg(25\cdot 4) = \lg 100 = \underline{\underline{2}}$
+::: {.fasit}
+$2$
 :::
 :::
 
 ::: {.oppgave tittel="Desibel" niva="Middels"}
 Lydnivået er $L = 10\lg\dfrac{I}{I_0}$ dB. Hvor mye øker lydnivået når intensiteten dobles?
 
-::: {.losning}
-$10\lg\frac{2I}{I_0} = 10\lg 2 + 10\lg\frac{I}{I_0}$. Økningen er $10\lg 2 = \underline{\underline{3.0\ \mathrm{dB}}}$.
+::: {.fasit}
+$3.0\ \mathrm{dB}$
 :::
 :::
 
 ::: {.oppgave tittel="Forenkle" niva="Utfordrende"}
 Skriv så enkelt som mulig: $\lg(a^2 b) - 2\lg a + \lg\dfrac{1}{b}$
 
-::: {.losning}
-$2\lg a + \lg b - 2\lg a - \lg b = \underline{\underline{0}}$
+::: {.fasit}
+$0$
 :::
 :::
 

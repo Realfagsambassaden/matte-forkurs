@@ -12,40 +12,40 @@ Oppgavene blander polynomdivisjon, faktorisering og rasjonale og irrasjonale lik
 ::: {.oppgave tittel="Polynomdivisjon" krever="algebra-og-likninger/polynomer"}
 Regn ut $(x^3 - 8) : (x - 2)$.
 
-::: {.losning}
-$(x^3 + 0x^2 + 0x - 8) : (x - 2) = \underline{\underline{x^2 + 2x + 4}}$, rest 0.
+::: {.fasit}
+$x^2 + 2x + 4$
 :::
 :::
 
 ::: {.oppgave tittel="Faktoriser og løs" krever="algebra-og-likninger/polynomer"}
 Løs $x^3 - 6x^2 + 11x - 6 = 0$.
 
-::: {.losning}
-$P(1) = 0$. Divisjonen gir $x^2 - 5x + 6 = (x - 2)(x - 3)$. Løsningene er $\underline{\underline{x = 1, 2, 3}}$.
+::: {.fasit}
+$x = 1, 2, 3$
 :::
 :::
 
 ::: {.oppgave tittel="Rasjonal likning" niva="Middels" krever="algebra-og-likninger/rasjonale-uttrykk, algebra-og-likninger/likninger"}
 Løs $\dfrac{x}{x + 1} + \dfrac{2}{x - 1} = 1$.
 
-::: {.losning}
-Forbudt $\pm 1$. Gang med $(x + 1)(x - 1)$: $x(x - 1) + 2(x + 1) = x^2 - 1$, så $x^2 + x + 2 = x^2 - 1$ og $x = -3$. $\underline{\underline{x = -3}}$
+::: {.fasit}
+$x = -3$
 :::
 :::
 
 ::: {.oppgave tittel="Rasjonal ulikhet" niva="Middels" krever="algebra-og-likninger/ulikheter, algebra-og-likninger/rasjonale-uttrykk"}
 Løs $\dfrac{x^2 - 4}{x} \ge 0$.
 
-::: {.losning}
-$\frac{(x + 2)(x - 2)}{x} \ge 0$. Nullpunkter $-2$, $0$ (forbudt) og $2$. Langt til høyre positivt, og fortegnet skifter ved hvert: $\underline{\underline{-2 \le x < 0 \text{ eller } x \ge 2}}$.
+::: {.fasit}
+$-2 \le x < 0 \text{ eller } x \ge 2$
 :::
 :::
 
 ::: {.oppgave tittel="Irrasjonal likning" niva="Utfordrende" krever="algebra-og-likninger/likninger, tall-og-regneregler/rotter"}
 Løs $x - \sqrt{x} - 6 = 0$. (Hint: sett $u = \sqrt x$.)
 
-::: {.losning}
-$u^2 - u - 6 = 0$ gir $(u - 3)(u + 2) = 0$. $u = \sqrt x \ge 0$, så bare $u = 3$, og $\underline{\underline{x = 9}}$. Prøve: $9 - 3 - 6 = 0$.
+::: {.fasit}
+$x = 9$
 :::
 :::
 
@@ -55,12 +55,8 @@ $u^2 - u - 6 = 0$ gir $(u - 3)(u + 2) = 0$. $u = \sqrt x \ge 0$, så bare $u = 3
 
 Grafen viser et tredjegradspolynom. Les av nullpunktene og $P(0)$, og finn $P(x)$.
 
-::: {.losning}
-Nullpunktene er $-2$, $1$ og $3$, så $P(x) = a(x + 2)(x - 1)(x - 3)$. Fra grafen er $P(0) = 12$:
-$$
-a\cdot2\cdot(-1)\cdot(-3) = 6a = 12 \quad\Rightarrow\quad a = 2
-$$
-$P(x) = \underline{\underline{2(x + 2)(x - 1)(x - 3)}}$.
+::: {.fasit}
+$2(x + 2)(x - 1)(x - 3)$
 :::
 :::
 

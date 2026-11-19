@@ -63,24 +63,21 @@ $k = \frac{x}{2}$. Konvergens for $-1 < \frac{x}{2} < 1$, altså $\underline{\un
 ::: {.oppgave tittel="Summen"}
 Finn summen: a) $1 + \frac13 + \frac19 + \dots$ b) $8 - 4 + 2 - 1 + \dots$
 
-::: {.losning}
-a) $\frac{1}{1 - 1/3} = \underline{\underline{\frac32}}$ b) $k = -\frac12$: $\frac{8}{1 + 1/2} = \underline{\underline{\frac{16}{3}}}$
+::: {.fasit}
+$\frac32$ · $\frac{16}{3}$
 :::
 :::
 
 ::: {.oppgave tittel="Desimaltall" niva="Middels"}
 Vis at $0.\overline{9} = 1$.
 
-::: {.losning}
-$0.9 + 0.09 + \dots$ har $a_1 = 0.9$ og $k = 0.1$: $S = \frac{0.9}{0.9} = 1$.
-:::
 :::
 
 ::: {.oppgave tittel="Medisin" niva="Utfordrende"}
 En pasient tar 100 mg medisin hver dag. Etter ett døgn er 40 % av mengden igjen i kroppen. Hvor mye medisin er det i kroppen rett etter en dose, etter svært lang tid?
 
-::: {.losning}
-$100 + 100\cdot 0.40 + 100\cdot 0.40^2 + \dots = \frac{100}{1 - 0.40} = \underline{\underline{167\ \mathrm{mg}}}$
+::: {.fasit}
+$167\ \mathrm{mg}$
 :::
 :::
 

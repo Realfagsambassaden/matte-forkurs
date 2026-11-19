@@ -68,25 +68,22 @@ print("scipy:", quad(f, a, b)[0])
 ::: {.oppgave tittel="Trapes for hånd"}
 Bruk trapesmetoden med $n = 2$ til å tilnærme $\int_0^2 x^2\,\mathrm{d}x$. Sammenlign med det nøyaktige svaret.
 
-::: {.losning}
-$h = 1$: $1\cdot\left(\frac02 + 1 + \frac42\right) = \underline{\underline{3}}$. Nøyaktig: $\frac83 = 2.67$. Trapesene ligger over den krumme grafen.
+::: {.fasit}
+$3$
 :::
 :::
 
 ::: {.oppgave tittel="Fra målinger" niva="Middels"}
 Farten til en syklist er målt hvert 10. sekund: $0,\ 4.0,\ 6.0,\ 7.0,\ 7.5\ \mathrm{m/s}$. Hvor langt har hen syklet etter 40 s? Bruk trapesmetoden.
 
-::: {.losning}
-$10\left(\frac02 + 4.0 + 6.0 + 7.0 + \frac{7.5}{2}\right) = \underline{\underline{208\ \mathrm{m}}}$
+::: {.fasit}
+$208\ \mathrm{m}$
 :::
 :::
 
 ::: {.oppgave tittel="Simpson er eksakt" niva="Utfordrende"}
 Bruk Simpsons metode med $n = 2$ på $\int_0^2 x^2\,\mathrm{d}x$. Hvorfor blir svaret helt riktig?
 
-::: {.losning}
-$\frac13(0 + 4\cdot 1 + 4) = \frac83$. Simpson bruker parabler, og grafen *er* en parabel.
-:::
 :::
 
 ::::

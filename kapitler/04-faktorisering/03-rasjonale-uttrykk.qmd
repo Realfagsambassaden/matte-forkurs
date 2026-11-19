@@ -60,43 +60,32 @@ $$
 ::: {.oppgave tittel="Forkort"}
 Forkort: a) $\dfrac{x^2 - 16}{x + 4}$ b) $\dfrac{x^2 + 5x + 6}{x + 2}$ c) $\dfrac{3x - 6}{x^2 - 4x + 4}$
 
-::: {.losning}
-a) $\underline{\underline{x - 4}}$, $x \ne -4$
-
-b) $\frac{(x + 2)(x + 3)}{x + 2} = \underline{\underline{x + 3}}$, $x \ne -2$
-
-c) $\frac{3(x - 2)}{(x - 2)^2} = \underline{\underline{\frac{3}{x - 2}}}$, $x \ne 2$
+::: {.fasit}
+a) $x - 4$ · b) $x + 3$ · c) $\frac{3}{x - 2}$
 :::
 :::
 
 ::: {.oppgave tittel="Fortegnsbytte" niva="Middels"}
 Forkort $\dfrac{x^2 - 5x}{25 - x^2}$.
 
-::: {.losning}
-$$
-\frac{x(x - 5)}{(5 - x)(5 + x)} = \frac{x(x - 5)}{-(x - 5)(x + 5)} = \underline{\underline{-\frac{x}{x + 5}}}, \quad x \ne \pm 5
-$$
+::: {.fasit}
+$-\frac{x}{x + 5}$
 :::
 :::
 
 ::: {.oppgave tittel="Fellesnevner" niva="Middels"}
 Skriv som én brøk og forenkle: $\dfrac{x}{x - 2} - \dfrac{8}{x^2 - 4}$
 
-::: {.losning}
-Fellesnevner $(x + 2)(x - 2)$:
-$$
-\frac{x(x + 2) - 8}{(x + 2)(x - 2)} = \frac{x^2 + 2x - 8}{(x + 2)(x - 2)} = \frac{(x + 4)(x - 2)}{(x + 2)(x - 2)} = \underline{\underline{\frac{x + 4}{x + 2}}}, \quad x \ne \pm 2
-$$
+::: {.fasit}
+$\frac{x + 4}{x + 2}$
 :::
 :::
 
 ::: {.oppgave tittel="Gange og dele" niva="Utfordrende"}
 Forenkle $\dfrac{x^2 - 1}{x^2 + 2x}\cdot\dfrac{x + 2}{x - 1}$.
 
-::: {.losning}
-$$
-\frac{(x + 1)(x - 1)}{x(x + 2)}\cdot\frac{x + 2}{x - 1} = \underline{\underline{\frac{x + 1}{x}}}, \quad x \ne 0,\ x \ne -2,\ x \ne 1
-$$
+::: {.fasit}
+$\frac{x + 1}{x}$
 :::
 :::
 

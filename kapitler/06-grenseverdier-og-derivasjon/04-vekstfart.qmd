@@ -83,39 +83,30 @@ for h in [1, 0.1, 0.01, 0.001, 1e-6]:
 ::: {.oppgave tittel="Gjennomsnittlig vekstfart"}
 Finn den gjennomsnittlige vekstfarten til $f(x) = x^2 - 2x$ fra $x = 1$ til $x = 4$.
 
-::: {.losning}
-$f(1) = -1$, $f(4) = 8$: $\frac{8 - (-1)}{4 - 1} = \underline{\underline{3}}$.
+::: {.fasit}
+$3$
 :::
 :::
 
 ::: {.oppgave tittel="Fra definisjonen" niva="Middels"}
 Bruk definisjonen og finn $f'(x)$ når $f(x) = 3x^2 + 1$.
 
-::: {.losning}
-$$
-\frac{3(x + h)^2 + 1 - 3x^2 - 1}{h} = \frac{6xh + 3h^2}{h} = 6x + 3h \to \underline{\underline{6x}}
-$$
+::: {.fasit}
+$6x$
 :::
 :::
 
 ::: {.oppgave tittel="Snittfart og momentan fart" niva="Middels"}
 En stein faller, og strekningen er $s(t) = 4.9t^2$ (meter, sekunder). a) Finn gjennomsnittsfarten de første $2.0\ \mathrm{s}$. b) Finn farten ved $t = 2.0\ \mathrm{s}$ med definisjonen.
 
-::: {.losning}
-a) $\frac{s(2) - s(0)}{2} = \frac{19.6}{2} = \underline{\underline{9.8\ \mathrm{m/s}}}$
-
-b) $\frac{4.9(2 + h)^2 - 4.9\cdot 4}{h} = \frac{19.6h + 4.9h^2}{h} = 19.6 + 4.9h \to \underline{\underline{19.6\ \mathrm{m/s}}}$. Momentanfarten ved 2 s er det dobbelte av gjennomsnittsfarten, slik den skal være ved konstant akselerasjon fra ro.
+::: {.fasit}
+a) $9.8\ \mathrm{m/s}$ · b) $19.6\ \mathrm{m/s}$
 :::
 :::
 
 ::: {.oppgave tittel="Derivert av 1/x" niva="Utfordrende"}
 Vis med definisjonen at $f'(x) = -\dfrac{1}{x^2}$ når $f(x) = \dfrac1x$.
 
-::: {.losning}
-$$
-\frac{\frac{1}{x + h} - \frac1x}{h} = \frac{x - (x + h)}{h\,x(x + h)} = \frac{-1}{x(x + h)} \to -\frac{1}{x^2}
-$$
-:::
 :::
 
 ::::

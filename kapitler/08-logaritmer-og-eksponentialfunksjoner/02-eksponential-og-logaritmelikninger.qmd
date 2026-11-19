@@ -66,36 +66,32 @@ $x = -2$ oppfyller ikke $x > 3$. Svaret er $\underline{\underline{x = 5}}$. Prø
 ::: {.oppgave tittel="Eksponentiallikninger"}
 Løs: a) $2^x = 50$ b) $3\cdot 5^x = 75$ c) $0.9^x = 0.5$
 
-::: {.losning}
-a) $x = \frac{\lg 50}{\lg 2} = \underline{\underline{5.64}}$
-
-b) $5^x = 25$, så $\underline{\underline{x = 2}}$
-
-c) $x = \frac{\lg 0.5}{\lg 0.9} = \underline{\underline{6.58}}$
+::: {.fasit}
+a) $5.64$ · b) $x = 2$ · c) $6.58$
 :::
 :::
 
 ::: {.oppgave tittel="Logaritmelikninger"}
 Løs: a) $\lg x = 2.5$ b) $\lg(2x + 4) = 2$
 
-::: {.losning}
-a) $x = 10^{2.5} = \underline{\underline{316}}$ b) $2x + 4 = 100$, så $\underline{\underline{x = 48}}$
+::: {.fasit}
+$316$ · $x = 48$
 :::
 :::
 
 ::: {.oppgave tittel="Halveringstid" niva="Middels"}
 Et radioaktivt stoff avtar med 12 % per time. Hvor lang tid tar det før halvparten er igjen?
 
-::: {.losning}
-$0.88^t = 0.5$ gir $t = \frac{\lg 0.5}{\lg 0.88} = \underline{\underline{5.4 \text{ timer}}}$. Se [radioaktivitet på fysikkhjelp.no](https://fysikkhjelp.no/fysikk-forkurs/kapitler/12-atom-og-kjernefysikk/03-radioaktivitet-og-straling.html).
+::: {.fasit}
+$5.4 \text{ timer}$
 :::
 :::
 
 ::: {.oppgave tittel="Substitusjon" niva="Utfordrende"}
 Løs $4^x - 3\cdot 2^x - 4 = 0$.
 
-::: {.losning}
-Sett $u = 2^x$, så $4^x = u^2$: $u^2 - 3u - 4 = 0$ gir $u = 4$ eller $u = -1$. $2^x$ er alltid positiv, så bare $2^x = 4$: $\underline{\underline{x = 2}}$.
+::: {.fasit}
+$x = 2$
 :::
 :::
 

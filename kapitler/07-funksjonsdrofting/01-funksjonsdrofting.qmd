@@ -93,36 +93,32 @@ plt.axhline(0, color="gray"); plt.legend(); plt.grid(True); plt.show()
 ::: {.oppgave tittel="Vokser og avtar"}
 Hvor vokser og avtar $f(x) = x^2 - 6x + 2$? Finn ekstremalpunktet.
 
-::: {.losning}
-$f'(x) = 2x - 6$. Avtar for $x < 3$, vokser for $x > 3$. Bunnpunkt $\underline{\underline{(3, -7)}}$.
+::: {.fasit}
+$(3, -7)$
 :::
 :::
 
 ::: {.oppgave tittel="Tredjegrad"}
 Drøft $g(x) = -x^3 + 3x$.
 
-::: {.losning}
-$g'(x) = -3x^2 + 3 = -3(x + 1)(x - 1)$. $g'$ er negativ for $|x| > 1$ og positiv for $|x| < 1$.
-
-Avtar for $x < -1$ og $x > 1$, vokser for $-1 < x < 1$. Bunnpunkt $\underline{\underline{(-1, -2)}}$, toppunkt $\underline{\underline{(1, 2)}}$.
+::: {.fasit}
+$(-1, -2)$ · $(1, 2)$
 :::
 :::
 
 ::: {.oppgave tittel="Terrassepunkt" niva="Middels"}
 Vis at $h(x) = x^3 - 3x^2 + 3x$ har et terrassepunkt, og finn det.
 
-::: {.losning}
-$h'(x) = 3x^2 - 6x + 3 = 3(x - 1)^2 \ge 0$. Null bare for $x = 1$, og fortegnet skifter ikke. $h$ vokser hele tiden, med terrassepunkt i $\underline{\underline{(1, 1)}}$.
+::: {.fasit}
+$(1, 1)$
 :::
 :::
 
 ::: {.oppgave tittel="Største verdi på et intervall" niva="Utfordrende"}
 Finn største og minste verdi til $f(x) = x^3 - 3x^2 - 9x + 5$ på intervallet $[-2, 6]$.
 
-::: {.losning}
-Kandidater: endepunktene og ekstremalpunktene inni intervallet. $f(-2) = -8 - 12 + 18 + 5 = 3$, $f(-1) = 10$, $f(3) = -22$, $f(6) = 216 - 108 - 54 + 5 = 59$.
-
-Største verdi $\underline{\underline{59}}$ (i endepunktet $x = 6$), minste verdi $\underline{\underline{-22}}$ (i $x = 3$).
+::: {.fasit}
+$59$ · $-22$
 :::
 :::
 

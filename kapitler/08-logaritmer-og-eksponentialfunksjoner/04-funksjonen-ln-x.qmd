@@ -56,28 +56,24 @@ Produktregelen: $h'(x) = 1\cdot\ln x + x\cdot\frac1x = \underline{\underline{\ln
 ::: {.oppgave tittel="Deriver"}
 a) $\ln(3x)$ b) $\ln(x^2)$ c) $\dfrac{\ln x}{x}$
 
-::: {.losning}
-a) $\frac{3}{3x} = \underline{\underline{\frac1x}}$ (fordi $\ln 3x = \ln 3 + \ln x$)
-
-b) $\frac{2x}{x^2} = \underline{\underline{\frac2x}}$
-
-c) $\frac{\frac1x\cdot x - \ln x}{x^2} = \underline{\underline{\frac{1 - \ln x}{x^2}}}$
+::: {.fasit}
+a) $\frac1x$ · b) $\frac2x$ · c) $\frac{1 - \ln x}{x^2}$
 :::
 :::
 
 ::: {.oppgave tittel="Toppunkt" niva="Middels"}
 Finn toppunktet til $f(x) = \dfrac{\ln x}{x}$.
 
-::: {.losning}
-$f'(x) = \frac{1 - \ln x}{x^2} = 0$ gir $\ln x = 1$, altså $x = \mathrm{e}$. $f'$ skifter fra pluss til minus. Toppunkt $\underline{\underline{\left(\mathrm{e}, \frac{1}{\mathrm{e}}\right) \approx (2.72,\ 0.368)}}$.
+::: {.fasit}
+$\left(\mathrm{e}, \frac{1}{\mathrm{e}}\right) \approx (2.72,\ 0.368)$
 :::
 :::
 
 ::: {.oppgave tittel="Definisjonsmengde" niva="Utfordrende"}
 Finn definisjonsmengden og nullpunktene til $f(x) = \ln(4 - x^2)$.
 
-::: {.losning}
-$4 - x^2 > 0$ gir $\underline{\underline{-2 < x < 2}}$. Nullpunkter: $4 - x^2 = 1$, så $\underline{\underline{x = \pm\sqrt3}}$.
+::: {.fasit}
+$-2 < x < 2$ · $x = \pm\sqrt3$
 :::
 :::
 

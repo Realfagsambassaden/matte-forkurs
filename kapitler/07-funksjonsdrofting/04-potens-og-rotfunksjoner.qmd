@@ -63,24 +63,24 @@ I $x = 0$ er den deriverte ikke definert. Grafen har en spiss der: Tangenten bli
 ::: {.oppgave tittel="Deriver"}
 a) $f(x) = 4x^{3/2}$ b) $g(x) = \dfrac{6}{\sqrt x}$ c) $h(x) = 2\sqrt[3]{x}$
 
-::: {.losning}
-a) $\underline{\underline{6x^{1/2} = 6\sqrt x}}$ b) $6x^{-1/2}$ gir $\underline{\underline{-3x^{-3/2}}}$ c) $2x^{1/3}$ gir $\underline{\underline{\frac23 x^{-2/3}}}$
+::: {.fasit}
+$6x^{1/2} = 6\sqrt x$ · $-3x^{-3/2}$ · $\frac23 x^{-2/3}$
 :::
 :::
 
 ::: {.oppgave tittel="Gravitasjon" niva="Middels"}
 Gravitasjonskraften på en satellitt er $F = \dfrac{k}{r^2}$. Hvor mye mindre blir kraften når avstanden til jordsenteret tredobles?
 
-::: {.losning}
-$F(3r) = \frac{k}{9r^2} = \frac19 F(r)$. Kraften blir $\underline{\underline{9 \text{ ganger mindre}}}$.
+::: {.fasit}
+$9 \text{ ganger mindre}$
 :::
 :::
 
 ::: {.oppgave tittel="Drøfting" niva="Utfordrende"}
 Finn bunnpunktet til $f(x) = x + \dfrac{4}{x}$ for $x > 0$.
 
-::: {.losning}
-$f'(x) = 1 - \frac{4}{x^2} = 0$ gir $x = 2$. $f'' = \frac{8}{x^3} > 0$, så det er et bunnpunkt: $\underline{\underline{(2, 4)}}$.
+::: {.fasit}
+$(2, 4)$
 :::
 :::
 

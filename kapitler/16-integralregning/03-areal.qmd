@@ -58,27 +58,24 @@ $$
 ::: {.oppgave tittel="Under grafen"}
 Finn arealet mellom $f(x) = 4 - x^2$ og $x$-aksen.
 
-::: {.losning}
-Nullpunkter $\pm 2$. $\int_{-2}^{2}(4 - x^2)\,\mathrm{d}x = \left[4x - \frac{x^3}{3}\right]_{-2}^{2} = \frac{16}{3} + \frac{16}{3} = \underline{\underline{\frac{32}{3}}}$
+::: {.fasit}
+$\frac{32}{3}$
 :::
 :::
 
 ::: {.oppgave tittel="Sinus" niva="Middels"}
 Finn arealet mellom $y = \sin x$ og $x$-aksen for $0 \le x \le 2\pi$.
 
-::: {.losning}
-Hver halvbue gir 2. Areal $= 2 + 2 = \underline{\underline{4}}$. (Integralet er 0.)
+::: {.fasit}
+$4$
 :::
 :::
 
 ::: {.oppgave tittel="To grafer" niva="Utfordrende"}
 Finn arealet mellom $y = x^3$ og $y = x$.
 
-::: {.losning}
-Skjæring i $x = -1, 0, 1$. På $[0, 1]$ ligger $x$ øverst, på $[-1, 0]$ ligger $x^3$ øverst. Symmetri:
-$$
-A = 2\int_0^1 (x - x^3)\,\mathrm{d}x = 2\left(\frac12 - \frac14\right) = \underline{\underline{\frac12}}
-$$
+::: {.fasit}
+$\frac12$
 :::
 :::
 

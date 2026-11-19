@@ -12,24 +12,18 @@ Oppgavene blander aritmetiske og geometriske følger og rekker. Prøv selv før 
 ::: {.oppgave tittel="Hvilken type?" krever="folger-og-rekker/aritmetiske, folger-og-rekker/geometriske"}
 Er følgene aritmetiske, geometriske eller ingen av delene? a) $2, 6, 18, 54$ b) $10, 7, 4, 1$ c) $1, 4, 9, 16$
 
-::: {.losning}
-a) Geometrisk, $k = 3$. b) Aritmetisk, $d = -3$. c) Ingen av delene (kvadrattall).
-:::
 :::
 
 ::: {.oppgave tittel="Lønnsøkning" niva="Middels" krever="folger-og-rekker/aritmetiske, folger-og-rekker/geometriske"}
 Tilbud A: 500000 kr første år, og 15000 kr mer hvert år. Tilbud B: 500000 kr første år, og 3 % mer hvert år. Hvilket gir mest til sammen over 10 år?
 
-::: {.losning}
-A: $\frac{10(500000 + 635000)}{2} = 5675000$ kr. B: $500000\cdot\frac{1.03^{10} - 1}{0.03} = 5731940$ kr. **B** gir mest.
-:::
 :::
 
 ::: {.oppgave tittel="Snøfnugget" niva="Utfordrende" krever="folger-og-rekker/uendelige"}
 Kochs snøfnugg starter med en likesidet trekant med areal 1. I hvert steg legges det til nye trekanter: først 3 trekanter med areal $\frac19$, så 12 med areal $\frac{1}{81}$, og så videre (4 ganger så mange, $\frac19$ av arealet). Finn det totale arealet.
 
-::: {.losning}
-Tilleggene: $3\cdot\frac19 + 12\cdot\frac{1}{81} + \dots = \frac13 + \frac{4}{27} + \dots$, geometrisk med $k = \frac49$. Summen: $\frac{1/3}{1 - 4/9} = \frac35$. Totalt areal $1 + \frac35 = \underline{\underline{\frac85}}$. Omkretsen blir uendelig lang, men arealet er endelig.
+::: {.fasit}
+$\frac85$
 :::
 :::
 
@@ -39,10 +33,8 @@ Tilleggene: $3\cdot\frac19 + 12\cdot\frac{1}{81} + \dots = \frac13 + \frac{4}{27
 
 Søylene viser de fem første leddene i en følge. Hva slags følge er det? Finn $a_n$ og summen av de ti første leddene.
 
-::: {.losning}
-Leddene er $3, 7, 11, 15, 19$: En **aritmetisk** følge med $a_1 = 3$ og $d = 4$. $a_n = 3 + 4(n - 1) = \underline{\underline{4n - 1}}$.
-
-$a_{10} = 39$, så $S_{10} = \frac{10(3 + 39)}{2} = \underline{\underline{210}}$.
+::: {.fasit}
+$4n - 1$ · $210$
 :::
 :::
 

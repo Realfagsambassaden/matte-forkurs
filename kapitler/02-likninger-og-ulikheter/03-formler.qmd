@@ -86,53 +86,40 @@ print(solve(Eq(A, (a + b)*h/2), b))     # [2*A/h - a]
 ::: {.oppgave tittel="Bruk formelen"}
 Volumet av en sylinder er $V = \pi r^2 h$. Regn ut volumet når $r = 3.0\ \mathrm{cm}$ og $h = 10\ \mathrm{cm}$.
 
-::: {.losning}
-$$
-V = \pi\cdot(3.0\ \mathrm{cm})^2\cdot 10\ \mathrm{cm} = 283\ \mathrm{cm^3} \approx \underline{\underline{2.8\cdot 10^2\ \mathrm{cm^3}}}
-$$
-To gjeldende siffer, som dataene.
+::: {.fasit}
+$2.8\cdot 10^2\ \mathrm{cm^3}$
 :::
 :::
 
 ::: {.oppgave tittel="Snu formelen"}
 Løs med hensyn på den størrelsen som står i parentes: a) $s = vt$ ($t$) b) $F = ma$ ($a$) c) $P = 2a + 2b$ ($b$)
 
-::: {.losning}
-a) $\underline{\underline{t = \dfrac{s}{v}}}$ b) $\underline{\underline{a = \dfrac{F}{m}}}$ c) $2b = P - 2a$, så $\underline{\underline{b = \dfrac{P - 2a}{2} = \dfrac P2 - a}}$
+::: {.fasit}
+$t = \dfrac{s}{v}$ · $a = \dfrac{F}{m}$ · $b = \dfrac{P - 2a}{2} = \dfrac P2 - a$
 :::
 :::
 
 ::: {.oppgave tittel="Temperatur" niva="Middels"}
 Sammenhengen mellom grader fahrenheit og celsius er $F = \frac95 C + 32$. a) Løs formelen med hensyn på $C$. b) Hva er $98.6\ ^\circ\mathrm{F}$ i celsius? c) Ved hvilken temperatur viser begge skalaene samme tall?
 
-::: {.losning}
-a) $F - 32 = \frac95 C$, så $\underline{\underline{C = \frac59(F - 32)}}$.
-
-b) $C = \frac59(98.6 - 32) = \frac59\cdot 66.6 = \underline{\underline{37.0\ ^\circ\mathrm{C}}}$
-
-c) Sett $F = C$: $C = \frac95 C + 32$, så $-\frac45 C = 32$ og $\underline{\underline{C = -40}}$. Både $-40\ ^\circ\mathrm{C}$ og $-40\ ^\circ\mathrm{F}$.
+::: {.fasit}
+a) $C = \frac59(F - 32)$ · b) $37.0\ ^\circ\mathrm{C}$ · c) $C = -40$
 :::
 :::
 
 ::: {.oppgave tittel="Pendelen" niva="Middels"}
 Svingetiden til en pendel er $T = 2\pi\sqrt{\dfrac{L}{\mathrm{g}}}$. Løs formelen med hensyn på $L$.
 
-::: {.losning}
-Del på $2\pi$: $\dfrac{T}{2\pi} = \sqrt{\dfrac{L}{\mathrm{g}}}$. Kvadrer: $\dfrac{T^2}{4\pi^2} = \dfrac{L}{\mathrm{g}}$. Gang med $\mathrm{g}$:
-$$
-\underline{\underline{L = \frac{\mathrm{g}T^2}{4\pi^2}}}
-$$
+::: {.fasit}
+$L = \frac{\mathrm{g}T^2}{4\pi^2}$
 :::
 :::
 
 ::: {.oppgave tittel="Ukjent i to ledd" niva="Utfordrende"}
 Løs $y = \dfrac{x + 2}{x - 1}$ med hensyn på $x$.
 
-::: {.losning}
-Gang med $x - 1$: $y(x - 1) = x + 2$, så $xy - y = x + 2$. Samle $x$-leddene: $xy - x = y + 2$. Sett $x$ utenfor:
-$$
-x(y - 1) = y + 2 \quad\Longrightarrow\quad \underline{\underline{x = \frac{y + 2}{y - 1}}}, \quad y \neq 1
-$$
+::: {.fasit}
+$x = \frac{y + 2}{y - 1}$
 :::
 :::
 

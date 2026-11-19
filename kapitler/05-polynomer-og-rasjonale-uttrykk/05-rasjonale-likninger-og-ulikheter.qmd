@@ -83,36 +83,32 @@ Snittet er $\underline{\underline{-1 \le x \le 3}}$.
 ::: {.oppgave tittel="Rasjonale likninger"}
 Løs: a) $\dfrac{3}{x} = \dfrac{6}{x + 2}$ b) $\dfrac{x}{x - 3} = \dfrac{3}{x - 3} + 2$
 
-::: {.losning}
-a) Forbudt $0$ og $-2$. $3(x + 2) = 6x$ gir $x = 2$: $\underline{\underline{x = 2}}$.
-
-b) Forbudt $3$. Gang med $x - 3$: $x = 3 + 2(x - 3)$, så $x = 3$. Men den er forbudt: $\underline{\underline{\text{ingen løsning}}}$.
+::: {.fasit}
+a) $x = 2$ · b) $\text{ingen løsning}$
 :::
 :::
 
 ::: {.oppgave tittel="Rasjonal ulikhet" niva="Middels"}
 Løs $\dfrac{x - 2}{x + 1} < 0$.
 
-::: {.losning}
-Telleren null for $x = 2$, nevneren for $x = -1$. Brøken er negativ mellom dem: $\underline{\underline{-1 < x < 2}}$.
+::: {.fasit}
+$-1 < x < 2$
 :::
 :::
 
 ::: {.oppgave tittel="Arbeid sammen" niva="Middels"}
 Én pumpe tømmer et basseng på 6 timer, en annen på 3 timer. Hvor lang tid tar det med begge? Løs likningen $\dfrac{1}{6} + \dfrac{1}{3} = \dfrac{1}{t}$.
 
-::: {.losning}
-$\frac16 + \frac26 = \frac36 = \frac12 = \frac1t$, så $\underline{\underline{t = 2 \text{ timer}}}$.
+::: {.fasit}
+$t = 2 \text{ timer}$
 :::
 :::
 
 ::: {.oppgave tittel="Ulikhet med flytting" niva="Utfordrende"}
 Løs $\dfrac{1}{x} > \dfrac{1}{x + 2}$.
 
-::: {.losning}
-$\frac1x - \frac{1}{x + 2} > 0$ gir $\frac{x + 2 - x}{x(x + 2)} = \frac{2}{x(x + 2)} > 0$.
-
-Telleren er alltid positiv, så vi trenger $x(x + 2) > 0$: $\underline{\underline{x < -2 \text{ eller } x > 0}}$.
+::: {.fasit}
+$x < -2 \text{ eller } x > 0$
 :::
 :::
 

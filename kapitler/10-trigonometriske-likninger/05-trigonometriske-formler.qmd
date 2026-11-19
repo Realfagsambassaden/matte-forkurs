@@ -69,27 +69,22 @@ Rekkevidden til et skrått kast fra bakken er $R = \dfrac{v_0^2\sin 2\alpha}{\ma
 ::: {.oppgave tittel="Eksakte verdier"}
 Finn eksakt: a) $\sin 15^\circ$ b) $\cos 105^\circ$
 
-::: {.losning}
-a) $\sin(45^\circ - 30^\circ) = \frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2} - \frac{\sqrt2}{2}\cdot\frac12 = \underline{\underline{\frac{\sqrt6 - \sqrt2}{4}}}$
-
-b) $\cos(60^\circ + 45^\circ) = \frac12\cdot\frac{\sqrt2}{2} - \frac{\sqrt3}{2}\cdot\frac{\sqrt2}{2} = \underline{\underline{\frac{\sqrt2 - \sqrt6}{4}}}$
+::: {.fasit}
+a) $\frac{\sqrt6 - \sqrt2}{4}$ · b) $\frac{\sqrt2 - \sqrt6}{4}$
 :::
 :::
 
 ::: {.oppgave tittel="Dobbel vinkel" niva="Middels"}
 $\sin v = \frac35$ og $v$ er spiss. Finn $\sin 2v$ og $\cos 2v$.
 
-::: {.losning}
-$\cos v = \frac45$. $\sin 2v = 2\cdot\frac35\cdot\frac45 = \underline{\underline{\frac{24}{25}}}$ og $\cos 2v = \frac{16}{25} - \frac{9}{25} = \underline{\underline{\frac{7}{25}}}$.
+::: {.fasit}
+$\frac{24}{25}$ · $\frac{7}{25}$
 :::
 :::
 
 ::: {.oppgave tittel="Vis at" niva="Utfordrende"}
 Vis at $\sin^2 v = \frac12(1 - \cos 2v)$.
 
-::: {.losning}
-Fra $\cos 2v = 1 - 2\sin^2 v$ får vi $2\sin^2 v = 1 - \cos 2v$, altså $\sin^2 v = \frac12(1 - \cos 2v)$. Denne formelen brukes når vi skal integrere $\sin^2 x$.
-:::
 :::
 
 ::::

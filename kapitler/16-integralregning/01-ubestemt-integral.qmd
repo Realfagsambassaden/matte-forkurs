@@ -81,26 +81,24 @@ $s(t) = \int (2t + 3)\,\mathrm{d}t = t^2 + 3t + C$. $s(0) = C = 10$, så $\under
 ::: {.oppgave tittel="Integrer"}
 a) $\int 5\,\mathrm{d}x$ b) $\int x^4\,\mathrm{d}x$ c) $\int (3x^2 + 2x)\,\mathrm{d}x$
 
-::: {.losning}
-a) $\underline{\underline{5x + C}}$ b) $\underline{\underline{\frac{x^5}{5} + C}}$ c) $\underline{\underline{x^3 + x^2 + C}}$
+::: {.fasit}
+$5x + C$ · $\frac{x^5}{5} + C$ · $x^3 + x^2 + C$
 :::
 :::
 
 ::: {.oppgave tittel="Eksponential og trigonometri"}
 a) $\int 4\mathrm{e}^{2x}\,\mathrm{d}x$ b) $\int (\cos x - \sin x)\,\mathrm{d}x$ c) $\int \frac{1}{x^2}\,\mathrm{d}x$
 
-::: {.losning}
-a) $\underline{\underline{2\mathrm{e}^{2x} + C}}$ b) $\underline{\underline{\sin x + \cos x + C}}$ c) $\int x^{-2}\,\mathrm{d}x = \underline{\underline{-\frac1x + C}}$
+::: {.fasit}
+$2\mathrm{e}^{2x} + C$ · $\sin x + \cos x + C$ · $-\frac1x + C$
 :::
 :::
 
 ::: {.oppgave tittel="Fritt fall" niva="Middels"}
 En stein slippes fra ro, og akselerasjonen er $a = -\mathrm{g}$. Finn $v(t)$ og $s(t)$ når $v(0) = 0$ og $s(0) = h$.
 
-::: {.losning}
-$v = \int -\mathrm{g}\,\mathrm{d}t = -\mathrm{g}t + C_1$, og $v(0) = 0$ gir $\underline{\underline{v = -\mathrm{g}t}}$.
-
-$s = \int -\mathrm{g}t\,\mathrm{d}t = -\frac12\mathrm{g}t^2 + C_2$, og $s(0) = h$ gir $\underline{\underline{s = h - \frac12\mathrm{g}t^2}}$.
+::: {.fasit}
+$v = -\mathrm{g}t$ · $s = h - \frac12\mathrm{g}t^2$
 :::
 :::
 

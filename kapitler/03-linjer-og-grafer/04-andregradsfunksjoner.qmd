@@ -94,40 +94,29 @@ plt.grid(True); plt.show()
 ::: {.oppgave tittel="Smiler eller sur?"}
 Har grafene toppunkt eller bunnpunkt? Hvor skjærer de $y$-aksen? a) $f(x) = 2x^2 - 3$ b) $g(x) = -x^2 + 4x$ c) $h(x) = 5 - x - x^2$
 
-::: {.losning}
-a) $a = 2 > 0$: bunnpunkt. Skjærer $y$-aksen i $(0, -3)$.
-
-b) $a = -1 < 0$: toppunkt. Skjærer i $(0, 0)$.
-
-c) $a = -1 < 0$: toppunkt. Skjærer i $(0, 5)$.
-:::
 :::
 
 ::: {.oppgave tittel="Toppunkt"}
 Finn toppunktet til $g(x) = -x^2 + 4x$.
 
-::: {.losning}
-$x = -\frac{4}{2\cdot(-1)} = 2$ og $g(2) = -4 + 8 = 4$. Toppunktet er $\underline{\underline{(2, 4)}}$.
+::: {.fasit}
+$(2, 4)$
 :::
 :::
 
 ::: {.oppgave tittel="Høyeste punkt" niva="Middels"}
 En ball kastes rett opp, og høyden er $y(t) = 1.2 + 14.7t - 4.9t^2$ (meter, sekunder). Når er ballen høyest, og hvor høyt kommer den?
 
-::: {.losning}
-Symmetrilinja: $t = -\frac{14.7}{2\cdot(-4.9)} = \underline{\underline{1.5\ \mathrm{s}}}$.
-
-Høyden: $y(1.5) = 1.2 + 22.05 - 11.025 = \underline{\underline{12.2\ \mathrm{m}}}$
+::: {.fasit}
+$1.5\ \mathrm{s}$ · $12.2\ \mathrm{m}$
 :::
 :::
 
 ::: {.oppgave tittel="Største areal" niva="Utfordrende"}
 Du har $40\ \mathrm{m}$ gjerde og skal lage en rektangulær innhegning. a) Vis at arealet er $A(x) = x(20 - x)$, der $x$ er den ene siden. b) Hvilken $x$ gir størst areal, og hvor stort er det?
 
-::: {.losning}
-a) Omkretsen er $2x + 2y = 40$, så den andre siden er $y = 20 - x$, og $A = xy = x(20 - x)$.
-
-b) $A(x) = -x^2 + 20x$ har toppunkt ved $x = -\frac{20}{2\cdot(-1)} = 10$. Da er $A = 10\cdot 10 = \underline{\underline{100\ \mathrm{m^2}}}$. Det største arealet får vi med et kvadrat på $10\ \mathrm{m}\times 10\ \mathrm{m}$.
+::: {.fasit}
+$100\ \mathrm{m^2}$
 :::
 :::
 

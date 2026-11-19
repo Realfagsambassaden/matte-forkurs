@@ -67,35 +67,32 @@ Måleusikkerhet skrives ofte som en dobbel ulikhet: «lengden er $2.50 \pm 0.02\
 ::: {.oppgave tittel="Løs de doble ulikhetene"}
 a) $3 \le x + 5 < 8$ b) $-6 < 3x \le 12$ c) $0 < 2x - 4 < 10$
 
-::: {.losning}
-a) $\underline{\underline{-2 \le x < 3}}$ b) $\underline{\underline{-2 < x \le 4}}$ c) $4 < 2x < 14$, så $\underline{\underline{2 < x < 7}}$
+::: {.fasit}
+$-2 \le x < 3$ · $-2 < x \le 4$ · $2 < x < 7$
 :::
 :::
 
 ::: {.oppgave tittel="Tegnet snur"}
 Løs $-3 \le 1 - 4x \le 9$.
 
-::: {.losning}
-Trekk fra 1: $-4 \le -4x \le 8$. Del på $-4$, tegnene snur: $1 \ge x \ge -2$, altså $\underline{\underline{x \in [-2, 1]}}$.
+::: {.fasit}
+$x \in [-2, 1]$
 :::
 :::
 
 ::: {.oppgave tittel="Temperaturintervall" niva="Middels"}
 En maskin tåler temperaturer fra $-20\ ^\circ\mathrm{C}$ til $60\ ^\circ\mathrm{C}$. Bruk $F = \frac95 C + 32$ og finn intervallet i grader fahrenheit.
 
-::: {.losning}
-$-20 \le C \le 60$. Gang med $\frac95$: $-36 \le \frac95 C \le 108$. Legg til 32:
-$$
-\underline{\underline{-4\ ^\circ\mathrm{F} \le F \le 140\ ^\circ\mathrm{F}}}
-$$
+::: {.fasit}
+$-4\ ^\circ\mathrm{F} \le F \le 140\ ^\circ\mathrm{F}$
 :::
 :::
 
 ::: {.oppgave tittel="To ulikheter" niva="Utfordrende"}
 Løs $2x - 3 \le x + 1 < 3x + 5$.
 
-::: {.losning}
-Første del: $2x - 3 \le x + 1$ gir $x \le 4$. Andre del: $x + 1 < 3x + 5$ gir $-4 < 2x$, altså $x > -2$. Snittet er $\underline{\underline{x \in \langle -2, 4]}}$.
+::: {.fasit}
+$x \in \langle -2, 4]$
 :::
 :::
 

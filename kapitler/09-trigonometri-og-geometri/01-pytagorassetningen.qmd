@@ -75,32 +75,29 @@ $$
 ::: {.oppgave tittel="Hypotenusen"}
 Katetene er $6.0\ \mathrm{cm}$ og $8.0\ \mathrm{cm}$. Finn hypotenusen.
 
-::: {.losning}
-$\sqrt{36 + 64} = \sqrt{100} = \underline{\underline{10\ \mathrm{cm}}}$
+::: {.fasit}
+$10\ \mathrm{cm}$
 :::
 :::
 
 ::: {.oppgave tittel="Avstand"}
 Finn avstanden mellom $(-1, 2)$ og $(5, 10)$.
 
-::: {.losning}
-$\sqrt{6^2 + 8^2} = \underline{\underline{10}}$
+::: {.fasit}
+$10$
 :::
 :::
 
 ::: {.oppgave tittel="Er den rettvinklet?" niva="Middels"}
 Er en trekant med sidene $7$, $24$ og $25$ rettvinklet? Hva med $5$, $6$ og $8$?
 
-::: {.losning}
-$7^2 + 24^2 = 49 + 576 = 625 = 25^2$: **ja**. $5^2 + 6^2 = 61 \ne 64$: **nei**.
-:::
 :::
 
 ::: {.oppgave tittel="Diagonalen i en boks" niva="Utfordrende"}
 En boks er $30\ \mathrm{cm}$ lang, $20\ \mathrm{cm}$ bred og $12\ \mathrm{cm}$ høy. Hvor lang er romdiagonalen?
 
-::: {.losning}
-Diagonalen i bunnen: $\sqrt{30^2 + 20^2} = \sqrt{1300}$. Romdiagonalen: $\sqrt{1300 + 12^2} = \sqrt{1444} = \underline{\underline{38\ \mathrm{cm}}}$.
+::: {.fasit}
+$38\ \mathrm{cm}$
 :::
 :::
 

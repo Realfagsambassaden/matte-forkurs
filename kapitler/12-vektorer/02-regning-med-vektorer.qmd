@@ -55,24 +55,24 @@ Newtons 1. lov sier at en gjenstand er i ro eller har konstant fart når **vekto
 ::: {.oppgave tittel="Regn ut"}
 $\vec a = [1, 3]$ og $\vec b = [4, -2]$. Finn a) $\vec a + \vec b$ b) $3\vec a - \vec b$ c) $|\vec a + \vec b|$
 
-::: {.losning}
-a) $\underline{\underline{[5, 1]}}$ b) $[3, 9] - [4, -2] = \underline{\underline{[-1, 11]}}$ c) $\underline{\underline{\sqrt{26}}}$
+::: {.fasit}
+$[5, 1]$ · $[-1, 11]$ · $\sqrt{26}$
 :::
 :::
 
 ::: {.oppgave tittel="Vektorlikning" niva="Middels"}
 Finn $\vec x$ når $2\vec x + [3, -1] = [7, 5]$.
 
-::: {.losning}
-$2\vec x = [4, 6]$, så $\underline{\underline{\vec x = [2, 3]}}$.
+::: {.fasit}
+$\vec x = [2, 3]$
 :::
 :::
 
 ::: {.oppgave tittel="Likevekt" niva="Middels"}
 Tre krefter virker på en ring: $\vec F_1 = [30, 0]$ N, $\vec F_2 = [-10, 25]$ N og en ukjent $\vec F_3$. Ringen er i ro. Finn $\vec F_3$ og størrelsen.
 
-::: {.losning}
-Summen er null, så $\vec F_3 = -(\vec F_1 + \vec F_2) = \underline{\underline{[-20, -25]\ \mathrm{N}}}$. Størrelsen er $\sqrt{400 + 625} = \underline{\underline{32\ \mathrm{N}}}$.
+::: {.fasit}
+$[-20, -25]\ \mathrm{N}$ · $32\ \mathrm{N}$
 :::
 :::
 

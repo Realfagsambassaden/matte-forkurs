@@ -82,34 +82,32 @@ plt.show()
 ::: {.oppgave tittel="Fart og akselerasjon"}
 En gjenstand har posisjonen $s(t) = 2t^3 - 6t$ (meter, sekunder). Finn $v(t)$, $a(t)$ og farten ved $t = 2.0\ \mathrm{s}$.
 
-::: {.losning}
-$v(t) = 6t^2 - 6$, $a(t) = 12t$. Ved $t = 2.0$: $v = 24 - 6 = \underline{\underline{18\ \mathrm{m/s}}}$.
+::: {.fasit}
+$18\ \mathrm{m/s}$
 :::
 :::
 
 ::: {.oppgave tittel="Når står den stille?" niva="Middels"}
 Med $s(t) = 2t^3 - 6t$ fra forrige oppgave: Når er farten null, og hvor er gjenstanden da? Hva er akselerasjonen i det øyeblikket?
 
-::: {.losning}
-$6t^2 - 6 = 0$ gir $t = 1.0\ \mathrm{s}$ (for $t \ge 0$). Posisjonen er $s(1) = 2 - 6 = \underline{\underline{-4.0\ \mathrm{m}}}$, og akselerasjonen $a(1) = \underline{\underline{12\ \mathrm{m/s^2}}}$. Gjenstanden snur der.
+::: {.fasit}
+$-4.0\ \mathrm{m}$ · $12\ \mathrm{m/s^2}$
 :::
 :::
 
 ::: {.oppgave tittel="Bremsende bil" niva="Middels"}
 En bil bremser, og posisjonen er $s(t) = 24t - 3.0t^2$. Når stopper bilen, og hvor langt har den kjørt?
 
-::: {.losning}
-$v = 24 - 6.0t = 0$ gir $t = 4.0\ \mathrm{s}$. Strekningen: $s(4) = 96 - 48 = \underline{\underline{48\ \mathrm{m}}}$.
+::: {.fasit}
+$48\ \mathrm{m}$
 :::
 :::
 
 ::: {.oppgave tittel="Rakett" niva="Utfordrende"}
 Høyden til en liten rakett de første sekundene er $h(t) = 0.5t^3 + 2t^2$ (meter, sekunder). a) Finn farten og akselerasjonen ved $t = 4.0\ \mathrm{s}$. b) Hvorfor er dette ikke konstant akselerasjon, og hva betyr det for bevegelseslikningene?
 
-::: {.losning}
-a) $v = 1.5t^2 + 4t$ gir $v(4) = 24 + 16 = \underline{\underline{40\ \mathrm{m/s}}}$. $a = 3t + 4$ gir $a(4) = \underline{\underline{16\ \mathrm{m/s^2}}}$.
-
-b) Akselerasjonen øker med tiden. Bevegelseslikningene ($v = v_0 + at$ osv.) gjelder bare for konstant akselerasjon, så her må vi bruke derivasjon.
+::: {.fasit}
+$40\ \mathrm{m/s}$ · $16\ \mathrm{m/s^2}$
 :::
 :::
 

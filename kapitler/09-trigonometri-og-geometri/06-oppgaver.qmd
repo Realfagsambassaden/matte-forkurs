@@ -12,34 +12,32 @@ Oppgavene blander Pytagoras, trigonometri i rettvinklede og vilkårlige trekante
 ::: {.oppgave tittel="Rampe" krever="trigonometri/rettvinklet"}
 En rampe er $6.0\ \mathrm{m}$ lang og stiger $0.50\ \mathrm{m}$. Hva er helningsvinkelen?
 
-::: {.losning}
-$\sin v = \frac{0.50}{6.0}$, så $\underline{\underline{v = 4.8^\circ}}$.
+::: {.fasit}
+$v = 4.8^\circ$
 :::
 :::
 
 ::: {.oppgave tittel="Dekomponering" krever="trigonometri/rettvinklet"}
 En fotball sparkes med farten $18\ \mathrm{m/s}$ i en vinkel $35^\circ$ over bakken. Finn den vannrette og den loddrette startfarten.
 
-::: {.losning}
-$v_x = 18\cos 35^\circ = \underline{\underline{14.7\ \mathrm{m/s}}}$ og $v_y = 18\sin 35^\circ = \underline{\underline{10.3\ \mathrm{m/s}}}$.
+::: {.fasit}
+$14.7\ \mathrm{m/s}$ · $10.3\ \mathrm{m/s}$
 :::
 :::
 
 ::: {.oppgave tittel="Avstand over en innsjø" niva="Middels" krever="trigonometri/trekantsetninger"}
 Fra punkt $C$ er det $320\ \mathrm{m}$ til $A$ og $450\ \mathrm{m}$ til $B$ på hver sin side av en innsjø. Vinkelen $ACB$ er $72^\circ$. Hvor bredt er det fra $A$ til $B$?
 
-::: {.losning}
-$AB^2 = 320^2 + 450^2 - 2\cdot 320\cdot 450\cos 72^\circ = 102400 + 202500 - 88998 = 215902$, så $AB = \underline{\underline{465\ \mathrm{m}}}$.
+::: {.fasit}
+$465\ \mathrm{m}$
 :::
 :::
 
 ::: {.oppgave tittel="Pyramide" niva="Utfordrende" krever="geometri/pytagoras, geometri/romfigurer"}
 En pyramide har kvadratisk grunnflate med side $6.0\ \mathrm{m}$, og hver sidekant (fra hjørne til topp) er $5.0\ \mathrm{m}$. Finn høyden og volumet.
 
-::: {.losning}
-Halve diagonalen i grunnflaten er $\frac{6.0\sqrt2}{2} = 4.24\ \mathrm{m}$. Høyden: $h = \sqrt{5.0^2 - 4.24^2} = \sqrt{25 - 18} = \sqrt7 = \underline{\underline{2.6\ \mathrm{m}}}$.
-
-Volumet: $V = \frac13\cdot 36\cdot 2.65 = \underline{\underline{32\ \mathrm{m^3}}}$.
+::: {.fasit}
+$2.6\ \mathrm{m}$ · $32\ \mathrm{m^3}$
 :::
 :::
 
@@ -49,12 +47,8 @@ Volumet: $V = \frac13\cdot 36\cdot 2.65 = \underline{\underline{32\ \mathrm{m^3}
 
 Finn den tredje siden $c$ og arealet av trekanten.
 
-::: {.losning}
-Cosinussetningen:
-$$
-c^2 = 7.0^2 + 9.0^2 - 2\cdot7.0\cdot9.0\cos40^\circ = 33.5 \quad\Rightarrow\quad c = \underline{\underline{5.8}}
-$$
-Arealsetningen: $A = \frac12\cdot7.0\cdot9.0\sin40^\circ = \underline{\underline{20}}$.
+::: {.fasit}
+$5.8$ · $20$
 :::
 :::
 

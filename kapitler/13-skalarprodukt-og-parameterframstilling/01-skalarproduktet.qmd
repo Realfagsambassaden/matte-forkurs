@@ -78,32 +78,29 @@ Arbeid er skalarproduktet av kraft og forflytning, $W = \vec F\cdot\vec s = Fs\c
 ::: {.oppgave tittel="Regn ut"}
 $\vec a = [2, -3]$ og $\vec b = [4, 1]$. Finn $\vec a\cdot\vec b$ og vinkelen mellom dem.
 
-::: {.losning}
-$8 - 3 = \underline{\underline{5}}$. $\cos v = \frac{5}{\sqrt{13}\sqrt{17}} = 0.336$, så $\underline{\underline{v = 70.3^\circ}}$.
+::: {.fasit}
+$5$ · $v = 70.3^\circ$
 :::
 :::
 
 ::: {.oppgave tittel="Vinkelrett"}
 Bestem $t$ slik at $[t, 3]$ står vinkelrett på $[2, -4]$.
 
-::: {.losning}
-$2t - 12 = 0$, så $\underline{\underline{t = 6}}$.
+::: {.fasit}
+$t = 6$
 :::
 :::
 
 ::: {.oppgave tittel="Rett vinkel i trekanten?" niva="Middels"}
 Er trekanten med hjørnene $A = (0, 0)$, $B = (4, 2)$ og $C = (1, 4)$ rettvinklet?
 
-::: {.losning}
-$\overrightarrow{AB} = [4, 2]$, $\overrightarrow{AC} = [1, 4]$: produkt $12 \ne 0$. $\overrightarrow{BA}\cdot\overrightarrow{BC} = [-4, -2]\cdot[-3, 2] = 8 \ne 0$. $\overrightarrow{CA}\cdot\overrightarrow{CB} = [-1, -4]\cdot[3, -2] = 5 \ne 0$. **Nei**, ingen rett vinkel.
-:::
 :::
 
 ::: {.oppgave tittel="Arbeid på skrå" niva="Utfordrende"}
 Et tau drar med $80\ \mathrm{N}$ i en vinkel $35^\circ$ over vannrett, og kassen flyttes $12\ \mathrm{m}$ vannrett. Finn arbeidet på to måter.
 
-::: {.losning}
-$W = Fs\cos v = 80\cdot 12\cos 35^\circ = \underline{\underline{786\ \mathrm{J}}}$. Med koordinater: $\vec F = [80\cos 35^\circ, 80\sin 35^\circ] = [65.5, 45.9]$ og $\vec s = [12, 0]$, så $W = 65.5\cdot 12 = 786\ \mathrm{J}$.
+::: {.fasit}
+$786\ \mathrm{J}$
 :::
 :::
 

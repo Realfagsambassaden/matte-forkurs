@@ -89,34 +89,32 @@ print(Intersection(A, B))       # Interval.open(2, 4)
 ::: {.oppgave tittel="Skriv som intervall"}
 Skriv som intervall: a) $-2 \le x < 5$ b) $x > 0$ c) $x \le -1$
 
-::: {.losning}
-a) $\underline{\underline{[-2, 5\rangle}}$ b) $\underline{\underline{\langle 0, \rightarrow\rangle}}$ c) $\underline{\underline{\langle\leftarrow, -1]}}$
+::: {.fasit}
+$[-2, 5\rangle$ · $\langle 0, \rightarrow\rangle$ · $\langle\leftarrow, -1]$
 :::
 :::
 
 ::: {.oppgave tittel="Skriv som ulikhet"}
 Skriv som ulikhet: a) $\langle 3, 7]$ b) $[0, \rightarrow\rangle$
 
-::: {.losning}
-a) $\underline{\underline{3 < x \le 7}}$ b) $\underline{\underline{x \ge 0}}$
+::: {.fasit}
+$3 < x \le 7$ · $x \ge 0$
 :::
 :::
 
 ::: {.oppgave tittel="Union og snitt" niva="Middels"}
 La $A = \langle\leftarrow, 2]$ og $B = [0, 5\rangle$. Finn $A \cup B$ og $A \cap B$.
 
-::: {.losning}
-$A \cup B = \underline{\underline{\langle\leftarrow, 5\rangle}}$ og $A \cap B = \underline{\underline{[0, 2]}}$.
+::: {.fasit}
+$\langle\leftarrow, 5\rangle$ · $[0, 2]$
 :::
 :::
 
 ::: {.oppgave tittel="Løsningsmengde" niva="Middels"}
 Finn løsningsmengden: a) $3x - 1 = 3x + 2$ b) $2x + 1 \ge 2x$
 
-::: {.losning}
-a) $-1 = 2$ er aldri sant: $\underline{\underline{L = \emptyset}}$.
-
-b) $1 \ge 0$ er alltid sant: $\underline{\underline{L = \mathbb{R}}}$, alle reelle tall.
+::: {.fasit}
+a) $L = \emptyset$ · b) $L = \mathbb{R}$
 :::
 :::
 

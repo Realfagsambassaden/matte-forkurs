@@ -79,59 +79,40 @@ print(F(18, 24))                       # forkortes automatisk: 3/4
 ::: {.oppgave tittel="Forkort"}
 Forkort brøkene så mye som mulig: a) $\frac{24}{36}$ b) $\frac{45}{75}$ c) $\frac{84}{126}$
 
-::: {.losning}
-a) $\frac{24}{36} = \frac{2\cdot 12}{3\cdot 12} = \underline{\underline{\frac23}}$
-
-b) $\frac{45}{75} = \frac{3\cdot 15}{5\cdot 15} = \underline{\underline{\frac35}}$
-
-c) $\frac{84}{126} = \frac{2\cdot 42}{3\cdot 42} = \underline{\underline{\frac23}}$
+::: {.fasit}
+a) $\frac23$ · b) $\frac35$ · c) $\frac23$
 :::
 :::
 
 ::: {.oppgave tittel="Pluss og minus"}
 Regn ut: a) $\frac25 + \frac{3}{10}$ b) $\frac34 - \frac16$ c) $2 - \frac{5}{8}$
 
-::: {.losning}
-a) $\frac{4}{10} + \frac{3}{10} = \underline{\underline{\frac{7}{10}}}$
-
-b) Fellesnevner 12: $\frac{9}{12} - \frac{2}{12} = \underline{\underline{\frac{7}{12}}}$
-
-c) $\frac{16}{8} - \frac58 = \underline{\underline{\frac{11}{8}}}$
+::: {.fasit}
+a) $\frac{7}{10}$ · b) $\frac{7}{12}$ · c) $\frac{11}{8}$
 :::
 :::
 
 ::: {.oppgave tittel="Gange og dele"}
 Regn ut og forkort: a) $\frac{4}{9}\cdot\frac{3}{8}$ b) $\frac{5}{6} : \frac{10}{9}$ c) $6\cdot\frac{5}{4}$
 
-::: {.losning}
-a) $\frac{4\cdot 3}{9\cdot 8} = \frac{12}{72} = \underline{\underline{\frac16}}$
-
-b) $\frac56\cdot\frac{9}{10} = \frac{45}{60} = \underline{\underline{\frac34}}$
-
-c) $\frac{6\cdot 5}{4} = \frac{30}{4} = \underline{\underline{\frac{15}{2}}}$
+::: {.fasit}
+a) $\frac16$ · b) $\frac34$ · c) $\frac{15}{2}$
 :::
 :::
 
 ::: {.oppgave tittel="Motstander i parallell" niva="Middels"}
 I fysikken er den samlede motstanden $R$ for to motstander i parallell gitt ved $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$. Finn $R$ når $R_1 = 6\ \Omega$ og $R_2 = 12\ \Omega$. Regn med brøker.
 
-::: {.losning}
-$$
-\frac1R = \frac16 + \frac{1}{12} = \frac{2}{12} + \frac{1}{12} = \frac{3}{12} = \frac14
-$$
-Når $\frac1R = \frac14$, er $R = \underline{\underline{4\ \Omega}}$. Den samlede motstanden er mindre enn hver av motstandene, slik den skal være i parallell.
+::: {.fasit}
+$4\ \Omega$
 :::
 :::
 
 ::: {.oppgave tittel="Brudden brøk" niva="Utfordrende"}
 Regn ut og forkort: $\dfrac{1 - \frac{1}{3}}{1 + \frac{1}{3}} + \dfrac{\frac34}{\frac{3}{2}}$
 
-::: {.losning}
-Første brøk: $\dfrac{\frac23}{\frac43} = \frac23\cdot\frac34 = \frac{6}{12} = \frac12$.
-
-Andre brøk: $\frac34\cdot\frac23 = \frac{6}{12} = \frac12$.
-
-Summen er $\frac12 + \frac12 = \underline{\underline{1}}$.
+::: {.fasit}
+$1$
 :::
 :::
 

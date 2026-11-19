@@ -69,24 +69,24 @@ Ved sirkelbevegelse er farten $v = \omega r$, der vinkelfarten $\omega$ måles i
 ::: {.oppgave tittel="Gjør om"}
 Gjør om til radianer: a) $60^\circ$ b) $270^\circ$. Gjør om til grader: c) $\frac{\pi}{12}$ d) $2.0$
 
-::: {.losning}
-a) $\underline{\underline{\frac{\pi}{3}}}$ b) $\underline{\underline{\frac{3\pi}{2}}}$ c) $\underline{\underline{15^\circ}}$ d) $\frac{2.0\cdot 180^\circ}{\pi} = \underline{\underline{115^\circ}}$
+::: {.fasit}
+$\frac{\pi}{3}$ · $\frac{3\pi}{2}$ · $15^\circ$ · $115^\circ$
 :::
 :::
 
 ::: {.oppgave tittel="Buelengde"}
 Et pendellodd svinger ut $0.20$ rad på hver side, og snora er $1.2\ \mathrm{m}$. Hvor lang er buen loddet går fra ytterpunkt til ytterpunkt?
 
-::: {.losning}
-$b = 1.2\cdot 0.40 = \underline{\underline{0.48\ \mathrm{m}}}$
+::: {.fasit}
+$0.48\ \mathrm{m}$
 :::
 :::
 
 ::: {.oppgave tittel="Vindmølle" niva="Middels"}
 En vindmølle har vinger på $40\ \mathrm{m}$ og roterer 15 ganger i minuttet. Finn vinkelfarten i rad/s og farten til vingespissen.
 
-::: {.losning}
-$\omega = \frac{15\cdot 2\pi}{60\ \mathrm{s}} = \underline{\underline{1.57\ \mathrm{rad/s}}}$ og $v = \omega r = \underline{\underline{63\ \mathrm{m/s}}}$.
+::: {.fasit}
+$1.57\ \mathrm{rad/s}$ · $63\ \mathrm{m/s}$
 :::
 :::
 

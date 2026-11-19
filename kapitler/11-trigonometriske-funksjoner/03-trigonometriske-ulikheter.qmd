@@ -56,19 +56,16 @@ Produktet er negativt for $\underline{\underline{\frac{\pi}{3} < x < \pi \text{ 
 ::: {.oppgave tittel="Cosinus"}
 Løs $\cos x \le \frac{\sqrt2}{2}$ for $x \in [0, 2\pi]$.
 
-::: {.losning}
-Likhet i $\frac{\pi}{4}$ og $\frac{7\pi}{4}$. Cosinus er mindre mellom dem: $\underline{\underline{\frac{\pi}{4} \le x \le \frac{7\pi}{4}}}$.
+::: {.fasit}
+$\frac{\pi}{4} \le x \le \frac{7\pi}{4}$
 :::
 :::
 
 ::: {.oppgave tittel="Tidevann" niva="Middels"}
 Vannstanden er $h(t) = 2.0 + 1.5\cos\left(\frac{2\pi}{12.4}t\right)$. I hvilke tidsrom i løpet av de første 12.4 timene er vannstanden over $2.5\ \mathrm{m}$?
 
-::: {.losning}
-Likhet når $\frac{2\pi t}{12.4} = 1.231$ eller $2\pi - 1.231$, altså $t = 2.43$ og $t = 9.97$. Cosinus er stor nær 0 og $2\pi$:
-$$
-\underline{\underline{0 \le t < 2.4 \text{ h og } 10.0 \text{ h} < t \le 12.4 \text{ h}}}
-$$
+::: {.fasit}
+$0 \le t < 2.4 \text{ h og } 10.0 \text{ h} < t \le 12.4 \text{ h}$
 :::
 :::
 
