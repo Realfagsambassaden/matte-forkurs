@@ -37,7 +37,8 @@ $\frac{1}{\sqrt3}[1, -1, 1]$
 <!-- tillegg: Claude -->
 ![](../../bilder/figurer/opg-kasse.svg){.tikz-fig style="width:300px"}
 
-En eske er $12 \times 4 \times 3$ (cm). Hvor lang er den røde romdiagonalen? Får en blyant på $12.5\ \mathrm{cm}$ plass i esken?
+<!-- tillegg: Claude: notasjon (× bare for kryssprodukt, ingen fargehenvisning) -->
+En eske er $12\ \mathrm{cm}$ lang, $4\ \mathrm{cm}$ bred og $3\ \mathrm{cm}$ høy. Hvor lang er romdiagonalen i figuren? Får en blyant på $12.5\ \mathrm{cm}$ plass i esken?
 
 ::: {.fasit}
 $13\ \mathrm{cm}$
